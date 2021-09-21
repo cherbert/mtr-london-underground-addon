@@ -1,5 +1,6 @@
 {
-  "block.tutorialmod.platform_tfl_1" : "PLatform TfL-UK Variant #1",
+  "block.tutorialmod.platform_tfl_1" : "LU PLatform",
+  "block.tutorialmod.platform_tfl_gap" : "LU Platform Mind the Gap",
   "block.tutorialmod.tfl_block" : "Transport for London Logo",
   "block.tutorialmod.tunnel_darkness" : "Tunnel Darkness",
   "itemGroup.tutorialmod.tfl_blocks": "London Underground"
