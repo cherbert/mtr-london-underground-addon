@@ -1,4 +1,4 @@
-package net.fabricmc.goingunderground.mixin;
+package net.goingunderground.mixin;
 
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;

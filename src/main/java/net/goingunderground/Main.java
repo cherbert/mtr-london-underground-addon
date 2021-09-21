@@ -1,4 +1,4 @@
-package net.fabricmc.goingunderground;
+package net.goingunderground;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;

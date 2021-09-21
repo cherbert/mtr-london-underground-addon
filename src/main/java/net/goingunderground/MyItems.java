@@ -1,11 +1,11 @@
-package net.fabricmc.goingunderground;
+package net.goingunderground;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
-import static net.fabricmc.goingunderground.Main.MOD_ID;
+import static net.goingunderground.Main.MOD_ID;
 
 
 public interface MyItems {

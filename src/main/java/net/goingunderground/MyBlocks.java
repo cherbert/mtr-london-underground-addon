@@ -1,10 +1,9 @@
-package net.fabricmc.goingunderground;
-
+package net.goingunderground;
 
 import mtr.Blocks;
 import mtr.block.BlockPlatform;
-import net.fabricmc.goingunderground.blocks.TFLBlock;
-import net.fabricmc.goingunderground.blocks.TunnelDarknessBlock;
+import net.goingunderground.blocks.TFLBlock;
+import net.goingunderground.blocks.TunnelDarknessBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;

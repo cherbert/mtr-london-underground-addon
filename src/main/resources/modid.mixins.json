@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.goingunderground.mixin",
+  "package": "net.goingunderground.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],

@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "MTR London Underground Addon",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "A London Underground Addon for the Minecraft Transit Railway Mod",
   "authors": [
     "Me!"
   ],
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.goingunderground.Main"
+      "net.goingunderground.Main"
     ]
   },
   "mixins": [
