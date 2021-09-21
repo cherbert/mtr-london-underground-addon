@@ -1,6 +1,5 @@
-package net.fabricmc.example;
+package net.fabricmc.goingunderground;
 
-import mtr.ItemGroups;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
@@ -10,7 +9,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ExampleMod implements ModInitializer {
+public class Main implements ModInitializer {
 	public static final String MOD_ID = "tutorialmod";
 
 	@Override
