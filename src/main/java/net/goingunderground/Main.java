@@ -28,7 +28,7 @@ public class Main implements ModInitializer {
 						registerBlock("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
 						registerBlock("tunnel_darkness", MyBlocks.TUNNEL_DARKNESS, MyItems.TFL_BLOCKS);
 						registerBlock("station_light", MyBlocks.STATION_LIGHT, MyItems.TFL_BLOCKS);
-
+						registerBlock("exit_sign", MyBlocks.EXIT_SIGN, MyItems.TFL_BLOCKS);
 						break;
 					}
 				}
