@@ -5,7 +5,7 @@
 		"1": "tutorialmod:block/tube_platforms/dont_pass_the_yellow_line",
 		"2": "tutorialmod:block/tube_platforms/platform",
 		"3": "tutorialmod:block/tube_platforms/tactile_pavement",
-		"4": "tutorialmod:block/polished_blackstone",
+		"4": "block/polished_blackstone",
 		"particle": "tutorialmod:block/tube_platforms/platform_edge"
 	},
 	"elements": [

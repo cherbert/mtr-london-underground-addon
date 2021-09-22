@@ -1,12 +1,34 @@
 {
   "multipart": [
     {
+      "when": {
+        "facing": "false"
+      },
+      "apply": {
+        "model": "tutorialmod:block/station_light"
+      }
+    },
+    {
+      "when": {
+        "facing": "true"
+      },
       "apply": {
         "model": "tutorialmod:block/station_light",
         "y": 90
       }
     },
     {
+      "when": {
+        "facing": "false"
+      },
+      "apply": {
+        "model": "tutorialmod:block/station_light_lamp"
+      }
+    },
+    {
+      "when": {
+        "facing": "true"
+      },
       "apply": {
         "model": "tutorialmod:block/station_light_lamp",
         "y": 90
