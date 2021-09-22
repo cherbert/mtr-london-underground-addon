@@ -4,7 +4,7 @@
 		"1": "block/black_concrete",
 		"2": "block/anvil",
 		"4": "tutorialmod:block/exit",
-		"particle": "tutorialmod:block/black_concrete"
+		"particle": "block/black_concrete"
 	},
 	"elements": [
 		{
