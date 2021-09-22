@@ -24,9 +24,10 @@ public class Main implements ModInitializer {
 						System.out.println("MTR Found!");
 						registerBlock("platform_tfl_1", MyBlocks.PLATFORM_TFL_1, MyItems.TFL_BLOCKS);
 						registerBlock("platform_tfl_gap", MyBlocks.PLATFORM_TFL_GAP, MyItems.TFL_BLOCKS);
+						registerBlock("platform_block", MyBlocks.PLATFORM_BLOCK, MyItems.TFL_BLOCKS);
 						registerBlock("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
 						registerBlock("tunnel_darkness", MyBlocks.TUNNEL_DARKNESS, MyItems.TFL_BLOCKS);
-
+						registerBlock("station_light", MyBlocks.STATION_LIGHT, MyItems.TFL_BLOCKS);
 
 						break;
 					}

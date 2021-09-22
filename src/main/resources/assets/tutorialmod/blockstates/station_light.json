@@ -1,0 +1,16 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "tutorialmod:block/station_light",
+        "y": 90
+      }
+    },
+    {
+      "apply": {
+        "model": "tutorialmod:block/station_light_lamp",
+        "y": 90
+      }
+    }
+  ]
+}
