@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.goingunderground.Main"
+    ],
+    "client": [
+      "net.goingunderground.MainClient"
     ]
   },
   "mixins": [
