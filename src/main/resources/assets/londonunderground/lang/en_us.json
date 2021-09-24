@@ -1,0 +1,10 @@
+{
+  "block.londonunderground.platform_tfl_1" : "LU Platform",
+  "block.londonunderground.platform_block" : "LU Platform Block",
+  "block.londonunderground.platform_tfl_gap" : "LU Platform Mind the Gap",
+  "block.londonunderground.tfl_block" : "Transport for London Logo",
+  "block.londonunderground.tunnel_darkness" : "Tunnel Darkness",
+  "block.londonunderground.station_light" : "Station Light",
+  "block.londonunderground.exit_sign" : "Exit Sign",
+  "itemGroup.londonunderground.tfl_blocks": "London Underground"
+}

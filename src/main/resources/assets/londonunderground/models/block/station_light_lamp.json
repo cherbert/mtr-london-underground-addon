@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"light": "londonunderground:block/white"
+	},
+	"elements": [
+		{
+			"name": "Light",
+			"from": [6.5, 15, 0],
+			"to": [9.5, 16, 16],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [6.5, 0, 9.5, 1], "texture": "#light", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 1], "texture": "#light"},
+				"south": {"uv": [6.5, 0, 9.5, 1], "texture": "#light", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 1], "texture": "#light"},
+				"up": {"uv": [6.5, 0, 9.5, 16], "texture": "#light"},
+				"down": {"uv": [6.5, 0, 9.5, 16], "texture": "#light"}
+			}
+		}
+	]
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "londonunderground:block/tfl_block" }
+  }
+}

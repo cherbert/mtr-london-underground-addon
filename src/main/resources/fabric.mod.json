@@ -19,10 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.goingunderground.Main"
+      "net.londonunderground.Main"
     ],
     "client": [
-      "net.goingunderground.MainClient"
+      "net.londonunderground.MainClient"
     ]
   },
   "mixins": [
