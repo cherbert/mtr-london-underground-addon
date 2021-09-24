@@ -45,7 +45,7 @@
 				"facing": "north"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_psd"
+				"model": "mtr:block/platform_psd"
 			}
 		},
 		{
@@ -54,7 +54,7 @@
 				"facing": "east"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_psd",
+				"model": "mtr:block/platform_psd",
 				"y": 90
 			}
 		},
@@ -64,7 +64,7 @@
 				"facing": "south"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_psd",
+				"model": "mtr:block/platform_psd",
 				"y": 180
 			}
 		},
@@ -74,7 +74,7 @@
 				"facing": "west"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_psd",
+				"model": "mtr:block/platform_psd",
 				"y": 270
 			}
 		},
@@ -84,7 +84,7 @@
 				"facing": "north"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_apg"
+				"model": "mtr:block/platform_apg"
 			}
 		},
 		{
@@ -93,7 +93,7 @@
 				"facing": "east"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_apg",
+				"model": "mtr:block/platform_apg",
 				"y": 90
 			}
 		},
@@ -103,7 +103,7 @@
 				"facing": "south"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_apg",
+				"model": "mtr:block/platform_apg",
 				"y": 180
 			}
 		},
@@ -113,7 +113,7 @@
 				"facing": "west"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_apg",
+				"model": "mtr:block/platform_apg",
 				"y": 270
 			}
 		},
@@ -123,7 +123,7 @@
 				"facing": "north"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_1"
+				"model": "mtr:block/platform_arrow_1"
 			}
 		},
 		{
@@ -132,7 +132,7 @@
 				"facing": "east"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_1",
+				"model": "mtr:block/platform_arrow_1",
 				"y": 90
 			}
 		},
@@ -142,7 +142,7 @@
 				"facing": "south"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_1",
+				"model": "mtr:block/platform_arrow_1",
 				"y": 180
 			}
 		},
@@ -152,7 +152,7 @@
 				"facing": "west"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_1",
+				"model": "mtr:block/platform_arrow_1",
 				"y": 270
 			}
 		},
@@ -162,7 +162,7 @@
 				"facing": "north"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_2"
+				"model": "mtr:block/platform_arrow_2"
 			}
 		},
 		{
@@ -171,7 +171,7 @@
 				"facing": "east"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_2",
+				"model": "mtr:block/platform_arrow_2",
 				"y": 90
 			}
 		},
@@ -181,7 +181,7 @@
 				"facing": "south"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_2",
+				"model": "mtr:block/platform_arrow_2",
 				"y": 180
 			}
 		},
@@ -191,7 +191,7 @@
 				"facing": "west"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_2",
+				"model": "mtr:block/platform_arrow_2",
 				"y": 270
 			}
 		},
@@ -201,7 +201,7 @@
 				"facing": "north"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_3"
+				"model": "mtr:block/platform_arrow_3"
 			}
 		},
 		{
@@ -210,7 +210,7 @@
 				"facing": "east"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_3",
+				"model": "mtr:block/platform_arrow_3",
 				"y": 90
 			}
 		},
@@ -220,7 +220,7 @@
 				"facing": "south"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_3",
+				"model": "mtr:block/platform_arrow_3",
 				"y": 180
 			}
 		},
@@ -230,7 +230,7 @@
 				"facing": "west"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_3",
+				"model": "mtr:block/platform_arrow_3",
 				"y": 270
 			}
 		},
@@ -240,7 +240,7 @@
 				"facing": "north"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_4"
+				"model": "mtr:block/platform_arrow_4"
 			}
 		},
 		{
@@ -249,7 +249,7 @@
 				"facing": "east"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_4",
+				"model": "mtr:block/platform_arrow_4",
 				"y": 90
 			}
 		},
@@ -259,7 +259,7 @@
 				"facing": "south"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_4",
+				"model": "mtr:block/platform_arrow_4",
 				"y": 180
 			}
 		},
@@ -269,7 +269,7 @@
 				"facing": "west"
 			},
 			"apply": {
-				"model": "tutorialmod:block/platform_arrow_4",
+				"model": "mtr:block/platform_arrow_4",
 				"y": 270
 			}
 		}

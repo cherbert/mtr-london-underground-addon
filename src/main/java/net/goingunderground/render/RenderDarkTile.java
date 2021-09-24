@@ -1,5 +1,7 @@
-package net.goingunderground;
+package net.goingunderground.render;
 
+import net.goingunderground.MyBlocks;
+import net.goingunderground.entities.TunnelEntity;
 import net.goingunderground.blocks.TunnelDarknessBlock;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.VertexConsumer;

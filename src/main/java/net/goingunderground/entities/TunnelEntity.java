@@ -2,7 +2,7 @@
 	// Exported for Minecraft version 1.15
 	// Paste this class into your mod and generate all required imports
 
-	package net.goingunderground;
+	package net.goingunderground.entities;
 
 import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.VertexConsumer;
