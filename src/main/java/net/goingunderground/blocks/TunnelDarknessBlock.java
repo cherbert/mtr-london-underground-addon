@@ -1,5 +1,7 @@
 package net.goingunderground.blocks;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.goingunderground.Main;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -33,6 +35,11 @@ public class TunnelDarknessBlock extends Block implements BlockEntityProvider {
         public TileEntityTunnelDarkness() {
             super(Main.DARK_TILE);
         }
+        @Environment(EnvType.CLIENT)
+        public double getRenderDistance() {
+            return 256.0D;
+        }
 
     }
+
 }

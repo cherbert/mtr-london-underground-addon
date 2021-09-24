@@ -21,12 +21,19 @@ public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkne
     @Override
     public void render(T entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
         final PlayerEntity player = MinecraftClient.getInstance().player;
-        if (player == null || entity.getPos().getSquaredDistance(player.getBlockPos()) < 64) {
-            return;
+        if(!player.isHolding(item -> item == MyBlocks.TUNNEL_DARKNESS.asItem())) {
+            if (player == null || entity.getPos().getSquaredDistance(player.getBlockPos()) < 64) {
+                return;
+            }
         }
+
         matrices.push();
         final VertexConsumer vertexConsumer = vertexConsumers.getBuffer(tunnel_entity.getLayer(new Identifier("tutorialmod:textures/block/tunnel_darkness.png")));
         tunnel_entity.render(matrices, vertexConsumer, light, overlay, 1,1,1, 1);
         matrices.pop();
+    }
+    @Override
+    public boolean rendersOutsideBoundingBox(T tunnel_entity) {
+        return true;
     }
 }
