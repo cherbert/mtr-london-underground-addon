@@ -1,6 +1,5 @@
 package net.londonunderground.blocks;
 
-import mtr.MTR;
 import mtr.block.BlockPIDSBase;
 import mtr.block.IBlock;
 import net.londonunderground.Main;
