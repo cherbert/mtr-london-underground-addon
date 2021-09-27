@@ -8,7 +8,9 @@
   "block.londonunderground.exit_sign" : "Exit Sign",
   "block.londonunderground.pids_northern": "LU Themed PID",
   "block.londonunderground.tunnel_block_5" : "Tunnel #5",
-  "block.londonunderground.tunnel_block_5" : "Tunnel #4",
+  "block.londonunderground.tunnel_block_4" : "Tunnel #4",
+  "block.londonunderground.tunnel_block_3" : "Tunnel #3",
+  "block.londonunderground.tunnel_block_3" : "Tunnel #2",
   "itemGroup.londonunderground.tfl_blocks": "London Underground",
   "gui.mtr.arrival_sec": " Due"
 

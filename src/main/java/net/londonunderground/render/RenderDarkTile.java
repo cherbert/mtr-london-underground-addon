@@ -31,7 +31,7 @@ public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkne
 
         matrices.push();
         final VertexConsumer vertexConsumer = vertexConsumers.getBuffer(tunnel_entity.getLayer(new Identifier("londonunderground:textures/block/tunnel_darkness.png")));
-        tunnel_entity.render(matrices, vertexConsumer, light, overlay, 1,1,1, 1);
+        tunnel_entity.render(matrices, vertexConsumer, light, overlay, 1,1,1, 50);
         matrices.pop();
     }
     @Override

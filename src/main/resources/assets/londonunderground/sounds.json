@@ -1,0 +1,16 @@
+{
+  "cityambient": {
+    "sounds": [
+      {
+        "name": "londonunderground:cityambient"
+      }
+    ]
+  },
+  "seeitsayitsorted": {
+    "sounds": [
+      {
+        "name": "londonunderground:seeitsayitsorted"
+      }
+    ]
+  }
+}
