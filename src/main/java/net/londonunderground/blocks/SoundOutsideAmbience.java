@@ -32,7 +32,7 @@ public class SoundOutsideAmbience extends Block {
                 1 // Pitch multiplier, 1 is normal, 0.5 is half pitch, etc
         );
 
-        world.getBlockTickScheduler().schedule(pos, state.getBlock(), 700);
+        world.getBlockTickScheduler().schedule(pos, state.getBlock(), 8040);
     }
 
     @Override

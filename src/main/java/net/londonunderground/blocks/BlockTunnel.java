@@ -11,8 +11,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
-public class BlockTunnel4 extends HorizontalFacingBlock {
-    public BlockTunnel4(Settings settings) {
+public class BlockTunnel extends HorizontalFacingBlock {
+    public BlockTunnel(Settings settings) {
         super(settings);
     }
 

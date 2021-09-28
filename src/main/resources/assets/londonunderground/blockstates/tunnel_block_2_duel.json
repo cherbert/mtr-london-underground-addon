@@ -1,0 +1,39 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_block_2_duel",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_block_2_duel",
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_block_2_duel"
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_block_2_duel",
+        "y": 90
+      }
+    }
+  ]
+}

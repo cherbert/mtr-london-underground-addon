@@ -1,4 +1,5 @@
 {
+  "itemGroup.londonunderground.tfl_blocks": "MTR London Underground",
   "block.londonunderground.platform_tfl_1" : "LU Platform",
   "block.londonunderground.platform_block" : "LU Platform Block",
   "block.londonunderground.platform_tfl_gap" : "LU Platform Mind the Gap",
@@ -10,10 +11,15 @@
   "block.londonunderground.tunnel_block_5" : "Tunnel #5",
   "block.londonunderground.tunnel_block_4" : "Tunnel #4",
   "block.londonunderground.tunnel_block_3" : "Tunnel #3",
+  "block.londonunderground.tunnel_block_3_duel" : "Morden Tunnel #3 (Duel)",
   "block.londonunderground.tunnel_block_2" : "Tunnel #2",
+  "block.londonunderground.tunnel_block_2_duel" : "Morden Tunnel #2 (Duel)",
   "block.londonunderground.tunnel_block_1" : "Tunnel #1",
+  "block.londonunderground.tunnel_block_1_duel" : "Morden Tunnel #1 (Duel)",
   "block.londonunderground.tunnel_block_0" : "Tunnel #0",
-  "itemGroup.londonunderground.tfl_blocks": "London Underground",
+  "block.londonunderground.tunnel_entrance_1" : "Tunnel Entrance #1",
+  "block.londonunderground.sounds.see_it_say_it_sorted" : "See it Say it Sorted",
+  "block.londonunderground.sounds.outside_ambience" : "Outside Ambience",
   "gui.mtr.arrival_sec": " Due"
 
 }

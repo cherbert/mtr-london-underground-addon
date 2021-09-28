@@ -32,7 +32,7 @@ public class SoundSeeItSayItSorted extends Block {
                 1 // Pitch multiplier, 1 is normal, 0.5 is half pitch, etc
         );
 
-        world.getBlockTickScheduler().schedule(pos, state.getBlock(), 700);
+        world.getBlockTickScheduler().schedule(pos, state.getBlock(), 6000);
     }
 
     @Override
