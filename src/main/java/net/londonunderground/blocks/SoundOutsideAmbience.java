@@ -27,7 +27,7 @@ public class SoundOutsideAmbience extends Block {
                 null, // Player - if non-null, will play sound for every nearby player *except* the specified player
                 pos, // The position of where the sound will come from
                 Main.SOUND_EVENT_OUTSIDE_AMBIENT, // The sound that will play
-                SoundCategory.BLOCKS, // This determines which of the volume sliders affect this sound
+                SoundCategory.AMBIENT, // This determines which of the volume sliders affect this sound
                 5, //Volume multiplier, 1 is normal, 0.5 is half volume, etc
                 1 // Pitch multiplier, 1 is normal, 0.5 is half pitch, etc
         );

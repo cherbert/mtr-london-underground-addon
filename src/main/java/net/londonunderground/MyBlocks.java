@@ -18,6 +18,8 @@ public interface MyBlocks extends Blocks {
     Block SOUND_SEE_IT_SAY_IT_SORTED = new SoundSeeItSayItSorted(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2));
     Block STATION_LIGHT = new StationLight(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).luminance(15).nonOpaque());
     Block EXIT_SIGN = new ExitSign(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).luminance(15));
+    Block TUNNEL_BLOCK_0 = new BlockTunnel0(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).noCollision().requiresTool().hardness(2).nonOpaque());
+    Block TUNNEL_BLOCK_1 = new BlockTunnel1(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_2 = new BlockTunnel2(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_3 = new BlockTunnel3(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_4 = new BlockTunnel4(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());

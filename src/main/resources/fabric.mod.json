@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "londonunderground",
   "version": "${version}",
 
   "name": "MTR London Underground Addon",
@@ -14,7 +14,7 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/londonunderground/icon.png",
 
   "environment": "*",
   "entrypoints": {

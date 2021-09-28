@@ -228,6 +228,9 @@
 		}
 	],
 	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.42, 0.42, 0.42]
+		},
 		"firstperson_righthand": {
 			"scale": [0.1, 0.1, 0.1]
 		},
@@ -235,7 +238,9 @@
 			"scale": [0.1, 0.1, 0.1]
 		},
 		"gui": {
-			"scale": [0.32617, 0.33203, 1]
+			"rotation": [15, -135, 0],
+			"translation": [0.25, 0, 0],
+			"scale": [0.55, 0.55, 0.55]
 		},
 		"fixed": {
 			"rotation": [0, -90, 0],
