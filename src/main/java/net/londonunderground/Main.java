@@ -1,7 +1,11 @@
 package net.londonunderground;
 
+import mtr.Blocks;
+import mtr.ItemGroups;
+import mtr.block.BlockClock;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
+import net.londonunderground.blocks.LUClock;
 import net.londonunderground.blocks.NorthernLinePIDS;
 import net.londonunderground.blocks.TunnelDarknessBlock;
 import net.minecraft.block.Block;
@@ -20,10 +24,13 @@ public class Main implements ModInitializer {
 	public static final String MOD_ID = "londonunderground";
 	public static final BlockEntityType<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE = registerTileEntity("tunnel_darkness", TunnelDarknessBlock.TileEntityTunnelDarkness::new, MyBlocks.TUNNEL_DARKNESS);
 	public static final BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = registerTileEntity("pids_northern", NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
+	public static final BlockEntityType<LUClock.TileEntityClock> CLOCK_TILE_ENTITY = registerTileEntity("clock", LUClock.TileEntityClock::new, MyBlocks.CLOCK);
+
 
 	public static SoundEvent SOUND_EVENT_OUTSIDE_AMBIENT = registerSoundEvent("cityambient");
 	public static SoundEvent SOUND_EVENT_SEE_IT_SAY_IT = registerSoundEvent("seeitsayitsorted");
 
+	int ARGB_RED = 0xFFAA0000;
 
 	@Override
 	public void onInitialize() {
@@ -49,7 +56,12 @@ public class Main implements ModInitializer {
 				registerBlock("tunnel_block_3_duel", MyBlocks.TUNNEL_BLOCK_3_DUEL, MyItems.TFL_BLOCKS);
 				registerBlock("tunnel_block_4", MyBlocks.TUNNEL_BLOCK_4, MyItems.TFL_BLOCKS);
 				registerBlock("tunnel_block_5", MyBlocks.TUNNEL_BLOCK_5, MyItems.TFL_BLOCKS);
+				registerBlock("tube_0", MyBlocks.TUBE_0, MyItems.TFL_BLOCKS);
+				registerBlock("tube_1", MyBlocks.TUBE_1, MyItems.TFL_BLOCKS);
+				registerBlock("tube_2", MyBlocks.TUBE_2, MyItems.TFL_BLOCKS);
+				registerBlock("tube_3", MyBlocks.TUBE_3, MyItems.TFL_BLOCKS);
 				registerBlock("pids_northern", MyBlocks.NORTHERN_PIDS, MyItems.TFL_BLOCKS);
+				registerBlock("clock", MyBlocks.CLOCK, MyItems.TFL_BLOCKS);
 				break;
 			}
 		}

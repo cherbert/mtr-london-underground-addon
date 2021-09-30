@@ -1,6 +1,7 @@
 package net.londonunderground;
 
 import mtr.Blocks;
+import mtr.block.BlockClock;
 import mtr.block.BlockPlatform;
 import net.londonunderground.blocks.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -19,7 +20,7 @@ public interface MyBlocks extends Blocks {
     Block STATION_LIGHT = new StationLight(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).luminance(15).nonOpaque());
     Block EXIT_SIGN = new ExitSign(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).luminance(15));
     Block TUNNEL_ENTRANCE_1 = new TunnelEntrance1(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).noCollision().requiresTool().hardness(2));
-    Block TUNNEL_BLOCK_0 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).noCollision().requiresTool().hardness(2).nonOpaque());
+    Block TUNNEL_BLOCK_0 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_1 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_1_DUEL = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_2 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
@@ -28,5 +29,11 @@ public interface MyBlocks extends Blocks {
     Block TUNNEL_BLOCK_3_DUEL = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_4 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_5 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
+    Block TUBE_0 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
+    Block TUBE_1 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
+    Block TUBE_2 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
+    Block TUBE_3 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block NORTHERN_PIDS = new NorthernLinePIDS();
+    Block CLOCK = new LUClock(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).luminance(5));
+
 }

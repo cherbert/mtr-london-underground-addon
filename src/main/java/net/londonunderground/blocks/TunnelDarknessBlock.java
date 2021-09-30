@@ -41,5 +41,4 @@ public class TunnelDarknessBlock extends Block implements BlockEntityProvider {
         }
 
     }
-
 }
