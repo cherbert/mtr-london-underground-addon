@@ -5,7 +5,7 @@
         "facing": "north"
       },
       "apply": {
-        "model": "londonunderground:block/tube_0",
+        "model": "londonunderground:block/track_2",
         "y": 180
       }
     },
@@ -14,7 +14,7 @@
         "facing": "east"
       },
       "apply": {
-        "model": "londonunderground:block/tube_0",
+        "model": "londonunderground:block/track_2",
         "y": -90
       }
     },
@@ -23,7 +23,7 @@
         "facing": "south"
       },
       "apply": {
-        "model": "londonunderground:block/tube_0"
+        "model": "londonunderground:block/track_2"
       }
     },
     {
@@ -31,7 +31,7 @@
         "facing": "west"
       },
       "apply": {
-        "model": "londonunderground:block/tube_0",
+        "model": "londonunderground:block/track_2",
         "y": 90
       }
     }

@@ -56,12 +56,18 @@ public class Main implements ModInitializer {
 				registerBlock("tunnel_block_3_duel", MyBlocks.TUNNEL_BLOCK_3_DUEL, MyItems.TFL_BLOCKS);
 				registerBlock("tunnel_block_4", MyBlocks.TUNNEL_BLOCK_4, MyItems.TFL_BLOCKS);
 				registerBlock("tunnel_block_5", MyBlocks.TUNNEL_BLOCK_5, MyItems.TFL_BLOCKS);
+				registerBlock("morden_arch", MyBlocks.MORDEN_ARCH, MyItems.TFL_BLOCKS);
 				registerBlock("tube_0", MyBlocks.TUBE_0, MyItems.TFL_BLOCKS);
 				registerBlock("tube_1", MyBlocks.TUBE_1, MyItems.TFL_BLOCKS);
 				registerBlock("tube_2", MyBlocks.TUBE_2, MyItems.TFL_BLOCKS);
 				registerBlock("tube_3", MyBlocks.TUBE_3, MyItems.TFL_BLOCKS);
 				registerBlock("pids_northern", MyBlocks.NORTHERN_PIDS, MyItems.TFL_BLOCKS);
 				registerBlock("clock", MyBlocks.CLOCK, MyItems.TFL_BLOCKS);
+				registerBlock("track_1", MyBlocks.TRACK_1, MyItems.TFL_BLOCKS);
+				registerBlock("track_2", MyBlocks.TRACK_2, MyItems.TFL_BLOCKS);
+				registerBlock("morden_stairs", MyBlocks.MORDEN_STAIRS, MyItems.TFL_BLOCKS);
+				registerBlock("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
+				registerBlock("morden_cobblestone", MyBlocks.MORDEN_COBBLESTONE, MyItems.TFL_BLOCKS);
 				break;
 			}
 		}

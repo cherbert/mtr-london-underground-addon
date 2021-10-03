@@ -1,0 +1,26 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/iron_ingot"
+	},
+	
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "item/panels/tooting_broadway"},
+		{"predicate": {"custom_model_data":2}, "model": "item/panels/background1"},
+		{"predicate": {"custom_model_data":3}, "model": "item/panels/south_wimbledon"},
+		{"predicate": {"custom_model_data":4}, "model": "item/panels/sw_advert1"},
+		{"predicate": {"custom_model_data":5}, "model": "item/panels/sw_advert2"},
+		{"predicate": {"custom_model_data":6}, "model": "item/tardis/tardis_remake"},
+		{"predicate": {"custom_model_data":7}, "model": "item/rails/powered_rail"},
+		{"predicate": {"custom_model_data":8}, "model": "item/rails/powered_rail2"},
+		{"predicate": {"custom_model_data":9}, "model": "item/panels/ad1"},
+		{"predicate": {"custom_model_data":10}, "model": "item/panels/ad2"},
+		{"predicate": {"custom_model_data":11}, "model": "item/panels/ad3"},
+		{"predicate": {"custom_model_data":12}, "model": "item/panels/ad4"},
+		{"predicate": {"custom_model_data":13}, "model": "item/class_345/tunnel"},
+		{"predicate": {"custom_model_data":14}, "model": "item/panels/sw_advert3"},
+		{"predicate": {"custom_model_data":15}, "model": "item/panels/sw_advert4"},
+		{"predicate": {"custom_model_data":16}, "model": "item/panels/south_wimbledon2"},
+		{"predicate": {"custom_model_data":17}, "model": "item/panels/south_wimbledon3"}
+	]
+}
