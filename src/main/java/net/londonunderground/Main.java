@@ -1,9 +1,7 @@
 package net.londonunderground;
 
-import mtr.Blocks;
-import mtr.ItemGroups;
-import mtr.block.BlockClock;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.CommandRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.londonunderground.blocks.LUClock;
 import net.londonunderground.blocks.NorthernLinePIDS;
@@ -11,14 +9,13 @@ import net.londonunderground.blocks.TunnelDarknessBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import java.util.function.Supplier;
+
 
 public class Main implements ModInitializer {
 	public static final String MOD_ID = "londonunderground";
@@ -34,7 +31,9 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		while (true){
+
 			if(FabricLoader.getInstance().isModLoaded("mtr")) {
 				System.out.println("MTR Found!");
 				registerBlock("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
@@ -68,10 +67,12 @@ public class Main implements ModInitializer {
 				registerBlock("morden_stairs", MyBlocks.MORDEN_STAIRS, MyItems.TFL_BLOCKS);
 				registerBlock("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
 				registerBlock("morden_cobblestone", MyBlocks.MORDEN_COBBLESTONE, MyItems.TFL_BLOCKS);
+				GiveCommand.register();
 				break;
 			}
 		}
 	}
+
 	private static void registerBlock(String path, Block block) {
 		Registry.register(Registry.BLOCK, new Identifier(MOD_ID, path), block);
 	}
@@ -89,5 +90,8 @@ public class Main implements ModInitializer {
 		final Identifier id = new Identifier(MOD_ID, path);
 		return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));
 	}
+
+
+
 
 }
