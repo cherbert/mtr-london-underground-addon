@@ -3,6 +3,7 @@ package net.londonunderground;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,6 +12,7 @@ import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
+import net.minecraft.world.World;
 
 import static net.minecraft.server.command.CommandManager.literal;
 
@@ -22,8 +24,10 @@ public class GiveCommand {
         });
     }
 
-    public static int run(CommandContext<ServerCommandSource> context) {
-        final PlayerEntity player = MinecraftClient.getInstance().player;
+    public static int run(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+
+        final World world = context.getSource().getWorld();
+        final PlayerEntity player = context.getSource().getPlayer();
         int modelData = IntegerArgumentType.getInteger(context,"custom");
 
         ItemStack item = new ItemStack(Items.IRON_INGOT, 1);
@@ -31,6 +35,7 @@ public class GiveCommand {
         compound.putInt("CustomModelData", modelData);
         item.setTag(compound);
         player.giveItemStack(item);
+
         return 1;
     }
 }
