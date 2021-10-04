@@ -1,7 +1,6 @@
 package net.londonunderground;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.registry.CommandRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.londonunderground.blocks.LUClock;
 import net.londonunderground.blocks.NorthernLinePIDS;
@@ -26,6 +25,7 @@ public class Main implements ModInitializer {
 
 	public static SoundEvent SOUND_EVENT_OUTSIDE_AMBIENT = registerSoundEvent("cityambient");
 	public static SoundEvent SOUND_EVENT_SEE_IT_SAY_IT = registerSoundEvent("seeitsayitsorted");
+	public static SoundEvent SOUNT_EVENT_TUBE_STATION_AMBIENCE1 = registerSoundEvent("ambient1");
 
 	int ARGB_RED = 0xFFAA0000;
 
@@ -41,6 +41,7 @@ public class Main implements ModInitializer {
 				registerBlock("platform_tfl_gap", MyBlocks.PLATFORM_TFL_GAP, MyItems.TFL_BLOCKS);
 				registerBlock("platform_block", MyBlocks.PLATFORM_BLOCK, MyItems.TFL_BLOCKS);
 				registerBlock("sounds/see_it_say_it_sorted", MyBlocks.SOUND_SEE_IT_SAY_IT_SORTED, MyItems.TFL_BLOCKS);
+				registerBlock("sounds/tube_station_ambience1", MyBlocks.TUBE_STATION_AMBIENCE1, MyItems.TFL_BLOCKS);
 				registerBlock("sounds/outside_ambience", MyBlocks.SOUND_OUTSIDE_AMBIENCE, MyItems.TFL_BLOCKS);
 				registerBlock("tunnel_darkness", MyBlocks.TUNNEL_DARKNESS, MyItems.TFL_BLOCKS);
 				registerBlock("station_light", MyBlocks.STATION_LIGHT, MyItems.TFL_BLOCKS);
@@ -67,7 +68,7 @@ public class Main implements ModInitializer {
 				registerBlock("morden_stairs", MyBlocks.MORDEN_STAIRS, MyItems.TFL_BLOCKS);
 				registerBlock("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
 				registerBlock("morden_cobblestone", MyBlocks.MORDEN_COBBLESTONE, MyItems.TFL_BLOCKS);
-				GiveCommand.register();
+				PanelCommand.register();
 				break;
 			}
 		}

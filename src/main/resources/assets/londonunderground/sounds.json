@@ -6,6 +6,13 @@
       }
     ]
   },
+  "ambient1": {
+    "sounds": [
+      {
+        "name": "londonunderground:ambient1"
+      }
+    ]
+  },
   "seeitsayitsorted": {
     "sounds": [
       {
