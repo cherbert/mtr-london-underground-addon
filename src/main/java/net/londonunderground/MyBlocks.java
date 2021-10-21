@@ -20,7 +20,7 @@ public interface MyBlocks extends Blocks {
     Block STATION_LIGHT = new StationLight(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).luminance(15).nonOpaque());
     Block EXIT_SIGN = new ExitSign(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).luminance(15));
     Block TUNNEL_ENTRANCE_1 = new TunnelEntrance1(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2));
-    Block TUNNEL_BLOCK_0 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).noCollision().requiresTool().hardness(2).nonOpaque());
+    Block TUNNEL_BLOCK_0 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_1 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_1_DUEL = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TUNNEL_BLOCK_2 = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
