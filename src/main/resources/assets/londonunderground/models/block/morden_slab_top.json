@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "londonunderground:block/tunnel_interior_type_1",
+    "top": "londonunderground:block/tunnel_interior_type_1",
+    "side": "londonunderground:block/tunnel_interior_type_1"
+  }
+}

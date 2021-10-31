@@ -1,5 +1,6 @@
 package net.londonunderground;
 
+import mtr.LoopingSoundInstance;
 import net.londonunderground.render.RenderPIDS;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendereregistry.v1.BlockEntityRendererRegistry;

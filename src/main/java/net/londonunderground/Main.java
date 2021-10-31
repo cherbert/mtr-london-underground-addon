@@ -1,9 +1,10 @@
 package net.londonunderground;
 
+import mtr.Blocks;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
-import net.londonunderground.blocks.LUClock;
 import net.londonunderground.blocks.NorthernLinePIDS;
+import net.londonunderground.blocks.SoundTimer;
 import net.londonunderground.blocks.TunnelDarknessBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
@@ -20,8 +21,7 @@ public class Main implements ModInitializer {
 	public static final String MOD_ID = "londonunderground";
 	public static final BlockEntityType<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE = registerTileEntity("tunnel_darkness", TunnelDarknessBlock.TileEntityTunnelDarkness::new, MyBlocks.TUNNEL_DARKNESS);
 	public static final BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = registerTileEntity("pids_northern", NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
-	public static final BlockEntityType<LUClock.TileEntityClock> CLOCK_TILE_ENTITY = registerTileEntity("clock", LUClock.TileEntityClock::new, MyBlocks.CLOCK);
-
+	public static final BlockEntityType<SoundTimer.TileEntitySoundTimer> SOUND_TIMER_ENTITY = registerTileEntity("sounds_timer", SoundTimer.TileEntitySoundTimer::new, MyBlocks.SOUND_TIMER);
 
 	public static SoundEvent SOUND_EVENT_OUTSIDE_AMBIENT = registerSoundEvent("cityambient");
 	public static SoundEvent SOUND_EVENT_SEE_IT_SAY_IT = registerSoundEvent("seeitsayitsorted");
@@ -37,6 +37,7 @@ public class Main implements ModInitializer {
 			if(FabricLoader.getInstance().isModLoaded("mtr")) {
 				System.out.println("MTR Found!");
 				registerBlock("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
+				registerBlock("sounds_timer", MyBlocks.SOUND_TIMER, MyItems.TFL_BLOCKS);
 				registerBlock("platform_tfl_1", MyBlocks.PLATFORM_TFL_1, MyItems.TFL_BLOCKS);
 				registerBlock("platform_tfl_gap", MyBlocks.PLATFORM_TFL_GAP, MyItems.TFL_BLOCKS);
 				registerBlock("platform_block", MyBlocks.PLATFORM_BLOCK, MyItems.TFL_BLOCKS);
@@ -62,11 +63,11 @@ public class Main implements ModInitializer {
 				registerBlock("tube_2", MyBlocks.TUBE_2, MyItems.TFL_BLOCKS);
 				registerBlock("tube_3", MyBlocks.TUBE_3, MyItems.TFL_BLOCKS);
 				registerBlock("pids_northern", MyBlocks.NORTHERN_PIDS, MyItems.TFL_BLOCKS);
-				registerBlock("clock", MyBlocks.CLOCK, MyItems.TFL_BLOCKS);
 				registerBlock("track_1", MyBlocks.TRACK_1, MyItems.TFL_BLOCKS);
 				registerBlock("track_2", MyBlocks.TRACK_2, MyItems.TFL_BLOCKS);
 				registerBlock("morden_stairs", MyBlocks.MORDEN_STAIRS, MyItems.TFL_BLOCKS);
 				registerBlock("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
+				registerBlock("morden_slab", MyBlocks.MORDEN_SLAB, MyItems.TFL_BLOCKS);
 				registerBlock("morden_cobblestone", MyBlocks.MORDEN_COBBLESTONE, MyItems.TFL_BLOCKS);
 				PanelCommand.register();
 				break;

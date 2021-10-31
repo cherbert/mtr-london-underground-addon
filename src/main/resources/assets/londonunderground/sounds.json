@@ -19,5 +19,12 @@
         "name": "londonunderground:seeitsayitsorted"
       }
     ]
+  },
+  "approach": {
+    "sounds": [
+      {
+        "name": "londonunderground:sw_ew_bank"
+      }
+    ]
   }
 }

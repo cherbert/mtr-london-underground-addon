@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+        "model": "londonunderground:block/morden_slab"
+    },
+    "type=double": {
+      "model": "londonunderground:block/morden_stone"
+    },
+    "type=top": {
+      "model": "londonunderground:block/morden_slab_top"
+    }
+  }
+}
