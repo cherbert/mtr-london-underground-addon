@@ -1,6 +1,7 @@
 package net.londonunderground.packet;
 
 import mtr.data.SerializedDataBase;
+import mtr.packet.PacketTrainDataBase;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.londonunderground.blocks.SoundTimer;
@@ -9,6 +10,8 @@ import net.minecraft.network.PacketByteBuf;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
+
+import static net.londonunderground.packet.IPacket.PACKET_OPEN_SOUND_TIMER_SCREEN;
 
 public class PacketTrainDataGuiServer extends PacketTrainDataBase {
 
