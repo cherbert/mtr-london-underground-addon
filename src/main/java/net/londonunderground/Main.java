@@ -1,7 +1,9 @@
 package net.londonunderground;
 
-import mtr.Blocks;
+import net.londonunderground.packet.IPacket;
+import net.londonunderground.packet.PacketTrainDataGuiServer;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.loader.api.FabricLoader;
 import net.londonunderground.blocks.NorthernLinePIDS;
 import net.londonunderground.blocks.SoundTimer;
@@ -17,7 +19,7 @@ import net.minecraft.util.registry.Registry;
 import java.util.function.Supplier;
 
 
-public class Main implements ModInitializer {
+public class Main implements ModInitializer, IPacket {
 	public static final String MOD_ID = "londonunderground";
 	public static final BlockEntityType<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE = registerTileEntity("tunnel_darkness", TunnelDarknessBlock.TileEntityTunnelDarkness::new, MyBlocks.TUNNEL_DARKNESS);
 	public static final BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = registerTileEntity("pids_northern", NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
@@ -26,6 +28,8 @@ public class Main implements ModInitializer {
 	public static SoundEvent SOUND_EVENT_OUTSIDE_AMBIENT = registerSoundEvent("cityambient");
 	public static SoundEvent SOUND_EVENT_SEE_IT_SAY_IT = registerSoundEvent("seeitsayitsorted");
 	public static SoundEvent SOUNT_EVENT_TUBE_STATION_AMBIENCE1 = registerSoundEvent("ambient1");
+
+
 
 	int ARGB_RED = 0xFFAA0000;
 
@@ -69,8 +73,16 @@ public class Main implements ModInitializer {
 				registerBlock("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
 				registerBlock("morden_slab", MyBlocks.MORDEN_SLAB, MyItems.TFL_BLOCKS);
 				registerBlock("morden_cobblestone", MyBlocks.MORDEN_COBBLESTONE, MyItems.TFL_BLOCKS);
+
+
+				ServerPlayNetworking.registerGlobalReceiver(PACKET_SOUND_TIMER_UPDATE, (minecraftServer, player, handler, packet, sender) -> PacketTrainDataGuiServer.receiveSoundTimerC2S(minecraftServer, player, packet));
+
+
+
 				PanelCommand.register();
 				break;
+
+
 			}
 		}
 	}
