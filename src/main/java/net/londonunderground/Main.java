@@ -1,15 +1,12 @@
 package net.londonunderground;
 
-import mtr.Blocks;
-import mtr.block.BlockSignalLight1;
 import net.londonunderground.blocks.BlockTunnelSignal;
 import net.londonunderground.packet.IPacket;
-import net.londonunderground.packet.PacketTrainDataGuiServer;
+//import net.londonunderground.packet.PacketTrainDataGuiServer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.loader.api.FabricLoader;
 import net.londonunderground.blocks.NorthernLinePIDS;
-import net.londonunderground.blocks.SoundTimer;
 import net.londonunderground.blocks.TunnelDarknessBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
@@ -26,7 +23,7 @@ public class Main implements ModInitializer, IPacket {
 	public static final String MOD_ID = "londonunderground";
 	public static final BlockEntityType<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE = registerTileEntity("tunnel_darkness", TunnelDarknessBlock.TileEntityTunnelDarkness::new, MyBlocks.TUNNEL_DARKNESS);
 	public static final BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = registerTileEntity("pids_northern", NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
-	public static final BlockEntityType<SoundTimer.TileEntitySoundTimer> SOUND_TIMER_ENTITY = registerTileEntity("sounds_timer", SoundTimer.TileEntitySoundTimer::new, MyBlocks.SOUND_TIMER);
+	//public static final BlockEntityType<SoundTimer.TileEntitySoundTimer> SOUND_TIMER_ENTITY = registerTileEntity("sounds_timer", SoundTimer.TileEntitySoundTimer::new, MyBlocks.SOUND_TIMER);
 	public static final BlockEntityType<BlockTunnelSignal.TileEntityTunnelSignalLight1> TUNNEL_BLOCK_2_SIGNAL = registerTileEntity("tunnel_block_2_signal", BlockTunnelSignal.TileEntityTunnelSignalLight1::new, MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
 
 
@@ -46,7 +43,7 @@ public class Main implements ModInitializer, IPacket {
 			if(FabricLoader.getInstance().isModLoaded("mtr")) {
 				System.out.println("MTR Found!");
 				registerBlock("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
-				registerBlock("sounds_timer", MyBlocks.SOUND_TIMER, MyItems.TFL_BLOCKS);
+				//registerBlock("sounds_timer", MyBlocks.SOUND_TIMER, MyItems.TFL_BLOCKS);
 				registerBlock("platform_tfl_1", MyBlocks.PLATFORM_TFL_1, MyItems.TFL_BLOCKS);
 				registerBlock("platform_tfl_gap", MyBlocks.PLATFORM_TFL_GAP, MyItems.TFL_BLOCKS);
 				registerBlock("platform_block", MyBlocks.PLATFORM_BLOCK, MyItems.TFL_BLOCKS);
@@ -84,7 +81,7 @@ public class Main implements ModInitializer, IPacket {
 				registerBlock("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
 				registerBlock("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
 
-				ServerPlayNetworking.registerGlobalReceiver(PACKET_SOUND_TIMER_UPDATE, (minecraftServer, player, handler, packet, sender) -> PacketTrainDataGuiServer.receiveSoundTimerC2S(minecraftServer, player, packet));
+				//ServerPlayNetworking.registerGlobalReceiver(PACKET_SOUND_TIMER_UPDATE, (minecraftServer, player, handler, packet, sender) -> PacketTrainDataGuiServer.receiveSoundTimerC2S(minecraftServer, player, packet));
 
 
 
