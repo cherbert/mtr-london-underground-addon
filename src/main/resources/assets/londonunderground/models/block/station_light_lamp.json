@@ -6,8 +6,8 @@
 	"elements": [
 		{
 			"name": "Light",
-			"from": [6.5, 15, 0],
-			"to": [9.5, 16, 16],
+			"from": [6.5, 13, 0],
+			"to": [9.5, 14, 16],
 			"shade": false,
 			"faces": {
 				"north": {"uv": [6.5, 0, 9.5, 1], "texture": "#light", "cullface": "north"},

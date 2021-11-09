@@ -7,8 +7,8 @@
 	"elements": [
 		{
 			"name": "Bar 1",
-			"from": [6, 14.5, 0],
-			"to": [6.5, 16, 16],
+			"from": [6, 12.5, 0],
+			"to": [6.5, 14, 16],
 			"faces": {
 				"north": {"uv": [11.5, 0, 12.5, 3], "texture": "#side", "cullface": "north"},
 				"east": {"uv": [0, 0, 16, 3], "texture": "#side"},
@@ -20,8 +20,8 @@
 		},
 		{
 			"name": "Bar 2",
-			"from": [9.5, 14.5, 0],
-			"to": [10, 16, 16],
+			"from": [9.5, 12.5, 0],
+			"to": [10, 14, 16],
 			"faces": {
 				"north": {"uv": [3.5, 0, 4.5, 3], "texture": "#side", "cullface": "north"},
 				"east": {"uv": [0, 0, 16, 3], "texture": "#side"},
@@ -48,7 +48,9 @@
 			"translation": [0.75, -6, 0]
 		}
 	},
-	"groups": [0, 1,
+	"groups": [
+		0,
+		1,
 		{
 			"name": "group",
 			"origin": [0, 0, 0],

@@ -11,8 +11,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
-public class BlockTunnel extends HorizontalFacingBlock {
-    public BlockTunnel(Settings settings) {
+public class MordenSign extends HorizontalFacingBlock {
+
+    public MordenSign(Settings settings) {
         super(settings);
     }
 
@@ -23,7 +24,7 @@ public class BlockTunnel extends HorizontalFacingBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 16, 16, state.get(FACING));
+        return IBlock.getVoxelShapeByDirection(-2, 0, 8, 19, 31, 9, state.get(FACING));
     }
 
     @Override
@@ -31,6 +32,6 @@ public class BlockTunnel extends HorizontalFacingBlock {
         builder.add(FACING);
     }
 
-
-
 }
+
+

@@ -1,0 +1,40 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "londonunderground:block/morden_steps",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "londonunderground:block/morden_steps",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "londonunderground:block/morden_steps",
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "londonunderground:block/morden_steps",
+        "y": 0
+      }
+    }
+  ]
+}

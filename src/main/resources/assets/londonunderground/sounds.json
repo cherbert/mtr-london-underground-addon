@@ -26,5 +26,19 @@
         "name": "londonunderground:sw_ew_bank"
       }
     ]
-  }
+  },
+  "approach_test": {
+    "sounds": [
+      {
+        "name": "londonunderground:arrive95"
+      }
+    ]
+  },
+  "sw_mdn": {
+  "sounds": [
+    {
+      "name": "londonunderground:this_south_wimbledon_terminates_morden"
+    }
+  ]
+}
 }

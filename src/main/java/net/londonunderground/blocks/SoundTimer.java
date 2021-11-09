@@ -2,6 +2,7 @@ package net.londonunderground.blocks;
 
 import mtr.block.IBlock;
 import mtr.data.Platform;
+import mtr.data.RailwayData;
 import mtr.data.Route;
 import mtr.gui.ClientData;
 import net.fabricmc.api.EnvType;
@@ -78,7 +79,9 @@ public class SoundTimer extends Block implements BlockEntityProvider {
 
     public static class TileEntitySoundTimer extends BlockEntity implements Tickable, BlockEntityClientSerializable {
         private String message = "";
+        private Boolean fire_redstone = false;
         private static final String KEY_MESSAGE = "message";
+        private static final String FIRE_MESSAGE = "fire_redstone";
 
         public TileEntitySoundTimer() {
             super(Main.SOUND_TIMER_ENTITY);
@@ -92,44 +95,63 @@ public class SoundTimer extends Block implements BlockEntityProvider {
         @Override
         public void tick() {
             if(!world.isClient) {
-                if(seconds == 37) {
-                    ServerWorld serverworld = (ServerWorld) world;
-                    final Block block = serverworld.getBlockState(pos).getBlock();
+
+                ServerWorld serverworld = (ServerWorld) world;
+                final Block block = serverworld.getBlockState(pos).getBlock();
+                if(getStatus()) {
                     serverworld.setBlockState(pos, serverworld.getBlockState(pos).with(SoundTimer.POWERED, true));
+                } else {
                     serverworld.getBlockTickScheduler().schedule(pos, block, 20);
                 }
             } else if (world != null && world.isClient) {
                 final Set<Route.ScheduleEntry> schedules;
                 BlockPos pos1 = new BlockPos(pos.getX(),pos.getY(), pos.getZ());
                 BlockPos pos2 = new BlockPos(pos.getX(),pos.getY()+1, pos.getZ());
-                final Platform platform = ClientData.getClosePlatform(pos1);
-                final Platform platform2 = ClientData.getClosePlatform(pos2);
-                if (platform == null && platform2 == null) {
-                    //System.out.println("No Platform");
-                    return;
+                Platform myPlatform = null;
+                Platform myPlatform2 = null;
+                //final Platform platform = RailwayData.getClosePlatform(pos1);
+                //final Platform platform2 = ClientData.getClosePlatform(pos2);
+                final RailwayData railwayData = RailwayData.getInstance(world);
+                if(railwayData != null) {
+                    try {
+                        myPlatform = railwayData.platforms.stream().filter(platform -> platform.isCloseToSavedRail(pos1)).findFirst().orElse(null);
+                        myPlatform2 = railwayData.platforms.stream().filter(platform -> platform.isCloseToSavedRail(pos2)).findFirst().orElse(null);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
-                if(platform != null) {
-                    schedules = ClientData.SCHEDULES_FOR_PLATFORM.get(platform.id);
-                } else {
-                    schedules = ClientData.SCHEDULES_FOR_PLATFORM.get(platform2.id);
+//                myPlatform.
+//
+//                if (myPlatform == null && myPlatform2 == null) {
+//                    //System.out.println("No Platform");
+//                    return;
+//                }
+//                if(myPlatform != null) {
+//                    schedules = railwayData.getSchedulesForStation(myPlatform.);
+//                    schedules = ClientData.SCHEDULES_FOR_PLATFORM.get(platform.id);
+//                } else {
+//                    schedules = ClientData.SCHEDULES_FOR_PLATFORM.get(platform2.id);
+//                }
+
+//                if (schedules == null) {
+//
+//                    return;
+//                }
+
+                if(seconds <= Integer.parseInt(getMessage()) && seconds > 0) {
+                    setStatus(true);
+                } else if(seconds <= 0) {
+                    setStatus(false);
                 }
 
-                if (schedules == null) {
-                    //System.out.println("No Schedule");
-                    return;
-                }
+                System.out.println(seconds);
+//
+//                final List<Route.ScheduleEntry> scheduleList = new ArrayList<>(schedules);
+//                Collections.sort(scheduleList);
+//
+//                final Route.ScheduleEntry currentSchedule = scheduleList.get(0);
+//                seconds = (int) ((currentSchedule.arrivalMillis - System.currentTimeMillis()) / 1000);
 
-                final List<Route.ScheduleEntry> scheduleList = new ArrayList<>(schedules);
-                Collections.sort(scheduleList);
-
-                final Route.ScheduleEntry currentSchedule = scheduleList.get(0);
-                seconds = (int) ((currentSchedule.arrivalMillis - System.currentTimeMillis()) / 1000);
-
-                if(seconds < 60) {
-                    //System.out.println(seconds);
-                } else {
-                    System.out.println(getMessage());
-                }
             }
 
         }
@@ -142,6 +164,16 @@ public class SoundTimer extends Block implements BlockEntityProvider {
                 return message;
             }
 
+        }
+
+        public Boolean getStatus() {
+            return fire_redstone;
+        }
+
+        public void setStatus(Boolean tf) {
+            this.fire_redstone = tf;
+            markDirty();
+            sync();
         }
 
         public void setMessage(String message) {
@@ -166,11 +198,13 @@ public class SoundTimer extends Block implements BlockEntityProvider {
         @Override
         public void fromClientTag(NbtCompound nbtCompound) {
             message = nbtCompound.getString(KEY_MESSAGE);
+            fire_redstone = nbtCompound.getBoolean(FIRE_MESSAGE);
         }
 
         @Override
         public NbtCompound toClientTag(NbtCompound nbtCompound) {
             nbtCompound.putString(KEY_MESSAGE, message);
+            nbtCompound.putBoolean(FIRE_MESSAGE, fire_redstone);
             return nbtCompound;
         }
 
