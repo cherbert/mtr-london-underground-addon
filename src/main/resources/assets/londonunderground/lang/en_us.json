@@ -1,6 +1,7 @@
 {
   "itemGroup.londonunderground.tfl_blocks": "MTR London Underground",
   "block.londonunderground.platform_tfl_1" : "LU Platform",
+  "block.londonunderground.platform_tfl_island" : "LU Platform (Island)",
   "block.londonunderground.platform_block" : "LU Platform Block",
   "block.londonunderground.platform_tfl_gap" : "LU Platform Mind the Gap",
   "block.londonunderground.tfl_block" : "Transport for London Logo",
