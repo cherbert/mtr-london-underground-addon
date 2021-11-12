@@ -1,5 +1,8 @@
 package net.londonunderground;
 
+import mtr.Blocks;
+import mtr.block.BlockStationNameWall;
+import net.londonunderground.blocks.BlockRoundel;
 import net.londonunderground.blocks.BlockTunnelSignal;
 import net.londonunderground.packet.IPacket;
 //import net.londonunderground.packet.PacketTrainDataGuiServer;
@@ -23,8 +26,8 @@ public class Main implements ModInitializer, IPacket {
 	public static final String MOD_ID = "londonunderground";
 	public static final BlockEntityType<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE = registerTileEntity("tunnel_darkness", TunnelDarknessBlock.TileEntityTunnelDarkness::new, MyBlocks.TUNNEL_DARKNESS);
 	public static final BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = registerTileEntity("pids_northern", NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
-	//public static final BlockEntityType<SoundTimer.TileEntitySoundTimer> SOUND_TIMER_ENTITY = registerTileEntity("sounds_timer", SoundTimer.TileEntitySoundTimer::new, MyBlocks.SOUND_TIMER);
 	public static final BlockEntityType<BlockTunnelSignal.TileEntityTunnelSignalLight1> TUNNEL_BLOCK_2_SIGNAL = registerTileEntity("tunnel_block_2_signal", BlockTunnelSignal.TileEntityTunnelSignalLight1::new, MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
+	public static final BlockEntityType<BlockRoundel.TileEntityBlockRoundel> BLOCK_ROUNDEL_TILE_ENTITY = registerTileEntity("block_roundel_1", BlockRoundel.TileEntityBlockRoundel::new, MyBlocks.BLOCK_ROUNDEL_1);
 
 
 	public static SoundEvent SOUND_EVENT_OUTSIDE_AMBIENT = registerSoundEvent("cityambient");
@@ -81,10 +84,7 @@ public class Main implements ModInitializer, IPacket {
 				registerBlock("morden_steps", MyBlocks.MORDEN_STEPS, MyItems.TFL_BLOCKS);
 				registerBlock("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
 				registerBlock("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
-
-				//ServerPlayNetworking.registerGlobalReceiver(PACKET_SOUND_TIMER_UPDATE, (minecraftServer, player, handler, packet, sender) -> PacketTrainDataGuiServer.receiveSoundTimerC2S(minecraftServer, player, packet));
-
-
+				registerBlock("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_BLOCKS);
 
 				PanelCommand.register();
 				break;

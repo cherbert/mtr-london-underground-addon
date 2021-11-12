@@ -40,6 +40,7 @@
   "block.londonunderground.glow_slab" : "Invisible Light",
   "block.londonunderground.sounds.see_it_say_it_sorted" : "See it Say it Sorted",
   "block.londonunderground.sounds.outside_ambience" : "Outside Ambience",
+  "block.londonunderground.block_roundel_1" : "Station Roundel",
   "gui.mtr.arrival_sec": " Due",
   "gui.londonunderground.soundtimer_message": "Time Offset (Seconds)"
 

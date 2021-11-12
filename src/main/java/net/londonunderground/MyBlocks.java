@@ -45,5 +45,7 @@ public interface MyBlocks extends Blocks {
     Block MORDEN_SIGN = new MordenSign(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).luminance(10).hardness(2).nonOpaque());
     Block MORDEN_STEPS = new StairBlockExtends(TFL_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block LU_POLE = new TFLBlock(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
+    Block BLOCK_ROUNDEL_1 = new BlockRoundel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
+
     Block LU_CROSSBAR = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
 }
