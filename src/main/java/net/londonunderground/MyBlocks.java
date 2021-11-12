@@ -8,6 +8,7 @@ import net.minecraft.block.*;
 
 public interface MyBlocks extends Blocks {
     Block PLATFORM_TFL_1 = new BlockPlatform(FabricBlockSettings.of(Material.METAL, MapColor.YELLOW).requiresTool().hardness(2), true);
+    Block PLATFORM_TFL_ISLAND = new BlockPlatform(FabricBlockSettings.of(Material.METAL, MapColor.YELLOW).requiresTool().hardness(2), true);
     Block PLATFORM_TFL_GAP = new BlockPlatform(FabricBlockSettings.of(Material.METAL, MapColor.YELLOW).requiresTool().hardness(2), true);
     Block PLATFORM_BLOCK = new TFLBlock(FabricBlockSettings.of(Material.METAL, MapColor.YELLOW).requiresTool().hardness(2));
     Block TUNNEL_DARKNESS = new TunnelDarknessBlock(FabricBlockSettings.of(Material.STONE, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
