@@ -5,10 +5,16 @@ import mtr.block.IBlock;
 import net.londonunderground.Main;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
+import net.minecraft.text.Style;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -20,6 +26,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
+import java.util.List;
+
 public class BlockRoundel extends BlockStationNameBase {
 
     public BlockRoundel(Settings settings) {
@@ -29,6 +37,11 @@ public class BlockRoundel extends BlockStationNameBase {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         return IBlock.checkHoldingBrush(world, player, () -> world.setBlockState(pos, state.cycle(COLOR)));
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, BlockView world, List<Text> tooltip, TooltipContext options) {
+        tooltip.add(new TranslatableText("tooltip.londonunderground.block_roundel").setStyle(Style.EMPTY.withColor(Formatting.GRAY)));
     }
 
     @Override

@@ -1,24 +1,18 @@
 package net.londonunderground.render;
 
 import mtr.block.BlockStationNameBase;
-import mtr.gui.IDrawing;
 import mtr.render.RenderStationNameBase;
 import net.londonunderground.Main;
-import net.londonunderground.blocks.BlockRoundel;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.block.entity.BlockEntityRenderDispatcher;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.text.CharacterVisitor;
-import net.minecraft.text.LiteralText;
-import net.minecraft.text.OrderedText;
-import net.minecraft.text.Style;
+import net.minecraft.text.*;
 import net.minecraft.util.Identifier;
-
 import java.util.Locale;
 
-public class RenderRoundel extends RenderStationNameBase<BlockRoundel.TileEntityBlockRoundel> {
+public class RenderRoundel extends RenderStationNameBase {
 
     final Style style = Style.EMPTY.withFont(new Identifier(Main.MOD_ID, "johnston"));
 
@@ -40,4 +34,5 @@ public class RenderRoundel extends RenderStationNameBase<BlockRoundel.TileEntity
         matrices.translate(0,0,-1.0);
         textRenderer.draw(matrices, chris3, -(buffer/2), -3, 0xFFB3B3B3);
     }
+
 }
