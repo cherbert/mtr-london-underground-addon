@@ -32,7 +32,7 @@ public class RenderRoundel extends RenderStationNameBase {
 
         matrices.scale(scale,scale,scale);
         matrices.translate(0,0,-1.0);
-        textRenderer.draw(matrices, chris3, -(buffer/2), -3, 0xFFB3B3B3);
+        textRenderer.draw(chris3, -(buffer/2), -3, 0xFFB3B3B3, false, matrices.peek().getModel(), vertexConsumers, false, 0, light);
     }
 
 }
