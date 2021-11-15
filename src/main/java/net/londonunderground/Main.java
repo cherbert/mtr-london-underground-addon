@@ -2,15 +2,12 @@ package net.londonunderground;
 
 import mtr.Blocks;
 import mtr.block.BlockStationNameWall;
-import net.londonunderground.blocks.BlockRoundel;
-import net.londonunderground.blocks.BlockTunnelSignal;
+import net.londonunderground.blocks.*;
 import net.londonunderground.packet.IPacket;
 //import net.londonunderground.packet.PacketTrainDataGuiServer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.loader.api.FabricLoader;
-import net.londonunderground.blocks.NorthernLinePIDS;
-import net.londonunderground.blocks.TunnelDarknessBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
@@ -28,6 +25,7 @@ public class Main implements ModInitializer, IPacket {
 	public static final BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = registerTileEntity("pids_northern", NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
 	public static final BlockEntityType<BlockTunnelSignal.TileEntityTunnelSignalLight1> TUNNEL_BLOCK_2_SIGNAL = registerTileEntity("tunnel_block_2_signal", BlockTunnelSignal.TileEntityTunnelSignalLight1::new, MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
 	public static final BlockEntityType<BlockRoundel.TileEntityBlockRoundel> BLOCK_ROUNDEL_TILE_ENTITY = registerTileEntity("block_roundel_1", BlockRoundel.TileEntityBlockRoundel::new, MyBlocks.BLOCK_ROUNDEL_1);
+	public static final BlockEntityType<BlockRoundelStation.TileEntityBlockRoundelStation> BLOCK_ROUNDEL_STATION_TILE_ENTITY = registerTileEntity("block_roundel_station", BlockRoundelStation.TileEntityBlockRoundelStation::new, MyBlocks.BLOCK_ROUNDEL_STATION);
 
 
 	public static SoundEvent SOUND_EVENT_OUTSIDE_AMBIENT = registerSoundEvent("cityambient");
@@ -46,7 +44,6 @@ public class Main implements ModInitializer, IPacket {
 			if(FabricLoader.getInstance().isModLoaded("mtr")) {
 				System.out.println("MTR Found!");
 				registerBlock("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
-				//registerBlock("sounds_timer", MyBlocks.SOUND_TIMER, MyItems.TFL_BLOCKS);
 				registerBlock("platform_tfl_1", MyBlocks.PLATFORM_TFL_1, MyItems.TFL_BLOCKS);
 				registerBlock("platform_tfl_island", MyBlocks.PLATFORM_TFL_ISLAND, MyItems.TFL_BLOCKS);
 				registerBlock("platform_tfl_gap", MyBlocks.PLATFORM_TFL_GAP, MyItems.TFL_BLOCKS);
@@ -85,6 +82,7 @@ public class Main implements ModInitializer, IPacket {
 				registerBlock("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
 				registerBlock("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
 				registerBlock("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_BLOCKS);
+				registerBlock("block_roundel_station", MyBlocks.BLOCK_ROUNDEL_STATION, MyItems.TFL_BLOCKS);
 
 				PanelCommand.register();
 				break;

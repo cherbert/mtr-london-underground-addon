@@ -13,7 +13,6 @@ public interface MyBlocks extends Blocks {
     Block PLATFORM_BLOCK = new TFLBlock(FabricBlockSettings.of(Material.METAL, MapColor.YELLOW).requiresTool().hardness(2));
     Block TUNNEL_DARKNESS = new TunnelDarknessBlock(FabricBlockSettings.of(Material.STONE, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block TFL_BLOCK = new TFLBlock(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2));
-    //Block SOUND_TIMER = new SoundTimer(AbstractBlock.Settings.copy(net.minecraft.block.Blocks.SMOOTH_STONE));
     Block SOUND_OUTSIDE_AMBIENCE = new SoundOutsideAmbience(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2));
     Block TUBE_STATION_AMBIENCE1 = new SoundTubeStationAmbience1(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2));
     Block SOUND_SEE_IT_SAY_IT_SORTED = new SoundSeeItSayItSorted(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2));
@@ -46,6 +45,6 @@ public interface MyBlocks extends Blocks {
     Block MORDEN_STEPS = new StairBlockExtends(TFL_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block LU_POLE = new TFLBlock(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block BLOCK_ROUNDEL_1 = new BlockRoundel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
-
+    Block BLOCK_ROUNDEL_STATION = new BlockRoundelStation(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque().luminance(15));
     Block LU_CROSSBAR = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
 }

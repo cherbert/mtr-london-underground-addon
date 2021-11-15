@@ -42,7 +42,7 @@
   "block.londonunderground.sounds.outside_ambience" : "Outside Ambience",
   "block.londonunderground.block_roundel_1" : "Station Roundel",
   "tooltip.londonunderground.block_roundel" : "Text depends on the station",
-  "gui.mtr.arrival_sec": " Due",
+  "gui.londonunderground.arrival_sec": " Due",
   "gui.londonunderground.soundtimer_message": "Time Offset (Seconds)"
 
 }

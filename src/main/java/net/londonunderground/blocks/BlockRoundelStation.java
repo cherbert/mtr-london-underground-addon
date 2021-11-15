@@ -1,47 +1,24 @@
 package net.londonunderground.blocks;
 
-import mtr.block.BlockStationNameBase;
 import mtr.block.IBlock;
 import net.londonunderground.Main;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
-import net.minecraft.text.Style;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Formatting;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
-import java.util.List;
+public class BlockRoundelStation extends BlockRoundelBase {
 
-public class BlockRoundel extends BlockRoundelBase {
 
-    public BlockRoundel(Settings settings) {
+    public BlockRoundelStation(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        return IBlock.checkHoldingBrush(world, player, () -> world.setBlockState(pos, state.cycle(COLOR)));
-    }
-
-    @Override
-    public void appendTooltip(ItemStack stack, BlockView world, List<Text> tooltip, TooltipContext options) {
-        tooltip.add(new TranslatableText("tooltip.londonunderground.block_roundel").setStyle(Style.EMPTY.withColor(Formatting.GRAY)));
     }
 
     @Override
@@ -71,7 +48,7 @@ public class BlockRoundel extends BlockRoundelBase {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 16, 1, IBlock.getStatePropertySafe(state, FACING));
+        return IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 16, 16, IBlock.getStatePropertySafe(state, FACING));
     }
 
     @Override
@@ -81,7 +58,7 @@ public class BlockRoundel extends BlockRoundelBase {
 
     @Override
     public BlockEntity createBlockEntity(BlockView world) {
-        return new BlockRoundel.TileEntityBlockRoundel();
+        return new BlockRoundelStation.TileEntityBlockRoundelStation();
     }
 
     @Override
@@ -89,10 +66,10 @@ public class BlockRoundel extends BlockRoundelBase {
         builder.add(COLOR, FACING);
     }
 
-    public static class TileEntityBlockRoundel extends BlockRoundelBase.TileEntityBlockRoundelBase {
+    public static class TileEntityBlockRoundelStation extends BlockRoundelBase.TileEntityBlockRoundelBase {
 
-        public TileEntityBlockRoundel() {
-            super(Main.BLOCK_ROUNDEL_TILE_ENTITY, 0, 0);
+        public TileEntityBlockRoundelStation() {
+            super(Main.BLOCK_ROUNDEL_STATION_TILE_ENTITY, 0, 0);
         }
 
         @Override

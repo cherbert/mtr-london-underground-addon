@@ -165,7 +165,7 @@ public class RenderPIDS<T extends BlockEntity> extends BlockEntityRenderer<T> im
                 if (seconds >= 60) {
                     arrivalText = new TranslatableText(isCJK ? "gui.mtr.arrival_min_cjk" : "gui.mtr.arrival_min", seconds / 60).append(appendDotAfterMin && !isCJK ? "." : "");
                 } else {
-                    arrivalText = seconds > 0 ? new TranslatableText(isCJK ? "gui.mtr.arrival_sec_cjk" : "gui.mtr.arrival_sec", seconds).append(appendDotAfterMin && !isCJK ? "." : "") : null;
+                    arrivalText = seconds > 0 ? new TranslatableText(isCJK ? "gui.mtr.arrival_sec_cjk" : "gui.londonunderground.arrival_sec", seconds).append(appendDotAfterMin && !isCJK ? "." : "") : null;
                 }
                 final Text carText = new TranslatableText(isCJK ? "gui.mtr.arrival_car_cjk" : "gui.mtr.arrival_car", currentSchedule.trainCars);
 

@@ -11,27 +11,26 @@ import net.minecraft.text.*;
 import net.minecraft.util.Identifier;
 import java.util.Locale;
 
-public class RenderRoundel extends RenderRoundelBase {
+public class RenderRoundelStation extends RenderRoundelBase {
 
     final Style style = Style.EMPTY.withFont(new Identifier(Main.MOD_ID, "johnston"));
 
-    public RenderRoundel(BlockEntityRenderDispatcher dispatcher) {
+    public RenderRoundelStation(BlockEntityRenderDispatcher dispatcher) {
         super(dispatcher);
     }
 
     @Override
     protected void drawStationName(BlockRoundelBase.TileEntityBlockRoundelBase entity, MatrixStack matrices, VertexConsumerProvider vertexConsumers, VertexConsumerProvider.Immediate immediate, String stationName, int color, int light) {
-        final OrderedText chris3 = new LiteralText(stationName.toUpperCase(Locale.ROOT)).fillStyle(style).asOrderedText();
+        final OrderedText roundelText = new LiteralText(stationName.toUpperCase(Locale.ROOT)).fillStyle(style).asOrderedText();
 
         final TextRenderer textRenderer = MinecraftClient.getInstance().textRenderer;
 
-        //IDrawing.drawStringWithFont(matrices, textRenderer, immediate, chris3, HorizontalAlignment.CENTER, VerticalAlignment.CENTER, 0, 0, 60, color, false, light, null);
-        int buffer = textRenderer.getWidth(chris3);
-        float scale = Math.min(0.9F/buffer,0.014F);
+        int buffer = textRenderer.getWidth(roundelText);
+        float scale = Math.min(2.9F/buffer,0.0158F);
 
         matrices.scale(scale,scale,scale);
-        matrices.translate(0,71,-1.0);
-        textRenderer.draw(chris3, -(buffer/2), -3, 0xFFB3B3B3, false, matrices.peek().getModel(), vertexConsumers, false, 0, light);
+        matrices.translate(0,48.5,-97);
+        textRenderer.draw(roundelText, -(buffer/2), -3, 0xFFB3B3B3, false, matrices.peek().getModel(), vertexConsumers, false, 0, light);
     }
 
 }

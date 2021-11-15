@@ -330,10 +330,12 @@
 		{
 			"name": "group",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": [
 				{
 					"name": "group",
 					"origin": [8, 8, 8],
+					"color": 0,
 					"children": []
 				}
 			]
@@ -341,19 +343,23 @@
 		{
 			"name": "group",
 			"origin": [-17, -37, 8],
+			"color": 0,
 			"children": []
 		},
 		{
 			"name": "dark_oak_stairs",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": [
 				{
 					"name": "group",
 					"origin": [8, 8, 8],
+					"color": 0,
 					"children": [
 						{
 							"name": "group",
 							"origin": [8, 8, 8],
+							"color": 0,
 							"children": []
 						}
 					]
@@ -363,14 +369,17 @@
 		{
 			"name": "dark_oak_stairs",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": [
 				{
 					"name": "group",
 					"origin": [8, 8, 8],
+					"color": 0,
 					"children": [
 						{
 							"name": "group",
 							"origin": [8, 8, 8],
+							"color": 0,
 							"children": []
 						}
 					]
@@ -380,14 +389,17 @@
 		{
 			"name": "acacia_stairs",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": [
 				{
 					"name": "group",
 					"origin": [8, 8, 8],
+					"color": 0,
 					"children": [
 						{
 							"name": "group",
 							"origin": [8, 8, 8],
+							"color": 0,
 							"children": []
 						}
 					]
@@ -397,6 +409,7 @@
 		{
 			"name": "group",
 			"origin": [-30.00437, 44, 8.00785],
+			"color": 0,
 			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
 		}
 	]
