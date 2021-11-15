@@ -29,7 +29,7 @@ public class RenderRoundelStation extends RenderRoundelBase {
         float scale = Math.min(2.9F/buffer,0.0158F);
 
         matrices.scale(scale,scale,scale);
-        matrices.translate(0,48.5,-97);
+        matrices.translate(0,-14.7,-97);
         textRenderer.draw(roundelText, -(buffer/2), -3, 0xFFB3B3B3, false, matrices.peek().getModel(), vertexConsumers, false, 0, light);
     }
 

@@ -17,7 +17,6 @@ import java.util.List;
 
 public abstract class BlockRoundelBase extends HorizontalFacingBlock implements BlockEntityProvider {
 
-    public static int y_OFFSET = 1;
     public static final IntProperty COLOR = IntProperty.of("color", 0, 2);
 
     protected BlockRoundelBase(Settings settings) {
@@ -31,12 +30,12 @@ public abstract class BlockRoundelBase extends HorizontalFacingBlock implements 
 
     public abstract static class TileEntityBlockRoundelBase extends BlockEntity {
 
-        public final int yOffset;
+        public final float yOffset;
         public final float zOffset;
 
         public TileEntityBlockRoundelBase(BlockEntityType<?> type, float yOffset, float zOffset) {
             super(type);
-            this.yOffset = y_OFFSET;
+            this.yOffset = zOffset;
             this.zOffset = zOffset;
         }
 

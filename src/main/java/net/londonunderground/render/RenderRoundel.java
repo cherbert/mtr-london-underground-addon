@@ -30,7 +30,7 @@ public class RenderRoundel extends RenderRoundelBase {
         float scale = Math.min(0.9F/buffer,0.014F);
 
         matrices.scale(scale,scale,scale);
-        matrices.translate(0,71,-1.0);
+        matrices.translate(0,0,-1.0);
         textRenderer.draw(chris3, -(buffer/2), -3, 0xFFB3B3B3, false, matrices.peek().getModel(), vertexConsumers, false, 0, light);
     }
 
