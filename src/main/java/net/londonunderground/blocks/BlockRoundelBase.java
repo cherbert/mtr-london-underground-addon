@@ -1,6 +1,7 @@
 package net.londonunderground.blocks;
 
 import net.minecraft.block.BlockEntityProvider;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
@@ -11,6 +12,7 @@ import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
 import java.util.List;
@@ -35,7 +37,7 @@ public abstract class BlockRoundelBase extends HorizontalFacingBlock implements 
 
         public TileEntityBlockRoundelBase(BlockEntityType<?> type, float yOffset, float zOffset) {
             super(type);
-            this.yOffset = zOffset;
+            this.yOffset = yOffset;
             this.zOffset = zOffset;
         }
 

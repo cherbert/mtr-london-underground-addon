@@ -21,6 +21,7 @@
 		{"predicate": {"custom_model_data":14}, "model": "item/panels/sw_advert3"},
 		{"predicate": {"custom_model_data":15}, "model": "item/panels/sw_advert4"},
 		{"predicate": {"custom_model_data":16}, "model": "item/panels/south_wimbledon2"},
-		{"predicate": {"custom_model_data":17}, "model": "item/panels/south_wimbledon3"}
+		{"predicate": {"custom_model_data":17}, "model": "item/panels/south_wimbledon3"},
+		{"predicate": {"custom_model_data":18}, "model": "item/panels/stockwell"}
 	]
 }

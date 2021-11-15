@@ -1,6 +1,5 @@
 package net.londonunderground.blocks;
 
-import mtr.block.BlockStationNameBase;
 import mtr.block.IBlock;
 import net.londonunderground.Main;
 import net.minecraft.block.*;

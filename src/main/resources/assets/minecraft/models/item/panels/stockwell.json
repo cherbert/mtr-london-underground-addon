@@ -1,0 +1,129 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"3": "stations/stockwell",
+		"particle": "block/sandstone_top"
+	},
+	"elements": [
+		{
+			"from": [0.50005, 0.49999, -15.9976],
+			"to": [1, 21.74996, 31.9976],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-26.9972, 30.49968, 8]},
+			"faces": {
+				"north": {"uv": [16, 0.21875, 1, 0], "texture": "#3"},
+				"east": {"uv": [16, 14.53125, 0, 14.15625], "texture": "#3"},
+				"south": {"uv": [15.71875, 16, 1, 15.40625], "texture": "#3"},
+				"west": {"uv": [0.003, 2.34675, 16, 16], "texture": "#3"},
+				"up": {"uv": [15.595, 15.188, 0, 14.782], "rotation": 90, "texture": "#missing"},
+				"down": {"uv": [2, 16, 1, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [13.5, 9.75, -16],
+			"to": [14.5, 14.75, 32],
+			"rotation": {"angle": 45, "axis": "z", "origin": [-7, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0.34375], "texture": "#3"},
+				"east": {"uv": [0, 0, 16, 5], "texture": "#3"},
+				"south": {"uv": [0, 0, 16, 0.375], "texture": "#3"},
+				"west": {"uv": [0, 0, 16, 2.28125], "texture": "#3"},
+				"up": {"uv": [0, 15.5, 16, 16], "texture": "#3"},
+				"down": {"uv": [0, 0, 1, 16], "texture": "#missing"}
+			}
+		}
+	],
+	"display": {
+		"fixed": {
+			"rotation": [0, -90, 0],
+			"translation": [0, -16, -14],
+			"scale": [2, 4, 2]
+		}
+	},
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "group",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": []
+				}
+			]
+		},
+		{
+			"name": "group",
+			"origin": [-17, -37, 8],
+			"color": 0,
+			"children": []
+		},
+		{
+			"name": "dark_oak_stairs",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "group",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [
+						{
+							"name": "group",
+							"origin": [8, 8, 8],
+							"color": 0,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "dark_oak_stairs",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "group",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [
+						{
+							"name": "group",
+							"origin": [8, 8, 8],
+							"color": 0,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "acacia_stairs",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "group",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [
+						{
+							"name": "group",
+							"origin": [8, 8, 8],
+							"color": 0,
+							"children": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "group",
+			"origin": [-30.00437, 44, 8.00785],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}
