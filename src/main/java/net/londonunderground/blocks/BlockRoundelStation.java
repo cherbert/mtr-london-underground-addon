@@ -64,7 +64,7 @@ public class BlockRoundelStation extends BlockRoundelBase {
     public static class TileEntityBlockRoundelStation extends BlockRoundelBase.TileEntityBlockRoundelBase {
 
         public TileEntityBlockRoundelStation() {
-            super(Main.BLOCK_ROUNDEL_STATION_TILE_ENTITY, 0, 0);
+            super(Main.BLOCK_ROUNDEL_STATION_TILE_ENTITY);
         }
 
         @Override

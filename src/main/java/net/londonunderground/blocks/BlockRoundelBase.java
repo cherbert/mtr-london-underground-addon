@@ -32,13 +32,8 @@ public abstract class BlockRoundelBase extends HorizontalFacingBlock implements 
 
     public abstract static class TileEntityBlockRoundelBase extends BlockEntity {
 
-        public final float yOffset;
-        public final float zOffset;
-
-        public TileEntityBlockRoundelBase(BlockEntityType<?> type, float yOffset, float zOffset) {
+        public TileEntityBlockRoundelBase(BlockEntityType<?> type) {
             super(type);
-            this.yOffset = yOffset;
-            this.zOffset = zOffset;
         }
 
         public abstract boolean shouldRender();
