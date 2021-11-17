@@ -17,7 +17,7 @@ public class MainClient implements ClientModInitializer, IPacket {
 		BlockEntityRendererRegistry.INSTANCE.register(Main.TUNNEL_BLOCK_2_SIGNAL, dispatcher -> new RenderTunnelSignalLight<>(dispatcher, true, false, 0xFF00FF00));
 		BlockEntityRendererRegistry.INSTANCE.register(Main.PIDS_NORTHERN_TILE_ENTITY, dispatcher -> new RenderPIDS<>(dispatcher, 3, 1.5F, 7.5F, 6, 6.5F, 29, true, true, false, 0xFF9900, 0xFF9900));
 		BlockEntityRendererRegistry.INSTANCE.register(Main.BLOCK_ROUNDEL_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 14 / 16F, 0.2F / 16, 0, -0.5F, 0, false));
-		BlockEntityRendererRegistry.INSTANCE.register(Main.BLOCK_ROUNDEL_STATION_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 14 / 16F, 0.2F / 16, 0, -0.5F, 0, false));
+		BlockEntityRendererRegistry.INSTANCE.register(Main.BLOCK_ROUNDEL_STATION_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 25/ 13F, 0.22F / 13, 0.21F, 1.046F, 0, false));
 		BlockEntityRendererRegistry.INSTANCE.register(Main.MORDEN_SIGN_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 10 / 16F, 0.425F / 16, 0, true));
 
 		BlockRenderLayerMap.INSTANCE.putBlock(MyBlocks.TUNNEL_BLOCK_2_SIGNAL, RenderLayer.getCutout());
