@@ -5,7 +5,6 @@ import mtr.data.IGui;
 import mtr.data.Station;
 import mtr.gui.ClientData;
 import mtr.gui.IDrawing;
-import mtr.render.RenderTrains;
 import net.londonunderground.blocks.BlockRoundelBase;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.render.Tessellator;
@@ -39,9 +38,6 @@ public abstract class RenderRoundelBase<T extends BlockRoundelBase.TileEntityBlo
         final BlockPos pos = entity.getPos();
         final BlockState state = world.getBlockState(pos);
         final Direction facing = IBlock.getStatePropertySafe(state, BlockRoundelBase.FACING);
-        if (RenderTrains.shouldNotRender(pos, RenderTrains.maxTrainRenderDistance, facing)) {
-            return;
-        }
 
         final int color;
         switch (IBlock.getStatePropertySafe(state, BlockRoundelBase.COLOR)) {

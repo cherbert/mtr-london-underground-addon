@@ -9,15 +9,16 @@ import net.minecraft.client.render.block.entity.BlockEntityRenderDispatcher;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.*;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Vec3f;
 
 import java.util.Locale;
 
-public class RenderRoundel extends RenderRoundelBase {
+public class RenderPlatformRoundelHolden extends RenderRoundelBase {
 
     final Style style = Style.EMPTY.withFont(new Identifier(Main.MOD_ID, "johnston"));
     final TextRenderer textRenderer = MinecraftClient.getInstance().textRenderer;
 
-    public RenderRoundel(BlockEntityRenderDispatcher dispatcher) {
+    public RenderPlatformRoundelHolden(BlockEntityRenderDispatcher dispatcher) {
         super(dispatcher);
     }
 
@@ -25,9 +26,9 @@ public class RenderRoundel extends RenderRoundelBase {
     public void drawStationName(BlockRoundelBase.TileEntityBlockRoundelBase entity, MatrixStack matrices, VertexConsumerProvider vertexConsumers, VertexConsumerProvider.Immediate immediate, String stationName, int color, int light) {
         final OrderedText roundelText = new LiteralText(stationName.toUpperCase(Locale.ROOT)).fillStyle(style).asOrderedText();
         int buffer = textRenderer.getWidth(stationName);
-        float scale = Math.min(0.97F/buffer,0.014F);
+        float scale = Math.min(2.9F/buffer,0.0158F);
         matrices.scale(scale,scale,scale);
-        matrices.translate(0,-0.2F,-0.2F);
+        matrices.translate(0,-14.7F,-97);
         drawStuff(matrices, roundelText, vertexConsumers, light, buffer);
 
 

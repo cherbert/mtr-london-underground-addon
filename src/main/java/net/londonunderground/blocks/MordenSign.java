@@ -1,17 +1,21 @@
 package net.londonunderground.blocks;
 
 import mtr.block.IBlock;
+import net.londonunderground.Main;
+import net.londonunderground.render.RenderRoundelBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
+import org.jetbrains.annotations.Nullable;
 
-public class MordenSign extends HorizontalFacingBlock {
+public class MordenSign extends BlockRoundelBase {
 
     public MordenSign(Settings settings) {
         super(settings);
@@ -28,10 +32,26 @@ public class MordenSign extends HorizontalFacingBlock {
     }
 
     @Override
+    public BlockEntity createBlockEntity(BlockView world) {
+        return new MordenSign.TileEntityMordenSign();
+    }
+
+    @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
 
+    public static class TileEntityMordenSign extends BlockRoundelBase.TileEntityBlockRoundelBase {
+
+        public TileEntityMordenSign() {
+            super(Main.MORDEN_SIGN_TILE_ENTITY, 0, 0);
+        }
+
+        @Override
+        public boolean shouldRender() {
+            return true;
+        }
+    }
 }
 
 

@@ -21,34 +21,29 @@ public class BlockRoundelStation extends BlockRoundelBase {
         super(settings);
     }
 
-    @Override
-    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        final Direction facing = IBlock.getStatePropertySafe(state, FACING);
-        return world.getBlockState(pos.offset(facing)).isSideSolidFullSquare(world, pos.offset(facing), facing.getOpposite());
-    }
+//    @Override
+//    public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+//        final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+//        return world.getBlockState(pos.offset(facing)).isSideSolidFullSquare(world, pos.offset(facing), facing.getOpposite());
+//    }
 
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        final Direction side = ctx.getSide();
-        if (side != Direction.UP && side != Direction.DOWN) {
-            return getDefaultState().with(FACING, side.getOpposite());
-        } else {
-            return null;
-        }
+        return getDefaultState().with(FACING, ctx.getPlayerFacing());
     }
 
-    @Override
-    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState, WorldAccess world, BlockPos pos, BlockPos posFrom) {
-        if (direction.getOpposite() == IBlock.getStatePropertySafe(state, FACING).getOpposite() && !state.canPlaceAt(world, pos)) {
-            return Blocks.AIR.getDefaultState();
-        } else {
-            return state;
-        }
-    }
+//    @Override
+//    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState, WorldAccess world, BlockPos pos, BlockPos posFrom) {
+//        if (direction.getOpposite() == IBlock.getStatePropertySafe(state, FACING).getOpposite() && !state.canPlaceAt(world, pos)) {
+//            return Blocks.AIR.getDefaultState();
+//        } else {
+//            return state;
+//        }
+//    }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 16, 16, IBlock.getStatePropertySafe(state, FACING));
+        return IBlock.getVoxelShapeByDirection(0, 0, 8, 16, 16, 7, IBlock.getStatePropertySafe(state, FACING));
     }
 
     @Override
