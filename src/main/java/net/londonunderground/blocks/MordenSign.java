@@ -25,7 +25,7 @@ public class MordenSign extends BlockRoundelBase {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return IBlock.getVoxelShapeByDirection(-2, 0, 8, 19, 31, 9, state.get(FACING));
+        return IBlock.getVoxelShapeByDirection(-1.5, 0, 7.575, 17.5, 31, 8.425, state.get(FACING));
     }
 
     @Override
