@@ -1,12 +1,8 @@
 package net.londonunderground;
 
-import mtr.Blocks;
-import mtr.block.BlockStationNameWall;
 import net.londonunderground.blocks.*;
 import net.londonunderground.packet.IPacket;
-//import net.londonunderground.packet.PacketTrainDataGuiServer;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
@@ -21,6 +17,7 @@ import java.util.function.Supplier;
 
 public class Main implements ModInitializer, IPacket {
 	public static final String MOD_ID = "londonunderground";
+
 	public static final BlockEntityType<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE = registerTileEntity("tunnel_darkness", TunnelDarknessBlock.TileEntityTunnelDarkness::new, MyBlocks.TUNNEL_DARKNESS);
 	public static final BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = registerTileEntity("pids_northern", NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
 	public static final BlockEntityType<BlockTunnelSignal.TileEntityTunnelSignalLight1> TUNNEL_BLOCK_2_SIGNAL = registerTileEntity("tunnel_block_2_signal", BlockTunnelSignal.TileEntityTunnelSignalLight1::new, MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
@@ -28,12 +25,9 @@ public class Main implements ModInitializer, IPacket {
 	public static final BlockEntityType<BlockRoundelStation.TileEntityBlockRoundelStation> BLOCK_ROUNDEL_STATION_TILE_ENTITY = registerTileEntity("block_roundel_station", BlockRoundelStation.TileEntityBlockRoundelStation::new, MyBlocks.BLOCK_ROUNDEL_STATION);
 	public static final BlockEntityType<MordenSign.TileEntityMordenSign> MORDEN_SIGN_TILE_ENTITY = registerTileEntity("morden_sign", MordenSign.TileEntityMordenSign::new, MyBlocks.MORDEN_SIGN);
 
-
 	public static SoundEvent SOUND_EVENT_OUTSIDE_AMBIENT = registerSoundEvent("cityambient");
 	public static SoundEvent SOUND_EVENT_SEE_IT_SAY_IT = registerSoundEvent("seeitsayitsorted");
 	public static SoundEvent SOUNT_EVENT_TUBE_STATION_AMBIENCE1 = registerSoundEvent("ambient1");
-
-
 
 	int ARGB_RED = 0xFFAA0000;
 
@@ -49,6 +43,7 @@ public class Main implements ModInitializer, IPacket {
 				registerBlock("platform_tfl_island", MyBlocks.PLATFORM_TFL_ISLAND, MyItems.TFL_BLOCKS);
 				registerBlock("platform_tfl_gap", MyBlocks.PLATFORM_TFL_GAP, MyItems.TFL_BLOCKS);
 				registerBlock("platform_block", MyBlocks.PLATFORM_BLOCK, MyItems.TFL_BLOCKS);
+				registerBlock("platform_variant", MyBlocks.PLATFORM_VARIANT, MyItems.TFL_BLOCKS);
 				registerBlock("sounds/see_it_say_it_sorted", MyBlocks.SOUND_SEE_IT_SAY_IT_SORTED, MyItems.TFL_BLOCKS);
 				registerBlock("sounds/tube_station_ambience1", MyBlocks.TUBE_STATION_AMBIENCE1, MyItems.TFL_BLOCKS);
 				registerBlock("sounds/outside_ambience", MyBlocks.SOUND_OUTSIDE_AMBIENCE, MyItems.TFL_BLOCKS);
@@ -69,7 +64,9 @@ public class Main implements ModInitializer, IPacket {
 				registerBlock("morden_arch", MyBlocks.MORDEN_ARCH, MyItems.TFL_BLOCKS);
 				registerBlock("tube_0", MyBlocks.TUBE_0, MyItems.TFL_BLOCKS);
 				registerBlock("tube_1", MyBlocks.TUBE_1, MyItems.TFL_BLOCKS);
+				registerBlock("tube_1_duel", MyBlocks.TUBE_1_DUEL, MyItems.TFL_BLOCKS);
 				registerBlock("tube_2", MyBlocks.TUBE_2, MyItems.TFL_BLOCKS);
+				registerBlock("tube_2_duel", MyBlocks.TUBE_2_DUEL, MyItems.TFL_BLOCKS);
 				registerBlock("tube_3", MyBlocks.TUBE_3, MyItems.TFL_BLOCKS);
 				registerBlock("pids_northern", MyBlocks.NORTHERN_PIDS, MyItems.TFL_BLOCKS);
 				registerBlock("track_1", MyBlocks.TRACK_1, MyItems.TFL_BLOCKS);
@@ -110,8 +107,5 @@ public class Main implements ModInitializer, IPacket {
 		final Identifier id = new Identifier(MOD_ID, path);
 		return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));
 	}
-
-
-
 
 }

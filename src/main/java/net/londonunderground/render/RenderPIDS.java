@@ -157,7 +157,7 @@ public class RenderPIDS<T extends BlockEntity> extends BlockEntityRenderer<T> im
                 final Route.ScheduleEntry currentSchedule = scheduleList.get(i);
 
                 final String[] destinationSplit = currentSchedule.destination.split("\\|");
-                final String destinationString = IGui.textOrUntitled(destinationSplit[((int) Math.floor(RenderTrains.getGameTicks()) / SWITCH_LANGUAGE_TICKS) % destinationSplit.length]);
+                String destinationString = IGui.textOrUntitled(destinationSplit[((int) Math.floor(RenderTrains.getGameTicks()) / SWITCH_LANGUAGE_TICKS) % destinationSplit.length]);
 
                 final Text arrivalText;
                 final int seconds = (int) ((currentSchedule.arrivalMillis - System.currentTimeMillis()) / 1000);
@@ -208,13 +208,21 @@ public class RenderPIDS<T extends BlockEntity> extends BlockEntityRenderer<T> im
 					matrices.pop();
 				}
 
+                if(currentSchedule.isTerminating) {
+                    destinationString = " ** TERMINATING HERE **";
+                }
+
                 matrices.push();
 				matrices.translate(destinationStart, 0, 0);
 				final int destinationWidth = textRenderer.getWidth(destinationString);
 				if (destinationWidth > newDestinationMaxWidth) {
 					matrices.scale(newDestinationMaxWidth / destinationWidth, 1, 1);
 				}
+
+
+
 				final OrderedText chris5 = new LiteralText(destinationString).fillStyle(style).asOrderedText();
+
 				textRenderer.draw(matrices, chris5, 0, 0, seconds > 0 ? textColor : firstTrainColor);
 				matrices.pop();
 
