@@ -209,7 +209,7 @@ public class RenderPIDS<T extends BlockEntity> extends BlockEntityRenderer<T> im
 				}
 
                 if(currentSchedule.isTerminating) {
-                    destinationString = " ** TERMINATING HERE **";
+                    destinationString = "Terminating Here";
                 }
 
                 matrices.push();
