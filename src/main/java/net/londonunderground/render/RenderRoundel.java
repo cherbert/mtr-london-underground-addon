@@ -2,6 +2,7 @@ package net.londonunderground.render;
 
 import mtr.block.IBlock;
 import mtr.data.IGui;
+import mtr.data.RailwayData;
 import mtr.data.Station;
 import mtr.gui.ClientData;
 import mtr.gui.IDrawing;
@@ -74,7 +75,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 				break;
 		}
 
-		final Station station = ClientData.getStation(pos);
+		final Station station = RailwayData.getStation(ClientData.STATIONS, pos);
 		final OrderedText roundelText = new LiteralText((station == null ? new TranslatableText("gui.mtr.untitled").getString() : station.name).toUpperCase(Locale.ROOT)).fillStyle(STYLE).asOrderedText();
 		final int textWidth = MinecraftClient.getInstance().textRenderer.getWidth(roundelText);
 

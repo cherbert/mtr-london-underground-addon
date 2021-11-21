@@ -1,10 +1,7 @@
 package net.londonunderground.render;
 
 import mtr.block.IBlock;
-import mtr.data.IGui;
-import mtr.data.Platform;
-import mtr.data.Route;
-import mtr.data.Station;
+import mtr.data.*;
 import mtr.gui.ClientData;
 import mtr.render.RenderTrains;
 import net.londonunderground.Main;
@@ -95,7 +92,7 @@ public class RenderPIDS<T extends BlockEntity> extends BlockEntityRenderer<T> im
             final Map<Long, String> platformIdToName = new HashMap<>();
 
             if (showAllPlatforms) {
-                final Station station = ClientData.getStation(pos);
+                final Station station = RailwayData.getStation(ClientData.STATIONS, pos);
                 if (station == null) {
                     return;
                 }
@@ -118,14 +115,12 @@ public class RenderPIDS<T extends BlockEntity> extends BlockEntityRenderer<T> im
                     }
                 });
             } else {
-                final Platform platform = ClientData.getClosePlatform(pos);
+                final Platform platform = RailwayData.getClosePlatform(ClientData.PLATFORMS, pos);
                 if (platform == null) {
-                    return;
-                }
-
-                schedules = ClientData.SCHEDULES_FOR_PLATFORM.get(platform.id);
-                if (schedules == null) {
-                    return;
+                    schedules = new HashSet<>();
+                } else {
+                    final Set<Route.ScheduleEntry> schedulesForPlatform = ClientData.SCHEDULES_FOR_PLATFORM.get(platform.id);
+                    schedules = schedulesForPlatform == null ? new HashSet<>() : schedulesForPlatform;
                 }
             }
 
