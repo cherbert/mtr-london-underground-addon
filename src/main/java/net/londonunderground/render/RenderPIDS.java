@@ -1,6 +1,7 @@
 package net.londonunderground.render;
 
 import mtr.block.IBlock;
+import mtr.config.Config;
 import mtr.data.*;
 import mtr.gui.ClientData;
 import mtr.render.RenderTrains;
@@ -46,6 +47,9 @@ public class RenderPIDS<T extends BlockEntity> extends BlockEntityRenderer<T> im
     private static final int CAR_TEXT_COLOR = 0xFF0000;
     private static final int MAX_VIEW_DISTANCE = 16;
 
+    private static Style style;
+
+
     public RenderPIDS(BlockEntityRenderDispatcher dispatcher, int maxArrivals, float startX, float startY, float startZ, float maxHeight, int maxWidth, boolean rotate90, boolean renderArrivalNumber, boolean showAllPlatforms, int textColor, int firstTrainColor, float textPadding, boolean appendDotAfterMin) {
         super(dispatcher);
         scale = 160 * maxArrivals / maxHeight * textPadding;
@@ -74,7 +78,11 @@ public class RenderPIDS<T extends BlockEntity> extends BlockEntityRenderer<T> im
     @Override
     public void render(T entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
 
-        final Style style = Style.EMPTY.withFont(new Identifier(Main.MOD_ID, "londonunderground"));
+        if(Config.useMTRFont()) {
+            style = Style.EMPTY.withFont(new Identifier(Main.MOD_ID, "johnston"));
+        } else {
+            style = Style.EMPTY;
+        }
 
         final WorldAccess world = entity.getWorld();
         if (world == null) {

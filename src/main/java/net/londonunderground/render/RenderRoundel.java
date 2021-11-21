@@ -1,6 +1,7 @@
 package net.londonunderground.render;
 
 import mtr.block.IBlock;
+import mtr.config.Config;
 import mtr.data.IGui;
 import mtr.data.RailwayData;
 import mtr.data.Station;
@@ -35,7 +36,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 	private final float zOffset;
 	private final float xTilt;
 	private final boolean isDoubleSided;
-	private static final Style STYLE = Style.EMPTY.withFont(new Identifier(Main.MOD_ID, "johnston"));
+	private static Style STYLE;
 
 	public RenderRoundel(BlockEntityRenderDispatcher dispatcher, float maxWidth, float maxScale, float yOffset, float zOffset, float xTilt, boolean isDoubleSided) {
 		super(dispatcher);
@@ -49,6 +50,15 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 
 	@Override
 	public void render(T entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
+
+		if(Config.useMTRFont()) {
+			STYLE = Style.EMPTY.withFont(new Identifier(Main.MOD_ID, "johnston"));
+		} else {
+			STYLE = Style.EMPTY;
+		}
+
+
+
 		if (!entity.shouldRender()) {
 			return;
 		}
