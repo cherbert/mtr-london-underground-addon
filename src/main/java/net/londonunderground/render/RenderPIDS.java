@@ -79,7 +79,7 @@ public class RenderPIDS<T extends BlockEntity> extends BlockEntityRenderer<T> im
     public void render(T entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
 
         if(Config.useMTRFont()) {
-            style = Style.EMPTY.withFont(new Identifier(Main.MOD_ID, "johnston"));
+            style = Style.EMPTY.withFont(new Identifier(Main.MOD_ID, "londonunderground"));
         } else {
             style = Style.EMPTY;
         }

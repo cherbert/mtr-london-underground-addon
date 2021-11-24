@@ -49,5 +49,7 @@ public interface MyBlocks extends Blocks {
     Block LU_POLE = new TFLBlock(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block BLOCK_ROUNDEL_1 = new BlockRoundel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block BLOCK_ROUNDEL_STATION = new BlockRoundelStation(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
+    Block BLOCK_ROUNDEL_STATION_TYPE_B = new BlockRoundelStationTypeB(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
+    Block BLOCK_ROUNDEL_STATION_TOP = new BlockRoundelStationTop(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
     Block LU_CROSSBAR = new BlockTunnel(FabricBlockSettings.of(Material.METAL, MapColor.OFF_WHITE).requiresTool().hardness(2).nonOpaque());
 }

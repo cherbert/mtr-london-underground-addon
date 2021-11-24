@@ -23,6 +23,8 @@ public class Main implements ModInitializer, IPacket {
 	public static final BlockEntityType<BlockTunnelSignal.TileEntityTunnelSignalLight1> TUNNEL_BLOCK_2_SIGNAL = registerTileEntity("tunnel_block_2_signal", BlockTunnelSignal.TileEntityTunnelSignalLight1::new, MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
 	public static final BlockEntityType<BlockRoundel.TileEntityBlockRoundel> BLOCK_ROUNDEL_TILE_ENTITY = registerTileEntity("block_roundel_1", BlockRoundel.TileEntityBlockRoundel::new, MyBlocks.BLOCK_ROUNDEL_1);
 	public static final BlockEntityType<BlockRoundelStation.TileEntityBlockRoundelStation> BLOCK_ROUNDEL_STATION_TILE_ENTITY = registerTileEntity("block_roundel_station", BlockRoundelStation.TileEntityBlockRoundelStation::new, MyBlocks.BLOCK_ROUNDEL_STATION);
+	public static final BlockEntityType<BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB> BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY = registerTileEntity("block_roundel_station_type_b", BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB::new, MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B);
+	public static final BlockEntityType<BlockRoundelStationTop.TileEntityBlockRoundelStationTop> BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY = registerTileEntity("block_roundel_station_top", BlockRoundelStationTop.TileEntityBlockRoundelStationTop::new, MyBlocks.BLOCK_ROUNDEL_STATION_TOP);
 	public static final BlockEntityType<MordenSign.TileEntityMordenSign> MORDEN_SIGN_TILE_ENTITY = registerTileEntity("morden_sign", MordenSign.TileEntityMordenSign::new, MyBlocks.MORDEN_SIGN);
 
 	public static SoundEvent SOUND_EVENT_OUTSIDE_AMBIENT = registerSoundEvent("cityambient");
@@ -81,6 +83,8 @@ public class Main implements ModInitializer, IPacket {
 				registerBlock("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
 				registerBlock("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_BLOCKS);
 				registerBlock("block_roundel_station", MyBlocks.BLOCK_ROUNDEL_STATION, MyItems.TFL_BLOCKS);
+				registerBlock("block_roundel_station_type_b", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B, MyItems.TFL_BLOCKS);
+				registerBlock("block_roundel_station_top", MyBlocks.BLOCK_ROUNDEL_STATION_TOP, MyItems.TFL_BLOCKS);
 
 				PanelCommand.register();
 				break;

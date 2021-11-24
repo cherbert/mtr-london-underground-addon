@@ -32,19 +32,23 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 
 	private final float maxWidth;
 	private final float maxScale;
+	private final float xOffset;
 	private final float yOffset;
 	private final float zOffset;
 	private final float xTilt;
+	private final int textColor;
 	private final boolean isDoubleSided;
 	private static Style STYLE;
 
-	public RenderRoundel(BlockEntityRenderDispatcher dispatcher, float maxWidth, float maxScale, float yOffset, float zOffset, float xTilt, boolean isDoubleSided) {
+	public RenderRoundel(BlockEntityRenderDispatcher dispatcher, float maxWidth, float maxScale, float xOffset, float yOffset, float zOffset, float xTilt, int textColor, boolean isDoubleSided) {
 		super(dispatcher);
 		this.maxWidth = maxWidth;
 		this.maxScale = maxScale;
+		this.xOffset = xOffset;
 		this.yOffset = yOffset;
 		this.zOffset = zOffset;
 		this.xTilt = xTilt;
+		this.textColor = textColor;
 		this.isDoubleSided = isDoubleSided;
 	}
 
@@ -106,12 +110,12 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 	private void render(MatrixStack matrices, VertexConsumerProvider.Immediate immediate, OrderedText roundelText, int textWidth, int color, int light) {
 		matrices.push();
 		matrices.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(xTilt));
-		matrices.translate(0, -yOffset, -zOffset - SMALL_OFFSET * 2);
+		matrices.translate(-xOffset, -yOffset, -zOffset - SMALL_OFFSET * 2);
 
 		final float scale = Math.min(maxWidth / textWidth, maxScale);
 		matrices.scale(scale, scale, scale);
 		matrices.translate(0, -4, 0);
-		MinecraftClient.getInstance().textRenderer.draw(roundelText, -textWidth / 2F, 0, 0xFFB3B3B3, false, matrices.peek().getModel(), immediate, false, 0, 190);
+		MinecraftClient.getInstance().textRenderer.draw(roundelText, -textWidth / 2F, 0, textColor, false, matrices.peek().getModel(), immediate, false, 0, 190);
 
 		matrices.pop();
 	}

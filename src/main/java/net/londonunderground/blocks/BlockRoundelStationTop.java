@@ -11,10 +11,10 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class BlockRoundelStation extends BlockRoundelBase {
+public class BlockRoundelStationTop extends BlockRoundelBase {
 
 
-    public BlockRoundelStation(Settings settings) {
+    public BlockRoundelStationTop(Settings settings) {
         super(settings);
     }
 
@@ -50,7 +50,7 @@ public class BlockRoundelStation extends BlockRoundelBase {
 
     @Override
     public BlockEntity createBlockEntity(BlockView world) {
-        return new BlockRoundelStation.TileEntityBlockRoundelStation();
+        return new BlockRoundelStationTop.TileEntityBlockRoundelStationTop();
     }
 
     @Override
@@ -58,10 +58,10 @@ public class BlockRoundelStation extends BlockRoundelBase {
         builder.add(COLOR, FACING);
     }
 
-    public static class TileEntityBlockRoundelStation extends BlockRoundelBase.TileEntityBlockRoundelBase {
+    public static class TileEntityBlockRoundelStationTop extends BlockRoundelBase.TileEntityBlockRoundelBase {
 
-        public TileEntityBlockRoundelStation() {
-            super(Main.BLOCK_ROUNDEL_STATION_TILE_ENTITY);
+        public TileEntityBlockRoundelStationTop() {
+            super(Main.BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY);
         }
 
         @Override

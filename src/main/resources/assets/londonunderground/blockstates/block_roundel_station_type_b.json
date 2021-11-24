@@ -1,0 +1,39 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "londonunderground:block/block_roundel_station_type_b",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "londonunderground:block/block_roundel_station_type_b",
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "londonunderground:block/block_roundel_station_type_b"
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "londonunderground:block/block_roundel_station_type_b",
+        "y": 90
+      }
+    }
+  ]
+}
