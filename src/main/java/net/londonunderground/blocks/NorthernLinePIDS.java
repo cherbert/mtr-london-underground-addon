@@ -1,5 +1,6 @@
 package net.londonunderground.blocks;
 
+import mapper.BlockEntityMapper;
 import mtr.block.BlockPIDSBase;
 import mtr.block.IBlock;
 import net.londonunderground.Main;
@@ -21,14 +22,14 @@ public class NorthernLinePIDS extends BlockPIDSBase {
 	}
 
 	@Override
-	public BlockEntity createBlockEntity(BlockView world) {
-		return new TileEntityNorthernLinePIDS();
+	public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+		return new TileEntityNorthernLinePIDS(pos, state);
 	}
 
-	public static class TileEntityNorthernLinePIDS extends BlockEntity {
+	public static class TileEntityNorthernLinePIDS extends BlockEntityMapper {
 
-		public TileEntityNorthernLinePIDS() {
-			super(Main.PIDS_NORTHERN_TILE_ENTITY);
+		public TileEntityNorthernLinePIDS(BlockPos pos, BlockState state) {
+			super(Main.PIDS_NORTHERN_TILE_ENTITY, pos, state);
 		}
 	}
 }

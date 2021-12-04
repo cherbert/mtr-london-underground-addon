@@ -14,7 +14,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
-public abstract class BlockPIDSBase extends HorizontalFacingBlock implements BlockEntityProvider {
+public abstract class BlockPIDSBase extends HorizontalFacingBlock {
 
 	public BlockPIDSBase() {
 		super(FabricBlockSettings.of(Material.METAL, MapColor.IRON_GRAY).requiresTool().hardness(2).luminance(5));

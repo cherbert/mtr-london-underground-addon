@@ -1,9 +1,9 @@
 package net.londonunderground.blocks;
 
-import net.minecraft.block.BlockEntityProvider;
+import mapper.BlockEntityMapper;
+import mapper.BlockEntityProviderMapper;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 
 import java.util.List;
 
-public abstract class BlockRoundelBase extends HorizontalFacingBlock implements BlockEntityProvider {
+public abstract class BlockRoundelBase extends HorizontalFacingBlock implements BlockEntityProviderMapper {
 
     public static final IntProperty COLOR = IntProperty.of("color", 0, 2);
 
@@ -30,10 +30,10 @@ public abstract class BlockRoundelBase extends HorizontalFacingBlock implements 
         tooltip.add(new TranslatableText("tooltip.londonunderground.block_roundel").setStyle(Style.EMPTY.withColor(Formatting.GRAY)));
     }
 
-    public abstract static class TileEntityBlockRoundelBase extends BlockEntity {
+    public abstract static class TileEntityBlockRoundelBase extends BlockEntityMapper {
 
-        public TileEntityBlockRoundelBase(BlockEntityType<?> type) {
-            super(type);
+        public TileEntityBlockRoundelBase(BlockEntityType<?> type, BlockPos pos, BlockState state) {
+            super(type, pos, state);
         }
 
         public abstract boolean shouldRender();

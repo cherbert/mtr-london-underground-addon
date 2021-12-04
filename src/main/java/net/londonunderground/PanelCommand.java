@@ -4,6 +4,7 @@ import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import mapper.Utilities;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -33,9 +34,8 @@ public class PanelCommand {
         int modelData = IntegerArgumentType.getInteger(context,"custom");
 
         ItemStack item = new ItemStack(Items.IRON_INGOT, 1);
-        NbtCompound compound = new NbtCompound();
+        NbtCompound compound = Utilities.getOrCreateNbt(item);
         compound.putInt("CustomModelData", modelData);
-        item.setTag(compound);
         player.giveItemStack(item);
         world.playSound(null, player.getBlockPos(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.BLOCKS, 1, 1);
         return 1;

@@ -28,7 +28,7 @@ public class StationLight extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return Block.createCuboidShape(0, 16, 0, 16, 14, 16);
+        return Block.createCuboidShape(0, 14, 0, 16, 16, 16);
     }
 
     @Override

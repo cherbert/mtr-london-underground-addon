@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.7-SNAPSHOT'
+	id 'fabric-loom' version '0.10-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -19,13 +19,18 @@ repositories {
 
 }
 
+def default_minecraft_version = "1.16.5"
+def minecraft_version = project.properties.containsKey("buildVersion") ? project.getProperties().get("buildVersion") : default_minecraft_version
+def is_1_16 = (minecraft_version as String).startsWith("1.16")
+def is_1_17 = (minecraft_version as String).startsWith("1.17")
+
 dependencies {
-	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "com.terraformersmc:modmenu:${project.mod_menu_version}"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "com.github.jonafanho:Minecraft-Transit-Railway:ff3401a"
+	minecraft "com.mojang:minecraft:${minecraft_version}"
+	mappings "net.fabricmc:yarn:${is_1_16 ? project.yarn_mappings_1_16 : is_1_17 ? project.yarn_mappings_1_17 : project.yarn_mappings_1_18}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${is_1_16 ? project.loader_version_1_16 : is_1_17 ? project.loader_version_1_17 : project.loader_version_1_18}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${is_1_16 ? project.fabric_version_1_16 : is_1_17 ? project.fabric_version_1_17 : project.fabric_version_1_18}"
+	modImplementation "com.terraformersmc:modmenu:${is_1_16 ? project.mod_menu_version_1_16 : is_1_17 ? project.mod_menu_version_1_17 : project.mod_menu_version_1_18}"
+	modImplementation "com.github.jonafanho:Minecraft-Transit-Railway:80008c1"
 }
 
 processResources {
@@ -34,6 +39,12 @@ processResources {
 	filesMatching("fabric.mod.json") {
 		expand "version": project.version
 	}
+}
+
+task copyMappingFiles(type: Copy) {
+	outputs.upToDateWhen { false }
+	from is_1_16 ? "src/main/mapper1.16" : is_1_17 ? "src/main/mapper1.17" : "src/main/mapper1.18"
+	into "src/main/java/mapper"
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -99,6 +110,14 @@ allprojects {
 		}
 		maven {
 			url = "https://maven.terraformersmc.com/"
+		}
+	}
+
+	afterEvaluate {
+		for (def task in it.tasks) {
+			if (task != rootProject.tasks.copyMappingFiles) {
+				task.dependsOn rootProject.tasks.copyMappingFiles
+			}
 		}
 	}
 }

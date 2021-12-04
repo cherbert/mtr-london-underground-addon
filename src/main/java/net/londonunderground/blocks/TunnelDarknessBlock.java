@@ -1,5 +1,7 @@
 package net.londonunderground.blocks;
 
+import mapper.BlockEntityMapper;
+import mapper.BlockEntityProviderMapper;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.londonunderground.Main;
@@ -10,7 +12,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class TunnelDarknessBlock extends Block implements BlockEntityProvider {
+public class TunnelDarknessBlock extends Block implements BlockEntityProviderMapper {
 
     public TunnelDarknessBlock(Settings settings) {
         super(settings);
@@ -26,14 +28,14 @@ public class TunnelDarknessBlock extends Block implements BlockEntityProvider {
     }
 
     @Override
-    public BlockEntity createBlockEntity(BlockView world) {
-        return new TileEntityTunnelDarkness();
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new TileEntityTunnelDarkness(pos, state);
     }
 
-    public static class TileEntityTunnelDarkness extends BlockEntity {
+    public static class TileEntityTunnelDarkness extends BlockEntityMapper {
 
-        public TileEntityTunnelDarkness() {
-            super(Main.DARK_TILE);
+        public TileEntityTunnelDarkness(BlockPos pos, BlockState state) {
+            super(Main.DARK_TILE, pos, state);
         }
         @Environment(EnvType.CLIENT)
         public double getRenderDistance() {

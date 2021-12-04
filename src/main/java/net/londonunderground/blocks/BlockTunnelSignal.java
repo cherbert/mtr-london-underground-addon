@@ -1,5 +1,7 @@
 package net.londonunderground.blocks;
 
+import mapper.BlockEntityMapper;
+import mapper.BlockEntityProviderMapper;
 import mtr.block.IBlock;
 import net.londonunderground.Main;
 import net.minecraft.block.*;
@@ -8,7 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
-public class BlockTunnelSignal extends mtr.block.BlockSignalLightBase implements BlockEntityProvider {
+public class BlockTunnelSignal extends mtr.block.BlockSignalLightBase implements BlockEntityProviderMapper {
     public BlockTunnelSignal(Settings settings) {
         super(settings);
     }
@@ -19,13 +21,13 @@ public class BlockTunnelSignal extends mtr.block.BlockSignalLightBase implements
     }
 
     @Override
-    public BlockEntity createBlockEntity(BlockView world) {
-        return new TileEntityTunnelSignalLight1();
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new TileEntityTunnelSignalLight1(pos, state);
     }
-    public static class TileEntityTunnelSignalLight1 extends BlockEntity {
+    public static class TileEntityTunnelSignalLight1 extends BlockEntityMapper {
 
-        public TileEntityTunnelSignalLight1() {
-            super(Main.TUNNEL_BLOCK_2_SIGNAL);
+        public TileEntityTunnelSignalLight1(BlockPos pos, BlockState state) {
+            super(Main.TUNNEL_BLOCK_2_SIGNAL, pos, state);
         }
     }
 

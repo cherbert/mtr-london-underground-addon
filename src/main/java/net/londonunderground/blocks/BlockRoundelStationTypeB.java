@@ -49,8 +49,8 @@ public class BlockRoundelStationTypeB extends BlockRoundelBase {
     }
 
     @Override
-    public BlockEntity createBlockEntity(BlockView world) {
-        return new BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB();
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB(pos, state);
     }
 
     @Override
@@ -60,8 +60,8 @@ public class BlockRoundelStationTypeB extends BlockRoundelBase {
 
     public static class TileEntityBlockRoundelStationTypeB extends BlockRoundelBase.TileEntityBlockRoundelBase {
 
-        public TileEntityBlockRoundelStationTypeB() {
-            super(Main.BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY);
+        public TileEntityBlockRoundelStationTypeB(BlockPos pos, BlockState state) {
+            super(Main.BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY, pos, state);
         }
 
         @Override

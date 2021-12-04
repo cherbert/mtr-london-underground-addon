@@ -1,5 +1,6 @@
 package net.londonunderground.render;
 
+import mapper.BlockEntityRendererMapper;
 import mtr.block.IBlock;
 import mtr.config.Config;
 import mtr.data.IGui;
@@ -14,7 +15,6 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.Tessellator;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.block.entity.BlockEntityRenderDispatcher;
-import net.minecraft.client.render.block.entity.BlockEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.OrderedText;
@@ -28,7 +28,7 @@ import net.minecraft.world.WorldAccess;
 
 import java.util.Locale;
 
-public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase> extends BlockEntityRenderer<T> implements IGui, IDrawing {
+public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase> extends BlockEntityRendererMapper<T> implements IGui, IDrawing {
 
 	private final float maxWidth;
 	private final float maxScale;

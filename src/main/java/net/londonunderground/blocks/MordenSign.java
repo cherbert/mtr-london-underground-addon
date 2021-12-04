@@ -29,8 +29,8 @@ public class MordenSign extends BlockRoundelBase {
     }
 
     @Override
-    public BlockEntity createBlockEntity(BlockView world) {
-        return new MordenSign.TileEntityMordenSign();
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new MordenSign.TileEntityMordenSign(pos, state);
     }
 
     @Override
@@ -40,8 +40,8 @@ public class MordenSign extends BlockRoundelBase {
 
     public static class TileEntityMordenSign extends BlockRoundelBase.TileEntityBlockRoundelBase {
 
-        public TileEntityMordenSign() {
-            super(Main.MORDEN_SIGN_TILE_ENTITY);
+        public TileEntityMordenSign(BlockPos pos, BlockState state) {
+            super(Main.MORDEN_SIGN_TILE_ENTITY, pos, state);
         }
 
         @Override

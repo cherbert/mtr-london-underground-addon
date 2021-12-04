@@ -1,5 +1,6 @@
 package net.londonunderground.render;
 
+import mapper.BlockEntityMapper;
 import mtr.gui.IDrawing;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.client.render.VertexConsumer;
@@ -9,7 +10,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.Direction;
 import mtr.render.RenderSignalBase;
 
-public class RenderTunnelSignalLight<T extends BlockEntity> extends RenderSignalBase<T> {
+public class RenderTunnelSignalLight<T extends BlockEntityMapper> extends RenderSignalBase<T> {
 
     final boolean redOnTop;
     final int proceedColor;
