@@ -31,8 +31,12 @@ jobs:
       - name: make gradle wrapper executable
         if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew
-      - name: build
-        run: ./gradlew build
+      - name: build 1.16.5
+        run: ./gradlew build - PbuildVersion="1.16.5"
+      - name: build 1.17.1
+        run: ./gradlew build - PbuildVersion="1.17.1"
+      - name: build 1.18
+        run: ./gradlew build - PbuildVersion="1.18"
       - name: capture build artifacts
         if: ${{ runner.os == 'Linux' && matrix.java == '11' }} # Only upload artifacts built from LTS java on one OS
         uses: actions/upload-artifact@v2
