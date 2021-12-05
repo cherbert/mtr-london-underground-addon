@@ -19,14 +19,14 @@ import java.util.function.Supplier;
 public class Main implements ModInitializer, IPacket {
 	public static final String MOD_ID = "londonunderground";
 
-	public static final BlockEntityType<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE = Utilities.registerTileEntity("tunnel_darkness",TunnelDarknessBlock.TileEntityTunnelDarkness::new, MyBlocks.TUNNEL_DARKNESS);
-	public static final BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = Utilities.registerTileEntity("pids_northern", NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
-	public static final BlockEntityType<BlockTunnelSignal.TileEntityTunnelSignalLight1> TUNNEL_BLOCK_2_SIGNAL = Utilities.registerTileEntity("tunnel_block_2_signal", BlockTunnelSignal.TileEntityTunnelSignalLight1::new, MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
-	public static final BlockEntityType<BlockRoundel.TileEntityBlockRoundel> BLOCK_ROUNDEL_TILE_ENTITY = Utilities.registerTileEntity("block_roundel_1", BlockRoundel.TileEntityBlockRoundel::new, MyBlocks.BLOCK_ROUNDEL_1);
-	public static final BlockEntityType<BlockRoundelStation.TileEntityBlockRoundelStation> BLOCK_ROUNDEL_STATION_TILE_ENTITY = Utilities.registerTileEntity("block_roundel_station", BlockRoundelStation.TileEntityBlockRoundelStation::new, MyBlocks.BLOCK_ROUNDEL_STATION);
-	public static final BlockEntityType<BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB> BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY = Utilities.registerTileEntity("block_roundel_station_type_b", BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB::new, MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B);
-	public static final BlockEntityType<BlockRoundelStationTop.TileEntityBlockRoundelStationTop> BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY = Utilities.registerTileEntity("block_roundel_station_top", BlockRoundelStationTop.TileEntityBlockRoundelStationTop::new, MyBlocks.BLOCK_ROUNDEL_STATION_TOP);
-	public static final BlockEntityType<MordenSign.TileEntityMordenSign> MORDEN_SIGN_TILE_ENTITY = Utilities.registerTileEntity("morden_sign", MordenSign.TileEntityMordenSign::new, MyBlocks.MORDEN_SIGN);
+	public static final BlockEntityType<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE = Utilities.registerTileEntity(MOD_ID + ":tunnel_darkness",TunnelDarknessBlock.TileEntityTunnelDarkness::new, MyBlocks.TUNNEL_DARKNESS);
+	public static final BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = Utilities.registerTileEntity(MOD_ID + ":pids_northern", NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
+	public static final BlockEntityType<BlockTunnelSignal.TileEntityTunnelSignalLight1> TUNNEL_BLOCK_2_SIGNAL = Utilities.registerTileEntity(MOD_ID + ":tunnel_block_2_signal", BlockTunnelSignal.TileEntityTunnelSignalLight1::new, MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
+	public static final BlockEntityType<BlockRoundel.TileEntityBlockRoundel> BLOCK_ROUNDEL_TILE_ENTITY = Utilities.registerTileEntity(MOD_ID + ":block_roundel_1", BlockRoundel.TileEntityBlockRoundel::new, MyBlocks.BLOCK_ROUNDEL_1);
+	public static final BlockEntityType<BlockRoundelStation.TileEntityBlockRoundelStation> BLOCK_ROUNDEL_STATION_TILE_ENTITY = Utilities.registerTileEntity(MOD_ID + ":block_roundel_station", BlockRoundelStation.TileEntityBlockRoundelStation::new, MyBlocks.BLOCK_ROUNDEL_STATION);
+	public static final BlockEntityType<BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB> BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY = Utilities.registerTileEntity(MOD_ID + ":block_roundel_station_type_b", BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB::new, MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B);
+	public static final BlockEntityType<BlockRoundelStationTop.TileEntityBlockRoundelStationTop> BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY = Utilities.registerTileEntity(MOD_ID + ":block_roundel_station_top", BlockRoundelStationTop.TileEntityBlockRoundelStationTop::new, MyBlocks.BLOCK_ROUNDEL_STATION_TOP);
+	public static final BlockEntityType<MordenSign.TileEntityMordenSign> MORDEN_SIGN_TILE_ENTITY = Utilities.registerTileEntity(MOD_ID + ":morden_sign", MordenSign.TileEntityMordenSign::new, MyBlocks.MORDEN_SIGN);
 
 	public static SoundEvent SOUND_EVENT_OUTSIDE_AMBIENT = registerSoundEvent("cityambient");
 	public static SoundEvent SOUND_EVENT_SEE_IT_SAY_IT = registerSoundEvent("seeitsayitsorted");

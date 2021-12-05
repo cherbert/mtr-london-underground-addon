@@ -19,7 +19,7 @@ import java.util.function.Function;
 public interface Utilities {
 
 	static <T extends BlockEntityMapper> BlockEntityType<T> registerTileEntity(String path, TileEntitySupplier<T> supplier, Block block) {
-		return Registry.register(Registry.BLOCK_ENTITY_TYPE, MTR.MOD_ID + ":" + path, BlockEntityType.Builder.create(() -> supplier.supplier(null, null), block).build(null));
+		return Registry.register(Registry.BLOCK_ENTITY_TYPE, path, BlockEntityType.Builder.create(() -> supplier.supplier(null, null), block).build(null));
 	}
 
 	static float getYaw(Entity entity) {
