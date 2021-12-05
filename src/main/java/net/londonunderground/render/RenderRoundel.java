@@ -1,6 +1,7 @@
 package net.londonunderground.render;
 
 import mapper.BlockEntityRendererMapper;
+import mapper.UtilitiesClient;
 import mtr.block.IBlock;
 import mtr.config.Config;
 import mtr.data.IGui;
@@ -115,7 +116,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 		final float scale = Math.min(maxWidth / textWidth, maxScale);
 		matrices.scale(scale, scale, scale);
 		matrices.translate(0, -4, 0);
-		MinecraftClient.getInstance().textRenderer.draw(roundelText, -textWidth / 2F, 0, textColor, false, matrices.peek().getModel(), immediate, false, 0, 190);
+		MinecraftClient.getInstance().textRenderer.draw(roundelText, -textWidth / 2F, 0, textColor, false, UtilitiesClient.getModel(matrices.peek()), immediate, false, 0, 190);
 
 		matrices.pop();
 	}

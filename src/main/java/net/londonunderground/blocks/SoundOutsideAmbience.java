@@ -1,5 +1,6 @@
 package net.londonunderground.blocks;
 
+import mapper.Utilities;
 import net.londonunderground.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -32,11 +33,11 @@ public class SoundOutsideAmbience extends Block {
                 1 // Pitch multiplier, 1 is normal, 0.5 is half pitch, etc
         );
 
-        world.getBlockTickScheduler().schedule(pos, state.getBlock(), 8040);
+        Utilities.scheduleBlockTick(world, pos, state.getBlock(), 8040);
     }
 
     @Override
     public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
-        world.getBlockTickScheduler().schedule(pos, state.getBlock(), 20);
+        Utilities.scheduleBlockTick(world, pos, state.getBlock(), 20);
     }
 }
