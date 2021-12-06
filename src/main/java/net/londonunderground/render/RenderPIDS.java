@@ -182,17 +182,17 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
                 final TextRenderer textRenderer = MinecraftClient.getInstance().textRenderer;
 
                 if (renderArrivalNumber) {
-                    final OrderedText chris4 = new LiteralText(String.valueOf(i+1)).fillStyle(style).asOrderedText();
-					textRenderer.draw(matrices, chris4, 0, 0, seconds > 0 ? textColor : firstTrainColor);
+                    final OrderedText text1 = new LiteralText(String.valueOf(i+1)).fillStyle(style).asOrderedText();
+					textRenderer.draw(matrices, text1, 0, 0, seconds > 0 ? textColor : firstTrainColor);
                 }
 
                 final float newDestinationMaxWidth = destinationMaxWidth - carLengthMaxWidth;
 
                 if (showAllPlatforms) {
 					final String platformName = " " + platformIdToName.get(currentSchedule.platformId);
-					final OrderedText chris3 = new LiteralText(platformName).fillStyle(style).asOrderedText();
+					final OrderedText text2 = new LiteralText(platformName).fillStyle(style).asOrderedText();
 					if (platformName != null) {
-						textRenderer.draw(matrices, chris3, destinationStart + newDestinationMaxWidth, 0, seconds > 0 ? textColor : firstTrainColor);
+						textRenderer.draw(matrices, text2, destinationStart + newDestinationMaxWidth, 0, seconds > 0 ? textColor : firstTrainColor);
 					}
 				}
 
@@ -200,14 +200,14 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 					matrices.push();
 					matrices.translate(destinationStart + newDestinationMaxWidth + platformMaxWidth, 0, 0);
 
-					final OrderedText chris = new LiteralText(carText.getString()).fillStyle(style).asOrderedText();
+					final OrderedText text3 = new LiteralText(carText.getString()).fillStyle(style).asOrderedText();
 
 
-					final int carTextWidth = textRenderer.getWidth(chris);
+					final int carTextWidth = textRenderer.getWidth(text3);
 					if (carTextWidth > carLengthMaxWidth) {
 						matrices.scale(carLengthMaxWidth / carTextWidth, 1, 1);
 					}
-					textRenderer.draw(matrices, chris, 0, 0, CAR_TEXT_COLOR);
+					textRenderer.draw(matrices, text3, 0, 0, CAR_TEXT_COLOR);
 					matrices.pop();
 				}
 
@@ -222,26 +222,24 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 					matrices.scale(newDestinationMaxWidth / destinationWidth, 1, 1);
 				}
 
+				final OrderedText text4 = new LiteralText(destinationString).fillStyle(style).asOrderedText();
 
-
-				final OrderedText chris5 = new LiteralText(destinationString).fillStyle(style).asOrderedText();
-
-				textRenderer.draw(matrices, chris5, 0, 0, seconds > 0 ? textColor : firstTrainColor);
+				textRenderer.draw(matrices, text4, 0, 0, seconds > 0 ? textColor : firstTrainColor);
 				matrices.pop();
 
                 if (arrivalText != null) {
-					final OrderedText chris2 = new LiteralText(arrivalText.getString()).fillStyle(style).asOrderedText();
+					final OrderedText text5 = new LiteralText(arrivalText.getString()).fillStyle(style).asOrderedText();
 
 
 					matrices.push();
-					final int arrivalWidth = textRenderer.getWidth(chris2);
+					final int arrivalWidth = textRenderer.getWidth(text5);
 					if (arrivalWidth > arrivalMaxWidth) {
 						matrices.translate(destinationStart + newDestinationMaxWidth + platformMaxWidth + carLengthMaxWidth, 0, 0);
 						matrices.scale(arrivalMaxWidth / arrivalWidth, 1, 1);
 					} else {
 						matrices.translate(totalScaledWidth - arrivalWidth, 0, 0);
 					}
-					textRenderer.draw(matrices, chris2, 0, 0, textColor);
+					textRenderer.draw(matrices, text5, 0, 0, textColor);
 					matrices.pop();
                 }
 
