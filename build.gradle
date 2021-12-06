@@ -42,6 +42,12 @@ dependencies {
 	modImplementation "com.github.jonafanho:Minecraft-Mappings:${is_1_16 ? project.mappings_version_1_16 : is_1_17 ? project.mappings_version_1_17 : project.mappings_version_1_18}"
 }
 
+configurations.all {
+	resolutionStrategy {
+		force "com.github.jonafanho:Minecraft-Mappings:${is_1_16 ? project.mappings_version_1_16 : is_1_17 ? project.mappings_version_1_17 : project.mappings_version_1_18}"
+	}
+}
+
 processResources {
 	inputs.property "version", project.version
 
