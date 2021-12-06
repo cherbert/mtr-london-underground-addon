@@ -1,6 +1,6 @@
 package net.londonunderground.blocks;
 
-import mapper.BlockEntityMapper;
+import minecraftmappings.BlockEntityMapper;
 import mtr.block.BlockPIDSBase;
 import mtr.block.IBlock;
 import net.londonunderground.Main;

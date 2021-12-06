@@ -1,7 +1,7 @@
 package net.londonunderground.render;
 
-import mapper.BlockEntityRendererMapper;
-import mapper.Utilities;
+import minecraftmappings.BlockEntityRendererMapper;
+import minecraftmappings.Utilities;
 import net.londonunderground.MyBlocks;
 import net.londonunderground.blocks.TunnelDarknessBlock;
 import net.londonunderground.entities.TunnelEntity;

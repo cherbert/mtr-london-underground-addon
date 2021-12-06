@@ -1,6 +1,6 @@
 package net.londonunderground.blocks;
 
-import mapper.Utilities;
+import minecraftmappings.Utilities;
 import net.londonunderground.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

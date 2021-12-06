@@ -1,6 +1,6 @@
 package net.londonunderground.render;
 
-import mapper.BlockEntityMapper;
+import minecraftmappings.BlockEntityMapper;
 import mtr.gui.IDrawing;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.client.render.VertexConsumer;

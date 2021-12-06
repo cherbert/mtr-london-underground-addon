@@ -1,7 +1,7 @@
 package net.londonunderground.blocks;
 
-import mapper.BlockEntityMapper;
-import mapper.BlockEntityProviderMapper;
+import minecraftmappings.BlockEntityMapper;
+import minecraftmappings.BlockEntityProviderMapper;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.londonunderground.Main;

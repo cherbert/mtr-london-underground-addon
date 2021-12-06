@@ -1,6 +1,6 @@
 package net.londonunderground;
 
-import mapper.UtilitiesClient;
+import minecraftmappings.UtilitiesClient;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.londonunderground.render.*;
 import net.fabricmc.api.ClientModInitializer;

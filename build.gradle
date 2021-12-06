@@ -38,7 +38,8 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${is_1_16 ? project.loader_version_1_16 : is_1_17 ? project.loader_version_1_17 : project.loader_version_1_18}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${is_1_16 ? project.fabric_version_1_16 : is_1_17 ? project.fabric_version_1_17 : project.fabric_version_1_18}"
 	modImplementation "com.terraformersmc:modmenu:${is_1_16 ? project.mod_menu_version_1_16 : is_1_17 ? project.mod_menu_version_1_17 : project.mod_menu_version_1_18}"
-	modImplementation "com.github.jonafanho:Minecraft-Transit-Railway:80008c1"
+	modImplementation "com.github.jonafanho:Minecraft-Transit-Railway:${project.mtr_version}"
+	modImplementation "com.github.jonafanho:Minecraft-Mappings:${is_1_16 ? project.mappings_version_1_16 : is_1_17 ? project.mappings_version_1_17 : project.mappings_version_1_18}"
 }
 
 processResources {
@@ -47,12 +48,6 @@ processResources {
 	filesMatching("fabric.mod.json") {
 		expand "version": project.version
 	}
-}
-
-task copyMappingFiles(type: Copy) {
-	outputs.upToDateWhen { false }
-	from is_1_16 ? "src/main/mapper1.16" : is_1_17 ? "src/main/mapper1.17" : "src/main/mapper1.18"
-	into "src/main/java/mapper"
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -116,7 +111,6 @@ publishing {
 allprojects {
 	repositories {
 		maven {
-			name = "BlueMap"
 			url = "https://jitpack.io/"
 		}
 		maven {
@@ -124,14 +118,6 @@ allprojects {
 		}
 		maven {
 			url = "https://maven.terraformersmc.com/"
-		}
-	}
-
-	afterEvaluate {
-		for (def task in it.tasks) {
-			if (task != rootProject.tasks.copyMappingFiles) {
-				task.dependsOn rootProject.tasks.copyMappingFiles
-			}
 		}
 	}
 }

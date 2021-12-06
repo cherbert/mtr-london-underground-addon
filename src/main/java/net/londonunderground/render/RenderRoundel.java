@@ -1,7 +1,7 @@
 package net.londonunderground.render;
 
-import mapper.BlockEntityRendererMapper;
-import mapper.UtilitiesClient;
+import minecraftmappings.BlockEntityRendererMapper;
+import minecraftmappings.UtilitiesClient;
 import mtr.block.IBlock;
 import mtr.config.Config;
 import mtr.data.IGui;
