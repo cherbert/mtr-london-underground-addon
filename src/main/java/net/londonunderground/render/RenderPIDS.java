@@ -45,7 +45,7 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 
     private static final int SWITCH_LANGUAGE_TICKS = 60;
     private static final int CAR_TEXT_COLOR = 0xFF0000;
-    private static final int MAX_VIEW_DISTANCE = 16;
+    private static final int MAX_VIEW_DISTANCE = 64;
 
     private static Style style;
 

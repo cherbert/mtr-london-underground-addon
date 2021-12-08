@@ -1,6 +1,5 @@
 package net.londonunderground;
 
-import minecraftmappings.BlockEntityMapper;
 import minecraftmappings.Utilities;
 import net.londonunderground.blocks.*;
 import net.londonunderground.packet.IPacket;
@@ -12,9 +11,6 @@ import net.minecraft.item.*;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import java.util.function.Supplier;
-
 
 public class Main implements ModInitializer, IPacket {
 	public static final String MOD_ID = "londonunderground";

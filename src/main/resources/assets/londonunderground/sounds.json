@@ -37,14 +37,14 @@
   "sw_mdn": {
     "sounds": [
       {
-        "name": "londonunderground:this_south_wimbledon_terminates_morden"
+        "name": "londonunderground:northernline/this_south_wimbledon_terminates_morden"
       }
     ]
   },
   "tb_terminates": {
     "sounds": [
       {
-        "name": "londonunderground:tootingbroadway_terminates"
+        "name": "londonunderground:northernline/tootingbroadway_terminates"
       }
     ]
   }
