@@ -31,5 +31,4 @@ bin/
 # fabric
 
 run/
-/src/main/resources/assets/londonunderground/sounds/northernline/
-/src/main/resources/assets/londonunderground/sounds/northernline/
+./src/main/resources/assets/londonunderground/sounds/northernline/
