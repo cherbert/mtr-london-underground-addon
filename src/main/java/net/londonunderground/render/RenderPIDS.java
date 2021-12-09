@@ -211,7 +211,9 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 					matrices.pop();
 				}
 
-                if(currentSchedule.isTerminating) {
+                if(currentSchedule.isTerminating & isCJK) {
+                    destinationString = "終止服務";
+                } else {
                     destinationString = "Terminating Here";
                 }
 
