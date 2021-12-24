@@ -71,6 +71,12 @@ task setupFiles() {
 		ant.move(file: it, todir: "forge/src/main/java/net/londonunderground/mappings")
 	}
 
+	// TODO temporary code for compatibilitiy with MTR beta-8
+	ant.path { ant.fileset(dir: "common/src/main/java/net/londonunderground/mappings", includes: "RegistryUtilities.java") }.list().each {
+		ant.move(file: it, todir: "forge/src/main/java/net/londonunderground/mappings")
+	}
+	// TODO temporary code end
+
 	ant.delete(dir: "common/src/main/java/net/londonunderground/mappings")
 }
 
