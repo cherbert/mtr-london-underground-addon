@@ -1,6 +1,5 @@
 package net.londonunderground;
 
-import mtr.RegistryClient;
 import net.londonunderground.render.RenderDarkTile;
 import net.londonunderground.render.RenderPIDS;
 import net.londonunderground.render.RenderRoundel;
