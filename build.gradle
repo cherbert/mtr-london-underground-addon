@@ -36,17 +36,30 @@ subprojects {
 	}
 }
 
-task buildLibrary(type: GradleBuild) {
+task buildLibraryCommon(type: GradleBuild) {
 	dir = "checkouts/mtr/common"
 	tasks = ["clean", "build"]
 	startParameter.projectProperties = ["buildVersion": minecraft_version] as Map<String, String>
 }
 
-task setupLibrary(dependsOn: buildLibrary, type: Copy) {
-	from "checkouts/mtr/common/build/libs"
-	include "*-dev.jar"
-	into "checkouts/mtr/common/build/libs"
-	rename "(.+).jar", "mtr.jar"
+task buildLibraryFabric(type: GradleBuild) {
+	dir = "checkouts/mtr/fabric"
+	tasks = ["clean", "build"]
+	startParameter.projectProperties = ["buildVersion": minecraft_version] as Map<String, String>
+}
+
+task buildLibraryForge(type: GradleBuild) {
+	dir = "checkouts/mtr/forge"
+	tasks = ["clean", "build"]
+	startParameter.projectProperties = ["buildVersion": minecraft_version] as Map<String, String>
+}
+
+task setupLibrary() {
+	dependsOn buildLibraryCommon
+	dependsOn buildLibraryFabric
+	dependsOn buildLibraryForge
+	buildLibraryFabric.mustRunAfter buildLibraryCommon
+	buildLibraryForge.mustRunAfter buildLibraryFabric
 }
 
 task setupFiles() {
@@ -78,6 +91,30 @@ task setupFiles() {
 	// TODO temporary code end
 
 	ant.delete(dir: "common/src/main/java/net/londonunderground/mappings")
+
+	copy {
+		outputs.upToDateWhen { false }
+		from "checkouts/mtr/common/build/libs"
+		include "*-dev.jar"
+		into "checkouts/mtr/common/build/libs"
+		rename "(.+).jar", "mtr.jar"
+	}
+
+	copy {
+		outputs.upToDateWhen { false }
+		from "checkouts/mtr/fabric/build/libs"
+		include "*-dev-shadow.jar"
+		into "fabric/run/mods"
+		rename "(.+).jar", "mtr.jar"
+	}
+
+	copy {
+		outputs.upToDateWhen { false }
+		from "checkouts/mtr/forge/build/libs"
+		include "*-dev-shadow.jar"
+		into "forge/run/mods"
+		rename "(.+).jar", "mtr.jar"
+	}
 }
 
 allprojects {
