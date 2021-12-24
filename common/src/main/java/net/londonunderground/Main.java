@@ -81,8 +81,6 @@ public class Main {
 		registerSoundEvent.accept(MySoundEvents.SOUND_EVENT_OUTSIDE_AMBIENT);
 		registerSoundEvent.accept(MySoundEvents.SOUNT_EVENT_TUBE_STATION_AMBIENCE1);
 		registerSoundEvent.accept(MySoundEvents.SOUND_EVENT_SEE_IT_SAY_IT);
-
-//		PanelCommand.register();
 	}
 
 	@FunctionalInterface

@@ -2,6 +2,7 @@ package net.londonunderground;
 
 import mtr.mappings.BlockEntityMapper;
 import mtr.mappings.DeferredRegisterHolder;
+import mtr.mappings.RegistryUtilities;
 import net.londonunderground.mappings.ForgeUtilities;
 import net.minecraft.core.Registry;
 import net.minecraft.sounds.SoundEvent;
@@ -29,6 +30,7 @@ public class MainForge {
 		ForgeUtilities.registerModEventBus(Main.MOD_ID, eventBus);
 		eventBus.register(MTRForgeRegistry.class);
 		Main.init(MainForge::registerBlock, MainForge::registerBlockEntityType, MainForge::registerSoundEvent);
+		RegistryUtilities.registerCommand((dispatcher, selection) -> PanelCommand.register(dispatcher));
 		ITEMS.register();
 		BLOCKS.register();
 		BLOCK_ENTITY_TYPES.register();

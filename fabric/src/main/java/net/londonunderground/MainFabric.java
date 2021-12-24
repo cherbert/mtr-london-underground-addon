@@ -2,6 +2,7 @@ package net.londonunderground;
 
 import mtr.mappings.BlockEntityMapper;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
@@ -16,6 +17,7 @@ public class MainFabric implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Main.init(MainFabric::registerBlock, MainFabric::registerBlockEntityType, MainFabric::registerSoundEvent);
+		CommandRegistrationCallback.EVENT.register((dispatcher, dedicated) -> PanelCommand.register(dispatcher));
 	}
 
 	private static void registerBlock(String path, Block block, CreativeModeTab itemGroup) {
