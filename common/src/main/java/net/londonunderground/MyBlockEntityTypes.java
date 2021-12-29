@@ -1,0 +1,18 @@
+package net.londonunderground;
+
+import mtr.mappings.RegistryUtilities;
+import net.londonunderground.blocks.*;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+
+public interface MyBlockEntityTypes {
+
+	BlockEntityType<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE = RegistryUtilities.getBlockEntityType(TunnelDarknessBlock.TileEntityTunnelDarkness::new, MyBlocks.TUNNEL_DARKNESS);
+	BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY = RegistryUtilities.getBlockEntityType(NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS);
+	BlockEntityType<BlockTunnelSignal.TileEntityTunnelSignalLight1> TUNNEL_BLOCK_2_SIGNAL = RegistryUtilities.getBlockEntityType(BlockTunnelSignal.TileEntityTunnelSignalLight1::new, MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
+	BlockEntityType<BlockRoundel.TileEntityBlockRoundel> BLOCK_ROUNDEL_TILE_ENTITY = RegistryUtilities.getBlockEntityType(BlockRoundel.TileEntityBlockRoundel::new, MyBlocks.BLOCK_ROUNDEL_1);
+	BlockEntityType<BlockRoundelStation.TileEntityBlockRoundelStation> BLOCK_ROUNDEL_STATION_TILE_ENTITY = RegistryUtilities.getBlockEntityType(BlockRoundelStation.TileEntityBlockRoundelStation::new, MyBlocks.BLOCK_ROUNDEL_STATION);
+	BlockEntityType<BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB> BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY = RegistryUtilities.getBlockEntityType(BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB::new, MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B);
+	BlockEntityType<BlockRoundelStationTypeC.TileEntityBlockRoundelStationTypeC> BLOCK_ROUNDEL_STATION_TYPE_C_TILE_ENTITY = RegistryUtilities.getBlockEntityType(BlockRoundelStationTypeC.TileEntityBlockRoundelStationTypeC::new, MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_C);
+	BlockEntityType<BlockRoundelStationTop.TileEntityBlockRoundelStationTop> BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY = RegistryUtilities.getBlockEntityType(BlockRoundelStationTop.TileEntityBlockRoundelStationTop::new, MyBlocks.BLOCK_ROUNDEL_STATION_TOP);
+	BlockEntityType<MordenSign.TileEntityMordenSign> MORDEN_SIGN_TILE_ENTITY = RegistryUtilities.getBlockEntityType(MordenSign.TileEntityMordenSign::new, MyBlocks.MORDEN_SIGN);
+}
