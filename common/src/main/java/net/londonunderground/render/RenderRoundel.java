@@ -38,7 +38,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 	private final int textColor;
 	private final boolean isDoubleSided;
 	private static Style STYLE;
-	private static String font;
+	private final String font;
 
 	public RenderRoundel(BlockEntityRenderDispatcher dispatcher, float maxWidth, float maxScale, float xOffset, float yOffset, float zOffset, float xTilt, int textColor, boolean isDoubleSided, String font) {
 		super(dispatcher);
@@ -112,7 +112,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 		matrices.mulPose(Vector3f.XP.rotationDegrees(xTilt));
 		matrices.translate(-xOffset, -yOffset, -zOffset - SMALL_OFFSET * 2);
 
-		final float scale = Math.min(maxWidth / textWidth, maxScale);
+		final float scale = Math.min((maxWidth) / textWidth, maxScale);
 		matrices.scale(scale, scale, scale);
 		matrices.translate(0, -4, 0);
 		Minecraft.getInstance().font.drawInBatch(roundelText, -textWidth / 2F, 0, textColor, false, matrices.last().pose(), immediate, false, 0, 190);

@@ -33,6 +33,9 @@
 		{"predicate": {"custom_model_data":26}, "model": "item/panels/stockwell_darkgrey_left"},
 		{"predicate": {"custom_model_data":27}, "model": "item/panels/stockwell_darkgrey_right"},
 		{"predicate": {"custom_model_data":28}, "model": "item/panels/stockwell2_victoria"},
-		{"predicate": {"custom_model_data":29}, "model": "item/panels/embankement1"}
+		{"predicate": {"custom_model_data":29}, "model": "item/panels/embankment1"},
+		{"predicate": {"custom_model_data":30}, "model": "item/panels/embankment2"},
+		{"predicate": {"custom_model_data":31}, "model": "item/panels/embankment3"},
+		{"predicate": {"custom_model_data":32}, "model": "item/panels/embankment4"}
 	]
 }
