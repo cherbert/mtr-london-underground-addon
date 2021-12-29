@@ -38,8 +38,9 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 	private final int textColor;
 	private final boolean isDoubleSided;
 	private static Style STYLE;
+	private static String font;
 
-	public RenderRoundel(BlockEntityRenderDispatcher dispatcher, float maxWidth, float maxScale, float xOffset, float yOffset, float zOffset, float xTilt, int textColor, boolean isDoubleSided) {
+	public RenderRoundel(BlockEntityRenderDispatcher dispatcher, float maxWidth, float maxScale, float xOffset, float yOffset, float zOffset, float xTilt, int textColor, boolean isDoubleSided, String font) {
 		super(dispatcher);
 		this.maxWidth = maxWidth;
 		this.maxScale = maxScale;
@@ -49,13 +50,14 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 		this.xTilt = xTilt;
 		this.textColor = textColor;
 		this.isDoubleSided = isDoubleSided;
+		this.font = font;
 	}
 
 	@Override
 	public void render(T entity, float tickDelta, PoseStack matrices, MultiBufferSource vertexConsumers, int light, int overlay) {
 
 		if (Config.useMTRFont()) {
-			STYLE = Style.EMPTY.withFont(new ResourceLocation(Main.MOD_ID, "johnston"));
+			STYLE = Style.EMPTY.withFont(new ResourceLocation(Main.MOD_ID, font));
 		} else {
 			STYLE = Style.EMPTY;
 		}

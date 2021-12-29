@@ -14,7 +14,7 @@ plugins {
 gitRepositories {
 	include("mtr") {
 		uri = "https://github.com/jonafanho/Minecraft-Transit-Railway.git"
-		branch = "architectury"
+		branch = "beta-9"
 	}
 }
 

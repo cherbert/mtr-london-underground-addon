@@ -52,6 +52,7 @@ public interface MyBlocks {
 	Block BLOCK_ROUNDEL_1 = new BlockRoundel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion());
 	Block BLOCK_ROUNDEL_STATION = new BlockRoundelStation(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion());
 	Block BLOCK_ROUNDEL_STATION_TYPE_B = new BlockRoundelStationTypeB(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion());
+	Block BLOCK_ROUNDEL_STATION_TYPE_C = new BlockRoundelStationTypeC(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion());
 	Block BLOCK_ROUNDEL_STATION_TOP = new BlockRoundelStationTop(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion());
 	Block LU_CROSSBAR = new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion());
 }
