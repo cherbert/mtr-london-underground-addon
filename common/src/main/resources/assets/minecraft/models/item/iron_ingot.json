@@ -35,7 +35,6 @@
 		{"predicate": {"custom_model_data":28}, "model": "item/panels/stockwell2_victoria"},
 		{"predicate": {"custom_model_data":29}, "model": "item/panels/embankment1"},
 		{"predicate": {"custom_model_data":30}, "model": "item/panels/embankment2"},
-		{"predicate": {"custom_model_data":31}, "model": "item/panels/embankment3"},
-		{"predicate": {"custom_model_data":32}, "model": "item/panels/embankment4"}
+		{"predicate": {"custom_model_data":31}, "model": "item/panels/embankment3"}
 	]
 }
