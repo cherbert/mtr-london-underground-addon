@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
 import java.util.function.BiConsumer;
-import java.util.function.Consumer;
 
 public class Main {
 
@@ -16,7 +15,7 @@ public class Main {
 	public static void init(
 			RegisterBlockItem registerBlockItem,
 			BiConsumer<String, BlockEntityType<? extends BlockEntityMapper>> registerBlockEntityType,
-			Consumer<SoundEvent> registerSoundEvent
+			BiConsumer<String, SoundEvent> registerSoundEvent
 	) {
 		registerBlockItem.accept("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("platform_tfl_1", MyBlocks.PLATFORM_TFL_1, MyItems.TFL_BLOCKS);
@@ -75,9 +74,9 @@ public class Main {
 		registerBlockEntityType.accept("block_roundel_station_top", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY);
 		registerBlockEntityType.accept("morden_sign", MyBlockEntityTypes.MORDEN_SIGN_TILE_ENTITY);
 
-		registerSoundEvent.accept(MySoundEvents.SOUND_EVENT_OUTSIDE_AMBIENT);
-		registerSoundEvent.accept(MySoundEvents.SOUNT_EVENT_TUBE_STATION_AMBIENCE1);
-		registerSoundEvent.accept(MySoundEvents.SOUND_EVENT_SEE_IT_SAY_IT);
+		registerSoundEvent.accept("cityambient", MySoundEvents.SOUND_EVENT_OUTSIDE_AMBIENT);
+		registerSoundEvent.accept("seeitsayitsorted", MySoundEvents.SOUNT_EVENT_TUBE_STATION_AMBIENCE1);
+		registerSoundEvent.accept("ambient1", MySoundEvents.SOUND_EVENT_SEE_IT_SAY_IT);
 	}
 
 	@FunctionalInterface

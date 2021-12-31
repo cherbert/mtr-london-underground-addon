@@ -29,7 +29,7 @@ public class MainFabric implements ModInitializer {
 		Registry.register(Registry.BLOCK_ENTITY_TYPE, new ResourceLocation(Main.MOD_ID, path), blockEntityType);
 	}
 
-	private static void registerSoundEvent(SoundEvent soundEvent) {
-		Registry.register(Registry.SOUND_EVENT, soundEvent.getLocation(), soundEvent);
+	private static void registerSoundEvent(String path, SoundEvent soundEvent) {
+		Registry.register(Registry.SOUND_EVENT, new ResourceLocation(Main.MOD_ID, path), soundEvent);
 	}
 }
