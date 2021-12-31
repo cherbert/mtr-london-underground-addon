@@ -89,7 +89,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 				break;
 		}
 
-		final Station station = RailwayData.getStation(ClientData.STATIONS, pos);
+		final Station station = RailwayData.getStation(ClientData.STATIONS, ClientData.DATA_CACHE, pos);
 		final FormattedCharSequence roundelText = new TextComponent(IGui.textOrUntitled(IGui.formatStationName(station == null ? "" : station.name)).toUpperCase(Locale.ROOT)).setStyle(STYLE).getVisualOrderText();
 		final int textWidth = Minecraft.getInstance().font.width(roundelText);
 

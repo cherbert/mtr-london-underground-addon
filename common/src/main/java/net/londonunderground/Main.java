@@ -18,11 +18,6 @@ public class Main {
 			BiConsumer<String, BlockEntityType<? extends BlockEntityMapper>> registerBlockEntityType,
 			Consumer<SoundEvent> registerSoundEvent
 	) {
-		while (!Registry.isModLoaded()) {
-			// TODO there's probably a better way to do this
-		}
-
-		System.out.println("MTR Found!");
 		registerBlockItem.accept("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("platform_tfl_1", MyBlocks.PLATFORM_TFL_1, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("platform_tfl_island", MyBlocks.PLATFORM_TFL_ISLAND, MyItems.TFL_BLOCKS);
