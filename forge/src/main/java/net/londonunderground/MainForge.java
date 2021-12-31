@@ -2,8 +2,8 @@ package net.londonunderground;
 
 import mtr.mappings.BlockEntityMapper;
 import mtr.mappings.DeferredRegisterHolder;
+import mtr.mappings.RegistryUtilities;
 import net.londonunderground.mappings.ForgeUtilities;
-import net.londonunderground.mappings.RegistryUtilities;
 import net.minecraft.core.Registry;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.BlockItem;
