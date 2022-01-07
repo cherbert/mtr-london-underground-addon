@@ -2,7 +2,7 @@ package net.londonunderground.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import mtr.gui.IDrawing;
+import mtr.client.IDrawing;
 import mtr.render.RenderSignalBase;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
