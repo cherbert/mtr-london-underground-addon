@@ -2,6 +2,7 @@ package net.londonunderground.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
+import mtr.MTRClient;
 import mtr.block.IBlock;
 import mtr.client.ClientData;
 import mtr.client.Config;
@@ -164,7 +165,7 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 				final ScheduleEntry currentSchedule = scheduleList.get(i);
 
 				final String[] destinationSplit = currentSchedule.destination.split("\\|");
-				String destinationString = IGui.textOrUntitled(destinationSplit[((int) Math.floor(RenderTrains.getGameTicks()) / SWITCH_LANGUAGE_TICKS) % destinationSplit.length]);
+				String destinationString = IGui.textOrUntitled(destinationSplit[((int) Math.floor(MTRClient.getGameTick()) / SWITCH_LANGUAGE_TICKS) % destinationSplit.length]);
 
 				final Component arrivalText;
 				final int seconds = (int) ((currentSchedule.arrivalMillis - System.currentTimeMillis()) / 1000);
