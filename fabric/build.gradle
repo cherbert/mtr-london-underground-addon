@@ -47,3 +47,25 @@ components.java {
 		skip()
 	}
 }
+
+task moveFabricBuilds() {
+	doLast {
+		delete fileTree("../build").matching {
+			include "**/MTR-LU-Addon-fabric*"
+		}
+		copy {
+			from "build/libs"
+			into "../build"
+			exclude "*dev-shadow.jar"
+			rename "(.+)", "MTR-LU-Addon-\$1"
+		}
+	}
+}
+
+afterEvaluate {
+	for (def task in it.tasks) {
+		if (task == tasks.build) {
+			task.finalizedBy tasks.moveFabricBuilds
+		}
+	}
+}

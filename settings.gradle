@@ -7,17 +7,6 @@ pluginManagement {
 	}
 }
 
-plugins {
-	id "me.champeau.includegit" version "0.1.1"
-}
-
-gitRepositories {
-	include("mtr") {
-		uri = "https://github.com/jonafanho/Minecraft-Transit-Railway.git"
-		branch = "beta-9"
-	}
-}
-
 include("common")
 include("fabric")
 include("forge")
