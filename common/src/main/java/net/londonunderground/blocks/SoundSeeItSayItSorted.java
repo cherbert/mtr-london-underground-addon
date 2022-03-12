@@ -22,7 +22,7 @@ public class SoundSeeItSayItSorted extends Block {
 	@Override
 	public void tick(BlockState state, ServerLevel world, BlockPos pos, Random random) {
 
-		System.out.println("play");
+//		System.out.println("play");
 		world.playSound(
 				null, // Player - if non-null, will play sound for every nearby player *except* the specified player
 				pos, // The position of where the sound will come from
