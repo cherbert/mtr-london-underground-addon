@@ -120,7 +120,8 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 					final Set<ScheduleEntry> scheduleForPlatform = ClientData.SCHEDULES_FOR_PLATFORM.get(platform.id);
 					if (scheduleForPlatform != null) {
 						scheduleForPlatform.forEach(scheduleEntry -> {
-							if (!scheduleEntry.isTerminating) {
+							final Route route = ClientData.DATA_CACHE.routeIdMap.get(scheduleEntry.routeId);
+							if (route != null && scheduleEntry.currentStationIndex < route.platformIds.size() - 1) {
 								schedules.add(scheduleEntry);
 								platformIdToName.put(platform.id, platform.name);
 							}
@@ -162,10 +163,20 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 			}
 
 			for (int i = 0; i < Math.min(maxArrivals, scheduleList.size()); i++) {
+				final int languageTicks = (int) Math.floor(MTRClient.getGameTick()) / SWITCH_LANGUAGE_TICKS;
+				String destinationString;
 				final ScheduleEntry currentSchedule = scheduleList.get(i);
+				final Route route = ClientData.DATA_CACHE.routeIdMap.get(currentSchedule.routeId);
 
-				final String[] destinationSplit = currentSchedule.destination.split("\\|");
-				String destinationString = IGui.textOrUntitled(destinationSplit[((int) Math.floor(MTRClient.getGameTick()) / SWITCH_LANGUAGE_TICKS) % destinationSplit.length]);
+				if (i < scheduleList.size() && route != null) {
+					final String[] destinationSplit = ClientData.DATA_CACHE.getFormattedRouteDestination(route, currentSchedule.currentStationIndex, "").split("\\|");
+					final boolean isLightRailRoute = route.isLightRailRoute;
+					final String[] routeNumberSplit = route.lightRailRouteNumber.split("\\|");
+
+					destinationString = (isLightRailRoute ? routeNumberSplit[languageTicks % routeNumberSplit.length] + " " : "") + IGui.textOrUntitled(destinationSplit[languageTicks % destinationSplit.length]);
+				} else {
+					destinationString = "";
+				}
 
 				final Component arrivalText;
 				final int seconds = (int) ((currentSchedule.arrivalMillis - System.currentTimeMillis()) / 1000);
@@ -193,11 +204,10 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 
 				final float newDestinationMaxWidth = destinationMaxWidth - carLengthMaxWidth;
 
-				if (showAllPlatforms) {
-					final String platformName = " " + platformIdToName.get(currentSchedule.platformId);
-					final FormattedCharSequence text2 = new TextComponent(platformName).setStyle(style).getVisualOrderText();
+				if (route != null && showAllPlatforms) {
+					final String platformName = platformIdToName.get(route.platformIds.get(currentSchedule.currentStationIndex));
 					if (platformName != null) {
-						textRenderer.draw(matrices, text2, destinationStart + newDestinationMaxWidth, 0, seconds > 0 ? textColor : firstTrainColor);
+						textRenderer.draw(matrices, platformName, destinationStart + newDestinationMaxWidth, 0, seconds > 0 ? textColor : firstTrainColor);
 					}
 				}
 
@@ -216,7 +226,7 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 					matrices.popPose();
 				}
 
-				if (currentSchedule.isTerminating) {
+				if (route != null && currentSchedule.currentStationIndex == route.platformIds.size() - 1) {
 					if (isCJK) {
 						destinationString = "終止服務";
 					} else {

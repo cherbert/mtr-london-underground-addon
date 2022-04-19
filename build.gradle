@@ -14,7 +14,6 @@ def is_1_17 = (minecraft_version as String).startsWith("1.17")
 
 rootProject.ext.architectury_version = is_1_16 ? rootProject.architectury_version_1_16 : is_1_17 ? rootProject.architectury_version_1_17 : rootProject.architectury_version_1_18
 rootProject.ext.architectury_id = is_1_16 ? "me.shedaniel" : "dev.architectury"
-rootProject.ext.fabric_loader_version = is_1_16 ? rootProject.fabric_loader_version_1_16 : is_1_17 ? rootProject.fabric_loader_version_1_17 : rootProject.fabric_loader_version_1_18
 rootProject.ext.fabric_api_version = is_1_16 ? rootProject.fabric_version_1_16 : is_1_17 ? rootProject.fabric_version_1_17 : rootProject.fabric_version_1_18
 rootProject.ext.forge_version = is_1_16 ? rootProject.forge_version_1_16 : is_1_17 ? rootProject.forge_version_1_17 : rootProject.forge_version_1_18
 
