@@ -28,7 +28,7 @@ public class BlockTunnelSignal extends BlockSignalLightBase {
 	public static class TileEntityTunnelSignalLight1 extends mtr.mappings.BlockEntityMapper {
 
 		public TileEntityTunnelSignalLight1(BlockPos pos, BlockState state) {
-			super(MyBlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL, pos, state);
+			super(MyBlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL.get(), pos, state);
 		}
 	}
 }

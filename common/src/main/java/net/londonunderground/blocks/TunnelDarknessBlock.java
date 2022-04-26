@@ -36,7 +36,7 @@ public class TunnelDarknessBlock extends Block implements EntityBlockMapper {
 	public static class TileEntityTunnelDarkness extends BlockEntityMapper {
 
 		public TileEntityTunnelDarkness(BlockPos pos, BlockState state) {
-			super(MyBlockEntityTypes.DARK_TILE, pos, state);
+			super(MyBlockEntityTypes.DARK_TILE.get(), pos, state);
 		}
 
 		public double getViewDistance() {

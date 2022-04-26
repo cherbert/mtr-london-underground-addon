@@ -41,7 +41,7 @@ public class MordenSign extends BlockRoundelBase {
 	public static class TileEntityMordenSign extends BlockRoundelBase.TileEntityBlockRoundelBase {
 
 		public TileEntityMordenSign(BlockPos pos, BlockState state) {
-			super(MyBlockEntityTypes.MORDEN_SIGN_TILE_ENTITY, pos, state);
+			super(MyBlockEntityTypes.MORDEN_SIGN_TILE_ENTITY.get(), pos, state);
 		}
 
 		@Override

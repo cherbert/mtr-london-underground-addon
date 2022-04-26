@@ -27,7 +27,7 @@ public class NorthernLinePIDS extends BlockPIDSBase {
 	public static class TileEntityNorthernLinePIDS extends BlockEntityMapper {
 
 		public TileEntityNorthernLinePIDS(BlockPos pos, BlockState state) {
-			super(MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY, pos, state);
+			super(MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY.get(), pos, state);
 		}
 	}
 }

@@ -63,7 +63,7 @@ public class BlockRoundelStationTop extends BlockRoundelBase {
 	public static class TileEntityBlockRoundelStationTop extends BlockRoundelBase.TileEntityBlockRoundelBase {
 
 		public TileEntityBlockRoundelStationTop(BlockPos pos, BlockState state) {
-			super(MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY, pos, state);
+			super(MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY.get(), pos, state);
 		}
 
 		@Override
