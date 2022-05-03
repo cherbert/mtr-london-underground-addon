@@ -1,5 +1,6 @@
 package net.londonunderground.blocks;
 
+import mtr.block.BlockPIDSBase;
 import mtr.block.IBlock;
 import mtr.mappings.BlockEntityMapper;
 import net.londonunderground.MyBlockEntityTypes;
@@ -24,10 +25,15 @@ public class NorthernLinePIDS extends BlockPIDSBase {
 		return new TileEntityNorthernLinePIDS(pos, state);
 	}
 
-	public static class TileEntityNorthernLinePIDS extends BlockEntityMapper {
+	public static class TileEntityNorthernLinePIDS extends TileEntityBlockPIDSBase {
 
 		public TileEntityNorthernLinePIDS(BlockPos pos, BlockState state) {
 			super(MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY.get(), pos, state);
+		}
+
+		@Override
+		protected int getMaxArrivals() {
+			return 3;
 		}
 	}
 }
