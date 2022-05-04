@@ -1,6 +1,7 @@
 package net.londonunderground;
 
 import mtr.RegistryObject;
+import mtr.block.BlockPIDSPole;
 import mtr.block.BlockPlatform;
 import net.londonunderground.blocks.*;
 import net.minecraft.world.level.block.Block;
@@ -48,6 +49,7 @@ public interface MyBlocks {
 	RegistryObject<Block> TUBE_2b_DUEL =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_3b =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
+	RegistryObject<Block> PIDS_POLE = new RegistryObject<>(() -> new BlockPIDSPole(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
 
 	RegistryObject<Block> NORTHERN_PIDS =new RegistryObject<>(NorthernLinePIDS::new);
 	RegistryObject<Block> TRACK_1 =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));

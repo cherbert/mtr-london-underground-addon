@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/gray_concrete",
-		"1": "block/gray_concrete",
+		"0": "londonunderground:block/gray_concrete",
+		"1": "londonunderground:block/gray_concrete",
 		"2": "londonunderground:block/tfl",
-		"particle": "block/gray_concrete"
+		"particle": "londonunderground:block/gray_concrete"
 	},
 	"elements": [
 		{
