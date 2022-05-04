@@ -40,6 +40,15 @@ public interface MyBlocks {
 	RegistryObject<Block> TUBE_2 =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_2_DUEL =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_3 =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+
+	RegistryObject<Block> TUBE_0b =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> TUBE_1b =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> TUBE_1b_DUEL =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> TUBE_2b =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUBE_2b_DUEL =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUBE_3b =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+
+
 	RegistryObject<Block> NORTHERN_PIDS =new RegistryObject<>(NorthernLinePIDS::new);
 	RegistryObject<Block> TRACK_1 =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> TRACK_2 =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
@@ -49,9 +58,13 @@ public interface MyBlocks {
 	RegistryObject<Block> MORDEN_COBBLESTONE =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_ARCH =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_SIGN =new RegistryObject<>(()-> new MordenSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> ELIZABETH_SIGN =new RegistryObject<>(()-> new ElizabethSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+
 	RegistryObject<Block> MORDEN_STEPS =new RegistryObject<>(()-> new StairBlockExtends(TFL_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> LU_POLE =new RegistryObject<>(()-> new TFLBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> BLOCK_ROUNDEL_1 =new RegistryObject<>(()-> new BlockRoundel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> BLOCK_ROUNDEL_2 =new RegistryObject<>(()-> new BlockRoundel2(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+
 	RegistryObject<Block> BLOCK_ROUNDEL_STATION =new RegistryObject<>(()-> new BlockRoundelStation(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> BLOCK_ROUNDEL_STATION_TYPE_B =new RegistryObject<>(()-> new BlockRoundelStationTypeB(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> BLOCK_ROUNDEL_STATION_TYPE_C =new RegistryObject<>(()-> new BlockRoundelStationTypeC(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));

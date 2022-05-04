@@ -47,5 +47,26 @@
         "name": "londonunderground:northernline/tootingbroadway_terminates"
       }
     ]
+  },
+  "clack1": {
+    "sounds": [
+      {
+        "name": "londonunderground:clack1"
+      }
+    ]
+  },
+  "clack2": {
+    "sounds": [
+      {
+        "name": "londonunderground:clack2"
+      }
+    ]
+  },
+  "screech1": {
+    "sounds": [
+      {
+        "name": "londonunderground:screech1"
+      }
+    ]
   }
 }

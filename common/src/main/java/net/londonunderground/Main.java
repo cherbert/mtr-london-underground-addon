@@ -48,6 +48,12 @@ public class Main {
 		registerBlockItem.accept("tube_2", MyBlocks.TUBE_2, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_2_duel", MyBlocks.TUBE_2_DUEL, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_3", MyBlocks.TUBE_3, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tube_0b", MyBlocks.TUBE_0b, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tube_1b", MyBlocks.TUBE_1b, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tube_1b_duel", MyBlocks.TUBE_1b_DUEL, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tube_2b", MyBlocks.TUBE_2b, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tube_2b_duel", MyBlocks.TUBE_2b_DUEL, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tube_3b", MyBlocks.TUBE_3b, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("pids_northern", MyBlocks.NORTHERN_PIDS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("track_1", MyBlocks.TRACK_1, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("track_2", MyBlocks.TRACK_2, MyItems.TFL_BLOCKS);
@@ -56,10 +62,12 @@ public class Main {
 		registerBlockItem.accept("morden_slab", MyBlocks.MORDEN_SLAB, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_cobblestone", MyBlocks.MORDEN_COBBLESTONE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_sign", MyBlocks.MORDEN_SIGN, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("elizabeth_sign", MyBlocks.ELIZABETH_SIGN, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_steps", MyBlocks.MORDEN_STEPS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("block_roundel_2", MyBlocks.BLOCK_ROUNDEL_2, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_station", MyBlocks.BLOCK_ROUNDEL_STATION, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_station_type_b", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_station_type_c", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_C, MyItems.TFL_BLOCKS);
@@ -69,11 +77,13 @@ public class Main {
 		registerBlockEntityType.accept("pids_northern", MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY);
 		registerBlockEntityType.accept("tunnel_block_2_signal", MyBlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL);
 		registerBlockEntityType.accept("block_roundel_1", MyBlockEntityTypes.BLOCK_ROUNDEL_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_2", MyBlockEntityTypes.BLOCK_ROUNDEL2_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station_type_b", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station_type_c", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TYPE_C_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station_top", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY);
 		registerBlockEntityType.accept("morden_sign", MyBlockEntityTypes.MORDEN_SIGN_TILE_ENTITY);
+		registerBlockEntityType.accept("elizabeth_sign", MyBlockEntityTypes.ELIZABETH_SIGN_TILE_ENTITY);
 
 		registerSoundEvent.accept("cityambient", MySoundEvents.SOUND_EVENT_OUTSIDE_AMBIENT);
 		registerSoundEvent.accept("seeitsayitsorted", MySoundEvents.SOUNT_EVENT_TUBE_STATION_AMBIENCE1);
