@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/steps_dirty",
-		"1": "block/steps_front",
+		"0": "block/stairs/steps_dirty",
+		"1": "block/stairs/steps_front",
 		"2": "block/light_gray_concrete",
-		"3": "block/steps_side",
-		"particle": "block/steps_dirty"
+		"3": "block/stairs/steps_side",
+		"particle": "block/stairs/steps_dirty"
 	},
 	"elements": [
 		{
