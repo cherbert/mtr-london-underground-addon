@@ -52,6 +52,8 @@ public class Main {
 		registerBlockItem.accept("tube_3", MyBlocks.TUBE_3, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_0b", MyBlocks.TUBE_0b, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_1b", MyBlocks.TUBE_1b, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tube_1b_stop", MyBlocks.TUBE_1b_STOP, MyItems.TFL_BLOCKS);
+
 		registerBlockItem.accept("tube_1b_duel", MyBlocks.TUBE_1b_DUEL, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_2b", MyBlocks.TUBE_2b, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_2b_duel", MyBlocks.TUBE_2b_DUEL, MyItems.TFL_BLOCKS);
