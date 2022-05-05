@@ -45,6 +45,7 @@ public class Main {
 		registerBlockItem.accept("morden_arch", MyBlocks.MORDEN_ARCH, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_0", MyBlocks.TUBE_0, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_1", MyBlocks.TUBE_1, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tube_1_stop", MyBlocks.TUBE_1_STOP, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_1_duel", MyBlocks.TUBE_1_DUEL, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_2", MyBlocks.TUBE_2, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_2_duel", MyBlocks.TUBE_2_DUEL, MyItems.TFL_BLOCKS);
