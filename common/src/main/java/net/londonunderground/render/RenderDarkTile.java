@@ -12,6 +12,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.phys.Vec3;
 
 public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkness> extends BlockEntityRendererMapper<T> {
 
@@ -44,4 +45,12 @@ public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkne
 	public boolean shouldRenderOffScreen(T blockEntity) {
 		return true;
 	}
+
+	@Override
+	public int getViewDistance() {
+		return 256;
+	}
+
+	@Override
+	public boolean shouldRender(T blockEntity, Vec3 vec3) { return true; }
 }
