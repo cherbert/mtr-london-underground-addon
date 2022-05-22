@@ -2,8 +2,6 @@ package net.londonunderground.blocks;
 
 import mtr.mappings.BlockEntityMapper;
 import mtr.mappings.EntityBlockMapper;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.londonunderground.MyBlockEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
@@ -43,10 +41,8 @@ public class TunnelDarknessBlock extends Block implements EntityBlockMapper {
 			super(MyBlockEntityTypes.DARK_TILE.get(), pos, state);
 		}
 
-		@Environment(EnvType.CLIENT)
 		public double getViewDistance() {
 			return 256;
 		}
-
 	}
 }

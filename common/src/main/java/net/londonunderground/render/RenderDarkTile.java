@@ -46,11 +46,9 @@ public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkne
 		return true;
 	}
 
-	//@Override
-	//public int getViewDistance() {
-	//	return 256;
-	//}
-//
-//	@Override
-//	public boolean shouldRender(T blockEntity, Vec3 vec3) { return true; }
+	public int getViewDistance() {
+		return 256;
+	}
+
+	public boolean shouldRender(T blockEntity, Vec3 vec3) { return true; }
 }
