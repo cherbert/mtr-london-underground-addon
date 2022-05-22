@@ -63,6 +63,8 @@
   "block.londonunderground.sounds.outside_ambience" : "Outside Ambience",
   "block.londonunderground.block_roundel_1" : "London Underground Roundel",
   "block.londonunderground.block_roundel_2" : "Elizabeth line Roundel",
+  "block.londonunderground.block_roundel_1_big" : "Big London Underground Roundel (Odd)",
+  "block.londonunderground.block_roundel_1_big_even" : "Big London Underground Roundel (Even)",
   "block.londonunderground.block_roundel_station" : "Station Name Panel Projection (TypeA)",
   "block.londonunderground.block_roundel_station_type_b" : "Station Name Panel Projection (TypeB)",
   "block.londonunderground.block_roundel_station_type_c" : "Station Name Panel Projection (TypeC)",
