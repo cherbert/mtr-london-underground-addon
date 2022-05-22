@@ -76,6 +76,7 @@ public interface MyBlocks {
 	RegistryObject<Block> LU_POLE =new RegistryObject<>(()-> new TFLBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> BLOCK_ROUNDEL_1 =new RegistryObject<>(()-> new BlockRoundel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> BLOCK_ROUNDEL_1_BIG =new RegistryObject<>(()-> new BlockRoundelBig(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> BLOCK_ROUNDEL_1_BIG_EVEN =new RegistryObject<>(()-> new BlockRoundelBigEven(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> BLOCK_ROUNDEL_2 =new RegistryObject<>(()-> new BlockRoundel2(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
 	RegistryObject<Block> BLOCK_ROUNDEL_STATION =new RegistryObject<>(()-> new BlockRoundelStation(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));

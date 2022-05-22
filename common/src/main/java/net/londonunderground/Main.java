@@ -79,6 +79,7 @@ public class Main {
 		registerBlockItem.accept("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_1_big", MyBlocks.BLOCK_ROUNDEL_1_BIG, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("block_roundel_1_big_even", MyBlocks.BLOCK_ROUNDEL_1_BIG_EVEN, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_2", MyBlocks.BLOCK_ROUNDEL_2, MyItems.TFL_BLOCKS);
 
 		registerBlockItem.accept("block_roundel_station", MyBlocks.BLOCK_ROUNDEL_STATION, MyItems.TFL_BLOCKS);
@@ -100,6 +101,7 @@ public class Main {
 		registerBlockEntityType.accept("tunnel_block_2_signal", MyBlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL);
 		registerBlockEntityType.accept("block_roundel_1", MyBlockEntityTypes.BLOCK_ROUNDEL_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_1_big", MyBlockEntityTypes.BLOCK_ROUNDEL_BIG_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_1_big_even", MyBlockEntityTypes.BLOCK_ROUNDEL_BIG_EVEN_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_2", MyBlockEntityTypes.BLOCK_ROUNDEL2_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station_type_b", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY);
