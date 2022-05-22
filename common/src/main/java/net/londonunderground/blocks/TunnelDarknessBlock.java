@@ -43,5 +43,10 @@ public class TunnelDarknessBlock extends Block implements EntityBlockMapper {
 			super(MyBlockEntityTypes.DARK_TILE.get(), pos, state);
 		}
 
+		@Environment(EnvType.CLIENT)
+		public double getViewDistance() {
+			return 256;
+		}
+
 	}
 }
