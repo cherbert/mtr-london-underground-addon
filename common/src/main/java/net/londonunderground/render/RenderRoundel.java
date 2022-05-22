@@ -114,7 +114,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 
 		final float scale = Math.min((maxWidth) / textWidth, maxScale);
 		matrices.scale(scale, scale, scale);
-		matrices.translate(0, -4, 0);
+		matrices.translate(0, -3.5, 0);
 		Minecraft.getInstance().font.drawInBatch(roundelText, -textWidth / 2F, 0, textColor, false, matrices.last().pose(), immediate, false, 0, 190);
 
 		matrices.popPose();
