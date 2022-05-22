@@ -68,6 +68,13 @@ public class Main {
 		registerBlockItem.accept("morden_cobblestone", MyBlocks.MORDEN_COBBLESTONE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_sign", MyBlocks.MORDEN_SIGN, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("elizabeth_sign", MyBlocks.ELIZABETH_SIGN, MyItems.TFL_BLOCKS);
+
+		registerBlockItem.accept("sign_river", MyBlocks.SIGN_RIVER, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("sign_overground", MyBlocks.SIGN_OVERGROUND, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("sign_dlr", MyBlocks.SIGN_DLR, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("sign_trams", MyBlocks.SIGN_TRAMS, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("sign_poppy", MyBlocks.SIGN_POPPY, MyItems.TFL_BLOCKS);
+
 		registerBlockItem.accept("morden_steps", MyBlocks.MORDEN_STEPS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
@@ -90,6 +97,12 @@ public class Main {
 		registerBlockEntityType.accept("block_roundel_station_top", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY);
 		registerBlockEntityType.accept("morden_sign", MyBlockEntityTypes.MORDEN_SIGN_TILE_ENTITY);
 		registerBlockEntityType.accept("elizabeth_sign", MyBlockEntityTypes.ELIZABETH_SIGN_TILE_ENTITY);
+
+		registerBlockEntityType.accept("sign_river", MyBlockEntityTypes.SIGN_RIVER_TILE_ENTITY);
+		registerBlockEntityType.accept("sign_overground", MyBlockEntityTypes.SIGN_OVERGROUND_TILE_ENTITY);
+		registerBlockEntityType.accept("sign_dlr", MyBlockEntityTypes.SIGN_DLR_TILE_ENTITY);
+		registerBlockEntityType.accept("sign_trams", MyBlockEntityTypes.SIGN_TRAMS_TILE_ENTITY);
+		registerBlockEntityType.accept("sign_poppy", MyBlockEntityTypes.SIGN_POPPY_TILE_ENTITY);
 
 		registerSoundEvent.accept("cityambient", MySoundEvents.SOUND_EVENT_OUTSIDE_AMBIENT);
 		registerSoundEvent.accept("seeitsayitsorted", MySoundEvents.SOUNT_EVENT_TUBE_STATION_AMBIENCE1);

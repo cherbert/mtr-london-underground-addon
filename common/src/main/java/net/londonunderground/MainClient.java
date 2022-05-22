@@ -24,6 +24,12 @@ public class MainClient {
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.MORDEN_SIGN_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.ELIZABETH_SIGN_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
 
+		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.SIGN_RIVER_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
+		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.SIGN_OVERGROUND_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
+		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.SIGN_DLR_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
+		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.SIGN_TRAMS_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
+		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.SIGN_POPPY_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
+
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.TUNNEL_BLOCK_2_SIGNAL.get());
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.BLOCK_ROUNDEL_1.get());
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.BLOCK_ROUNDEL_2.get());

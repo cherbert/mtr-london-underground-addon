@@ -19,4 +19,11 @@ public interface MyBlockEntityTypes {
 	RegistryObject<BlockEntityType<BlockRoundelStationTop.TileEntityBlockRoundelStationTop>> BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(BlockRoundelStationTop.TileEntityBlockRoundelStationTop::new, MyBlocks.BLOCK_ROUNDEL_STATION_TOP.get()));
 	RegistryObject<BlockEntityType<MordenSign.TileEntityMordenSign>> MORDEN_SIGN_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(MordenSign.TileEntityMordenSign::new, MyBlocks.MORDEN_SIGN.get()));
 	RegistryObject<BlockEntityType<ElizabethSign.TileEntityElizabethSign>> ELIZABETH_SIGN_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(ElizabethSign.TileEntityElizabethSign::new, MyBlocks.ELIZABETH_SIGN.get()));
+
+	RegistryObject<BlockEntityType<SignRiver.TileEntitySignRiver>> SIGN_RIVER_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(SignRiver.TileEntitySignRiver::new, MyBlocks.SIGN_RIVER.get()));
+	RegistryObject<BlockEntityType<SignOverground.TileEntitySignOverground>> SIGN_OVERGROUND_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(SignOverground.TileEntitySignOverground::new, MyBlocks.SIGN_OVERGROUND.get()));
+	RegistryObject<BlockEntityType<SignDlr.TileEntitySignDlr>> SIGN_DLR_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(SignDlr.TileEntitySignDlr::new, MyBlocks.SIGN_DLR.get()));
+	RegistryObject<BlockEntityType<SignTrams.TileEntitySignTrams>> SIGN_TRAMS_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(SignTrams.TileEntitySignTrams::new, MyBlocks.SIGN_TRAMS.get()));
+	RegistryObject<BlockEntityType<SignPoppy.TileEntitySignPoppy>> SIGN_POPPY_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(SignPoppy.TileEntitySignPoppy::new, MyBlocks.SIGN_POPPY.get()));
+
 }
