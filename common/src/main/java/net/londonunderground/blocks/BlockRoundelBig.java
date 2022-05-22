@@ -30,9 +30,9 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.List;
 
-public class BlockRoundel2 extends BlockRoundelBase {
+public class BlockRoundelBig extends BlockRoundelBase {
 
-	public BlockRoundel2(Properties settings) {
+	public BlockRoundelBig(Properties settings) {
 		super(settings);
 	}
 
@@ -83,7 +83,7 @@ public class BlockRoundel2 extends BlockRoundelBase {
 
 	@Override
 	public BlockEntityMapper createBlockEntity(BlockPos pos, BlockState state) {
-		return new BlockRoundel2.TileEntityBlockRoundel2(pos, state);
+		return new BlockRoundelBig.TileEntityBlockRoundelBig(pos, state);
 	}
 
 	@Override
@@ -91,10 +91,10 @@ public class BlockRoundel2 extends BlockRoundelBase {
 		builder.add(COLOR, FACING);
 	}
 
-	public static class TileEntityBlockRoundel2 extends TileEntityBlockRoundelBase {
+	public static class TileEntityBlockRoundelBig extends TileEntityBlockRoundelBase {
 
-		public TileEntityBlockRoundel2(BlockPos pos, BlockState state) {
-			super(MyBlockEntityTypes.BLOCK_ROUNDEL2_TILE_ENTITY.get(), pos, state);
+		public TileEntityBlockRoundelBig(BlockPos pos, BlockState state) {
+			super(MyBlockEntityTypes.BLOCK_ROUNDEL_BIG_TILE_ENTITY.get(), pos, state);
 		}
 
 		@Override

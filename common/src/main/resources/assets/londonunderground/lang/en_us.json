@@ -45,6 +45,13 @@
   "block.londonunderground.morden_sign" : "Morden Style Sign",
   "block.londonunderground.pids_pole": "LU PIDS Pole",
   "block.londonunderground.elizabeth_sign" : "Morden Style Sign (Elizabeth Variant)",
+
+  "block.londonunderground.sign_river" : "TfL Roundel (River Variant)",
+  "block.londonunderground.sign_overground" : "TfL Roundel (River Variant)",
+  "block.londonunderground.sign_dlr" : "TfL Roundel (DLR Variant)",
+  "block.londonunderground.sign_poppy" : "TfL Roundel (Poppy Variant)",
+  "block.londonunderground.sign_trams" : "TfL Roundel (Trams Variant)",
+
   "block.londonunderground.morden_steps" : "Morden Station Steps",
   "block.londonunderground.lu_pole" : "LU Pole",
   "block.londonunderground.lu_crossbar" : "LU Crossbar",

@@ -11,6 +11,7 @@ public interface MyBlockEntityTypes {
 	RegistryObject<BlockEntityType<NorthernLinePIDS.TileEntityNorthernLinePIDS>> PIDS_NORTHERN_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(NorthernLinePIDS.TileEntityNorthernLinePIDS::new, MyBlocks.NORTHERN_PIDS.get()));
 	RegistryObject<BlockEntityType<BlockTunnelSignal.TileEntityTunnelSignalLight1>> TUNNEL_BLOCK_2_SIGNAL = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(BlockTunnelSignal.TileEntityTunnelSignalLight1::new, MyBlocks.TUNNEL_BLOCK_2_SIGNAL.get()));
 	RegistryObject<BlockEntityType<BlockRoundel.TileEntityBlockRoundel>> BLOCK_ROUNDEL_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(BlockRoundel.TileEntityBlockRoundel::new, MyBlocks.BLOCK_ROUNDEL_1.get()));
+	RegistryObject<BlockEntityType<BlockRoundelBig.TileEntityBlockRoundelBig>> BLOCK_ROUNDEL_BIG_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(BlockRoundelBig.TileEntityBlockRoundelBig::new, MyBlocks.BLOCK_ROUNDEL_1_BIG.get()));
 	RegistryObject<BlockEntityType<BlockRoundel2.TileEntityBlockRoundel2>> BLOCK_ROUNDEL2_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(BlockRoundel2.TileEntityBlockRoundel2::new, MyBlocks.BLOCK_ROUNDEL_2.get()));
 
 	RegistryObject<BlockEntityType<BlockRoundelStation.TileEntityBlockRoundelStation>> BLOCK_ROUNDEL_STATION_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(BlockRoundelStation.TileEntityBlockRoundelStation::new, MyBlocks.BLOCK_ROUNDEL_STATION.get()));
