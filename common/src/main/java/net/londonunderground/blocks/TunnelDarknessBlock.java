@@ -42,7 +42,7 @@ public class TunnelDarknessBlock extends Block implements EntityBlockMapper {
 		}
 
 		public double getViewDistance() {
-			return 256;
+			return 512;
 		}
 	}
 }

@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "londonunderground:block/britishrail_tube",
-		"2": "londonunderground:block/londonunderground"
+		"2": "londonunderground:block/londonunderground",
+		"particle": "londonunderground:block/britishrail_tube"
 	},
 	"elements": [
 		{
