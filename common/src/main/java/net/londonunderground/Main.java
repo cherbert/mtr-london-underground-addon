@@ -65,22 +65,31 @@ public class Main {
 		registerBlockItem.accept("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_slab", MyBlocks.MORDEN_SLAB, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_cobblestone", MyBlocks.MORDEN_COBBLESTONE, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("morden_sign", MyBlocks.MORDEN_SIGN, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("elizabeth_sign", MyBlocks.ELIZABETH_SIGN, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("morden_sign", MyBlocks.MORDEN_SIGN, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("metropolitan_sign", MyBlocks.METROPOLITAN_SIGN, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("elizabeth_sign", MyBlocks.ELIZABETH_SIGN, MyItems.TFL_SIGNS);
 
-		registerBlockItem.accept("sign_river", MyBlocks.SIGN_RIVER, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("sign_overground", MyBlocks.SIGN_OVERGROUND, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("sign_dlr", MyBlocks.SIGN_DLR, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("sign_trams", MyBlocks.SIGN_TRAMS, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("sign_poppy", MyBlocks.SIGN_POPPY, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("sign_underground", MyBlocks.SIGN_UNDERGROUND, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("sign_overground", MyBlocks.SIGN_OVERGROUND, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("sign_river", MyBlocks.SIGN_RIVER, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("sign_dlr", MyBlocks.SIGN_DLR, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("sign_lizzy", MyBlocks.SIGN_LIZZY, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("sign_trams", MyBlocks.SIGN_TRAMS, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("sign_poppy", MyBlocks.SIGN_POPPY, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("sign_metro", MyBlocks.SIGN_METRO, MyItems.TFL_SIGNS);
 
 		registerBlockItem.accept("morden_steps", MyBlocks.MORDEN_STEPS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("block_roundel_1_big", MyBlocks.BLOCK_ROUNDEL_1_BIG, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("block_roundel_1_big_even", MyBlocks.BLOCK_ROUNDEL_1_BIG_EVEN, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("block_roundel_2", MyBlocks.BLOCK_ROUNDEL_2, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_1_big", MyBlocks.BLOCK_ROUNDEL_1_BIG, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_1_big_even", MyBlocks.BLOCK_ROUNDEL_1_BIG_EVEN, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_2", MyBlocks.BLOCK_ROUNDEL_2, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_2_big", MyBlocks.BLOCK_ROUNDEL_2_BIG, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_2_big_even", MyBlocks.BLOCK_ROUNDEL_2_BIG_EVEN, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_3", MyBlocks.BLOCK_ROUNDEL_3, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_3_big", MyBlocks.BLOCK_ROUNDEL_3_BIG, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_3_big_even", MyBlocks.BLOCK_ROUNDEL_3_BIG_EVEN, MyItems.TFL_SIGNS);
 
 		registerBlockItem.accept("block_roundel_station", MyBlocks.BLOCK_ROUNDEL_STATION, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_station_type_b", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B, MyItems.TFL_BLOCKS);
@@ -88,21 +97,33 @@ public class Main {
 		registerBlockItem.accept("block_roundel_station_top", MyBlocks.BLOCK_ROUNDEL_STATION_TOP, MyItems.TFL_BLOCKS);
 
 		registerBlockEntityType.accept("morden_sign", MyBlockEntityTypes.MORDEN_SIGN_TILE_ENTITY);
+		registerBlockEntityType.accept("metropolitan_sign", MyBlockEntityTypes.METROPOLITAN_SIGN_TILE_ENTITY);
 		registerBlockEntityType.accept("elizabeth_sign", MyBlockEntityTypes.ELIZABETH_SIGN_TILE_ENTITY);
 
 		registerBlockEntityType.accept("sign_river", MyBlockEntityTypes.SIGN_RIVER_TILE_ENTITY);
 		registerBlockEntityType.accept("sign_overground", MyBlockEntityTypes.SIGN_OVERGROUND_TILE_ENTITY);
+		registerBlockEntityType.accept("sign_lizzy", MyBlockEntityTypes.SIGN_LIZZY_TILE_ENTITY);
 		registerBlockEntityType.accept("sign_dlr", MyBlockEntityTypes.SIGN_DLR_TILE_ENTITY);
 		registerBlockEntityType.accept("sign_trams", MyBlockEntityTypes.SIGN_TRAMS_TILE_ENTITY);
 		registerBlockEntityType.accept("sign_poppy", MyBlockEntityTypes.SIGN_POPPY_TILE_ENTITY);
+		registerBlockEntityType.accept("sign_metro", MyBlockEntityTypes.SIGN_METRO_TILE_ENTITY);
+		registerBlockEntityType.accept("sign_underground", MyBlockEntityTypes.SIGN_UNDERGROUND_TILE_ENTITY);
+
+		registerBlockItem.accept("british_rail_underground", MyBlocks.BRITISH_RAIL_UNDERGROUND, MyItems.TFL_SIGNS);
 
 		registerBlockEntityType.accept("tunnel_darkness", MyBlockEntityTypes.DARK_TILE);
 		registerBlockEntityType.accept("pids_northern", MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY);
 		registerBlockEntityType.accept("tunnel_block_2_signal", MyBlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL);
 		registerBlockEntityType.accept("block_roundel_1", MyBlockEntityTypes.BLOCK_ROUNDEL_TILE_ENTITY);
+		registerBlockEntityType.accept("british_rail_underground", MyBlockEntityTypes.BRITISH_RAIL_UNDERGROUND_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_1_big", MyBlockEntityTypes.BLOCK_ROUNDEL_BIG_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_1_big_even", MyBlockEntityTypes.BLOCK_ROUNDEL_BIG_EVEN_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_2", MyBlockEntityTypes.BLOCK_ROUNDEL2_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_2_big", MyBlockEntityTypes.BLOCK_ROUNDEL2_BIG_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_2_big_even", MyBlockEntityTypes.BLOCK_ROUNDEL2_BIG_EVEN_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_3", MyBlockEntityTypes.BLOCK_ROUNDEL3_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_3_big", MyBlockEntityTypes.BLOCK_ROUNDEL3_BIG_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_3_big_even", MyBlockEntityTypes.BLOCK_ROUNDEL3_BIG_EVEN_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station_type_b", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station_type_c", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TYPE_C_TILE_ENTITY);
