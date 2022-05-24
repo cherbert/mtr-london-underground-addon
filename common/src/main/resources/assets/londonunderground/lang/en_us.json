@@ -66,6 +66,7 @@
   "block.londonunderground.sounds.tube_station_ambience1" : "Deep Tube Station Ambience",
   "block.londonunderground.sounds.outside_ambience" : "Outside Ambience",
   "block.londonunderground.block_roundel_1" : "London Underground Roundel (1x1)",
+  "block.londonunderground.block_roundel_nle" : "London Underground Roundel - NLE Style (1x1)",
   "block.londonunderground.british_rail_underground" : "London Underground / British Rail",
   "block.londonunderground.block_roundel_1_big" : "London Underground Roundel (2x2 Odd)",
   "block.londonunderground.block_roundel_1_big_even" : "London Underground Roundel (2x2 Even)",
