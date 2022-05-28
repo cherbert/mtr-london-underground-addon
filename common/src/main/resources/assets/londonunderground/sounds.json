@@ -48,6 +48,27 @@
       }
     ]
   },
+  "sw_chx_highb": {
+    "sounds": [
+      {
+        "name": "londonunderground:northernline/sw_chx_highb"
+      }
+    ]
+  },
+  "arrival": {
+    "sounds": [
+      {
+        "name": "londonunderground:northernline/arrival"
+      }
+    ]
+  },
+  "next_southwimbledon": {
+    "sounds": [
+      {
+        "name": "londonunderground:northernline/next_southwimbledon"
+      }
+    ]
+  },
   "clack1": {
     "sounds": [
       {

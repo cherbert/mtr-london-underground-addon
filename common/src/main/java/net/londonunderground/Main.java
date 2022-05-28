@@ -50,6 +50,7 @@ public class Main {
 		registerBlockItem.accept("tube_2_duel", MyBlocks.TUBE_2_DUEL, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_3", MyBlocks.TUBE_3, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_0b", MyBlocks.TUBE_0b, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tube_0b_slab", MyBlocks.TUBE_0b_SLAB, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_1b", MyBlocks.TUBE_1b, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("tube_1b_stop", MyBlocks.TUBE_1b_STOP, MyItems.TFL_BLOCKS);
 
@@ -77,6 +78,7 @@ public class Main {
 		registerBlockItem.accept("sign_trams", MyBlocks.SIGN_TRAMS, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("sign_poppy", MyBlocks.SIGN_POPPY, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("sign_metro", MyBlocks.SIGN_METRO, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("sign_pride", MyBlocks.SIGN_PRIDE, MyItems.TFL_SIGNS);
 
 		registerBlockItem.accept("morden_steps", MyBlocks.MORDEN_STEPS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
@@ -109,6 +111,7 @@ public class Main {
 		registerBlockEntityType.accept("sign_poppy", MyBlockEntityTypes.SIGN_POPPY_TILE_ENTITY);
 		registerBlockEntityType.accept("sign_metro", MyBlockEntityTypes.SIGN_METRO_TILE_ENTITY);
 		registerBlockEntityType.accept("sign_underground", MyBlockEntityTypes.SIGN_UNDERGROUND_TILE_ENTITY);
+		registerBlockEntityType.accept("sign_pride", MyBlockEntityTypes.SIGN_PRIDE_TILE_ENTITY);
 
 		registerBlockItem.accept("british_rail_underground", MyBlocks.BRITISH_RAIL_UNDERGROUND, MyItems.TFL_SIGNS);
 

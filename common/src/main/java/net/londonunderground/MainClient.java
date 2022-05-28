@@ -42,6 +42,7 @@ public class MainClient {
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.SIGN_METRO_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10.2F / 16, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.SIGN_LIZZY_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10.2F / 16, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.SIGN_UNDERGROUND_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10.2F / 16, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
+		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.SIGN_PRIDE_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10.2F / 16, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
 
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.TUNNEL_BLOCK_2_SIGNAL.get());
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.BRITISH_RAIL_UNDERGROUND.get());

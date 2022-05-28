@@ -45,6 +45,7 @@ public interface MyBlocks {
 	RegistryObject<Block> TUBE_3 =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
 	RegistryObject<Block> TUBE_0b =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> TUBE_0b_SLAB = new RegistryObject<>(()-> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_1b =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_1b_STOP =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 
@@ -75,6 +76,7 @@ public interface MyBlocks {
 	RegistryObject<Block> SIGN_METRO =new RegistryObject<>(()-> new SignMetro(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> SIGN_LIZZY =new RegistryObject<>(()-> new SignLizzy(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> SIGN_UNDERGROUND =new RegistryObject<>(()-> new SignUnderground(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> SIGN_PRIDE =new RegistryObject<>(()-> new SignPride(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 
 	RegistryObject<Block> MORDEN_STEPS =new RegistryObject<>(()-> new StairBlockExtends(TFL_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> LU_POLE =new RegistryObject<>(()-> new TFLBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));

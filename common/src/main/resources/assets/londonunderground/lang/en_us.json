@@ -31,6 +31,7 @@
   "block.londonunderground.tube_2_duel" : "Tube Station #2 (Dual)",
   "block.londonunderground.tube_3" : "Tube Station #3",
   "block.londonunderground.tube_0b" : "Tube Station Block (Concrete)",
+  "block.londonunderground.tube_0b_slab" : "Tube Station Slab (Concrete)",
   "block.londonunderground.tube_1b" : "Tube Station #1 (Concrete)",
   "block.londonunderground.tube_1b_stop" : "Tube Station #1 (Concrete / Stop Marker)",
   "block.londonunderground.tube_1b_duel" : "Tube Station #1 (Concrete / Dual)",
@@ -55,7 +56,7 @@
   "block.londonunderground.sign_trams" : "Platform Sign (Trams)",
   "block.londonunderground.sign_lizzy" : "Platform Sign (Elizabeth)",
   "block.londonunderground.sign_metro" : "Platform Sign (Metropolitan)",
-
+  "block.londonunderground.sign_pride" : "Platform Sign (Pride)",
   "block.londonunderground.morden_steps" : "Morden Station Steps",
   "block.londonunderground.lu_pole" : "LU Pole",
   "block.londonunderground.lu_crossbar" : "LU Crossbar",
