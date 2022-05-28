@@ -1,19 +1,19 @@
 {
   "custom_trains": {
     "london_underground_1995_roundel": {
-      "name": "London Underground 1995 Stock (Roundel Varient)",
+      "name": "London Underground 1995 Stock (Roundel Variant)",
       "color": "0x333333",
       "base_train_type": "london_underground_1995",
       "texture_id": "mtr:custom_textures/london_underground_1995.png"
     },
     "london_underground_1996_roundel": {
-      "name": "London Underground 1996 Stock (Roundel Varient)",
+      "name": "London Underground 1996 Stock (Roundel Variant)",
       "color": "0xA1A5A7",
       "base_train_type": "london_underground_1996",
       "texture_id": "mtr:custom_textures/london_underground_1996.png"
     },
     "london_underground_d78_roundel": {
-      "name": "London Underground D78 Stock (Roundel Varient)",
+      "name": "London Underground D78 Stock (Roundel Variant)",
       "color": "0x007229",
       "base_train_type": "london_underground_d78",
       "texture_id": "mtr:custom_textures/london_underground_d78.png"
