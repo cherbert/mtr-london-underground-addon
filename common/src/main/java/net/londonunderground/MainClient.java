@@ -14,7 +14,7 @@ public class MainClient {
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL.get(), dispatcher -> new RenderTunnelSignalLight<>(dispatcher, true, false, 0xFF00FF00));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY.get(), dispatcher -> new RenderPIDS<>(dispatcher, 3, 1.5F, 7.5F, 6, 6.5F, 29, true, true, 0xFF9900, 0xFF9900));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.BLOCK_ROUNDEL_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 14 / 16F, 0.2F / 16, 0, 0, -0.5F, 0, 0xFFB3B3B3, false, "johnston"));
-		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.BLOCK_ROUNDEL_NLE_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 14 / 16F, 0.2F / 16, 0, 0, -0.5F, 0, 0xFFB3B3B3, false, "johnston"));
+		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.BLOCK_ROUNDEL_NLE_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 14 / 16F, 0.2F / 16, 0, 0, -0.495F, 0, 0xFFB3B3B3, false, "johnston"));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.BRITISH_RAIL_UNDERGROUND_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 14 / 16F, 0.2F / 16, 0, 0.09F, -0.480F, 0, 0xFFB3B3B3, false, "johnston"));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.BLOCK_ROUNDEL_BIG_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 28 / 16F, 0.4F / 16, 0, 0.5F, -0.5F, 0, 0xFFB3B3B3, false, "johnston"));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.BLOCK_ROUNDEL_BIG_EVEN_TILE_ENTITY.get(), dispatcher -> new RenderRoundel<>(dispatcher, 28 / 16F, 0.4F / 16, -0.5F, 0.5F, -0.5F, 0, 0xFFB3B3B3, false, "johnston"));

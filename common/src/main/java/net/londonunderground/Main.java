@@ -65,6 +65,7 @@ public class Main {
 		registerBlockItem.accept("morden_stairs", MyBlocks.MORDEN_STAIRS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_slab", MyBlocks.MORDEN_SLAB, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("morden_cobble_slab", MyBlocks.MORDEN_COBBLE_SLAB, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_cobblestone", MyBlocks.MORDEN_COBBLESTONE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_sign", MyBlocks.MORDEN_SIGN, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("metropolitan_sign", MyBlocks.METROPOLITAN_SIGN, MyItems.TFL_SIGNS);
