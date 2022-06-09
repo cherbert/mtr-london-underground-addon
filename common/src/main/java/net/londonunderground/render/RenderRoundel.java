@@ -11,6 +11,7 @@ import mtr.data.IGui;
 import mtr.data.RailwayData;
 import mtr.data.Station;
 import mtr.mappings.BlockEntityRendererMapper;
+import mtr.mappings.Text;
 import net.londonunderground.Main;
 import net.londonunderground.blocks.BlockRoundelBase;
 import net.minecraft.client.Minecraft;
@@ -19,7 +20,6 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Style;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.world.level.Level;
@@ -90,7 +90,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 		}
 
 		final Station station = RailwayData.getStation(ClientData.STATIONS, ClientData.DATA_CACHE, pos);
-		final FormattedCharSequence roundelText = new TextComponent(IGui.textOrUntitled(IGui.formatStationName(station == null ? "" : station.name)).toUpperCase(Locale.ROOT)).setStyle(STYLE).getVisualOrderText();
+		final FormattedCharSequence roundelText = Text.literal(IGui.textOrUntitled(IGui.formatStationName(station == null ? "" : station.name)).toUpperCase(Locale.ROOT)).setStyle(STYLE).getVisualOrderText();
 		final int textWidth = Minecraft.getInstance().font.width(roundelText);
 
 		matrices.pushPose();

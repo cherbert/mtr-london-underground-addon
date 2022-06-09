@@ -21,17 +21,17 @@
 //    private final BlockPos pos;
 //    private final String message;
 //    private final TextFieldWidget textFieldMessage;
-//    private final Component text = new TranslatableComponent("gui.londonunderground.soundtimer_message");
+//    private final Component text = Text.translatable("gui.londonunderground.soundtimer_message");
 //
 //    private static final int MAX_MESSAGE_LENGTH = 256;
 //
 //    public EditSoundTimerScreen(BlockPos pos) {
-//        super(new TextComponent(""));
+//        super(Text.literal(""));
 //        this.pos = pos;
 //
 //
 //        client = Minecraft.getInstance();
-//        textFieldMessage = new TextFieldWidget(client.textRenderer, 0, 0, 0, SQUARE_SIZE, new TextComponent(""));
+//        textFieldMessage = new TextFieldWidget(client.textRenderer, 0, 0, 0, SQUARE_SIZE, Text.literal(""));
 //
 //
 //        final World world = client.world;

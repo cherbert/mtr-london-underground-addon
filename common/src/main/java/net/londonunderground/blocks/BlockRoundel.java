@@ -2,13 +2,13 @@ package net.londonunderground.blocks;
 
 import mtr.block.IBlock;
 import mtr.mappings.BlockEntityMapper;
+import mtr.mappings.Text;
 import net.londonunderground.MyBlockEntityTypes;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -43,7 +43,7 @@ public class BlockRoundel extends BlockRoundelBase {
 
 	@Override
 	public void appendHoverText(ItemStack stack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-		tooltip.add(new TranslatableComponent("tooltip.londonunderground.block_roundel").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
+		tooltip.add(Text.translatable("tooltip.londonunderground.block_roundel").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package net.londonunderground.blocks;
 
+import mtr.mappings.BlockMapper;
 import mtr.mappings.Utilities;
 import net.londonunderground.MySoundEvents;
 import net.minecraft.core.BlockPos;
@@ -8,19 +9,16 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
-import java.util.Random;
-
-public class SoundSeeItSayItSorted extends Block {
+public class SoundSeeItSayItSorted extends BlockMapper {
 
 	public SoundSeeItSayItSorted(Properties settings) {
 		super(settings);
 	}
 
 	@Override
-	public void tick(BlockState state, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState state, ServerLevel world, BlockPos pos) {
 
 //		System.out.println("play");
 		world.playSound(

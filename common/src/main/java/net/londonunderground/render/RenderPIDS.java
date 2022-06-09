@@ -3,14 +3,17 @@ package net.londonunderground.render;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import mtr.MTRClient;
-import mtr.block.BlockArrivalProjectorBase;
 import mtr.block.BlockPIDSBase;
 import mtr.block.IBlock;
 import mtr.client.ClientData;
 import mtr.client.Config;
-import mtr.data.*;
+import mtr.data.IGui;
+import mtr.data.RailwayData;
+import mtr.data.Route;
+import mtr.data.ScheduleEntry;
 import mtr.mappings.BlockEntityMapper;
 import mtr.mappings.BlockEntityRendererMapper;
+import mtr.mappings.Text;
 import mtr.render.RenderTrains;
 import net.londonunderground.Main;
 import net.londonunderground.data.IGui2;
@@ -22,12 +25,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 
 import java.util.*;
@@ -185,7 +185,7 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 				final Font textRenderer = Minecraft.getInstance().font;
 
 				if (useCustomMessage) {
-					final FormattedCharSequence text4 = new TextComponent(destinationString).setStyle(style).getVisualOrderText();
+					final FormattedCharSequence text4 = Text.literal(destinationString).setStyle(style).getVisualOrderText();
 					final int destinationWidth = textRenderer.width(text4);
 					if (destinationWidth > totalScaledWidth) {
 						matrices.scale(totalScaledWidth / destinationWidth, 1, 1);
@@ -196,22 +196,22 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 					final int seconds = (int) ((currentSchedule.arrivalMillis - System.currentTimeMillis()) / 1000);
 					final boolean isCJK = destinationString.codePoints().anyMatch(Character::isIdeographic);
 					if (seconds >= 60) {
-						arrivalText = new TranslatableComponent(isCJK ? "gui.mtr.arrival_min_cjk" : "gui.mtr.arrival_min", seconds / 60).append(appendDotAfterMin && !isCJK ? "." : "");
+						arrivalText = Text.translatable(isCJK ? "gui.mtr.arrival_min_cjk" : "gui.mtr.arrival_min", seconds / 60).append(appendDotAfterMin && !isCJK ? "." : "");
 					} else {
-						arrivalText = seconds > 0 ? new TranslatableComponent(isCJK ? "gui.mtr.arrival_sec_cjk" : "gui.londonunderground.arrival_sec", seconds).append(appendDotAfterMin && !isCJK ? "." : "") : null;
+						arrivalText = seconds > 0 ? Text.translatable(isCJK ? "gui.mtr.arrival_sec_cjk" : "gui.londonunderground.arrival_sec", seconds).append(appendDotAfterMin && !isCJK ? "." : "") : null;
 					}
-					final Component carText = new TranslatableComponent(isCJK ? "gui.mtr.arrival_car_cjk" : "gui.mtr.arrival_car", currentSchedule.trainCars);
+					final Component carText = Text.translatable(isCJK ? "gui.mtr.arrival_car_cjk" : "gui.mtr.arrival_car", currentSchedule.trainCars);
 
 
 					if (renderArrivalNumber) {
-						final FormattedCharSequence text1 = new TextComponent(String.valueOf(i + 1)).setStyle(style).getVisualOrderText();
+						final FormattedCharSequence text1 = Text.literal(String.valueOf(i + 1)).setStyle(style).getVisualOrderText();
 						textRenderer.draw(matrices, text1, 0, 0, seconds > 0 ? textColor : firstTrainColor);
 					}
 
 					final float newDestinationMaxWidth = destinationMaxWidth - carLengthMaxWidth;
 
 					if (showCarLength) {
-						final FormattedCharSequence text3 = new TextComponent(carText.getString()).setStyle(style).getVisualOrderText();
+						final FormattedCharSequence text3 = Text.literal(carText.getString()).setStyle(style).getVisualOrderText();
 
 						matrices.pushPose();
 						matrices.translate(destinationStart + newDestinationMaxWidth + platformMaxWidth, 0, 0);
@@ -234,7 +234,7 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 						destinationString2 = destinationString;
 					}
 
-					final FormattedCharSequence text4 = new TextComponent(destinationString2).setStyle(style).getVisualOrderText();
+					final FormattedCharSequence text4 = Text.literal(destinationString2).setStyle(style).getVisualOrderText();
 
 					matrices.pushPose();
 					matrices.translate(destinationStart, 0, 0);
@@ -247,7 +247,7 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 					matrices.popPose();
 
 					if (arrivalText != null) {
-						final FormattedCharSequence text5 = new TextComponent(arrivalText.getString()).setStyle(style).getVisualOrderText();
+						final FormattedCharSequence text5 = Text.literal(arrivalText.getString()).setStyle(style).getVisualOrderText();
 
 
 						matrices.pushPose();
