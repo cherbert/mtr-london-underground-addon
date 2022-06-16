@@ -1,0 +1,50 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "londonunderground:block/tfl_sign_1",
+		"particle": "londonunderground:block/tfl_sign_1"
+	},
+	"elements": [
+		{
+			"name": "Arrow Right",
+			"from": [1.5, 9, 15.75],
+			"to": [4.5, 15.25, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 0, 8]},
+			"faces": {
+				"north": {"uv": [14.02083, 2.90623, 15.96875, 5.75003], "texture": "#0"},
+				"east": {"uv": [11.05208, 1.47917, 12.05208, 4.71875], "texture": "#0"},
+				"south": {"uv": [2.16667, 4.23958, 0.07292, 14.07292], "texture": "#0"},
+				"west": {"uv": [7.15625, 3.32292, 8.15625, 4.53125], "texture": "#0"},
+				"up": {"uv": [0, 0, 3, 1], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [1.67708, 1.91667, 4.67708, 2.91667], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "Arrow Left",
+			"from": [1.5, 9, 15.5],
+			"to": [4.5, 15.25, 15.75],
+			"faces": {
+				"north": {"uv": [0.07292, 4.23958, 2.16667, 14.07292], "texture": "#0"},
+				"east": {"uv": [8.53125, 2.73958, 9.53125, 3.94792], "texture": "#0"},
+				"south": {"uv": [14.02083, 2.90623, 15.96875, 5.89587], "texture": "#0"},
+				"west": {"uv": [11.05208, 1.47917, 12.05208, 4.71875], "texture": "#0"},
+				"up": {"uv": [0, 0, 3, 1], "texture": "#0"},
+				"down": {"uv": [2.17708, 2.35417, 5.17708, 3.35417], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Back",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "Front",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [1]
+		}
+	]
+}

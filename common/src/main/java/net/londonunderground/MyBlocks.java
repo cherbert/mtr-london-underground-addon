@@ -38,6 +38,12 @@ public interface MyBlocks {
 	RegistryObject<Block> TUBE_1 =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_1_STOP =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 
+	RegistryObject<Block> PLATFORM_SIGN_NORTHERN_CX = new RegistryObject<>(()-> new PlatformSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> PLATFORM_SIGN_P1 = new RegistryObject<>(()-> new PlatformSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> PLATFORM_SIGN_NORTHERN_LINE = new RegistryObject<>(()-> new PlatformSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> PLATFORM_SIGN_ARROW_LEFT = new RegistryObject<>(()-> new PlatformSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+	RegistryObject<Block> PLATFORM_SIGN_BLANK_RIGHT = new RegistryObject<>(()-> new PlatformSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
+
 	RegistryObject<Block> TUBE_1_DUEL =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_2 =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_2_DUEL =new RegistryObject<>(()-> new BlockTunnel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
