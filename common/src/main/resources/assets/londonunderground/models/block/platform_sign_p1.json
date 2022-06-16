@@ -1,0 +1,50 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "londonunderground:block/tfl_sign_1",
+		"particle": "londonunderground:block/tfl_sign_1"
+	},
+	"elements": [
+		{
+			"name": "Platform 1",
+			"from": [-1.5, 25, 15.5],
+			"to": [1.5, 31.25, 15.75],
+			"faces": {
+				"north": {"uv": [14.02083, 2.90623, 15.96875, 15.44795], "texture": "#0"},
+				"east": {"uv": [10.86458, 12.36458, 11.86458, 14.28125], "texture": "#0"},
+				"south": {"uv": [10.15625, 3.25, 12.25, 6.14583], "texture": "#0"},
+				"west": {"uv": [7.6875, 2.35417, 8.6875, 3.44792], "texture": "#0"},
+				"up": {"uv": [0, 0, 3, 1], "texture": "#0"},
+				"down": {"uv": [1.60417, 1.71875, 4.60417, 2.71875], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Platform 1",
+			"from": [14.5, 25, 15.75],
+			"to": [17.5, 31.25, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 0, 8]},
+			"faces": {
+				"north": {"uv": [10.15625, 3.25, 12.25, 6.14583], "texture": "#0"},
+				"east": {"uv": [7.6875, 2.35417, 8.6875, 3.44792], "texture": "#0"},
+				"south": {"uv": [14.02083, 2.90623, 15.96875, 15.44795], "texture": "#0"},
+				"west": {"uv": [10.86458, 12.36458, 11.86458, 14.28125], "texture": "#0"},
+				"up": {"uv": [0, 0, 3, 1], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [1.60417, 1.71875, 4.60417, 2.71875], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Back",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "Front",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [1]
+		}
+	]
+}

@@ -1,6 +1,7 @@
 {
   "itemGroup.londonunderground.tfl_blocks": "MTR London Underground",
   "itemGroup.londonunderground.tfl_signs": "LU Signs",
+  "block.londonunderground.platform_sign_northbound_charingcross" : "Northbound via Charing Cross",
   "block.londonunderground.platform_tfl_1" : "LU Platform",
   "block.londonunderground.platform_tfl_island" : "LU Platform (Island)",
   "block.londonunderground.platform_block" : "LU Platform Block",
