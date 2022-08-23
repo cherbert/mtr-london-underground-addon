@@ -1,3 +1,4 @@
+import groovy.json.JsonSlurper
 import org.apache.tools.ant.filters.ReplaceTokens
 
 plugins {
@@ -13,10 +14,12 @@ def is_1_16 = (minecraft_version as String).startsWith("1.16")
 def is_1_17 = (minecraft_version as String).startsWith("1.17")
 def is_1_18 = (minecraft_version as String).startsWith("1.18")
 
-rootProject.ext.architectury_version = is_1_16 ? rootProject.architectury_version_1_16 : is_1_17 ? rootProject.architectury_version_1_17 : is_1_18 ? rootProject.architectury_version_1_18 : rootProject.architectury_version_1_19
+rootProject.ext.fabric_loader_version = new JsonSlurper().parse(("https://meta.fabricmc.net/v2/versions/loader/" + minecraft_version).toURL())[0]["loader"]["version"]
+rootProject.ext.forge_version = minecraft_version + "-" + new JsonSlurper().parse(("https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json").toURL())["promos"][minecraft_version + "-latest"]
+rootProject.ext.fabric_api_version = getModrinthVersion("fabric", minecraft_version, "fabric-api")
+rootProject.ext.mod_menu_version = getModrinthVersion("fabric", minecraft_version, "modmenu")
+rootProject.ext.architectury_version = getModrinthVersion("forge", minecraft_version, "architectury-api").split("\\+")[0]
 rootProject.ext.architectury_id = is_1_16 ? "me.shedaniel" : "dev.architectury"
-rootProject.ext.fabric_api_version = is_1_16 ? rootProject.fabric_version_1_16 : is_1_17 ? rootProject.fabric_version_1_17 : is_1_18 ? rootProject.fabric_version_1_18 : rootProject.fabric_version_1_19
-rootProject.ext.forge_version = is_1_16 ? rootProject.forge_version_1_16 : is_1_17 ? rootProject.forge_version_1_17 : is_1_18 ? rootProject.forge_version_1_18 : rootProject.forge_version_1_19
 
 architectury {
 	minecraft = minecraft_version
@@ -59,6 +62,12 @@ task setupLibrary() {
 }
 
 task setupFiles() {
+	System.out.println("Fabric Loader: " + rootProject.fabric_loader_version)
+	System.out.println("Forge: " + rootProject.forge_version)
+	System.out.println("Fabric API: " + rootProject.fabric_api_version)
+	System.out.println("Mod Menu: " + rootProject.mod_menu_version)
+	System.out.println("Architectury: " + rootProject.architectury_version)
+
 	download {
 		src "https://github.com/jonafanho/Minecraft-Mappings/archive/refs/heads/${is_1_16 ? "1.16" : is_1_17 ? "1.17" : is_1_18 ? "1.18" : "1.19"}.zip"
 		dest "common/src/main/java/net/londonunderground/mappings/files.zip"
@@ -123,4 +132,14 @@ allprojects {
 			}
 		}
 	}
+}
+
+static def getModrinthVersion(loader, minecraftVersion, projectId) {
+	def versionsArray = new JsonSlurper().parse(("https://api.modrinth.com/v2/project/" + projectId + "/version").toURL())
+	for (def versionElement : versionsArray) {
+		if (versionElement["loaders"].contains(loader) && versionElement["game_versions"].contains(minecraftVersion)) {
+			return versionElement["version_number"]
+		}
+	}
+	return ""
 }
