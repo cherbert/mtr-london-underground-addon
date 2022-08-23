@@ -40,7 +40,7 @@ public class MainForge {
 		SOUND_EVENTS.register();
 
 		eventBus.register(MTRForgeRegistry.class);
-		RegistryUtilities.registerCommand((dispatcher, selection) -> PanelCommand.register(dispatcher));
+		RegistryUtilities.registerCommand(PanelCommand::register);
 	}
 
 	private static void registerBlock(String path, RegistryObject<Block> block) {
