@@ -102,6 +102,13 @@ task setupFiles() {
 		from "checkouts/mtr-forge.jar"
 		into "forge/run/mods"
 	}
+
+	copy {
+		outputs.upToDateWhen { false }
+		from "common/src/main/latest-lu-addon.json"
+		into "build/latest"
+		filter(ReplaceTokens, tokens: ["version": rootProject.mod_version])
+	}
 }
 
 allprojects {

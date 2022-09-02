@@ -63,9 +63,14 @@ task moveForgeBuilds() {
 		}
 		copy {
 			from "build/libs"
-			into "../build"
+			into "../build/release"
 			exclude "*dev-shadow.jar"
 			rename "(.+)", "MTR-LU-Addon-\$1"
+		}
+		copy {
+			from "../build/release"
+			into "../build/latest"
+			rename { fileName -> fileName.replace(rootProject.mod_version, "latest") }
 		}
 	}
 }
