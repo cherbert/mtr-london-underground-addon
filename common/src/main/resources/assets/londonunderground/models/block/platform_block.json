@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"0": "londonunderground:block/tube_platforms/platform",
 		"particle": "londonunderground:block/tube_platforms/platform"
@@ -17,11 +18,5 @@
 				"down": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0"}
 			}
 		}
-	],
-	"display": {
-		"gui": {
-			"rotation": [35, -45, 0],
-			"scale": [0.59, 0.59, 0.59]
-		}
-	}
+	]
 }

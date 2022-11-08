@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"0": "londonunderground:block/morden_cobblestone",
 		"particle": "londonunderground:block/morden_cobblestone"
@@ -17,11 +18,5 @@
 				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
 			}
 		}
-	],
-	"display": {
-		"gui": {
-			"rotation": [35, -45, 0],
-			"scale": [0.59, 0.59, 0.59]
-		}
-	}
+	]
 }

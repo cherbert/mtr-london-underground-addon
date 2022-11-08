@@ -3,14 +3,12 @@ package net.londonunderground.render;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import mtr.MTRClient;
+import mtr.block.BlockArrivalProjectorBase;
 import mtr.block.BlockPIDSBase;
 import mtr.block.IBlock;
 import mtr.client.ClientData;
 import mtr.client.Config;
-import mtr.data.IGui;
-import mtr.data.RailwayData;
-import mtr.data.Route;
-import mtr.data.ScheduleEntry;
+import mtr.data.*;
 import mtr.mappings.BlockEntityMapper;
 import mtr.mappings.BlockEntityRendererMapper;
 import mtr.mappings.Text;
@@ -116,13 +114,54 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 			final Set<ScheduleEntry> schedules;
 			final Map<Long, String> platformIdToName = new HashMap<>();
 
-			final long platformId = RailwayData.getClosePlatformId(ClientData.PLATFORMS, ClientData.DATA_CACHE, pos);
-			if (platformId == 0) {
-				schedules = new HashSet<>();
-			} else {
-				final Set<ScheduleEntry> schedulesForPlatform = ClientData.SCHEDULES_FOR_PLATFORM.get(platformId);
-				schedules = schedulesForPlatform == null ? new HashSet<>() : schedulesForPlatform;
+			final Station station = RailwayData.getStation(ClientData.STATIONS, ClientData.DATA_CACHE, pos);
+			if (station == null) {
+				return;
 			}
+
+			final Map<Long, Platform> platforms = ClientData.DATA_CACHE.requestStationIdToPlatforms(station.id);
+			if (platforms.isEmpty()) {
+				return;
+			}
+
+			final Set<Long> platformIds;
+			final PIDSType renderType = PIDSType.PIDS;
+			switch (renderType) {
+				case ARRIVAL_PROJECTOR:
+					if (entity instanceof BlockArrivalProjectorBase.TileEntityArrivalProjectorBase) {
+						platformIds = ((BlockArrivalProjectorBase.TileEntityArrivalProjectorBase) entity).getPlatformIds();
+					} else {
+						platformIds = new HashSet<>();
+					}
+					break;
+				case PIDS:
+					final Set<Long> tempPlatformIds;
+					if (entity instanceof BlockPIDSBase.TileEntityBlockPIDSBase) {
+						tempPlatformIds = ((BlockPIDSBase.TileEntityBlockPIDSBase) entity).getPlatformIds();
+					} else {
+						tempPlatformIds = new HashSet<>();
+					}
+					platformIds = tempPlatformIds.isEmpty() ? Collections.singleton(entity instanceof BlockPIDSBase.TileEntityBlockPIDSBase ? ((BlockPIDSBase.TileEntityBlockPIDSBase) entity).getPlatformId(ClientData.PLATFORMS, ClientData.DATA_CACHE) : 0) : tempPlatformIds;
+					break;
+				default:
+					platformIds = new HashSet<>();
+			}
+
+			schedules = new HashSet<>();
+			platforms.values().forEach(platform -> {
+				if (platformIds.isEmpty() || platformIds.contains(platform.id)) {
+					final Set<ScheduleEntry> scheduleForPlatform = ClientData.SCHEDULES_FOR_PLATFORM.get(platform.id);
+					if (scheduleForPlatform != null) {
+						scheduleForPlatform.forEach(scheduleEntry -> {
+							final Route route = ClientData.DATA_CACHE.routeIdMap.get(scheduleEntry.routeId);
+							if (route != null && (renderType.showTerminatingPlatforms || scheduleEntry.currentStationIndex < route.platformIds.size() - 1)) {
+								schedules.add(scheduleEntry);
+								platformIdToName.put(platform.id, platform.name);
+							}
+						});
+					}
+				}
+			});
 
 			final List<ScheduleEntry> scheduleList = new ArrayList<>(schedules);
 			Collections.sort(scheduleList);
@@ -194,7 +233,7 @@ public class RenderPIDS<T extends BlockEntityMapper> extends BlockEntityRenderer
 				} else {
 					final Component arrivalText;
 					final int seconds = (int) ((currentSchedule.arrivalMillis - System.currentTimeMillis()) / 1000);
-					final boolean isCJK = destinationString.codePoints().anyMatch(Character::isIdeographic);
+					final boolean isCJK = IGui.isCjk(destinationString);
 					if (seconds >= 60) {
 						arrivalText = Text.translatable(isCJK ? "gui.mtr.arrival_min_cjk" : "gui.mtr.arrival_min", seconds / 60).append(appendDotAfterMin && !isCJK ? "." : "");
 					} else {

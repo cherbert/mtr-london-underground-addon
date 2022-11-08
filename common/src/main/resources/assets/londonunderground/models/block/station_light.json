@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"particle": "londonunderground:block/metal",
 		"side": "londonunderground:block/metal"
@@ -32,22 +33,6 @@
 			}
 		}
 	],
-	"display": {
-		"thirdperson_righthand": {
-			"translation": [0, -1.5, 0],
-			"scale": [0.45, 0.45, 0.45]
-		},
-		"firstperson_righthand": {
-			"rotation": [42, 0, 0]
-		},
-		"firstperson_lefthand": {
-			"rotation": [36, -14, 0]
-		},
-		"gui": {
-			"rotation": [27, 30, 1],
-			"translation": [0.75, -6, 0]
-		}
-	},
 	"groups": [
 		0,
 		1,

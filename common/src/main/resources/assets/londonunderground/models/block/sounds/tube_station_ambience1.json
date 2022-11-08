@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"1": "londonunderground:block/sounds/tube_station_ambience1"
 	},
@@ -16,14 +17,5 @@
 				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"scale": [0.51, 0.51, 0.51]
-		},
-		"gui": {
-			"rotation": [31, -45, 0],
-			"scale": [0.59, 0.59, 0.59]
-		}
-	}
+	]
 }

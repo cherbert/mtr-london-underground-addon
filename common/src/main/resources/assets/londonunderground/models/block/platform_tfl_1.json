@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"0": "londonunderground:block/tube_platforms/platform_edge",
 		"1": "londonunderground:block/tube_platforms/dont_pass_the_yellow_line",
@@ -669,15 +670,5 @@
 				"down": {"uv": [0, 4.25, 16, 8], "texture": "#2"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"scale": [0.56, 0.56, 0.56]
-		},
-		"gui": {
-			"rotation": [51, -133, 0],
-			"translation": [0.5, -1, -0.75],
-			"scale": [0.55, 0.55, 0.55]
-		}
-	}
+	]
 }

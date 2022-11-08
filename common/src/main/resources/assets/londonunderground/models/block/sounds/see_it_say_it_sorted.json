@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"0": "londonunderground:block/sounds/see_it_say_it_sorted",
 		"particle": "londonunderground:block/sounds/see_it_say_it_sorted"
@@ -17,14 +18,5 @@
 				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"scale": [0.51, 0.51, 0.51]
-		},
-		"gui": {
-			"rotation": [31, -45, 0],
-			"scale": [0.59, 0.59, 0.59]
-		}
-	}
+	]
 }

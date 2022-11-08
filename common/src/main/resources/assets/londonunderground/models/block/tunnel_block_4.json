@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"1": "londonunderground:block/tunnel_interior_type_1",
 		"3": "londonunderground:block/tunnel_1",
@@ -123,21 +124,5 @@
 				"down": {"uv": [5, 0, 0, 16], "rotation": 270, "texture": "#1"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"scale": [0.39, 0.39, 0.39]
-		},
-		"firstperson_righthand": {
-			"scale": [0.1, 0.1, 0.1]
-		},
-		"firstperson_lefthand": {
-			"scale": [0.1, 0.1, 0.1]
-		},
-		"gui": {
-			"rotation": [6, -136, 1],
-			"translation": [0.75, -1, 0],
-			"scale": [0.65, 0.65, 0.65]
-		}
-	}
+	]
 }

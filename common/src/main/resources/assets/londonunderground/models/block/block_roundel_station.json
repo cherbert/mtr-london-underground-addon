@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"0": "londonunderground:block/projector",
 		"particle": "londonunderground:block/projector"
@@ -17,11 +18,5 @@
 				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
 			}
 		}
-	],
-	"display": {
-		"fixed": {
-			"translation": [0.5, -0.75, -48],
-			"scale": [4, 4, 4]
-		}
-	}
+	]
 }

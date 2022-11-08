@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"0": "block/stairs/steps_dirty",
 		"1": "block/stairs/steps_front",

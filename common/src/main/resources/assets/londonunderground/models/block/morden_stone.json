@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/block",
 	"textures": {
 		"0": "londonunderground:block/tunnel_interior_type_1",
 		"particle": "londonunderground:block/tunnel_interior_type_1"
@@ -17,14 +18,5 @@
 				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"scale": [0.39, 0.39, 0.39]
-		},
-		"gui": {
-			"rotation": [25, 45, 0],
-			"scale": [0.6, 0.6, 0.6]
-		}
-	}
+	]
 }
