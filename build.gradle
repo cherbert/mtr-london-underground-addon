@@ -13,6 +13,7 @@ def minecraft_version = project.properties.containsKey("buildVersion") ? project
 def is_1_16 = (minecraft_version as String).startsWith("1.16")
 def is_1_17 = (minecraft_version as String).startsWith("1.17")
 def is_1_18 = (minecraft_version as String).startsWith("1.18")
+def minecraft_mod_api_tools_version = new JsonSlurper().parse(("https://api.github.com/repos/jonafanho/Minecraft-Mod-API-Tools/git/refs/heads/master").toURL())["object"]["sha"]
 
 rootProject.ext.fabric_loader_version = new JsonSlurper().parse(("https://meta.fabricmc.net/v2/versions/loader/" + minecraft_version).toURL())[0]["loader"]["version"]
 rootProject.ext.forge_version = minecraft_version + "-" + new JsonSlurper().parse(("https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json").toURL())["promos"][minecraft_version + "-latest"]
@@ -36,6 +37,7 @@ subprojects {
 		minecraft "com.mojang:minecraft:${minecraft_version}"
 		mappings loom.officialMojangMappings()
 		implementation files("../checkouts/mtr-common.jar")
+		implementation "com.github.jonafanho:Minecraft-Mod-API-Tools:${minecraft_mod_api_tools_version}"
 	}
 }
 
@@ -116,6 +118,10 @@ allprojects {
 
 	version = minecraft_version + "-" + project.mod_version
 	group = project.maven_group
+
+	repositories {
+		maven { url = "https://jitpack.io/" }
+	}
 
 	tasks.withType(JavaCompile) {
 		options.encoding = "UTF-8"
