@@ -83,7 +83,7 @@ public class Main {
 
 		registerBlockItem.accept("morden_steps", MyBlocks.MORDEN_STEPS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("roundel_pole", MyBlocks.ROUNDEL_POLE, MyItems.TFL_SIGNS);
+
 		registerBlockItem.accept("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("block_roundel_nle", MyBlocks.BLOCK_ROUNDEL_NLE, MyItems.TFL_SIGNS);
@@ -100,6 +100,11 @@ public class Main {
 		registerBlockItem.accept("block_roundel_station_type_b", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_station_type_c", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_C, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_station_top", MyBlocks.BLOCK_ROUNDEL_STATION_TOP, MyItems.TFL_BLOCKS);
+
+		registerBlockItem.accept("roundel_pole", MyBlocks.ROUNDEL_POLE, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("roundel_pole_dlr", MyBlocks.ROUNDEL_POLE_DLR, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("roundel_pole_liz", MyBlocks.ROUNDEL_POLE_LIZ, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("roundel_pole_overground", MyBlocks.ROUNDEL_POLE_OVERGROUND, MyItems.TFL_SIGNS);
 
 		registerBlockEntityType.accept("morden_sign", MyBlockEntityTypes.MORDEN_SIGN_TILE_ENTITY);
 		registerBlockEntityType.accept("metropolitan_sign", MyBlockEntityTypes.METROPOLITAN_SIGN_TILE_ENTITY);

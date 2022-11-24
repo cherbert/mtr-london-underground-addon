@@ -54,7 +54,11 @@ public interface MyBlocks {
 	RegistryObject<Block> TUBE_3b =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
 	RegistryObject<Block> PIDS_POLE = new RegistryObject<>(() -> new BlockPIDSPole(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
-	RegistryObject<Block> ROUNDEL_POLE = new RegistryObject<>(() -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
+
+	RegistryObject<Block> ROUNDEL_POLE = new RegistryObject<>(() -> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
+	RegistryObject<Block> ROUNDEL_POLE_DLR = new RegistryObject<>(() -> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
+	RegistryObject<Block> ROUNDEL_POLE_LIZ = new RegistryObject<>(() -> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
+	RegistryObject<Block> ROUNDEL_POLE_OVERGROUND = new RegistryObject<>(() -> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
 
 	RegistryObject<Block> NORTHERN_PIDS =new RegistryObject<>(NorthernLinePIDS::new);
 	RegistryObject<Block> TRACK_1 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));

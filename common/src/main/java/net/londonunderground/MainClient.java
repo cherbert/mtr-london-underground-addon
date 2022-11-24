@@ -58,5 +58,8 @@ public class MainClient {
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.BLOCK_ROUNDEL_3_BIG.get());
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.BLOCK_ROUNDEL_3_BIG_EVEN.get());
 		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.ROUNDEL_POLE.get());
+		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.ROUNDEL_POLE_DLR.get());
+		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.ROUNDEL_POLE_LIZ.get());
+		RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.ROUNDEL_POLE_OVERGROUND.get());
 	}
 }

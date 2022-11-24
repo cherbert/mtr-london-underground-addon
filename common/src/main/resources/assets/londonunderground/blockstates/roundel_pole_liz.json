@@ -5,7 +5,7 @@
         "facing": "north"
       },
       "apply": {
-        "model": "londonunderground:block/roundel_pole",
+        "model": "londonunderground:block/roundel_pole_liz",
         "y": 180
       }
     },
@@ -14,7 +14,7 @@
         "facing": "east"
       },
       "apply": {
-        "model": "londonunderground:block/roundel_pole",
+        "model": "londonunderground:block/roundel_pole_liz",
         "y": -90
       }
     },
@@ -23,7 +23,7 @@
         "facing": "south"
       },
       "apply": {
-        "model": "londonunderground:block/roundel_pole"
+        "model": "londonunderground:block/roundel_pole_liz"
       }
     },
     {
@@ -31,7 +31,7 @@
         "facing": "west"
       },
       "apply": {
-        "model": "londonunderground:block/roundel_pole",
+        "model": "londonunderground:block/roundel_pole_liz",
         "y": 90
       }
     }
