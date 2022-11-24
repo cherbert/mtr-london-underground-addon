@@ -29,7 +29,7 @@ public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkne
 			return;
 		}
 		if (!Utilities.isHolding(player, item -> item == MyBlocks.TUNNEL_DARKNESS.get().asItem())) {
-			if (entity.getBlockPos().distSqr(player.blockPosition()) < 2048) {
+			if (entity.getBlockPos().distSqr(player.blockPosition()) < 8196) {
 				return;
 			}
 		}

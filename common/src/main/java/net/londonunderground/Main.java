@@ -23,11 +23,6 @@ public class Main {
 		registerBlockItem.accept("platform_tfl_island", MyBlocks.PLATFORM_TFL_ISLAND, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("platform_tfl_gap", MyBlocks.PLATFORM_TFL_GAP, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("platform_block", MyBlocks.PLATFORM_BLOCK, MyItems.TFL_BLOCKS);
-//		registerBlockItem.accept("platform_sign_northbound_charingcross", MyBlocks.PLATFORM_SIGN_NORTHERN_CX, MyItems.TFL_SIGNS);
-//		registerBlockItem.accept("platform_sign_p1", MyBlocks.PLATFORM_SIGN_P1, MyItems.TFL_SIGNS);
-//		registerBlockItem.accept("platform_sign_northern_line", MyBlocks.PLATFORM_SIGN_NORTHERN_LINE, MyItems.TFL_SIGNS);
-//		registerBlockItem.accept("platform_sign_arrow_left", MyBlocks.PLATFORM_SIGN_ARROW_LEFT, MyItems.TFL_SIGNS);
-//		registerBlockItem.accept("platform_sign_blank_right", MyBlocks.PLATFORM_SIGN_BLANK_RIGHT, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("platform_variant", MyBlocks.PLATFORM_VARIANT, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("sounds/see_it_say_it_sorted", MyBlocks.SOUND_SEE_IT_SAY_IT_SORTED, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("sounds/tube_station_ambience1", MyBlocks.TUBE_STATION_AMBIENCE1, MyItems.TFL_BLOCKS);
@@ -88,6 +83,7 @@ public class Main {
 
 		registerBlockItem.accept("morden_steps", MyBlocks.MORDEN_STEPS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("roundel_pole", MyBlocks.ROUNDEL_POLE, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("block_roundel_nle", MyBlocks.BLOCK_ROUNDEL_NLE, MyItems.TFL_SIGNS);
