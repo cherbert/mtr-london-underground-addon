@@ -3,11 +3,11 @@
 	"parent": "block/block",
 	"texture_size": [44, 44],
 	"textures": {
-		"0": "roundel_pole_overground.json",
+		"0": "block/anvil",
 		"1": "londonunderground:block/roundel_pole",
 		"2": "londonunderground:block/tunnel_1",
-		"5": "londonunderground:block/OvergroundRoundel",
-		"particle": "roundel_pole_overground.json"
+		"5": "londonunderground:block/overground_roundel",
+		"particle": "londonunderground:block/overground_roundel"
 	},
 	"elements": [
 		{
@@ -17,7 +17,7 @@
 				"north": {"uv": [5.45455, 6.90909, 6.90909, 7.63636], "texture": "#2"},
 				"east": {"uv": [4.09091, 0, 6.81818, 2.72727], "texture": "#0"},
 				"south": {"uv": [8.36364, 6.90909, 9.81818, 7.63636], "texture": "#2"},
-				"west": {"uv": [6.90909, 6.90909, 8.36364, 7.63636], "texture": "#2"},
+				"west": {"uv": [4.09091, 0, 6.81818, 2.72727], "texture": "#0"},
 				"up": {"uv": [6.90909, 6.90909, 5.45455, 5.45455], "texture": "#2"},
 				"down": {"uv": [8.36364, 5.45455, 6.90909, 6.90909], "texture": "#2"}
 			}
@@ -41,7 +41,7 @@
 				"north": {"uv": [0.36364, 0.72727, 1.09091, 1.45455], "texture": "#2"},
 				"east": {"uv": [4.09091, 0, 6.81818, 2.72727], "texture": "#0"},
 				"south": {"uv": [1.45455, 0.72727, 2.18182, 1.45455], "texture": "#2"},
-				"west": {"uv": [1.09091, 0.72727, 1.45455, 1.45455], "texture": "#2"},
+				"west": {"uv": [4.09091, 0, 6.81818, 2.72727], "texture": "#0"},
 				"up": {"uv": [1.09091, 0.72727, 0.36364, 0.36364], "texture": "#2"},
 				"down": {"uv": [1.81818, 0.36364, 1.09091, 0.72727], "texture": "#2"}
 			}

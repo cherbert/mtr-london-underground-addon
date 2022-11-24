@@ -83,7 +83,12 @@
   "block.londonunderground.block_roundel_3" : "Metropolitan Roundel (1x1)",
   "block.londonunderground.block_roundel_3_big" : "Metropolitan Roundel (2x2 Odd)",
   "block.londonunderground.block_roundel_3_big_even" : "Metropolitan Roundel (2x2 Even)",
-
+  "block.londonunderground.block_roundel_4" : "DLR Roundel (1x1)",
+  "block.londonunderground.block_roundel_4_big" : "DLR Roundel (2x2 Odd)",
+  "block.londonunderground.block_roundel_4_big_even" : "DLR Roundel (2x2 Even)",
+  "block.londonunderground.block_roundel_5" : "Overground Roundel (1x1)",
+  "block.londonunderground.block_roundel_5_big" : "Overground Roundel (2x2 Odd)",
+  "block.londonunderground.block_roundel_5_big_even" : "Overground Roundel (2x2 Even)",
   "block.londonunderground.block_roundel_station" : "Station Name Panel Projection (TypeA)",
   "block.londonunderground.block_roundel_station_type_b" : "Station Name Panel Projection (TypeB)",
   "block.londonunderground.block_roundel_station_type_c" : "Station Name Panel Projection (TypeC)",

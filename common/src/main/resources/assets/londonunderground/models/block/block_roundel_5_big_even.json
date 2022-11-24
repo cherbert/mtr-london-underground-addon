@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "londonunderground:block/block_roundel_big_even_base",
+	"textures": {
+		"0": "londonunderground:block/roundel5",
+		"particle": "londonunderground:block/roundel5"
+	}
+}

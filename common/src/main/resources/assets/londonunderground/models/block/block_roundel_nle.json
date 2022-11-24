@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "londonundergound:block/block_roundel_base",
 	"textures": {
-		"1": "londonunderground:block/roundel4"
+		"1": "londonunderground:block/roundel_nle"
 	},
 	"elements": [
 		{

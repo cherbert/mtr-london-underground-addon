@@ -86,7 +86,6 @@ public class Main {
 
 		registerBlockItem.accept("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_1", MyBlocks.BLOCK_ROUNDEL_1, MyItems.TFL_SIGNS);
-		registerBlockItem.accept("block_roundel_nle", MyBlocks.BLOCK_ROUNDEL_NLE, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("block_roundel_1_big", MyBlocks.BLOCK_ROUNDEL_1_BIG, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("block_roundel_1_big_even", MyBlocks.BLOCK_ROUNDEL_1_BIG_EVEN, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("block_roundel_2", MyBlocks.BLOCK_ROUNDEL_2, MyItems.TFL_SIGNS);
@@ -95,11 +94,20 @@ public class Main {
 		registerBlockItem.accept("block_roundel_3", MyBlocks.BLOCK_ROUNDEL_3, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("block_roundel_3_big", MyBlocks.BLOCK_ROUNDEL_3_BIG, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("block_roundel_3_big_even", MyBlocks.BLOCK_ROUNDEL_3_BIG_EVEN, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_4", MyBlocks.BLOCK_ROUNDEL_4, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_4_big", MyBlocks.BLOCK_ROUNDEL_4_BIG, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_4_big_even", MyBlocks.BLOCK_ROUNDEL_4_BIG_EVEN, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_5", MyBlocks.BLOCK_ROUNDEL_5, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_5_big", MyBlocks.BLOCK_ROUNDEL_5_BIG, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_5_big_even", MyBlocks.BLOCK_ROUNDEL_5_BIG_EVEN, MyItems.TFL_SIGNS);
 
 		registerBlockItem.accept("block_roundel_station", MyBlocks.BLOCK_ROUNDEL_STATION, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_station_type_b", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_station_type_c", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_C, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("block_roundel_station_top", MyBlocks.BLOCK_ROUNDEL_STATION_TOP, MyItems.TFL_BLOCKS);
+
+		registerBlockItem.accept("british_rail_underground", MyBlocks.BRITISH_RAIL_UNDERGROUND, MyItems.TFL_SIGNS);
+		registerBlockItem.accept("block_roundel_nle", MyBlocks.BLOCK_ROUNDEL_NLE, MyItems.TFL_SIGNS);
 
 		registerBlockItem.accept("roundel_pole", MyBlocks.ROUNDEL_POLE, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("roundel_pole_dlr", MyBlocks.ROUNDEL_POLE_DLR, MyItems.TFL_SIGNS);
@@ -120,7 +128,7 @@ public class Main {
 		registerBlockEntityType.accept("sign_underground", MyBlockEntityTypes.SIGN_UNDERGROUND_TILE_ENTITY);
 		registerBlockEntityType.accept("sign_pride", MyBlockEntityTypes.SIGN_PRIDE_TILE_ENTITY);
 
-		registerBlockItem.accept("british_rail_underground", MyBlocks.BRITISH_RAIL_UNDERGROUND, MyItems.TFL_SIGNS);
+
 
 		registerBlockEntityType.accept("tunnel_darkness", MyBlockEntityTypes.DARK_TILE);
 		registerBlockEntityType.accept("pids_northern", MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY);
