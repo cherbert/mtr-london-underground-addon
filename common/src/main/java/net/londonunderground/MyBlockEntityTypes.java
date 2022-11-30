@@ -3,6 +3,7 @@ package net.londonunderground;
 import mtr.RegistryObject;
 import mtr.mappings.RegistryUtilities;
 import net.londonunderground.blocks.*;
+import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
 public interface MyBlockEntityTypes {

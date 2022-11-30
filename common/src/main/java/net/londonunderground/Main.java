@@ -128,14 +128,13 @@ public class Main {
 		registerBlockEntityType.accept("sign_underground", MyBlockEntityTypes.SIGN_UNDERGROUND_TILE_ENTITY);
 		registerBlockEntityType.accept("sign_pride", MyBlockEntityTypes.SIGN_PRIDE_TILE_ENTITY);
 
-
-
 		registerBlockEntityType.accept("tunnel_darkness", MyBlockEntityTypes.DARK_TILE);
 		registerBlockEntityType.accept("pids_northern", MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY);
 		registerBlockEntityType.accept("tunnel_block_2_signal", MyBlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL);
 		registerBlockEntityType.accept("block_roundel_1", MyBlockEntityTypes.BLOCK_ROUNDEL_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_nle", MyBlockEntityTypes.BLOCK_ROUNDEL_NLE_TILE_ENTITY);
 		registerBlockEntityType.accept("british_rail_underground", MyBlockEntityTypes.BRITISH_RAIL_UNDERGROUND_TILE_ENTITY);
+
 		registerBlockEntityType.accept("block_roundel_1_big", MyBlockEntityTypes.BLOCK_ROUNDEL_BIG_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_1_big_even", MyBlockEntityTypes.BLOCK_ROUNDEL_BIG_EVEN_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_2", MyBlockEntityTypes.BLOCK_ROUNDEL2_TILE_ENTITY);
@@ -144,6 +143,13 @@ public class Main {
 		registerBlockEntityType.accept("block_roundel_3", MyBlockEntityTypes.BLOCK_ROUNDEL3_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_3_big", MyBlockEntityTypes.BLOCK_ROUNDEL3_BIG_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_3_big_even", MyBlockEntityTypes.BLOCK_ROUNDEL3_BIG_EVEN_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_4", MyBlockEntityTypes.BLOCK_ROUNDEL4_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_4_big", MyBlockEntityTypes.BLOCK_ROUNDEL4_BIG_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_4_big_even", MyBlockEntityTypes.BLOCK_ROUNDEL4_BIG_EVEN_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_5", MyBlockEntityTypes.BLOCK_ROUNDEL5_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_5_big", MyBlockEntityTypes.BLOCK_ROUNDEL5_BIG_TILE_ENTITY);
+		registerBlockEntityType.accept("block_roundel_5_big_even", MyBlockEntityTypes.BLOCK_ROUNDEL5_BIG_EVEN_TILE_ENTITY);
+
 		registerBlockEntityType.accept("block_roundel_station", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station_type_b", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_station_type_c", MyBlockEntityTypes.BLOCK_ROUNDEL_STATION_TYPE_C_TILE_ENTITY);
