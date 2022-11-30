@@ -24,5 +24,791 @@
       "base_train_type": "london_underground_d78",
       "texture_id": "mtr:custom_textures/london_underground_d78.png"
     }
+  },
+  "custom_signs": {
+    "central1": {
+      "texture_id": "mtr:custom_textures/central_line_adown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central2": {
+      "texture_id": "mtr:custom_textures/central_line_aleft.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central3": {
+      "texture_id": "mtr:custom_textures/central_line_aup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central4": {
+      "texture_id": "mtr:custom_textures/central_line_ab.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central5": {
+      "texture_id": "mtr:custom_textures/central_line_ac.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central6": {
+      "texture_id": "mtr:custom_textures/central_line_cright.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central7": {
+      "texture_id": "mtr:custom_textures/central_line_aleftdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central8": {
+      "texture_id": "mtr:custom_textures/central_line_aleftup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central9": {
+      "texture_id": "mtr:custom_textures/central_line_crightup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central10": {
+      "texture_id": "mtr:custom_textures/central_line_crightdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central11": {
+      "texture_id": "mtr:custom_textures/central_line_a.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central12": {
+      "texture_id": "mtr:custom_textures/central_line_cdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central13": {
+      "texture_id": "mtr:custom_textures/central_line_cup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central14": {
+      "texture_id": "mtr:custom_textures/central_line_ca.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "central15": {
+      "texture_id": "mtr:custom_textures/central_line_cb.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "northern1": {
+      "texture_id": "mtr:custom_textures/northern_adown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern2": {
+      "texture_id": "mtr:custom_textures/northern_aup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern3": {
+      "texture_id": "mtr:custom_textures/northern_aleft.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern4": {
+      "texture_id": "mtr:custom_textures/northern_cright.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern5": {
+      "texture_id": "mtr:custom_textures/northern_ab.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern6": {
+      "texture_id": "mtr:custom_textures/northern_ac.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern7": {
+      "texture_id": "mtr:custom_textures/northern_aleftdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern8": {
+      "texture_id": "mtr:custom_textures/northern_aleftup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern9": {
+      "texture_id": "mtr:custom_textures/northern_crightup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern10": {
+      "texture_id": "mtr:custom_textures/northern_crightdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern11": {
+      "texture_id": "mtr:custom_textures/northern_cdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern12": {
+      "texture_id": "mtr:custom_textures/northern_cup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern13": {
+      "texture_id": "mtr:custom_textures/northern_ca.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "northern14": {
+      "texture_id": "mtr:custom_textures/northern_cb.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr1": {
+      "texture_id": "mtr:custom_textures/dlr_ca.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr2": {
+      "texture_id": "mtr:custom_textures/dlr_cb.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr3": {
+      "texture_id": "mtr:custom_textures/dlr_cright.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr4": {
+      "texture_id": "mtr:custom_textures/dlr_crightup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr5": {
+      "texture_id": "mtr:custom_textures/dlr_crightdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr6": {
+      "texture_id": "mtr:custom_textures/dlr_cdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr7": {
+      "texture_id": "mtr:custom_textures/dlr_cup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr8": {
+      "texture_id": "mtr:custom_textures/dlr_aup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr9": {
+      "texture_id": "mtr:custom_textures/dlr_aleftup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr10": {
+      "texture_id": "mtr:custom_textures/dlr_aleft.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr11": {
+      "texture_id": "mtr:custom_textures/dlr_aleftdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr12": {
+      "texture_id": "mtr:custom_textures/dlr_adown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr13": {
+      "texture_id": "mtr:custom_textures/dlr_ab.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "dlr14": {
+      "texture_id": "mtr:custom_textures/dlr_ac.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc1": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_ab.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc2": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_ac.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc3": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_adown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc4": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_aleft.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc5": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_aleftup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc6": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_aleftdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc7": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_aup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc8": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_ca.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc9": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_cb.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc10": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_cup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc11": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_crightup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc12": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_cright.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc13": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_crightdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "picc14": {
+      "texture_id": "mtr:custom_textures/piccadilly_line_cdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic1": {
+      "texture_id": "mtr:custom_textures/victoria_line_ab.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic2": {
+      "texture_id": "mtr:custom_textures/victoria_line_ac.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic3": {
+      "texture_id": "mtr:custom_textures/victoria_line_adown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic4": {
+      "texture_id": "mtr:custom_textures/victoria_line_aleft.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic5": {
+      "texture_id": "mtr:custom_textures/victoria_line_aleftdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic6": {
+      "texture_id": "mtr:custom_textures/victoria_line_aleftup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic7": {
+      "texture_id": "mtr:custom_textures/victoria_line_aup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic8": {
+      "texture_id": "mtr:custom_textures/victoria_line_ca.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic9": {
+      "texture_id": "mtr:custom_textures/victoria_line_cb.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic10": {
+      "texture_id": "mtr:custom_textures/victoria_line_cdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic11": {
+      "texture_id": "mtr:custom_textures/victoria_line_cright.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic12": {
+      "texture_id": "mtr:custom_textures/victoria_line_crightdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic13": {
+      "texture_id": "mtr:custom_textures/victoria_line_crightup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "vic14": {
+      "texture_id": "mtr:custom_textures/victoria_line_cup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz1": {
+      "texture_id": "mtr:custom_textures/liz_line_ab.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz2": {
+      "texture_id": "mtr:custom_textures/liz_line_ac.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz3": {
+      "texture_id": "mtr:custom_textures/liz_line_adown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz4": {
+      "texture_id": "mtr:custom_textures/liz_line_aleft.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz5": {
+      "texture_id": "mtr:custom_textures/liz_line_aleftdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz6": {
+      "texture_id": "mtr:custom_textures/liz_line_aleftup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz7": {
+      "texture_id": "mtr:custom_textures/liz_line_aup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz8": {
+      "texture_id": "mtr:custom_textures/liz_line_ca.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz9": {
+      "texture_id": "mtr:custom_textures/liz_line_cb.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz10": {
+      "texture_id": "mtr:custom_textures/liz_line_cdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz11": {
+      "texture_id": "mtr:custom_textures/liz_line_cright.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz12": {
+      "texture_id": "mtr:custom_textures/liz_line_crightdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz13": {
+      "texture_id": "mtr:custom_textures/liz_line_crightup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "liz14": {
+      "texture_id": "mtr:custom_textures/liz_line_cup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout2": {
+      "texture_id": "mtr:custom_textures/wayout_ab.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout3": {
+      "texture_id": "mtr:custom_textures/wayout_adown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout4": {
+      "texture_id": "mtr:custom_textures/wayout_aleft.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout5": {
+      "texture_id": "mtr:custom_textures/wayout_aleftdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout6": {
+      "texture_id": "mtr:custom_textures/wayout_aleftup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout7": {
+      "texture_id": "mtr:custom_textures/wayout_aup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout8": {
+      "texture_id": "mtr:custom_textures/wayout_ca.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout9": {
+      "texture_id": "mtr:custom_textures/blank.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout10": {
+      "texture_id": "mtr:custom_textures/wayout_cdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout11": {
+      "texture_id": "mtr:custom_textures/wayout_cright.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout12": {
+      "texture_id": "mtr:custom_textures/wayout_crightdown.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout13": {
+      "texture_id": "mtr:custom_textures/wayout_crightup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    },
+    "wayout14": {
+      "texture_id": "mtr:custom_textures/wayout_cup.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "000000"
+    }
   }
 }
