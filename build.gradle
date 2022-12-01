@@ -8,7 +8,7 @@ plugins {
 	id "com.github.johnrengelman.shadow" version "7.1.0"
 }
 
-def default_minecraft_version = "1.18.2"
+def default_minecraft_version = "1.16.5"
 def minecraft_version = project.properties.containsKey("buildVersion") ? project.getProperties().get("buildVersion") : default_minecraft_version
 def is_1_16 = (minecraft_version as String).startsWith("1.16")
 def is_1_17 = (minecraft_version as String).startsWith("1.17")
@@ -38,6 +38,9 @@ subprojects {
 		mappings loom.officialMojangMappings()
 		implementation files("../checkouts/mtr-common.jar")
 		implementation "com.github.jonafanho:Minecraft-Mod-API-Tools:${minecraft_mod_api_tools_version}"
+		implementation 'org.codehaus.groovy:groovy-json:3.0.9'
+		testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+		testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 	}
 }
 
@@ -146,6 +149,7 @@ allprojects {
 		}
 	}
 }
+
 
 static def getModrinthVersion(loader, minecraftVersion, projectId) {
 	def versionsArray = new JsonSlurper().parse(("https://api.modrinth.com/v2/project/" + projectId + "/version").toURL())
