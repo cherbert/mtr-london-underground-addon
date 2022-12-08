@@ -12,7 +12,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class BlockTunnelSignal extends BlockSignalLightBase {
 	public BlockTunnelSignal(BlockBehaviour.Properties settings) {
-		super(settings);
+		super(settings, 2, 14);
 	}
 
 	@Override
