@@ -1,9 +1,9 @@
 package net.londonunderground;
 
+import mtr.CreativeModeTabs;
 import mtr.RegistryObject;
 import mtr.mappings.BlockEntityMapper;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
@@ -15,7 +15,7 @@ public class Main {
 
 	public static void init(
 			RegisterBlockItem registerBlockItem,
-			BiConsumer<String,RegistryObject<? extends BlockEntityType<? extends BlockEntityMapper>>> registerBlockEntityType,
+			BiConsumer<String, RegistryObject<? extends BlockEntityType<? extends BlockEntityMapper>>> registerBlockEntityType,
 			BiConsumer<String, SoundEvent> registerSoundEvent
 	) {
 		registerBlockItem.accept("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
@@ -162,6 +162,6 @@ public class Main {
 
 	@FunctionalInterface
 	public interface RegisterBlockItem {
-		void accept(String string, RegistryObject<Block> block, CreativeModeTab tab);
+		void accept(String string, RegistryObject<Block> block, CreativeModeTabs.Wrapper tab);
 	}
 }
