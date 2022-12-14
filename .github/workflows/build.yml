@@ -16,13 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
       - name: Validate gradle wrapper
-        uses: gradle/wrapper-validation-action@v1
+        uses: gradle/wrapper-validation-action@master
       - name: Setup JDK 17
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@main
         with:
           java-version: 17
+          distribution: 'zulu'
       - name: Make gradle wrapper executable
         run: chmod +x ./gradlew
       - name: Setup ${{ matrix.minecraft }} ${{ matrix.loader }}
@@ -30,7 +31,7 @@ jobs:
       - name: Build ${{ matrix.minecraft }} ${{ matrix.loader }}
         run: ./gradlew ${{ matrix.loader }}:build -PbuildVersion="${{ matrix.minecraft }}"
       - name: Capture release artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@main
         with:
           name: Artifacts
           path: build/release
@@ -38,7 +39,7 @@ jobs:
         env:
           MY_KEY: ${{ secrets.FTP_HOST }}
         if: ${{ env.MY_KEY != '' }}
-        uses: sand4rt/ftp-deployer@v1.4
+        uses: sand4rt/ftp-deployer@master
         with:
           sftp: true
           host: ${{ secrets.FTP_HOST }}
@@ -52,7 +53,7 @@ jobs:
         env:
           MY_KEY: ${{ secrets.FTP_HOST }}
         if: ${{ env.MY_KEY != '' && matrix.loader == 'fabric' && matrix.minecraft == '1.16.5' }}
-        uses: sand4rt/ftp-deployer@v1.4
+        uses: sand4rt/ftp-deployer@master
         with:
           sftp: true
           host: ${{ secrets.FTP_HOST }}
