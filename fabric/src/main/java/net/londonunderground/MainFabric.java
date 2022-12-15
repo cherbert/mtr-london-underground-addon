@@ -1,15 +1,15 @@
 package net.londonunderground;
 
+import mtr.CreativeModeTabs;
 import mtr.RegistryObject;
 import mtr.mappings.BlockEntityMapper;
+import mtr.mappings.RegistryUtilities;
 import net.fabricmc.api.ModInitializer;
 import net.londonunderground.mappings.FabricRegistryUtilities;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
@@ -21,16 +21,18 @@ public class MainFabric implements ModInitializer {
 		FabricRegistryUtilities.registerCommand(PanelCommand::register);
 	}
 
-	private static void registerBlock(String path, RegistryObject<Block> block, CreativeModeTab itemGroup) {
-		Registry.register(Registry.BLOCK, new ResourceLocation(Main.MOD_ID, path), block.get());
-		Registry.register(Registry.ITEM, new ResourceLocation(Main.MOD_ID, path), new BlockItem(block.get(), new Item.Properties().tab(itemGroup)));
+	private static void registerBlock(String path, RegistryObject<Block> block, CreativeModeTabs.Wrapper creativeModeTab) {
+		Registry.register(RegistryUtilities.registryGetBlock(), new ResourceLocation(Main.MOD_ID, path), block.get());
+		final BlockItem blockItem = new BlockItem(block.get(), RegistryUtilities.createItemProperties(creativeModeTab::get));
+		Registry.register(RegistryUtilities.registryGetItem(), new ResourceLocation(Main.MOD_ID, path), blockItem);
+		FabricRegistryUtilities.registerCreativeModeTab(creativeModeTab.get(), blockItem);
 	}
 
-	private static <T extends BlockEntityMapper> void registerBlockEntityType(String path, RegistryObject<? extends BlockEntityType<? extends BlockEntityMapper>> blockEntityType) {
-		Registry.register(Registry.BLOCK_ENTITY_TYPE, new ResourceLocation(Main.MOD_ID, path), blockEntityType.get());
+	private static void registerBlockEntityType(String path, RegistryObject<? extends BlockEntityType<? extends BlockEntityMapper>> blockEntityType) {
+		Registry.register(RegistryUtilities.registryGetBlockEntityType(), new ResourceLocation(Main.MOD_ID, path), blockEntityType.get());
 	}
 
 	private static void registerSoundEvent(String path, SoundEvent soundEvent) {
-		Registry.register(Registry.SOUND_EVENT, new ResourceLocation(Main.MOD_ID, path), soundEvent);
+		Registry.register(RegistryUtilities.registryGetSoundEvent(), new ResourceLocation(Main.MOD_ID, path), soundEvent);
 	}
 }

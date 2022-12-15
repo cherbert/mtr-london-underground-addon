@@ -2,7 +2,6 @@ package net.londonunderground.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.Tesselator;
-import com.mojang.math.Vector3f;
 import mtr.block.IBlock;
 import mtr.client.ClientData;
 import mtr.client.Config;
@@ -12,6 +11,7 @@ import mtr.data.RailwayData;
 import mtr.data.Station;
 import mtr.mappings.BlockEntityRendererMapper;
 import mtr.mappings.Text;
+import mtr.mappings.UtilitiesClient;
 import net.londonunderground.Main;
 import net.londonunderground.blocks.BlockRoundelBase;
 import net.minecraft.client.Minecraft;
@@ -95,12 +95,12 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 
 		matrices.pushPose();
 		matrices.translate(0.5, 0.5, 0.5);
-		matrices.mulPose(Vector3f.YP.rotationDegrees(-facing.toYRot()));
-		matrices.mulPose(Vector3f.ZP.rotationDegrees(180));
+		UtilitiesClient.rotateYDegrees(matrices, -facing.toYRot());
+		UtilitiesClient.rotateZDegrees(matrices, 180);
 		final MultiBufferSource.BufferSource immediate = MultiBufferSource.immediate(Tesselator.getInstance().getBuilder());
 		render(matrices, immediate, roundelText, textWidth, color, light);
 		if (isDoubleSided) {
-			matrices.mulPose(Vector3f.YP.rotationDegrees(180));
+			UtilitiesClient.rotateYDegrees(matrices, 180);
 			render(matrices, immediate, roundelText, textWidth, color, light);
 		}
 		immediate.endBatch();
@@ -109,7 +109,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 
 	private void render(PoseStack matrices, MultiBufferSource.BufferSource immediate, FormattedCharSequence roundelText, int textWidth, int color, int light) {
 		matrices.pushPose();
-		matrices.mulPose(Vector3f.XP.rotationDegrees(xTilt));
+		UtilitiesClient.rotateXDegrees(matrices, xTilt);
 		matrices.translate(-xOffset, -yOffset, -zOffset - SMALL_OFFSET * 2);
 
 		final float scale = Math.min((maxWidth) / textWidth, maxScale);
