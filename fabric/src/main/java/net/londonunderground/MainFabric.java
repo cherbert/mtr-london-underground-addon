@@ -28,7 +28,7 @@ public class MainFabric implements ModInitializer {
 		FabricRegistryUtilities.registerCreativeModeTab(creativeModeTab.get(), blockItem);
 	}
 
-	private static <T extends BlockEntityMapper> void registerBlockEntityType(String path, RegistryObject<? extends BlockEntityType<? extends BlockEntityMapper>> blockEntityType) {
+	private static void registerBlockEntityType(String path, RegistryObject<? extends BlockEntityType<? extends BlockEntityMapper>> blockEntityType) {
 		Registry.register(RegistryUtilities.registryGetBlockEntityType(), new ResourceLocation(Main.MOD_ID, path), blockEntityType.get());
 	}
 

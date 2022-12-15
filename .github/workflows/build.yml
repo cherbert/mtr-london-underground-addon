@@ -12,7 +12,6 @@ jobs:
       fail-fast: false
       matrix:
         minecraft: [ 1.16.5, 1.17.1, 1.18.2, 1.19.2, 1.19.3 ]
-        loader: [ fabric, forge ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -29,7 +28,7 @@ jobs:
       - name: Setup ${{ matrix.minecraft }} ${{ matrix.loader }}
         run: ./gradlew setupLibrary -PbuildVersion="${{ matrix.minecraft }}"
       - name: Build ${{ matrix.minecraft }} ${{ matrix.loader }}
-        run: ./gradlew ${{ matrix.loader }}:build -PbuildVersion="${{ matrix.minecraft }}"
+        run: ./gradlew build -PbuildVersion="${{ matrix.minecraft }}"
       - name: Capture release artifacts
         uses: actions/upload-artifact@main
         with:

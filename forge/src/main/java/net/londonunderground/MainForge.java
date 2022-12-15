@@ -1,6 +1,7 @@
 package net.londonunderground;
 
 import mtr.CreativeModeTabs;
+import mtr.Registry;
 import mtr.RegistryObject;
 import mtr.mappings.BlockEntityMapper;
 import mtr.mappings.DeferredRegisterHolder;
@@ -50,7 +51,7 @@ public class MainForge {
 		registerBlock(path, block);
 		ITEMS.register(path, () -> {
 			final BlockItem blockItem = new BlockItem(block.get(), RegistryUtilities.createItemProperties(creativeModeTabWrapper::get));
-			ForgeUtilities.registerCreativeModeTab(creativeModeTabWrapper.resourceLocation, blockItem);
+			Registry.registerCreativeModeTab(creativeModeTabWrapper.resourceLocation, blockItem);
 			return blockItem;
 		});
 	}
