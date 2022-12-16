@@ -8,14 +8,13 @@ import java.util.Map;
 
 public class ModUpload {
 
-	private static final String[] MINECRAFT_VERSIONS = {"1.16.5", "1.17.1", "1.18.2", "1.19.2"};
+	private static final String[] MINECRAFT_VERSIONS = {"1.16.5", "1.17.1", "1.18.2", "1.19.2", "1.19.3"};
 
 	public static void main(String[] args) throws IOException {
 		if (args.length == 2) {
 			final String[] modVersion = {""};
-			NetworkUtils.openConnectionSafeJson("https://www.minecrafttransitrailway.com/libs/latest/latest-lu-addon.json", jsonElement -> {
-				modVersion[0] = jsonElement.getAsJsonObject().get("version").getAsString();
-			});
+
+			NetworkUtils.openConnectionSafeJson("https://www.minecrafttransitrailway.com/libs/latest/latest-lu-addon.json", jsonElement -> modVersion[0] = jsonElement.getAsJsonObject().get("version").getAsString());
 			for (final String minecraftVersion : MINECRAFT_VERSIONS) {
 				for (final ModLoader modLoader : ModLoader.values()) {
 					final String modVersionMtr = modLoader.name + "-" + minecraftVersion + "-" + modVersion[0];
