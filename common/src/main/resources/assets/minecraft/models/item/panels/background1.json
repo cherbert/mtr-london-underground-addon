@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/black_concrete",
-		"3": "stations/wall"
+		"3": "block/sign/wall"
 	},
 	"elements": [
 		{

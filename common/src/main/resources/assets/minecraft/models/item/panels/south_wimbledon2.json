@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/black_concrete",
-		"7": "stations/south_wimbledon2",
+		"7": "block/sign/south_wimbledon2",
 		"particle": "block/sandstone_top"
 	},
 	"elements": [

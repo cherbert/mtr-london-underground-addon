@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/white_concrete",
-		"7": "ads/touch_in",
+		"7": "block/sign/touch_in",
 		"particle": "block/sandstone_top"
 	},
 	"elements": [

@@ -1,7 +1,7 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "4": "stations/embankment2"
+    "4": "block/sign/embankment2"
   },
   "elements": [
     {

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/white_concrete",
-		"7": "ads/HM_Corona",
+		"7": "block/sign/HM_Corona",
 		"particle": "block/sandstone_top"
 	},
 	"elements": [

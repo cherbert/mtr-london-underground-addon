@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/white_concrete",
-		"7": "stations/tooting_broadway",
+		"7": "block/sign/tooting_broadway",
 		"particle": "block/sandstone_top"
 	},
 	"elements": [

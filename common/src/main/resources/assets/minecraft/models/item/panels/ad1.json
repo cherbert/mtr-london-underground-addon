@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "londonunderground:block/black_concrete_powder",
-		"2": "ads/st2",
+		"2": "block/sign/st2",
 		"particle": "londonunderground:block/black_concrete_powder"
 	},
 	"elements": [

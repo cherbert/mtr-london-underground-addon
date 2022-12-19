@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/black_concrete",
-		"2": "stations/wall",
-		"3": "stations/sw_advert4",
+		"2": "block/sign/wall",
+		"3": "block/sign/sw_advert4",
 		"particle": "block/black_concrete"
 	},
 	"elements": [

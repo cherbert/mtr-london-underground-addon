@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"3": "stations/stockwell2",
+		"3": "block/sign/stockwell2",
 		"4": "londonunderground:block/tube_1",
-		"particle": "stations/stockwell2"
+		"particle": "block/sign/stockwell2"
 	},
 	"elements": [
 		{
