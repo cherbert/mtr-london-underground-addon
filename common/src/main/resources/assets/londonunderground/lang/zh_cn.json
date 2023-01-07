@@ -95,5 +95,4 @@
   "block.londonunderground.block_roundel_station_top" : "站台名称投影 (顶部倾斜)",
   "tooltip.londonunderground.block_roundel" : "文字基于站名",
   "gui.londonunderground.arrival_sec": " Due"
-  "gui.londonunderground.arrival_sec_cjk": " 进站"
 }
