@@ -34,6 +34,11 @@ public interface MyBlocks {
 	RegistryObject<Block> TUNNEL_BLOCK_3_DUEL =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> TUNNEL_BLOCK_4 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> TUNNEL_BLOCK_5 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+
+
+	RegistryObject<Block> STATION_A1 =new RegistryObject<>(()-> new StationA1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+
+
 	RegistryObject<Block> TUBE_0 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_1 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_1_STOP =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
