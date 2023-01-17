@@ -43,11 +43,15 @@ public class Main {
 		registerBlockItem.accept("tunnel_block_5", MyBlocks.TUNNEL_BLOCK_5, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_arch", MyBlocks.MORDEN_ARCH, MyItems.TFL_BLOCKS);
 
-		registerBlockItem.accept("station_a1", MyBlocks.STATION_A1, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("station_a2", MyBlocks.STATION_A2, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("station_a3", MyBlocks.STATION_A3, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("station_a4", MyBlocks.STATION_A4, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("station_a5", MyBlocks.STATION_A5, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("station_a1", MyBlocks.STATION_A1, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a2", MyBlocks.STATION_A2, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a3", MyBlocks.STATION_A3, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a4", MyBlocks.STATION_A4, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a5", MyBlocks.STATION_A5, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a6", MyBlocks.STATION_A6, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a7", MyBlocks.STATION_A7, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a8", MyBlocks.STATION_A8, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a9", MyBlocks.STATION_A9, MyItems.TFL_STATION);
 
 		registerBlockItem.accept("tube_0", MyBlocks.TUBE_0, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("tube_1", MyBlocks.TUBE_1, MyItems.TFL_LEGACY);

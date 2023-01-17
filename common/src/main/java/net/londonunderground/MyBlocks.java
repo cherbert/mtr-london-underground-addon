@@ -41,6 +41,10 @@ public interface MyBlocks {
 	RegistryObject<Block> STATION_A3 =new RegistryObject<>(()-> new StationA3(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A4 =new RegistryObject<>(()-> new StationA4(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A5 =new RegistryObject<>(()-> new StationA5(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A6 =new RegistryObject<>(()-> new StationA6(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A7 =new RegistryObject<>(()-> new StationA7(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A8 =new RegistryObject<>(()-> new StationA8(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A9 =new RegistryObject<>(()-> new StationA9(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 
 	RegistryObject<Block> TUBE_0 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_1 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
