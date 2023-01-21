@@ -8,7 +8,7 @@
 		"Chris Herbert",
 		"Benjamin Wyatt"
 	],
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
