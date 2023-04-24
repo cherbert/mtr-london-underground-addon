@@ -1,6 +1,6 @@
 package net.londonunderground.blocks;
 
-import mtr.block.BlockPIDSBase;
+import mtr.block.BlockPIDSBaseHorizontal;
 import mtr.block.IBlock;
 import mtr.mappings.BlockEntityMapper;
 import net.londonunderground.MyBlockEntityTypes;
@@ -11,7 +11,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class NorthernLinePIDS extends BlockPIDSBase {
+public class NorthernLinePIDS extends BlockPIDSBaseHorizontal {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext collisionContext) {
@@ -25,14 +25,14 @@ public class NorthernLinePIDS extends BlockPIDSBase {
 		return new TileEntityNorthernLinePIDS(pos, state);
 	}
 
-	public static class TileEntityNorthernLinePIDS extends TileEntityBlockPIDSBase {
+	public static class TileEntityNorthernLinePIDS extends TileEntityBlockPIDSBaseHorizontal {
 
 		public TileEntityNorthernLinePIDS(BlockPos pos, BlockState state) {
 			super(MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY.get(), pos, state);
 		}
 
 		@Override
-		protected int getMaxArrivals() {
+		public int getMaxArrivals() {
 			return 3;
 		}
 	}

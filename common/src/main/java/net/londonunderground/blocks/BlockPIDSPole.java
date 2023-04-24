@@ -1,6 +1,6 @@
 package net.londonunderground.blocks;
 
-import mtr.block.BlockPIDSBase;
+import mtr.block.BlockPIDSBaseHorizontal;
 import mtr.block.BlockPoleCheckBase;
 import mtr.block.IBlock;
 import mtr.mappings.Text;
@@ -26,7 +26,7 @@ public class BlockPIDSPole extends BlockPoleCheckBase {
 
 	@Override
 	protected boolean isBlock(Block block) {
-		return block instanceof BlockPIDSBase || block instanceof BlockPIDSPole;
+		return block instanceof BlockPIDSBaseHorizontal || block instanceof BlockPIDSPole;
 	}
 
 	@Override
