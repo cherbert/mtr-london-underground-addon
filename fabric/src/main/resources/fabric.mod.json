@@ -5,8 +5,7 @@
 	"name": "MTR London Underground Addon",
 	"description": "A London Underground Addon for the Minecraft Transit Railway Mod",
 	"authors": [
-		"Chris Herbert",
-		"Benjamin Wyatt"
+		"John Doe"
 	],
 	"license": "MIT",
 	"icon": "icon.png",

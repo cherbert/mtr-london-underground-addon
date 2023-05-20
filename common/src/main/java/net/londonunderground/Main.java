@@ -53,15 +53,29 @@ public class Main {
 		registerBlockItem.accept("station_a8", MyBlocks.STATION_A8, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a9", MyBlocks.STATION_A9, MyItems.TFL_STATION);
 
-		registerBlockItem.accept("tube_0", MyBlocks.TUBE_0, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("station_a1b", MyBlocks.STATION_A1b, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a2b", MyBlocks.STATION_A2b, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a3b", MyBlocks.STATION_A3b, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a4b", MyBlocks.STATION_A4b, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a5b", MyBlocks.STATION_A5b, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a6b", MyBlocks.STATION_A6b, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a7b", MyBlocks.STATION_A7b, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a8b", MyBlocks.STATION_A8b, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a9b", MyBlocks.STATION_A9b, MyItems.TFL_STATION);
+
+
+		registerBlockItem.accept("tube_0", MyBlocks.TUBE_0, MyItems.TFL_STATION);
+		registerBlockItem.accept("tube_0_slab", MyBlocks.TUBE_0_SLAB, MyItems.TFL_STATION);
+		registerBlockItem.accept("tube_0b", MyBlocks.TUBE_0b, MyItems.TFL_STATION);
+		registerBlockItem.accept("tube_0b_slab", MyBlocks.TUBE_0b_SLAB, MyItems.TFL_STATION);
+
 		registerBlockItem.accept("tube_1", MyBlocks.TUBE_1, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("tube_1_stop", MyBlocks.TUBE_1_STOP, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("tube_1_duel", MyBlocks.TUBE_1_DUEL, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("tube_2", MyBlocks.TUBE_2, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("tube_2_duel", MyBlocks.TUBE_2_DUEL, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("tube_3", MyBlocks.TUBE_3, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_0b", MyBlocks.TUBE_0b, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_0b_slab", MyBlocks.TUBE_0b_SLAB, MyItems.TFL_LEGACY);
+
 		registerBlockItem.accept("tube_1b", MyBlocks.TUBE_1b, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("tube_1b_stop", MyBlocks.TUBE_1b_STOP, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("tube_1b_duel", MyBlocks.TUBE_1b_DUEL, MyItems.TFL_LEGACY);

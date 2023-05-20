@@ -26,7 +26,16 @@ public class StationA8 extends HorizontalDirectionalBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
 		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
-		return Shapes.or(IBlock.getVoxelShapeByDirection(0,15,0,16, 16, 9, facing), IBlock.getVoxelShapeByDirection(0, 9, 0,16, 15, 8, facing), IBlock.getVoxelShapeByDirection(0, 0, 0,16, 9, 7, facing));
+		return Shapes.or(
+				IBlock.getVoxelShapeByDirection(0,4,0,16, 5, 2, facing),
+				IBlock.getVoxelShapeByDirection(0, 5, 0,16, 6, 4, facing),
+				IBlock.getVoxelShapeByDirection(0, 6, 0,16, 7, 5, facing),
+				IBlock.getVoxelShapeByDirection(0,7,0, 16, 8,7, facing),
+				IBlock.getVoxelShapeByDirection(0, 8, 0,16, 9, 9, facing),
+				IBlock.getVoxelShapeByDirection(0, 9, 0,16, 10, 11, facing),
+				IBlock.getVoxelShapeByDirection(0,10,0,16, 11, 14, facing),
+				IBlock.getVoxelShapeByDirection(0,11,0, 16, 16,16, facing)
+		);
 	}
 
 	@Override
