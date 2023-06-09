@@ -24,17 +24,20 @@ public interface MyBlocks {
 	RegistryObject<Block> SOUND_SEE_IT_SAY_IT_SORTED =new RegistryObject<>(()-> new SoundSeeItSayItSorted(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> STATION_LIGHT =new RegistryObject<>(()-> new StationLight(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).lightLevel(state -> 15).noOcclusion()));
 	RegistryObject<Block> EXIT_SIGN =new RegistryObject<>(()-> new ExitSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).lightLevel(state -> 15)));
+
 	RegistryObject<Block> TUNNEL_ENTRANCE_1 =new RegistryObject<>(()-> new TunnelEntrance1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_0 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().noCollission().noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_1 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_1_DUEL =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_2 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_2_SIGNAL =new RegistryObject<>(()-> new BlockTunnelSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_2_DUEL =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_3 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_3_DUEL =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_4 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TUNNEL_BLOCK_5 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A0 =new RegistryObject<>(()-> new TunnelA0(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().noCollission().noOcclusion()));
+	RegistryObject<Block> TUNNEL_A1 =new RegistryObject<>(()-> new TunnelA1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A1_DUEL =new RegistryObject<>(()-> new TunnelA1Duel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A2 =new RegistryObject<>(()-> new TunnelA2(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A2_NOWIRES =new RegistryObject<>(()-> new TunnelA2NoWires(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A2_SIGNAL =new RegistryObject<>(()-> new TunnelA2Signal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A2_DUEL =new RegistryObject<>(()-> new TunnelA2Duel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A3 =new RegistryObject<>(()-> new TunnelA3(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A3_NOWIRES =new RegistryObject<>(()-> new TunnelA3NoWires(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A3_DUEL =new RegistryObject<>(()-> new TunnelA3Duel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A4 =new RegistryObject<>(()-> new TunnelA4(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_A5 =new RegistryObject<>(()-> new TunnelA5(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
 
 	RegistryObject<Block> STATION_A1 =new RegistryObject<>(()-> new StationA1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
@@ -136,6 +139,17 @@ public interface MyBlocks {
 
 	RegistryObject<Block> MORDEN_STEPS =new RegistryObject<>(()-> new StairBlockExtends(TFL_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_ARCH =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+
+	RegistryObject<Block> TUNNEL_BLOCK_0 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().noCollission().noOcclusion()));
+	RegistryObject<Block> TUNNEL_BLOCK_1 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_BLOCK_1_DUEL =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_BLOCK_2 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_BLOCK_2_SIGNAL =new RegistryObject<>(()-> new BlockTunnelSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_BLOCK_2_DUEL =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_BLOCK_3 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_BLOCK_3_DUEL =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_BLOCK_4 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TUNNEL_BLOCK_5 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
 
 }

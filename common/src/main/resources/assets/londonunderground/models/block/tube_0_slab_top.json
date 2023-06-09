@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/slab_top",
+	"textures": {
+		"bottom": "block/white_concrete_powder",
+		"top": "block/white_concrete_powder",
+		"side": "block/white_concrete_powder"
+	}
+}

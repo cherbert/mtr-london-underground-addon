@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "londonunderground:block/tube_0_slab"
+    },
+    "type=double": {
+      "model": "londonunderground:block/tube_0"
+    },
+    "type=top": {
+      "model": "londonunderground:block/tube_0_slab_top"
+    }
+  }
+}
