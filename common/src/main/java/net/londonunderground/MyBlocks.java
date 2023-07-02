@@ -81,6 +81,8 @@ public interface MyBlocks {
 	RegistryObject<Block> MORDEN_SLAB =new RegistryObject<>(()-> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_COBBLE_SLAB =new RegistryObject<>(()-> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_COBBLESTONE =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> MORDEN_ARCH_NEW =new RegistryObject<>(()-> new MordenArch(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> MORDEN_ARCH_ROOF =new RegistryObject<>(()-> new TunnelA5(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_SIGN =new RegistryObject<>(()-> new MordenSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> METROPOLITAN_SIGN =new RegistryObject<>(()-> new MetropolitanSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> ELIZABETH_SIGN =new RegistryObject<>(()-> new ElizabethSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));

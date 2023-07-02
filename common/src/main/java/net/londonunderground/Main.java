@@ -80,6 +80,8 @@ public class Main {
 		registerBlockItem.accept("track_1", MyBlocks.TRACK_1, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("track_2", MyBlocks.TRACK_2, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_stairs", MyBlocks.MORDEN_STAIRS, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("morden_arch_new", MyBlocks.MORDEN_ARCH_NEW, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("morden_arch_roof", MyBlocks.MORDEN_ARCH_ROOF, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_slab", MyBlocks.MORDEN_SLAB, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_cobble_slab", MyBlocks.MORDEN_COBBLE_SLAB, MyItems.TFL_BLOCKS);
