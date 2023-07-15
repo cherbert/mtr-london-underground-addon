@@ -1,6 +1,5 @@
 package net.londonunderground.blocks;
 
-import mtr.block.BlockPlatform;
 import mtr.block.IBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -14,10 +13,9 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class LU_PLATFORM_1 extends BlockPlatform {
-
-	public LU_PLATFORM_1(Properties settings, boolean isIndented) {
-		super(settings, isIndented);
+public class StationA3StopMarker extends HorizontalDirectionalBlock {
+	public StationA3StopMarker(Properties settings) {
+		super(settings);
 	}
 
 	@Override
@@ -28,15 +26,13 @@ public class LU_PLATFORM_1 extends BlockPlatform {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
 		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
-		return Shapes.or(
-				IBlock.getVoxelShapeByDirection(0,0,5.05,16, 16, 16, facing),
-				IBlock.getVoxelShapeByDirection(0, 13, 0,16, 16, 5.05, facing)
-		);
+		return Shapes.or(IBlock.getVoxelShapeByDirection(0,0,8,16, 1, 9, facing), IBlock.getVoxelShapeByDirection(0, 0, 7,16, 7, 8, facing), IBlock.getVoxelShapeByDirection(0, 0, 6,16, 16, 7, facing),
+				IBlock.getVoxelShapeByDirection(0, 0, 5,16, 16, 6, facing), IBlock.getVoxelShapeByDirection(0, 0, 4,16, 16, 5, facing), IBlock.getVoxelShapeByDirection(0, 0, 0,16, 16, 4, facing));
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING, DOOR_TYPE, SIDE);
+		builder.add(FACING);
 	}
 
 

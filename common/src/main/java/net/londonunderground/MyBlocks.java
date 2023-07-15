@@ -2,7 +2,6 @@ package net.londonunderground;
 
 import mtr.RegistryObject;
 import mtr.block.BlockPIDSPole;
-import mtr.block.BlockPlatform;
 import net.londonunderground.blocks.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
@@ -12,8 +11,8 @@ import net.minecraft.world.level.material.MaterialColor;
 
 public interface MyBlocks {
 	RegistryObject<Block> PLATFORM_TFL_1 =new RegistryObject<>(()-> new LU_PLATFORM_1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_YELLOW).requiresCorrectToolForDrops().strength(2), true));
-	RegistryObject<Block> PLATFORM_TFL_ISLAND =new RegistryObject<>(()-> new BlockPlatform(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_YELLOW).requiresCorrectToolForDrops().strength(2), true));
-	RegistryObject<Block> PLATFORM_TFL_GAP =new RegistryObject<>(()-> new BlockPlatform(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_YELLOW).requiresCorrectToolForDrops().strength(2), true));
+	RegistryObject<Block> PLATFORM_TFL_ISLAND =new RegistryObject<>(()-> new LU_PLATFORM_1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_YELLOW).requiresCorrectToolForDrops().strength(2), true));
+	RegistryObject<Block> PLATFORM_TFL_GAP =new RegistryObject<>(()-> new LU_PLATFORM_1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_YELLOW).requiresCorrectToolForDrops().strength(2), true));
 
 	RegistryObject<Block> PLATFORM_BLOCK =new RegistryObject<>(()-> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_YELLOW).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> PLATFORM_VARIANT =new RegistryObject<>(()-> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_YELLOW).requiresCorrectToolForDrops().strength(2)));
@@ -42,6 +41,8 @@ public interface MyBlocks {
 
 	RegistryObject<Block> STATION_A1 =new RegistryObject<>(()-> new StationA1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A2 =new RegistryObject<>(()-> new StationA2(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A3_STOP =new RegistryObject<>(()-> new StationA3StopMarker(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A3_GREEN =new RegistryObject<>(()-> new StationA3StopMarker(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A3 =new RegistryObject<>(()-> new StationA3(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A4 =new RegistryObject<>(()-> new StationA4(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A5 =new RegistryObject<>(()-> new StationA5(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
@@ -52,6 +53,8 @@ public interface MyBlocks {
 
 	RegistryObject<Block> STATION_A1b =new RegistryObject<>(()-> new StationA1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A2b =new RegistryObject<>(()-> new StationA2(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A3b_STOP =new RegistryObject<>(()-> new StationA3StopMarker(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A3b_GREEN =new RegistryObject<>(()-> new StationA3StopMarker(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A3b =new RegistryObject<>(()-> new StationA3(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A4b =new RegistryObject<>(()-> new StationA4(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A5b =new RegistryObject<>(()-> new StationA5(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
@@ -74,8 +77,7 @@ public interface MyBlocks {
 	RegistryObject<Block> ROUNDEL_POLE_OVERGROUND = new RegistryObject<>(() -> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
 
 	RegistryObject<Block> NORTHERN_PIDS =new RegistryObject<>(NorthernLinePIDS::new);
-	RegistryObject<Block> TRACK_1 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> TRACK_2 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+
 	RegistryObject<Block> MORDEN_STAIRS =new RegistryObject<>(()-> new StairBlockExtends(TFL_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_STONE =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_SLAB =new RegistryObject<>(()-> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
@@ -126,6 +128,8 @@ public interface MyBlocks {
 	// Legacy Items
 	//
 
+	RegistryObject<Block> TRACK_1 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> TRACK_2 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_1 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_1_STOP =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_1_DUEL =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));

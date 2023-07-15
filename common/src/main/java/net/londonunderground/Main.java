@@ -54,6 +54,11 @@ public class Main {
 		registerBlockItem.accept("station_a8b", MyBlocks.STATION_A8b, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a9b", MyBlocks.STATION_A9b, MyItems.TFL_STATION);
 
+		// Stop Markers
+		registerBlockItem.accept("station_a3_stop", MyBlocks.STATION_A3_STOP, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a3b_stop", MyBlocks.STATION_A3b_STOP, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a3_green", MyBlocks.STATION_A3_GREEN, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a3b_green", MyBlocks.STATION_A3b_GREEN, MyItems.TFL_STATION);
 
 		registerBlockItem.accept("tube_0", MyBlocks.TUBE_0, MyItems.TFL_STATION);
 		registerBlockItem.accept("tube_0_slab", MyBlocks.TUBE_0_SLAB, MyItems.TFL_STATION);
@@ -77,8 +82,7 @@ public class Main {
 
 		registerBlockItem.accept("pids_northern", MyBlocks.NORTHERN_PIDS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("pids_pole", MyBlocks.PIDS_POLE, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("track_1", MyBlocks.TRACK_1, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("track_2", MyBlocks.TRACK_2, MyItems.TFL_BLOCKS);
+
 		registerBlockItem.accept("morden_stairs", MyBlocks.MORDEN_STAIRS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_arch_new", MyBlocks.MORDEN_ARCH_NEW, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_arch_roof", MyBlocks.MORDEN_ARCH_ROOF, MyItems.TFL_BLOCKS);
@@ -136,6 +140,9 @@ public class Main {
 
 
 		// Legacy Items
+
+		registerBlockItem.accept("track_1", MyBlocks.TRACK_1, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("track_2", MyBlocks.TRACK_2, MyItems.TFL_LEGACY);
 
 		registerBlockItem.accept("tube_1", MyBlocks.TUBE_1, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("tube_1_stop", MyBlocks.TUBE_1_STOP, MyItems.TFL_LEGACY);
