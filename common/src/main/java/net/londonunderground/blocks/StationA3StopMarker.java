@@ -26,8 +26,14 @@ public class StationA3StopMarker extends HorizontalDirectionalBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
 		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
-		return Shapes.or(IBlock.getVoxelShapeByDirection(0,0,8,16, 1, 9, facing), IBlock.getVoxelShapeByDirection(0, 0, 7,16, 7, 8, facing), IBlock.getVoxelShapeByDirection(0, 0, 6,16, 16, 7, facing),
-				IBlock.getVoxelShapeByDirection(0, 0, 5,16, 16, 6, facing), IBlock.getVoxelShapeByDirection(0, 0, 4,16, 16, 5, facing), IBlock.getVoxelShapeByDirection(0, 0, 0,16, 16, 4, facing));
+		return Shapes.or(
+				IBlock.getVoxelShapeByDirection(0,15,0,16, 16, 9, facing),
+				IBlock.getVoxelShapeByDirection(0, 9, 0,16, 15, 8, facing),
+				IBlock.getVoxelShapeByDirection(0, 0, 0,16, 9, 7, facing),
+				IBlock.getVoxelShapeByDirection(0, 0, 11,16, 0.25, 12, facing),
+				IBlock.getVoxelShapeByDirection(0, 4.75, 11,16, 5, 12, facing),
+				IBlock.getVoxelShapeByDirection(0, 0.25, 11,16, 4.75, 12, facing),
+				IBlock.getVoxelShapeByDirection(7, 1.75, 6.25,9, 2.75, 11.25, facing));
 	}
 
 	@Override

@@ -59,6 +59,7 @@ public class Main {
 		registerBlockItem.accept("station_a3b_stop", MyBlocks.STATION_A3b_STOP, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a3_green", MyBlocks.STATION_A3_GREEN, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a3b_green", MyBlocks.STATION_A3b_GREEN, MyItems.TFL_STATION);
+		registerBlockItem.accept("tunnel_a3_nowires_stop", MyBlocks.TUNNEL_A3_NOWIRES_STOP, MyItems.TFL_STATION);
 
 		registerBlockItem.accept("tube_0", MyBlocks.TUBE_0, MyItems.TFL_STATION);
 		registerBlockItem.accept("tube_0_slab", MyBlocks.TUBE_0_SLAB, MyItems.TFL_STATION);

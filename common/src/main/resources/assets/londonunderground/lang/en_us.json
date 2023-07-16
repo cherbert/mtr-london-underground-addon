@@ -35,6 +35,7 @@
   "block.londonunderground.tunnel_a3" : "Tube Tunnel Block #3",
   "block.londonunderground.tunnel_a3_duel" : "Tube Tunnel Block #3 (Dual)",
   "block.londonunderground.tunnel_a3_nowires" : "Tube Tunnel Block #3 (No Wires)",
+  "block.londonunderground.tunnel_a3_nowires_stop" : "Tube Tunnel Block #3 (Stopper Right)",
   "block.londonunderground.tunnel_a4" : "Tube Tunnel Block #4",
   "block.londonunderground.tunnel_a5" : "Tube Tunnel Block #5",
   "block.londonunderground.platform_sign_northbound_charingcross" : "Northbound via Charing Cross",
