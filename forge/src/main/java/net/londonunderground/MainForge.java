@@ -27,7 +27,7 @@ public class MainForge {
 	private static final DeferredRegisterHolder<SoundEvent> SOUND_EVENTS = new DeferredRegisterHolder<>(Main.MOD_ID, ForgeUtilities.registryGetSoundEvent());
 
 	static {
-		Main.init(MainForge::registerBlock, MainForge::registerBlockEntityType, MainForge::registerSoundEvent);
+		Main.init(MainForge::registerBlock, MainForge::registerBlock, MainForge::registerBlockEntityType, MainForge::registerSoundEvent);
 	}
 
 	public MainForge() {

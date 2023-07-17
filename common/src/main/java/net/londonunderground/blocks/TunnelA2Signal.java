@@ -4,6 +4,7 @@ import mtr.block.BlockSignalLightBase;
 import mtr.block.IBlock;
 import net.londonunderground.MyBlockEntityTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -30,5 +31,9 @@ public class TunnelA2Signal extends BlockSignalLightBase {
 		public TileEntityTunnelSignalLight1(BlockPos pos, BlockState state) {
 			super(MyBlockEntityTypes.TUNNEL_A2_SIGNAL.get(), pos, state);
 		}
+	}
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext ctx) {
+		return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getClockWise());
 	}
 }

@@ -15,6 +15,7 @@ public class Main {
 
 	public static void init(
 			RegisterBlockItem registerBlockItem,
+			RegisterBlockHide registerBlockHide,
 			BiConsumer<String, RegistryObject<? extends BlockEntityType<? extends BlockEntityMapper>>> registerBlockEntityType,
 			BiConsumer<String, SoundEvent> registerSoundEvent
 	) {
@@ -142,34 +143,34 @@ public class Main {
 
 		// Legacy Items
 
-		registerBlockItem.accept("track_1", MyBlocks.TRACK_1, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("track_2", MyBlocks.TRACK_2, MyItems.TFL_LEGACY);
+		registerBlockHide.accept("track_1", MyBlocks.TRACK_1);
+		registerBlockHide.accept("track_2", MyBlocks.TRACK_2);
 
-		registerBlockItem.accept("tube_1", MyBlocks.TUBE_1, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_1_stop", MyBlocks.TUBE_1_STOP, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_1_duel", MyBlocks.TUBE_1_DUEL, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_2", MyBlocks.TUBE_2, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_2_duel", MyBlocks.TUBE_2_DUEL, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_3", MyBlocks.TUBE_3, MyItems.TFL_LEGACY);
+		registerBlockHide.accept("tube_1", MyBlocks.TUBE_1);
+		registerBlockHide.accept("tube_1_stop", MyBlocks.TUBE_1_STOP);
+		registerBlockHide.accept("tube_1_duel", MyBlocks.TUBE_1_DUEL);
+		registerBlockHide.accept("tube_2", MyBlocks.TUBE_2);
+		registerBlockHide.accept("tube_2_duel", MyBlocks.TUBE_2_DUEL);
+		registerBlockHide.accept("tube_3", MyBlocks.TUBE_3);
 
-		registerBlockItem.accept("tube_1b", MyBlocks.TUBE_1b, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_1b_stop", MyBlocks.TUBE_1b_STOP, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_1b_duel", MyBlocks.TUBE_1b_DUEL, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_2b", MyBlocks.TUBE_2b, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_2b_duel", MyBlocks.TUBE_2b_DUEL, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tube_3b", MyBlocks.TUBE_3b, MyItems.TFL_LEGACY);
+		registerBlockHide.accept("tube_1b", MyBlocks.TUBE_1b);
+		registerBlockHide.accept("tube_1b_stop", MyBlocks.TUBE_1b_STOP);
+		registerBlockHide.accept("tube_1b_duel", MyBlocks.TUBE_1b_DUEL);
+		registerBlockHide.accept("tube_2b", MyBlocks.TUBE_2b);
+		registerBlockHide.accept("tube_2b_duel", MyBlocks.TUBE_2b_DUEL);
+		registerBlockHide.accept("tube_3b", MyBlocks.TUBE_3b);
 
-		registerBlockItem.accept("tunnel_block_0", MyBlocks.TUNNEL_BLOCK_0, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tunnel_block_1", MyBlocks.TUNNEL_BLOCK_1, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tunnel_block_1_duel", MyBlocks.TUNNEL_BLOCK_1_DUEL, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tunnel_block_2", MyBlocks.TUNNEL_BLOCK_2, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tunnel_block_2_duel", MyBlocks.TUNNEL_BLOCK_2_DUEL, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tunnel_block_2_signal", MyBlocks.TUNNEL_BLOCK_2_SIGNAL, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tunnel_block_3", MyBlocks.TUNNEL_BLOCK_3, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tunnel_block_3_duel", MyBlocks.TUNNEL_BLOCK_3_DUEL, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tunnel_block_4", MyBlocks.TUNNEL_BLOCK_4, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("tunnel_block_5", MyBlocks.TUNNEL_BLOCK_5, MyItems.TFL_LEGACY);
-		registerBlockItem.accept("morden_arch", MyBlocks.MORDEN_ARCH, MyItems.TFL_LEGACY);
+		registerBlockHide.accept("tunnel_block_0", MyBlocks.TUNNEL_BLOCK_0);
+		registerBlockHide.accept("tunnel_block_1", MyBlocks.TUNNEL_BLOCK_1);
+		registerBlockHide.accept("tunnel_block_1_duel", MyBlocks.TUNNEL_BLOCK_1_DUEL);
+		registerBlockHide.accept("tunnel_block_2", MyBlocks.TUNNEL_BLOCK_2);
+		registerBlockHide.accept("tunnel_block_2_duel", MyBlocks.TUNNEL_BLOCK_2_DUEL);
+		registerBlockHide.accept("tunnel_block_2_signal", MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
+		registerBlockHide.accept("tunnel_block_3", MyBlocks.TUNNEL_BLOCK_3);
+		registerBlockHide.accept("tunnel_block_3_duel", MyBlocks.TUNNEL_BLOCK_3_DUEL);
+		registerBlockHide.accept("tunnel_block_4", MyBlocks.TUNNEL_BLOCK_4);
+		registerBlockHide.accept("tunnel_block_5", MyBlocks.TUNNEL_BLOCK_5);
+		registerBlockHide.accept("morden_arch", MyBlocks.MORDEN_ARCH);
 
 
 
@@ -190,6 +191,7 @@ public class Main {
 		registerBlockEntityType.accept("tunnel_darkness", MyBlockEntityTypes.DARK_TILE);
 		registerBlockEntityType.accept("pids_northern", MyBlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY);
 		registerBlockEntityType.accept("tunnel_block_2_signal", MyBlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL);
+		registerBlockEntityType.accept("tunnel_a2_signal", MyBlockEntityTypes.TUNNEL_A2_SIGNAL);
 		registerBlockEntityType.accept("block_roundel_1", MyBlockEntityTypes.BLOCK_ROUNDEL_TILE_ENTITY);
 		registerBlockEntityType.accept("block_roundel_nle", MyBlockEntityTypes.BLOCK_ROUNDEL_NLE_TILE_ENTITY);
 		registerBlockEntityType.accept("british_rail_underground", MyBlockEntityTypes.BRITISH_RAIL_UNDERGROUND_TILE_ENTITY);
@@ -222,5 +224,9 @@ public class Main {
 	@FunctionalInterface
 	public interface RegisterBlockItem {
 		void accept(String string, RegistryObject<Block> block, CreativeModeTabs.Wrapper tab);
+	}
+	@FunctionalInterface
+	public interface RegisterBlockHide {
+		void accept(String string, RegistryObject<Block> block);
 	}
 }

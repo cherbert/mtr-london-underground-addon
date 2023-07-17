@@ -72,18 +72,18 @@ public interface MyBlocks {
 
 	RegistryObject<Block> PIDS_POLE = new RegistryObject<>(() -> new BlockPIDSPole(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
 
-	RegistryObject<Block> ROUNDEL_POLE = new RegistryObject<>(() -> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
-	RegistryObject<Block> ROUNDEL_POLE_DLR = new RegistryObject<>(() -> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
-	RegistryObject<Block> ROUNDEL_POLE_LIZ = new RegistryObject<>(() -> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
-	RegistryObject<Block> ROUNDEL_POLE_OVERGROUND = new RegistryObject<>(() -> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
+	RegistryObject<Block> ROUNDEL_POLE = new RegistryObject<>(() -> new LUPoleRoundel(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
+	RegistryObject<Block> ROUNDEL_POLE_DLR = new RegistryObject<>(() -> new LUPoleRoundel(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
+	RegistryObject<Block> ROUNDEL_POLE_LIZ = new RegistryObject<>(() -> new LUPoleRoundel(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
+	RegistryObject<Block> ROUNDEL_POLE_OVERGROUND = new RegistryObject<>(() -> new LUPoleRoundel(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1).noOcclusion().lightLevel(state -> 15)));
 
 	RegistryObject<Block> NORTHERN_PIDS =new RegistryObject<>(NorthernLinePIDS::new);
 
 	RegistryObject<Block> MORDEN_STAIRS =new RegistryObject<>(()-> new StairBlockExtends(TFL_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> MORDEN_STONE =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> MORDEN_STONE =new RegistryObject<>(()-> new MordenBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_SLAB =new RegistryObject<>(()-> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_COBBLE_SLAB =new RegistryObject<>(()-> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> MORDEN_COBBLESTONE =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> MORDEN_COBBLESTONE =new RegistryObject<>(()-> new MordenBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_ARCH_NEW =new RegistryObject<>(()-> new MordenArch(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_ARCH_ROOF =new RegistryObject<>(()-> new TunnelA5(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> MORDEN_SIGN =new RegistryObject<>(()-> new MordenSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));

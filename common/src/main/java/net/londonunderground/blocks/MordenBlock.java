@@ -1,22 +1,20 @@
 package net.londonunderground.blocks;
 
-import mtr.mappings.Text;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.Style;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import mtr.block.IBlock;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
-import java.util.List;
-
-public class LUDirectionalBlock extends HorizontalDirectionalBlock {
-	public LUDirectionalBlock(Properties settings) {
+public class MordenBlock extends HorizontalDirectionalBlock {
+	public MordenBlock(Properties settings) {
 		super(settings);
 	}
 
@@ -30,8 +28,4 @@ public class LUDirectionalBlock extends HorizontalDirectionalBlock {
 		builder.add(FACING);
 	}
 
-	@Override
-	public void appendHoverText(ItemStack stack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-		tooltip.add(Text.literal("DEPRECATED!!!").setStyle(Style.EMPTY.withColor(ChatFormatting.RED)));
-	}
 }
