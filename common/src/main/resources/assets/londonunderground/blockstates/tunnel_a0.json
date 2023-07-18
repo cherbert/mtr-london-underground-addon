@@ -6,7 +6,7 @@
       },
       "apply": {
         "model": "londonunderground:block/tunnel_a0",
-        "y": 180
+        "y": 0
       }
     },
     {
@@ -15,7 +15,7 @@
       },
       "apply": {
         "model": "londonunderground:block/tunnel_a0",
-        "y": -90
+        "y": 90
       }
     },
     {
@@ -23,7 +23,8 @@
         "facing": "south"
       },
       "apply": {
-        "model": "londonunderground:block/tunnel_a0"
+        "model": "londonunderground:block/tunnel_a0",
+        "y": 180
       }
     },
     {
@@ -32,7 +33,7 @@
       },
       "apply": {
         "model": "londonunderground:block/tunnel_a0",
-        "y": 90
+        "y": -90
       }
     }
   ]

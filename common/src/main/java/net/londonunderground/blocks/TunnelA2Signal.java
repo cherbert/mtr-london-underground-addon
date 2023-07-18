@@ -4,11 +4,13 @@ import mtr.block.BlockSignalLightBase;
 import mtr.block.IBlock;
 import net.londonunderground.MyBlockEntityTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class TunnelA2Signal extends BlockSignalLightBase {
@@ -18,7 +20,11 @@ public class TunnelA2Signal extends BlockSignalLightBase {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
-		return IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 16, 16, IBlock.getStatePropertySafe(state, FACING));
+		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+		return Shapes.or(
+				IBlock.getVoxelShapeByDirection(0, 0, 0, 12, 16, 16, facing)
+
+		);
 	}
 
 	@Override
