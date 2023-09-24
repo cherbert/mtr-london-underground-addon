@@ -1,19 +1,21 @@
 package net.londonunderground.blocks;
 
+import mtr.block.IBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class StationLight extends Block {
+public class StationLight extends HorizontalDirectionalBlock {
 
-	public static final BooleanProperty FACING = BooleanProperty.create("facing");
 
 	public StationLight(Properties settings) {
 		super(settings);
@@ -21,13 +23,17 @@ public class StationLight extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext ctx) {
-		boolean facing = ctx.getHorizontalDirection().getAxis() == Direction.Axis.X;
-		return defaultBlockState().setValue(FACING, facing);
+		return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getClockWise());
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext collisionContext) {
-		return Block.box(0, 14, 0, 16, 16, 16);
+	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
+		final Direction facing = IBlock.getStatePropertySafe(state, FACING).getClockWise();
+		return Shapes.or(
+				IBlock.getVoxelShapeByDirection(6,14.5,0,6.5, 16, 16, facing),
+				IBlock.getVoxelShapeByDirection(9.5, 14.5, 0,10, 16, 16, facing),
+				IBlock.getVoxelShapeByDirection(6.5, 15, 0,9.5, 16, 16, facing)
+		);
 	}
 
 	@Override

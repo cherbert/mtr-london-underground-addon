@@ -1,22 +1,22 @@
 {
-  "credit": "Made with Blockbench",
+	"credit": "Made with Blockbench",
 	"parent": "block/block",
-  "textures": {
-    "0": "londonunderground:block/tube_platforms/platform_variant",
-    "particle": "londonunderground:block/tube_platforms/platform_variant"
-  },
-  "elements": [
-    {
-      "from": [0, 0, 0],
-      "to": [16, 16, 16],
-      "faces": {
-        "north": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0"},
-        "east": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0"},
-        "south": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0"},
-        "west": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0"},
-        "up": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0"},
-        "down": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0"}
-      }
-    }
-  ]
+	"textures": {
+		"0": "londonunderground:block/tube_platforms/platform_variant",
+		"particle": "londonunderground:block/tube_platforms/platform_variant"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 12], "rotation": 180, "texture": "#0", "cullface": "down"}
+			}
+		}
+	]
 }

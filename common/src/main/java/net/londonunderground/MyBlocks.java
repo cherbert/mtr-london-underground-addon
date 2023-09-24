@@ -21,7 +21,7 @@ public interface MyBlocks {
 	RegistryObject<Block> SOUND_OUTSIDE_AMBIENCE =new RegistryObject<>(()-> new SoundOutsideAmbience(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> TUBE_STATION_AMBIENCE1 =new RegistryObject<>(()-> new SoundTubeStationAmbience1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> SOUND_SEE_IT_SAY_IT_SORTED =new RegistryObject<>(()-> new SoundSeeItSayItSorted(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
-	RegistryObject<Block> STATION_LIGHT =new RegistryObject<>(()-> new StationLight(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).lightLevel(state -> 15).noOcclusion()));
+	RegistryObject<Block> STATION_LIGHT =new RegistryObject<>(()-> new StationLight(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).lightLevel(state -> 15)));
 	RegistryObject<Block> EXIT_SIGN =new RegistryObject<>(()-> new ExitSign(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).lightLevel(state -> 15)));
 
 	RegistryObject<Block> TUNNEL_ENTRANCE_1 =new RegistryObject<>(()-> new TunnelEntrance1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
@@ -50,7 +50,7 @@ public interface MyBlocks {
 	RegistryObject<Block> STATION_A6 =new RegistryObject<>(()-> new StationA6(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A7 =new RegistryObject<>(()-> new StationA7(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A8 =new RegistryObject<>(()-> new StationA8(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
-	RegistryObject<Block> STATION_A9 =new RegistryObject<>(()-> new StationA9(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A9 =new RegistryObject<>(()-> new StationA9(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).lightLevel(state -> 2)));
 
 	RegistryObject<Block> STATION_A1b =new RegistryObject<>(()-> new StationA1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A2b =new RegistryObject<>(()-> new StationA2(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));

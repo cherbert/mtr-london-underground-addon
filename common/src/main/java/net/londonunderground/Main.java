@@ -19,21 +19,22 @@ public class Main {
 			BiConsumer<String, RegistryObject<? extends BlockEntityType<? extends BlockEntityMapper>>> registerBlockEntityType,
 			BiConsumer<String, SoundEvent> registerSoundEvent
 	) {
-		registerBlockItem.accept("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("platform_tfl_1", MyBlocks.PLATFORM_TFL_1, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("platform_tfl_island", MyBlocks.PLATFORM_TFL_ISLAND, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("platform_tfl_gap", MyBlocks.PLATFORM_TFL_GAP, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("platform_block", MyBlocks.PLATFORM_BLOCK, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("platform_variant", MyBlocks.PLATFORM_VARIANT, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("sounds/see_it_say_it_sorted", MyBlocks.SOUND_SEE_IT_SAY_IT_SORTED, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("sounds/tube_station_ambience1", MyBlocks.TUBE_STATION_AMBIENCE1, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("sounds/outside_ambience", MyBlocks.SOUND_OUTSIDE_AMBIENCE, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("tunnel_darkness", MyBlocks.TUNNEL_DARKNESS, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("station_light", MyBlocks.STATION_LIGHT, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("tfl_block", MyBlocks.TFL_BLOCK, MyItems.TFL_BLOCKS); // culled
+
+		// Platform Blocks
+		registerBlockItem.accept("platform_tfl_1", MyBlocks.PLATFORM_TFL_1, MyItems.TFL_BLOCKS); // culled
+		registerBlockItem.accept("platform_tfl_island", MyBlocks.PLATFORM_TFL_ISLAND, MyItems.TFL_BLOCKS); // culled
+		registerBlockItem.accept("platform_tfl_gap", MyBlocks.PLATFORM_TFL_GAP, MyItems.TFL_BLOCKS); // culled
+		registerBlockItem.accept("platform_block", MyBlocks.PLATFORM_BLOCK, MyItems.TFL_BLOCKS); // culled
+		registerBlockItem.accept("platform_variant", MyBlocks.PLATFORM_VARIANT, MyItems.TFL_BLOCKS); //culled
+
+		registerBlockItem.accept("sounds/see_it_say_it_sorted", MyBlocks.SOUND_SEE_IT_SAY_IT_SORTED, MyItems.TFL_BLOCKS); // culled
+		registerBlockItem.accept("sounds/tube_station_ambience1", MyBlocks.TUBE_STATION_AMBIENCE1, MyItems.TFL_BLOCKS); // culled
+		registerBlockItem.accept("sounds/outside_ambience", MyBlocks.SOUND_OUTSIDE_AMBIENCE, MyItems.TFL_BLOCKS); // culled
+
+		registerBlockItem.accept("tunnel_darkness", MyBlocks.TUNNEL_DARKNESS, MyItems.TFL_BLOCKS); // culled
+		registerBlockItem.accept("station_light", MyBlocks.STATION_LIGHT, MyItems.TFL_BLOCKS); // culled
 		registerBlockItem.accept("exit_sign", MyBlocks.EXIT_SIGN, MyItems.TFL_BLOCKS);
-
-
-
 
 		registerBlockItem.accept("station_a1", MyBlocks.STATION_A1, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a2", MyBlocks.STATION_A2, MyItems.TFL_STATION);

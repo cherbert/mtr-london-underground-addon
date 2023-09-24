@@ -2,6 +2,7 @@ package net.londonunderground.blocks;
 
 import mtr.block.IBlock;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -10,6 +11,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class ExitSign extends HorizontalDirectionalBlock {
@@ -24,8 +26,9 @@ public class ExitSign extends HorizontalDirectionalBlock {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext collisionContext) {
-		return IBlock.getVoxelShapeByDirection(0, 8, 0, 16, 15, 7, state.getValue(FACING));
+	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
+		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+		return Shapes.or(IBlock.getVoxelShapeByDirection(0,7.5,0,16, 15, 8, facing));
 	}
 
 	@Override

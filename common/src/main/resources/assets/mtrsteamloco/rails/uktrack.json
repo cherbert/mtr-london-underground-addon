@@ -1,0 +1,5 @@
+{
+    "name": "UK Track",
+    "model": "mtrsteamloco:rails/uk_track.obj",
+    "repeatInterval": 0.8
+}
