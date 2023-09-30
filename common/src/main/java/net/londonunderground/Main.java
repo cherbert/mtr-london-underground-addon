@@ -34,11 +34,11 @@ public class Main {
 
 		registerBlockItem.accept("tunnel_darkness", MyBlocks.TUNNEL_DARKNESS, MyItems.TFL_BLOCKS); // culled
 		registerBlockItem.accept("station_light", MyBlocks.STATION_LIGHT, MyItems.TFL_BLOCKS); // culled
-		registerBlockItem.accept("exit_sign", MyBlocks.EXIT_SIGN, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("exit_sign", MyBlocks.EXIT_SIGN, MyItems.TFL_BLOCKS); // culled
 
-		registerBlockItem.accept("station_a1", MyBlocks.STATION_A1, MyItems.TFL_STATION);
-		registerBlockItem.accept("station_a2", MyBlocks.STATION_A2, MyItems.TFL_STATION);
-		registerBlockItem.accept("station_a3", MyBlocks.STATION_A3, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a1", MyBlocks.STATION_A1, MyItems.TFL_STATION); // culled
+		registerBlockItem.accept("station_a2", MyBlocks.STATION_A2, MyItems.TFL_STATION); // culled
+		registerBlockItem.accept("station_a3", MyBlocks.STATION_A3, MyItems.TFL_STATION); // culled
 		registerBlockItem.accept("station_a4", MyBlocks.STATION_A4, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a5", MyBlocks.STATION_A5, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a6", MyBlocks.STATION_A6, MyItems.TFL_STATION);
@@ -46,9 +46,9 @@ public class Main {
 		registerBlockItem.accept("station_a8", MyBlocks.STATION_A8, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a9", MyBlocks.STATION_A9, MyItems.TFL_STATION);
 
-		registerBlockItem.accept("station_a1b", MyBlocks.STATION_A1b, MyItems.TFL_STATION);
-		registerBlockItem.accept("station_a2b", MyBlocks.STATION_A2b, MyItems.TFL_STATION);
-		registerBlockItem.accept("station_a3b", MyBlocks.STATION_A3b, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a1b", MyBlocks.STATION_A1b, MyItems.TFL_STATION); // culled
+		registerBlockItem.accept("station_a2b", MyBlocks.STATION_A2b, MyItems.TFL_STATION); // culled
+		registerBlockItem.accept("station_a3b", MyBlocks.STATION_A3b, MyItems.TFL_STATION); // culled
 		registerBlockItem.accept("station_a4b", MyBlocks.STATION_A4b, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a5b", MyBlocks.STATION_A5b, MyItems.TFL_STATION);
 		registerBlockItem.accept("station_a6b", MyBlocks.STATION_A6b, MyItems.TFL_STATION);
@@ -57,10 +57,10 @@ public class Main {
 		registerBlockItem.accept("station_a9b", MyBlocks.STATION_A9b, MyItems.TFL_STATION);
 
 		// Stop Markers
-		registerBlockItem.accept("station_a3_stop", MyBlocks.STATION_A3_STOP, MyItems.TFL_STATION);
-		registerBlockItem.accept("station_a3b_stop", MyBlocks.STATION_A3b_STOP, MyItems.TFL_STATION);
-		registerBlockItem.accept("station_a3_green", MyBlocks.STATION_A3_GREEN, MyItems.TFL_STATION);
-		registerBlockItem.accept("station_a3b_green", MyBlocks.STATION_A3b_GREEN, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a3_stop", MyBlocks.STATION_A3_STOP, MyItems.TFL_STATION); // culled
+		registerBlockItem.accept("station_a3b_stop", MyBlocks.STATION_A3b_STOP, MyItems.TFL_STATION); // culled
+		registerBlockItem.accept("station_a3_green", MyBlocks.STATION_A3_GREEN, MyItems.TFL_STATION); // culled
+		registerBlockItem.accept("station_a3b_green", MyBlocks.STATION_A3b_GREEN, MyItems.TFL_STATION); // culled
 		registerBlockItem.accept("tunnel_a3_nowires_stop", MyBlocks.TUNNEL_A3_NOWIRES_STOP, MyItems.TFL_STATION);
 
 		registerBlockItem.accept("tube_0", MyBlocks.TUBE_0, MyItems.TFL_STATION);
@@ -86,7 +86,7 @@ public class Main {
 		registerBlockItem.accept("pids_northern", MyBlocks.NORTHERN_PIDS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("pids_pole", MyBlocks.PIDS_POLE, MyItems.TFL_BLOCKS);
 
-		registerBlockItem.accept("morden_stairs", MyBlocks.MORDEN_STAIRS, MyItems.TFL_BLOCKS);
+
 		registerBlockItem.accept("morden_arch_new", MyBlocks.MORDEN_ARCH_NEW, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_arch_roof", MyBlocks.MORDEN_ARCH_ROOF, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
@@ -107,7 +107,8 @@ public class Main {
 		registerBlockItem.accept("sign_metro", MyBlocks.SIGN_METRO, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("sign_pride", MyBlocks.SIGN_PRIDE, MyItems.TFL_SIGNS);
 
-		registerBlockItem.accept("morden_steps", MyBlocks.MORDEN_STEPS, MyItems.TFL_BLOCKS);
+
+		registerBlockItem.accept("morden_stairs", MyBlocks.MORDEN_STAIRS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("lu_pole", MyBlocks.LU_POLE, MyItems.TFL_BLOCKS);
 
 		registerBlockItem.accept("lu_crossbar", MyBlocks.LU_CROSSBAR, MyItems.TFL_BLOCKS);
@@ -140,43 +141,49 @@ public class Main {
 		registerBlockItem.accept("roundel_pole_liz", MyBlocks.ROUNDEL_POLE_LIZ, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("roundel_pole_overground", MyBlocks.ROUNDEL_POLE_OVERGROUND, MyItems.TFL_SIGNS);
 
+		registerBlockItem.accept("morden_steps_left", MyBlocks.MORDEN_STEPS_LEFT, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("morden_steps_middle", MyBlocks.MORDEN_STEPS_MIDDLE, MyItems.TFL_BLOCKS);
+		registerBlockItem.accept("morden_steps_right", MyBlocks.MORDEN_STEPS_RIGHT, MyItems.TFL_BLOCKS);
+
 
 
 		// Legacy Items
 
-		registerBlockHide.accept("track_1", MyBlocks.TRACK_1);
-		registerBlockHide.accept("track_2", MyBlocks.TRACK_2);
+		registerBlockItem.accept("track_1", MyBlocks.TRACK_1, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("track_2", MyBlocks.TRACK_2, MyItems.TFL_LEGACY);
 
-		registerBlockHide.accept("tube_1", MyBlocks.TUBE_1);
-		registerBlockHide.accept("tube_1_stop", MyBlocks.TUBE_1_STOP);
-		registerBlockHide.accept("tube_1_duel", MyBlocks.TUBE_1_DUEL);
-		registerBlockHide.accept("tube_2", MyBlocks.TUBE_2);
-		registerBlockHide.accept("tube_2_duel", MyBlocks.TUBE_2_DUEL);
-		registerBlockHide.accept("tube_3", MyBlocks.TUBE_3);
+		registerBlockItem.accept("tube_1", MyBlocks.TUBE_1, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_1_stop", MyBlocks.TUBE_1_STOP, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_1_duel", MyBlocks.TUBE_1_DUEL, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_2", MyBlocks.TUBE_2, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_2_duel", MyBlocks.TUBE_2_DUEL, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_3", MyBlocks.TUBE_3, MyItems.TFL_LEGACY);
 
-		registerBlockHide.accept("tube_1b", MyBlocks.TUBE_1b);
-		registerBlockHide.accept("tube_1b_stop", MyBlocks.TUBE_1b_STOP);
-		registerBlockHide.accept("tube_1b_duel", MyBlocks.TUBE_1b_DUEL);
-		registerBlockHide.accept("tube_2b", MyBlocks.TUBE_2b);
-		registerBlockHide.accept("tube_2b_duel", MyBlocks.TUBE_2b_DUEL);
-		registerBlockHide.accept("tube_3b", MyBlocks.TUBE_3b);
+		registerBlockItem.accept("tube_1b", MyBlocks.TUBE_1b, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_1b_stop", MyBlocks.TUBE_1b_STOP, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_1b_duel", MyBlocks.TUBE_1b_DUEL, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_2b", MyBlocks.TUBE_2b, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_2b_duel", MyBlocks.TUBE_2b_DUEL, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tube_3b", MyBlocks.TUBE_3b, MyItems.TFL_LEGACY);
 
-		registerBlockHide.accept("tunnel_block_0", MyBlocks.TUNNEL_BLOCK_0);
-		registerBlockHide.accept("tunnel_block_1", MyBlocks.TUNNEL_BLOCK_1);
-		registerBlockHide.accept("tunnel_block_1_duel", MyBlocks.TUNNEL_BLOCK_1_DUEL);
-		registerBlockHide.accept("tunnel_block_2", MyBlocks.TUNNEL_BLOCK_2);
-		registerBlockHide.accept("tunnel_block_2_duel", MyBlocks.TUNNEL_BLOCK_2_DUEL);
-		registerBlockHide.accept("tunnel_block_2_signal", MyBlocks.TUNNEL_BLOCK_2_SIGNAL);
-		registerBlockHide.accept("tunnel_block_3", MyBlocks.TUNNEL_BLOCK_3);
-		registerBlockHide.accept("tunnel_block_3_duel", MyBlocks.TUNNEL_BLOCK_3_DUEL);
-		registerBlockHide.accept("tunnel_block_4", MyBlocks.TUNNEL_BLOCK_4);
-		registerBlockHide.accept("tunnel_block_5", MyBlocks.TUNNEL_BLOCK_5);
-		registerBlockHide.accept("morden_arch", MyBlocks.MORDEN_ARCH);
+		registerBlockItem.accept("tunnel_block_0", MyBlocks.TUNNEL_BLOCK_0, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tunnel_block_1", MyBlocks.TUNNEL_BLOCK_1, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tunnel_block_1_duel", MyBlocks.TUNNEL_BLOCK_1_DUEL, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tunnel_block_2", MyBlocks.TUNNEL_BLOCK_2, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tunnel_block_2_duel", MyBlocks.TUNNEL_BLOCK_2_DUEL, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tunnel_block_2_signal", MyBlocks.TUNNEL_BLOCK_2_SIGNAL, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tunnel_block_3", MyBlocks.TUNNEL_BLOCK_3, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tunnel_block_3_duel", MyBlocks.TUNNEL_BLOCK_3_DUEL, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tunnel_block_4", MyBlocks.TUNNEL_BLOCK_4, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("tunnel_block_5", MyBlocks.TUNNEL_BLOCK_5, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("morden_arch", MyBlocks.MORDEN_ARCH, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("morden_steps", MyBlocks.MORDEN_STEPS, MyItems.TFL_LEGACY);
 
 
 
 		registerBlockEntityType.accept("morden_sign", MyBlockEntityTypes.MORDEN_SIGN_TILE_ENTITY);
 		registerBlockEntityType.accept("metropolitan_sign", MyBlockEntityTypes.METROPOLITAN_SIGN_TILE_ENTITY);
+
 		registerBlockEntityType.accept("elizabeth_sign", MyBlockEntityTypes.ELIZABETH_SIGN_TILE_ENTITY);
 
 		registerBlockEntityType.accept("sign_river", MyBlockEntityTypes.SIGN_RIVER_TILE_ENTITY);
