@@ -1,15 +1,5 @@
-# Blender 3.6.3 MTL File: 'ChrisesStationStuff.blend'
+# Blender 3.6.0 MTL File: 'without floor.blend'
 # www.blender.org
-
-newmtl Fbx_Default_Material.002
-Ns 200.000000
-Ka 1.000000 1.000000 1.000000
-Kd 0.720000 0.720000 0.720000
-Ks 0.500000 0.500000 0.500000
-Ke 0.000000 0.000000 0.000000
-Ni 1.450000
-d 1.000000
-illum 2
 
 newmtl Material
 Ns 250.000000
@@ -19,9 +9,29 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Concrete044D_1K-PNG_Color.png
+map_Kd 3rd_rail.png
 
-newmtl Material.005
+newmtl Material.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd 3rd_rail_pole.png
+
+newmtl Material.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd 3rd_rail_pole.png
+
+newmtl Material.003
 Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000
@@ -29,9 +39,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Metal036_1K-PNG_Color.png
+map_Kd andesite_dotted.png
 
-newmtl Material.006
+newmtl Material.011
 Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000
@@ -39,17 +49,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Metal009_1K-PNG_Color.png
-
-newmtl Material.007
-Ns 250.000000
-Ka 1.000000 1.000000 1.000000
-Ks 0.500000 0.500000 0.500000
-Ke 0.000000 0.000000 0.000000
-Ni 1.450000
-d 1.000000
-illum 2
-map_Kd Metal047B_1K-PNG_Color.png
+map_Kd andesite_dotted.png
 
 newmtl Material.012
 Ns 250.000000
@@ -59,9 +59,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Porcelain001_1K-PNG_Color_Dark.png
+map_Kd andesite_dotted.png
 
-newmtl Material.018
+newmtl Material.013
 Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000
@@ -69,4 +69,24 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Rocks006_1K-PNG_Color.png
+map_Kd andesite_dotted.png
+
+newmtl Material.014
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd andesite_dotted.png
+
+newmtl rail_siding
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd test_colour.png

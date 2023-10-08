@@ -1,0 +1,5 @@
+{
+    "name": "LU DLR track with no 3rd rail type 2",
+    "model": "mtrsteamloco:rails/trackno3rdtype2.obj",
+    "repeatInterval": 0.5
+}

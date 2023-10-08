@@ -2,13 +2,21 @@ package net.londonunderground.blocks;
 
 import mtr.block.BlockSignalLightBase;
 import mtr.block.IBlock;
+import mtr.mappings.Text;
 import net.londonunderground.MyBlockEntityTypes;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.Style;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import java.util.List;
 
 public class BlockTunnelSignal extends BlockSignalLightBase {
 	public BlockTunnelSignal(BlockBehaviour.Properties settings) {
@@ -31,4 +39,9 @@ public class BlockTunnelSignal extends BlockSignalLightBase {
 			super(MyBlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL.get(), pos, state);
 		}
 	}
+	@Override
+	public void appendHoverText(ItemStack stack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
+		tooltip.add(Text.literal("DEPRECATED!!!").setStyle(Style.EMPTY.withColor(ChatFormatting.RED)));
+	}
+
 }

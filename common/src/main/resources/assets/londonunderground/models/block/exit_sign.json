@@ -4,7 +4,8 @@
 	"textures": {
 		"3": "londonunderground:block/tunnel_1",
 		"4": "londonunderground:block/exit",
-		"5": "londonunderground:block/tube_1"
+		"5": "londonunderground:block/tube_1",
+		"particle": "londonunderground:block/exit"
 	},
 	"elements": [
 		{
