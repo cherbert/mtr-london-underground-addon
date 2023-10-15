@@ -3,7 +3,8 @@
 	"parent": "block/block",
 	"textures": {
 		"7": "londonunderground:block/tunnel_interior_type_1",
-		"8": "londonunderground:block/tunnel_1"
+		"8": "londonunderground:block/tunnel_1",
+		"particle": "londonunderground:block/tunnel_interior_type_1"
 	},
 	"elements": [
 		{

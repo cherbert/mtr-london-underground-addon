@@ -82,13 +82,13 @@ public class Main {
 		registerBlockItem.accept("tunnel_a4", MyBlocks.TUNNEL_A4, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a5", MyBlocks.TUNNEL_A5, MyItems.TFL_STATION);
 
+		registerBlockItem.accept("morden_arch_new", MyBlocks.MORDEN_ARCH_NEW, MyItems.TFL_STATION);
+		registerBlockItem.accept("morden_arch_roof", MyBlocks.MORDEN_ARCH_ROOF, MyItems.TFL_STATION);
+
 
 		registerBlockItem.accept("pids_northern", MyBlocks.NORTHERN_PIDS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("pids_pole", MyBlocks.PIDS_POLE, MyItems.TFL_BLOCKS);
 
-
-		registerBlockItem.accept("morden_arch_new", MyBlocks.MORDEN_ARCH_NEW, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("morden_arch_roof", MyBlocks.MORDEN_ARCH_ROOF, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_stone", MyBlocks.MORDEN_STONE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_slab", MyBlocks.MORDEN_SLAB, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_cobble_slab", MyBlocks.MORDEN_COBBLE_SLAB, MyItems.TFL_BLOCKS);

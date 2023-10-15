@@ -26,7 +26,10 @@ public class TunnelA2NoWires extends HorizontalDirectionalBlock {
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
 		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
 		return Shapes.or(
-				IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 16, 11, facing)
+				IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 3, 10.83333, facing),
+				IBlock.getVoxelShapeByDirection(0, 3, 0, 16, 7, 9.83333, facing),
+				IBlock.getVoxelShapeByDirection(0, 7, 0, 16, 15, 9, facing),
+				IBlock.getVoxelShapeByDirection(0, 15, 0, 16, 16, 9.83333, facing)
 
 		);
 	}

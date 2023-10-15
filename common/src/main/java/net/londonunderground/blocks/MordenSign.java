@@ -4,12 +4,14 @@ import mtr.block.IBlock;
 import mtr.mappings.BlockEntityMapper;
 import net.londonunderground.MyBlockEntityTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class MordenSign extends BlockRoundelBase {
@@ -25,7 +27,10 @@ public class MordenSign extends BlockRoundelBase {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
-		return IBlock.getVoxelShapeByDirection(-1.5, 0, 7.575, 17.5, 31, 8.425, state.getValue(FACING));
+		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+		return Shapes.or(
+				IBlock.getVoxelShapeByDirection(-1.5,8.66667,7.575,17.5, 31, 8.425, facing),
+				IBlock.getVoxelShapeByDirection(7.375, 0, 7.6,8.625, 8.75, 8.4, facing));
 	}
 
 	@Override
