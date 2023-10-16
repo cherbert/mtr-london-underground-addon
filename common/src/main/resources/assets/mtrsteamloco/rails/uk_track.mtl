@@ -19,7 +19,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Concrete044D_1K-PNG_Color.png
+map_Kd concrete044.png
 
 newmtl Material.005
 Ns 250.000000
@@ -29,7 +29,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Metal036_1K-PNG_Color.png
+map_Kd metal036.png
 
 newmtl Material.006
 Ns 250.000000
@@ -39,7 +39,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Metal009_1K-PNG_Color.png
+map_Kd metal009.png
 
 newmtl Material.007
 Ns 250.000000
@@ -49,4 +49,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd Metal047B_1K-PNG_Color.png
+map_Kd metal047.png
