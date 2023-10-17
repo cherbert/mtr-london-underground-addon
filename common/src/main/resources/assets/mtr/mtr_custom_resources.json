@@ -27,7 +27,7 @@
 	},
 	"custom_signs": {
 		"central1": {
-			"texture_id": "mtr:custom_directory/central_line_adown.png",
+			"texture_id": "mtr:custom_textures/central_line_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -35,7 +35,7 @@
 			"background_color": "000000"
 		},
 		"central2": {
-			"texture_id": "mtr:custom_directory/central_line_aleft.png",
+			"texture_id": "mtr:custom_textures/central_line_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -43,7 +43,7 @@
 			"background_color": "000000"
 		},
 		"central3": {
-			"texture_id": "mtr:custom_directory/central_line_aup.png",
+			"texture_id": "mtr:custom_textures/central_line_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -51,7 +51,7 @@
 			"background_color": "000000"
 		},
 		"central4": {
-			"texture_id": "mtr:custom_directory/central_line_ab.png",
+			"texture_id": "mtr:custom_textures/central_line_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -59,7 +59,7 @@
 			"background_color": "000000"
 		},
 		"central5": {
-			"texture_id": "mtr:custom_directory/central_line_ac.png",
+			"texture_id": "mtr:custom_textures/central_line_ac.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -67,7 +67,7 @@
 			"background_color": "000000"
 		},
 		"central6": {
-			"texture_id": "mtr:custom_directory/central_line_cright.png",
+			"texture_id": "mtr:custom_textures/central_line_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -75,7 +75,7 @@
 			"background_color": "000000"
 		},
 		"central7": {
-			"texture_id": "mtr:custom_directory/central_line_aleftdown.png",
+			"texture_id": "mtr:custom_textures/central_line_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -83,7 +83,7 @@
 			"background_color": "000000"
 		},
 		"central8": {
-			"texture_id": "mtr:custom_directory/central_line_aleftup.png",
+			"texture_id": "mtr:custom_textures/central_line_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -91,7 +91,7 @@
 			"background_color": "000000"
 		},
 		"central9": {
-			"texture_id": "mtr:custom_directory/central_line_crightup.png",
+			"texture_id": "mtr:custom_textures/central_line_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -99,7 +99,7 @@
 			"background_color": "000000"
 		},
 		"central10": {
-			"texture_id": "mtr:custom_directory/central_line_crightdown.png",
+			"texture_id": "mtr:custom_textures/central_line_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -107,7 +107,7 @@
 			"background_color": "000000"
 		},
 		"central11": {
-			"texture_id": "mtr:custom_directory/central_line_a.png",
+			"texture_id": "mtr:custom_textures/central_line_a.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -115,7 +115,7 @@
 			"background_color": "000000"
 		},
 		"central12": {
-			"texture_id": "mtr:custom_directory/central_line_cdown.png",
+			"texture_id": "mtr:custom_textures/central_line_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -123,7 +123,7 @@
 			"background_color": "000000"
 		},
 		"central13": {
-			"texture_id": "mtr:custom_directory/central_line_cup.png",
+			"texture_id": "mtr:custom_textures/central_line_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -131,7 +131,7 @@
 			"background_color": "000000"
 		},
 		"central14": {
-			"texture_id": "mtr:custom_directory/central_line_ca.png",
+			"texture_id": "mtr:custom_textures/central_line_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -139,7 +139,7 @@
 			"background_color": "000000"
 		},
 		"central15": {
-			"texture_id": "mtr:custom_directory/central_line_cb.png",
+			"texture_id": "mtr:custom_textures/central_line_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -147,7 +147,7 @@
 			"background_color": "000000"
 		},
 		"northern1": {
-			"texture_id": "mtr:custom_directory/northern_adown.png",
+			"texture_id": "mtr:custom_textures/northern_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -155,7 +155,7 @@
 			"background_color": "000000"
 		},
 		"northern2": {
-			"texture_id": "mtr:custom_directory/northern_aup.png",
+			"texture_id": "mtr:custom_textures/northern_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -163,7 +163,7 @@
 			"background_color": "000000"
 		},
 		"northern3": {
-			"texture_id": "mtr:custom_directory/northern_aleft.png",
+			"texture_id": "mtr:custom_textures/northern_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -171,7 +171,7 @@
 			"background_color": "000000"
 		},
 		"northern4": {
-			"texture_id": "mtr:custom_directory/northern_cright.png",
+			"texture_id": "mtr:custom_textures/northern_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -179,7 +179,7 @@
 			"background_color": "000000"
 		},
 		"northern5": {
-			"texture_id": "mtr:custom_directory/northern_ab.png",
+			"texture_id": "mtr:custom_textures/northern_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -187,7 +187,7 @@
 			"background_color": "000000"
 		},
 		"northern6": {
-			"texture_id": "mtr:custom_directory/northern_ac.png",
+			"texture_id": "mtr:custom_textures/northern_ac.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -195,7 +195,7 @@
 			"background_color": "000000"
 		},
 		"northern7": {
-			"texture_id": "mtr:custom_directory/northern_aleftdown.png",
+			"texture_id": "mtr:custom_textures/northern_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -203,7 +203,7 @@
 			"background_color": "000000"
 		},
 		"northern8": {
-			"texture_id": "mtr:custom_directory/northern_aleftup.png",
+			"texture_id": "mtr:custom_textures/northern_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -211,7 +211,7 @@
 			"background_color": "000000"
 		},
 		"northern9": {
-			"texture_id": "mtr:custom_directory/northern_crightup.png",
+			"texture_id": "mtr:custom_textures/northern_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -219,7 +219,7 @@
 			"background_color": "000000"
 		},
 		"northern10": {
-			"texture_id": "mtr:custom_directory/northern_crightdown.png",
+			"texture_id": "mtr:custom_textures/northern_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -227,7 +227,7 @@
 			"background_color": "000000"
 		},
 		"northern11": {
-			"texture_id": "mtr:custom_directory/northern_cdown.png",
+			"texture_id": "mtr:custom_textures/northern_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -235,7 +235,7 @@
 			"background_color": "000000"
 		},
 		"northern12": {
-			"texture_id": "mtr:custom_directory/northern_cup.png",
+			"texture_id": "mtr:custom_textures/northern_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -243,7 +243,7 @@
 			"background_color": "000000"
 		},
 		"northern13": {
-			"texture_id": "mtr:custom_directory/northern_ca.png",
+			"texture_id": "mtr:custom_textures/northern_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -251,7 +251,7 @@
 			"background_color": "000000"
 		},
 		"northern14": {
-			"texture_id": "mtr:custom_directory/northern_cb.png",
+			"texture_id": "mtr:custom_textures/northern_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -259,7 +259,7 @@
 			"background_color": "000000"
 		},
 		"dlr1": {
-			"texture_id": "mtr:custom_directory/dlr_ca.png",
+			"texture_id": "mtr:custom_textures/dlr_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -267,7 +267,7 @@
 			"background_color": "000000"
 		},
 		"dlr2": {
-			"texture_id": "mtr:custom_directory/dlr_cb.png",
+			"texture_id": "mtr:custom_textures/dlr_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -275,7 +275,7 @@
 			"background_color": "000000"
 		},
 		"dlr3": {
-			"texture_id": "mtr:custom_directory/dlr_cright.png",
+			"texture_id": "mtr:custom_textures/dlr_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -283,7 +283,7 @@
 			"background_color": "000000"
 		},
 		"dlr4": {
-			"texture_id": "mtr:custom_directory/dlr_crightup.png",
+			"texture_id": "mtr:custom_textures/dlr_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -291,7 +291,7 @@
 			"background_color": "000000"
 		},
 		"dlr5": {
-			"texture_id": "mtr:custom_directory/dlr_crightdown.png",
+			"texture_id": "mtr:custom_textures/dlr_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -299,7 +299,7 @@
 			"background_color": "000000"
 		},
 		"dlr6": {
-			"texture_id": "mtr:custom_directory/dlr_cdown.png",
+			"texture_id": "mtr:custom_textures/dlr_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -307,7 +307,7 @@
 			"background_color": "000000"
 		},
 		"dlr7": {
-			"texture_id": "mtr:custom_directory/dlr_cup.png",
+			"texture_id": "mtr:custom_textures/dlr_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -315,7 +315,7 @@
 			"background_color": "000000"
 		},
 		"dlr8": {
-			"texture_id": "mtr:custom_directory/dlr_aup.png",
+			"texture_id": "mtr:custom_textures/dlr_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -323,7 +323,7 @@
 			"background_color": "000000"
 		},
 		"dlr9": {
-			"texture_id": "mtr:custom_directory/dlr_aleftup.png",
+			"texture_id": "mtr:custom_textures/dlr_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -331,7 +331,7 @@
 			"background_color": "000000"
 		},
 		"dlr10": {
-			"texture_id": "mtr:custom_directory/dlr_aleft.png",
+			"texture_id": "mtr:custom_textures/dlr_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -339,7 +339,7 @@
 			"background_color": "000000"
 		},
 		"dlr11": {
-			"texture_id": "mtr:custom_directory/dlr_aleftdown.png",
+			"texture_id": "mtr:custom_textures/dlr_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -347,7 +347,7 @@
 			"background_color": "000000"
 		},
 		"dlr12": {
-			"texture_id": "mtr:custom_directory/dlr_adown.png",
+			"texture_id": "mtr:custom_textures/dlr_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -355,7 +355,7 @@
 			"background_color": "000000"
 		},
 		"dlr13": {
-			"texture_id": "mtr:custom_directory/dlr_ab.png",
+			"texture_id": "mtr:custom_textures/dlr_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -363,7 +363,7 @@
 			"background_color": "000000"
 		},
 		"dlr14": {
-			"texture_id": "mtr:custom_directory/dlr_ac.png",
+			"texture_id": "mtr:custom_textures/dlr_ac.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -371,7 +371,7 @@
 			"background_color": "000000"
 		},
 		"picc1": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_ab.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -379,7 +379,7 @@
 			"background_color": "000000"
 		},
 		"picc2": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_ac.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_ac.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -387,7 +387,7 @@
 			"background_color": "000000"
 		},
 		"picc3": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_adown.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -395,7 +395,7 @@
 			"background_color": "000000"
 		},
 		"picc4": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_aleft.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -403,7 +403,7 @@
 			"background_color": "000000"
 		},
 		"picc5": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_aleftup.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -411,7 +411,7 @@
 			"background_color": "000000"
 		},
 		"picc6": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_aleftdown.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -419,7 +419,7 @@
 			"background_color": "000000"
 		},
 		"picc7": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_aup.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -427,7 +427,7 @@
 			"background_color": "000000"
 		},
 		"picc8": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_ca.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -435,7 +435,7 @@
 			"background_color": "000000"
 		},
 		"picc9": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_cb.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -443,7 +443,7 @@
 			"background_color": "000000"
 		},
 		"picc10": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_cup.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -451,7 +451,7 @@
 			"background_color": "000000"
 		},
 		"picc11": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_crightup.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -459,7 +459,7 @@
 			"background_color": "000000"
 		},
 		"picc12": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_cright.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -467,7 +467,7 @@
 			"background_color": "000000"
 		},
 		"picc13": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_crightdown.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -475,7 +475,7 @@
 			"background_color": "000000"
 		},
 		"picc14": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_cdown.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -483,7 +483,7 @@
 			"background_color": "000000"
 		},
 		"vic1": {
-			"texture_id": "mtr:custom_directory/victoria_line_ab.png",
+			"texture_id": "mtr:custom_textures/victoria_line_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -491,7 +491,7 @@
 			"background_color": "000000"
 		},
 		"vic2": {
-			"texture_id": "mtr:custom_directory/victoria_line_ac.png",
+			"texture_id": "mtr:custom_textures/victoria_line_ac.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -499,7 +499,7 @@
 			"background_color": "000000"
 		},
 		"vic3": {
-			"texture_id": "mtr:custom_directory/victoria_line_adown.png",
+			"texture_id": "mtr:custom_textures/victoria_line_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -507,7 +507,7 @@
 			"background_color": "000000"
 		},
 		"vic4": {
-			"texture_id": "mtr:custom_directory/victoria_line_aleft.png",
+			"texture_id": "mtr:custom_textures/victoria_line_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -515,7 +515,7 @@
 			"background_color": "000000"
 		},
 		"vic5": {
-			"texture_id": "mtr:custom_directory/victoria_line_aleftdown.png",
+			"texture_id": "mtr:custom_textures/victoria_line_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -523,7 +523,7 @@
 			"background_color": "000000"
 		},
 		"vic6": {
-			"texture_id": "mtr:custom_directory/victoria_line_aleftup.png",
+			"texture_id": "mtr:custom_textures/victoria_line_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -531,7 +531,7 @@
 			"background_color": "000000"
 		},
 		"vic7": {
-			"texture_id": "mtr:custom_directory/victoria_line_aup.png",
+			"texture_id": "mtr:custom_textures/victoria_line_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -539,7 +539,7 @@
 			"background_color": "000000"
 		},
 		"vic8": {
-			"texture_id": "mtr:custom_directory/victoria_line_ca.png",
+			"texture_id": "mtr:custom_textures/victoria_line_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -547,7 +547,7 @@
 			"background_color": "000000"
 		},
 		"vic9": {
-			"texture_id": "mtr:custom_directory/victoria_line_cb.png",
+			"texture_id": "mtr:custom_textures/victoria_line_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -555,7 +555,7 @@
 			"background_color": "000000"
 		},
 		"vic10": {
-			"texture_id": "mtr:custom_directory/victoria_line_cdown.png",
+			"texture_id": "mtr:custom_textures/victoria_line_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -563,7 +563,7 @@
 			"background_color": "000000"
 		},
 		"vic11": {
-			"texture_id": "mtr:custom_directory/victoria_line_cright.png",
+			"texture_id": "mtr:custom_textures/victoria_line_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -571,7 +571,7 @@
 			"background_color": "000000"
 		},
 		"vic12": {
-			"texture_id": "mtr:custom_directory/victoria_line_crightdown.png",
+			"texture_id": "mtr:custom_textures/victoria_line_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -579,7 +579,7 @@
 			"background_color": "000000"
 		},
 		"vic13": {
-			"texture_id": "mtr:custom_directory/victoria_line_crightup.png",
+			"texture_id": "mtr:custom_textures/victoria_line_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -587,7 +587,7 @@
 			"background_color": "000000"
 		},
 		"vic14": {
-			"texture_id": "mtr:custom_directory/victoria_line_cup.png",
+			"texture_id": "mtr:custom_textures/victoria_line_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -595,7 +595,7 @@
 			"background_color": "000000"
 		},
 		"liz1": {
-			"texture_id": "mtr:custom_directory/liz_line_ab.png",
+			"texture_id": "mtr:custom_textures/liz_line_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -603,7 +603,7 @@
 			"background_color": "000000"
 		},
 		"liz2": {
-			"texture_id": "mtr:custom_directory/liz_line_ac.png",
+			"texture_id": "mtr:custom_textures/liz_line_ac.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -611,7 +611,7 @@
 			"background_color": "000000"
 		},
 		"liz3": {
-			"texture_id": "mtr:custom_directory/liz_line_adown.png",
+			"texture_id": "mtr:custom_textures/liz_line_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -619,7 +619,7 @@
 			"background_color": "000000"
 		},
 		"liz4": {
-			"texture_id": "mtr:custom_directory/liz_line_aleft.png",
+			"texture_id": "mtr:custom_textures/liz_line_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -627,7 +627,7 @@
 			"background_color": "000000"
 		},
 		"liz5": {
-			"texture_id": "mtr:custom_directory/liz_line_aleftdown.png",
+			"texture_id": "mtr:custom_textures/liz_line_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -635,7 +635,7 @@
 			"background_color": "000000"
 		},
 		"liz6": {
-			"texture_id": "mtr:custom_directory/liz_line_aleftup.png",
+			"texture_id": "mtr:custom_textures/liz_line_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -643,7 +643,7 @@
 			"background_color": "000000"
 		},
 		"liz7": {
-			"texture_id": "mtr:custom_directory/liz_line_aup.png",
+			"texture_id": "mtr:custom_textures/liz_line_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -651,7 +651,7 @@
 			"background_color": "000000"
 		},
 		"liz8": {
-			"texture_id": "mtr:custom_directory/liz_line_ca.png",
+			"texture_id": "mtr:custom_textures/liz_line_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -659,7 +659,7 @@
 			"background_color": "000000"
 		},
 		"liz9": {
-			"texture_id": "mtr:custom_directory/liz_line_cb.png",
+			"texture_id": "mtr:custom_textures/liz_line_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -667,7 +667,7 @@
 			"background_color": "000000"
 		},
 		"liz10": {
-			"texture_id": "mtr:custom_directory/liz_line_cdown.png",
+			"texture_id": "mtr:custom_textures/liz_line_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -675,7 +675,7 @@
 			"background_color": "000000"
 		},
 		"liz11": {
-			"texture_id": "mtr:custom_directory/liz_line_cright.png",
+			"texture_id": "mtr:custom_textures/liz_line_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -683,7 +683,7 @@
 			"background_color": "000000"
 		},
 		"liz12": {
-			"texture_id": "mtr:custom_directory/liz_line_crightdown.png",
+			"texture_id": "mtr:custom_textures/liz_line_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -691,7 +691,7 @@
 			"background_color": "000000"
 		},
 		"liz13": {
-			"texture_id": "mtr:custom_directory/liz_line_crightup.png",
+			"texture_id": "mtr:custom_textures/liz_line_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -699,7 +699,7 @@
 			"background_color": "000000"
 		},
 		"liz14": {
-			"texture_id": "mtr:custom_directory/liz_line_cup.png",
+			"texture_id": "mtr:custom_textures/liz_line_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -707,7 +707,7 @@
 			"background_color": "000000"
 		},
 		"wayout2": {
-			"texture_id": "mtr:custom_directory/wayout_ab.png",
+			"texture_id": "mtr:custom_textures/wayout_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -715,7 +715,7 @@
 			"background_color": "000000"
 		},
 		"wayout3": {
-			"texture_id": "mtr:custom_directory/wayout_adown.png",
+			"texture_id": "mtr:custom_textures/wayout_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -723,7 +723,7 @@
 			"background_color": "000000"
 		},
 		"wayout4": {
-			"texture_id": "mtr:custom_directory/wayout_aleft.png",
+			"texture_id": "mtr:custom_textures/wayout_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -731,7 +731,7 @@
 			"background_color": "000000"
 		},
 		"wayout5": {
-			"texture_id": "mtr:custom_directory/wayout_aleftdown.png",
+			"texture_id": "mtr:custom_textures/wayout_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -739,7 +739,7 @@
 			"background_color": "000000"
 		},
 		"wayout6": {
-			"texture_id": "mtr:custom_directory/wayout_aleftup.png",
+			"texture_id": "mtr:custom_textures/wayout_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -747,7 +747,7 @@
 			"background_color": "000000"
 		},
 		"wayout7": {
-			"texture_id": "mtr:custom_directory/wayout_aup.png",
+			"texture_id": "mtr:custom_textures/wayout_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -755,7 +755,7 @@
 			"background_color": "000000"
 		},
 		"wayout8": {
-			"texture_id": "mtr:custom_directory/wayout_ca.png",
+			"texture_id": "mtr:custom_textures/wayout_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -763,7 +763,7 @@
 			"background_color": "000000"
 		},
 		"wayout9": {
-			"texture_id": "mtr:custom_directory/blank.png",
+			"texture_id": "mtr:custom_textures/blank.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -771,7 +771,7 @@
 			"background_color": "000000"
 		},
 		"wayout10": {
-			"texture_id": "mtr:custom_directory/wayout_cdown.png",
+			"texture_id": "mtr:custom_textures/wayout_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -779,7 +779,7 @@
 			"background_color": "000000"
 		},
 		"wayout11": {
-			"texture_id": "mtr:custom_directory/wayout_cright.png",
+			"texture_id": "mtr:custom_textures/wayout_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -787,7 +787,7 @@
 			"background_color": "000000"
 		},
 		"wayout12": {
-			"texture_id": "mtr:custom_directory/wayout_crightdown.png",
+			"texture_id": "mtr:custom_textures/wayout_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -795,7 +795,7 @@
 			"background_color": "000000"
 		},
 		"wayout13": {
-			"texture_id": "mtr:custom_directory/wayout_crightup.png",
+			"texture_id": "mtr:custom_textures/wayout_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -803,7 +803,7 @@
 			"background_color": "000000"
 		},
 		"wayout14": {
-			"texture_id": "mtr:custom_directory/wayout_cup.png",
+			"texture_id": "mtr:custom_textures/wayout_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -811,7 +811,7 @@
 			"background_color": "000000"
 		},
 		"centralcolblk": {
-			"texture_id": "mtr:custom_directory/central_line_colblk.png",
+			"texture_id": "mtr:custom_textures/central_line_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -819,7 +819,7 @@
 			"background_color": "000000"
 		},
 		"dlrcolblk": {
-			"texture_id": "mtr:custom_directory/dlr_colblk.png",
+			"texture_id": "mtr:custom_textures/dlr_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -827,7 +827,7 @@
 			"background_color": "000000"
 		},
 		"lizlinecolblk": {
-			"texture_id": "mtr:custom_directory/liz_line_colblk.png",
+			"texture_id": "mtr:custom_textures/liz_line_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -835,7 +835,7 @@
 			"background_color": "000000"
 		},
 		"northerncolblk": {
-			"texture_id": "mtr:custom_directory/northern_colblk.png",
+			"texture_id": "mtr:custom_textures/northern_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -843,7 +843,7 @@
 			"background_color": "000000"
 		},
 		"piccadillycolblk": {
-			"texture_id": "mtr:custom_directory/piccadilly_line_colblk.png",
+			"texture_id": "mtr:custom_textures/piccadilly_line_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -851,7 +851,7 @@
 			"background_color": "000000"
 		},
 		"victoriacolblk": {
-			"texture_id": "mtr:custom_directory/victoria_line_colblk.png",
+			"texture_id": "mtr:custom_textures/victoria_line_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -859,7 +859,7 @@
 			"background_color": "000000"
 		},
 		"tubewte": {
-			"texture_id": "mtr:custom_directory/tube_logo_wte.png",
+			"texture_id": "mtr:custom_textures/tube_logo_wte.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -867,7 +867,7 @@
 			"background_color": "000000"
 		},
 		"tubeblk": {
-			"texture_id": "mtr:custom_directory/tube_logo_blk.png",
+			"texture_id": "mtr:custom_textures/tube_logo_blk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -875,7 +875,7 @@
 			"background_color": "000000"
 		},
 		"tramwte": {
-			"texture_id": "mtr:custom_directory/trams_logo_wte.png",
+			"texture_id": "mtr:custom_textures/trams_logo_wte.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -883,7 +883,7 @@
 			"background_color": "000000"
 		},
 		"tramblk": {
-			"texture_id": "mtr:custom_directory/trams_logo_blk.png",
+			"texture_id": "mtr:custom_textures/trams_logo_blk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -891,7 +891,7 @@
 			"background_color": "000000"
 		},
 		"buseswte": {
-			"texture_id": "mtr:custom_directory/buses_logo_wte.png",
+			"texture_id": "mtr:custom_textures/buses_logo_wte.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -899,7 +899,7 @@
 			"background_color": "000000"
 		},
 		"busesblk": {
-			"texture_id": "mtr:custom_directory/buses_logo_blk.png",
+			"texture_id": "mtr:custom_textures/buses_logo_blk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -907,7 +907,7 @@
 			"background_color": "000000"
 		},
 		"dlrwte": {
-			"texture_id": "mtr:custom_directory/dlr_logo_wte.png",
+			"texture_id": "mtr:custom_textures/dlr_logo_wte.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -915,7 +915,7 @@
 			"background_color": "000000"
 		},
 		"dlrblk": {
-			"texture_id": "mtr:custom_directory/dlr_logo_blk.png",
+			"texture_id": "mtr:custom_textures/dlr_logo_blk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -923,7 +923,7 @@
 			"background_color": "000000"
 		},
 		"lizwte": {
-			"texture_id": "mtr:custom_directory/liz_line_logo_wte.png",
+			"texture_id": "mtr:custom_textures/liz_line_logo_wte.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -931,7 +931,7 @@
 			"background_color": "000000"
 		},
 		"lizblk": {
-			"texture_id": "mtr:custom_directory/liz_line_logo_blk.png",
+			"texture_id": "mtr:custom_textures/liz_line_logo_blk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -939,7 +939,7 @@
 			"background_color": "000000"
 		},
 		"overwte": {
-			"texture_id": "mtr:custom_directory/overground_logo_wte.png",
+			"texture_id": "mtr:custom_textures/overground_logo_wte.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -947,7 +947,7 @@
 			"background_color": "000000"
 		},
 		"overblk": {
-			"texture_id": "mtr:custom_directory/overground_logo_blk.png",
+			"texture_id": "mtr:custom_textures/overground_logo_blk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -955,7 +955,7 @@
 			"background_color": "000000"
 		},
 		"nrwte": {
-			"texture_id": "mtr:custom_directory/nr_logo_wte.png",
+			"texture_id": "mtr:custom_textures/nr_logo_wte.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -963,7 +963,7 @@
 			"background_color": "000000"
 		},
 		"nrblk": {
-			"texture_id": "mtr:custom_directory/nr_logo_blk.png",
+			"texture_id": "mtr:custom_textures/nr_logo_blk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -971,7 +971,7 @@
 			"background_color": "000000"
 		},
 		"jubilee1": {
-			"texture_id": "mtr:custom_directory/jubilee_line_ab.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -979,7 +979,7 @@
 			"background_color": "000000"
 		},
 		"jubilee3": {
-			"texture_id": "mtr:custom_directory/jubilee_line_adown.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -987,7 +987,7 @@
 			"background_color": "000000"
 		},
 		"jubilee4": {
-			"texture_id": "mtr:custom_directory/jubilee_line_aleft.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -995,7 +995,7 @@
 			"background_color": "000000"
 		},
 		"jubilee5": {
-			"texture_id": "mtr:custom_directory/jubilee_line_aleftdown.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1003,7 +1003,7 @@
 			"background_color": "000000"
 		},
 		"jubilee6": {
-			"texture_id": "mtr:custom_directory/jubilee_line_aleftup.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1011,7 +1011,7 @@
 			"background_color": "000000"
 		},
 		"jubilee7": {
-			"texture_id": "mtr:custom_directory/jubilee_line_aup.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1019,7 +1019,7 @@
 			"background_color": "000000"
 		},
 		"jubilee8": {
-			"texture_id": "mtr:custom_directory/jubilee_line_colblk.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1027,7 +1027,7 @@
 			"background_color": "000000"
 		},
 		"jubilee9": {
-			"texture_id": "mtr:custom_directory/jubilee_line_cb.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1035,7 +1035,7 @@
 			"background_color": "000000"
 		},
 		"jubilee10": {
-			"texture_id": "mtr:custom_directory/jubilee_line_cdown.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1043,7 +1043,7 @@
 			"background_color": "000000"
 		},
 		"jubilee11": {
-			"texture_id": "mtr:custom_directory/jubilee_line_cright.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1051,7 +1051,7 @@
 			"background_color": "000000"
 		},
 		"jubilee12": {
-			"texture_id": "mtr:custom_directory/jubilee_line_crightdown.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1059,7 +1059,7 @@
 			"background_color": "000000"
 		},
 		"jubilee13": {
-			"texture_id": "mtr:custom_directory/jubilee_line_crightup.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1067,7 +1067,7 @@
 			"background_color": "000000"
 		},
 		"jubilee14": {
-			"texture_id": "mtr:custom_directory/jubilee_line_cup.png",
+			"texture_id": "mtr:custom_textures/jubilee_line_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1075,7 +1075,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo1a": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_ab.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1083,7 +1083,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo1": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_ac.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_ac.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1091,7 +1091,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo3": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_adown.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1099,7 +1099,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo4": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_aleft.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1107,7 +1107,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo5": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_aleftdown.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1115,7 +1115,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo6": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_aleftup.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1123,7 +1123,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo7": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_aup.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1131,7 +1131,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo8": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_colblk.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1139,7 +1139,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo9a": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_ca.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1147,7 +1147,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo9": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_cb.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1155,7 +1155,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo10": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_cdown.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1163,7 +1163,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo11": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_cright.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1171,7 +1171,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo12": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_crightdown.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1179,7 +1179,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo13": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_crightup.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1187,7 +1187,7 @@
 			"background_color": "000000"
 		},
 		"bakerloo14": {
-			"texture_id": "mtr:custom_directory/bakerloo_line_cup.png",
+			"texture_id": "mtr:custom_textures/bakerloo_line_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1195,7 +1195,7 @@
 			"background_color": "000000"
 		},
 		"wac1a": {
-			"texture_id": "mtr:custom_directory/wac_line_ab.png",
+			"texture_id": "mtr:custom_textures/wac_line_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1203,7 +1203,7 @@
 			"background_color": "000000"
 		},
 		"wac1": {
-			"texture_id": "mtr:custom_directory/wac_line_ac.png",
+			"texture_id": "mtr:custom_textures/wac_line_ac.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1211,7 +1211,7 @@
 			"background_color": "000000"
 		},
 		"wac3": {
-			"texture_id": "mtr:custom_directory/wac_line_adown.png",
+			"texture_id": "mtr:custom_textures/wac_line_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1219,7 +1219,7 @@
 			"background_color": "000000"
 		},
 		"wac4": {
-			"texture_id": "mtr:custom_directory/wac_line_aleft.png",
+			"texture_id": "mtr:custom_textures/wac_line_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1227,7 +1227,7 @@
 			"background_color": "000000"
 		},
 		"wac5": {
-			"texture_id": "mtr:custom_directory/wac_line_aleftdown.png",
+			"texture_id": "mtr:custom_textures/wac_line_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1235,7 +1235,7 @@
 			"background_color": "000000"
 		},
 		"wac6": {
-			"texture_id": "mtr:custom_directory/wac_line_aleftup.png",
+			"texture_id": "mtr:custom_textures/wac_line_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1243,7 +1243,7 @@
 			"background_color": "000000"
 		},
 		"wac7": {
-			"texture_id": "mtr:custom_directory/wac_line_aup.png",
+			"texture_id": "mtr:custom_textures/wac_line_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1251,7 +1251,7 @@
 			"background_color": "000000"
 		},
 		"wac8": {
-			"texture_id": "mtr:custom_directory/wac_line_colblk.png",
+			"texture_id": "mtr:custom_textures/wac_line_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1259,7 +1259,7 @@
 			"background_color": "000000"
 		},
 		"wac9a": {
-			"texture_id": "mtr:custom_directory/wac_line_ca.png",
+			"texture_id": "mtr:custom_textures/wac_line_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1267,7 +1267,7 @@
 			"background_color": "000000"
 		},
 		"wac9": {
-			"texture_id": "mtr:custom_directory/wac_line_cb.png",
+			"texture_id": "mtr:custom_textures/wac_line_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1275,7 +1275,7 @@
 			"background_color": "000000"
 		},
 		"wac10": {
-			"texture_id": "mtr:custom_directory/wac_line_cdown.png",
+			"texture_id": "mtr:custom_textures/wac_line_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1283,7 +1283,7 @@
 			"background_color": "000000"
 		},
 		"wac11": {
-			"texture_id": "mtr:custom_directory/wac_line_cright.png",
+			"texture_id": "mtr:custom_textures/wac_line_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1291,7 +1291,7 @@
 			"background_color": "000000"
 		},
 		"wac12": {
-			"texture_id": "mtr:custom_directory/wac_line_crightdown.png",
+			"texture_id": "mtr:custom_textures/wac_line_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1299,7 +1299,7 @@
 			"background_color": "000000"
 		},
 		"wac13": {
-			"texture_id": "mtr:custom_directory/wac_line_crightup.png",
+			"texture_id": "mtr:custom_textures/wac_line_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1307,7 +1307,7 @@
 			"background_color": "000000"
 		},
 		"wac14": {
-			"texture_id": "mtr:custom_directory/wac_line_cup.png",
+			"texture_id": "mtr:custom_textures/wac_line_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1315,7 +1315,7 @@
 			"background_color": "000000"
 		},
 		"tram1a": {
-			"texture_id": "mtr:custom_directory/tram_ab.png",
+			"texture_id": "mtr:custom_textures/tram_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1323,7 +1323,7 @@
 			"background_color": "000000"
 		},
 		"tram3": {
-			"texture_id": "mtr:custom_directory/tram_adown.png",
+			"texture_id": "mtr:custom_textures/tram_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1331,7 +1331,7 @@
 			"background_color": "000000"
 		},
 		"tram4": {
-			"texture_id": "mtr:custom_directory/tram_aleft.png",
+			"texture_id": "mtr:custom_textures/tram_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1339,7 +1339,7 @@
 			"background_color": "000000"
 		},
 		"tram5": {
-			"texture_id": "mtr:custom_directory/tram_aleftdown.png",
+			"texture_id": "mtr:custom_textures/tram_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1347,7 +1347,7 @@
 			"background_color": "000000"
 		},
 		"tram6": {
-			"texture_id": "mtr:custom_directory/tram_aleftup.png",
+			"texture_id": "mtr:custom_textures/tram_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1355,7 +1355,7 @@
 			"background_color": "000000"
 		},
 		"tram7": {
-			"texture_id": "mtr:custom_directory/tram_aup.png",
+			"texture_id": "mtr:custom_textures/tram_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1363,7 +1363,7 @@
 			"background_color": "000000"
 		},
 		"tram8": {
-			"texture_id": "mtr:custom_directory/tram_colblk.png",
+			"texture_id": "mtr:custom_textures/tram_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1371,7 +1371,7 @@
 			"background_color": "000000"
 		},
 		"tram9": {
-			"texture_id": "mtr:custom_directory/tram_cb.png",
+			"texture_id": "mtr:custom_textures/tram_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1379,7 +1379,7 @@
 			"background_color": "000000"
 		},
 		"tram10": {
-			"texture_id": "mtr:custom_directory/tram_cdown.png",
+			"texture_id": "mtr:custom_textures/tram_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1387,7 +1387,7 @@
 			"background_color": "000000"
 		},
 		"tram11": {
-			"texture_id": "mtr:custom_directory/tram_cright.png",
+			"texture_id": "mtr:custom_textures/tram_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1395,7 +1395,7 @@
 			"background_color": "000000"
 		},
 		"tram12": {
-			"texture_id": "mtr:custom_directory/tram_crightdown.png",
+			"texture_id": "mtr:custom_textures/tram_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1403,7 +1403,7 @@
 			"background_color": "000000"
 		},
 		"tram13": {
-			"texture_id": "mtr:custom_directory/tram_crightup.png",
+			"texture_id": "mtr:custom_textures/tram_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1411,7 +1411,7 @@
 			"background_color": "000000"
 		},
 		"tram14": {
-			"texture_id": "mtr:custom_directory/tram_cup.png",
+			"texture_id": "mtr:custom_textures/tram_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1419,7 +1419,7 @@
 			"background_color": "000000"
 		},
 		"overground1a": {
-			"texture_id": "mtr:custom_directory/overground_ab.png",
+			"texture_id": "mtr:custom_textures/overground_ab.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1427,7 +1427,7 @@
 			"background_color": "000000"
 		},
 		"overground1": {
-			"texture_id": "mtr:custom_directory/overground_ac.png",
+			"texture_id": "mtr:custom_textures/overground_ac.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1435,7 +1435,7 @@
 			"background_color": "000000"
 		},
 		"overground3": {
-			"texture_id": "mtr:custom_directory/overground_adown.png",
+			"texture_id": "mtr:custom_textures/overground_adown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1443,7 +1443,7 @@
 			"background_color": "000000"
 		},
 		"overground4": {
-			"texture_id": "mtr:custom_directory/overground_aleft.png",
+			"texture_id": "mtr:custom_textures/overground_aleft.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1451,7 +1451,7 @@
 			"background_color": "000000"
 		},
 		"overground5": {
-			"texture_id": "mtr:custom_directory/overground_aleftdown.png",
+			"texture_id": "mtr:custom_textures/overground_aleftdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1459,7 +1459,7 @@
 			"background_color": "000000"
 		},
 		"overground6": {
-			"texture_id": "mtr:custom_directory/overground_aleftup.png",
+			"texture_id": "mtr:custom_textures/overground_aleftup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1467,7 +1467,7 @@
 			"background_color": "000000"
 		},
 		"overground7": {
-			"texture_id": "mtr:custom_directory/overground_aup.png",
+			"texture_id": "mtr:custom_textures/overground_aup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1475,7 +1475,7 @@
 			"background_color": "000000"
 		},
 		"overground8": {
-			"texture_id": "mtr:custom_directory/overground_colblk.png",
+			"texture_id": "mtr:custom_textures/overground_colblk.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1483,7 +1483,7 @@
 			"background_color": "000000"
 		},
 		"overground9a": {
-			"texture_id": "mtr:custom_directory/overground_ca.png",
+			"texture_id": "mtr:custom_textures/overground_ca.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1491,7 +1491,7 @@
 			"background_color": "000000"
 		},
 		"overground9": {
-			"texture_id": "mtr:custom_directory/overground_cb.png",
+			"texture_id": "mtr:custom_textures/overground_cb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1499,7 +1499,7 @@
 			"background_color": "000000"
 		},
 		"overground10": {
-			"texture_id": "mtr:custom_directory/overground_cdown.png",
+			"texture_id": "mtr:custom_textures/overground_cdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1507,7 +1507,7 @@
 			"background_color": "000000"
 		},
 		"overground11": {
-			"texture_id": "mtr:custom_directory/overground_cright.png",
+			"texture_id": "mtr:custom_textures/overground_cright.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1515,7 +1515,7 @@
 			"background_color": "000000"
 		},
 		"overground12": {
-			"texture_id": "mtr:custom_directory/overground_crightdown.png",
+			"texture_id": "mtr:custom_textures/overground_crightdown.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1523,7 +1523,7 @@
 			"background_color": "000000"
 		},
 		"overground13": {
-			"texture_id": "mtr:custom_directory/overground_crightup.png",
+			"texture_id": "mtr:custom_textures/overground_crightup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1531,7 +1531,7 @@
 			"background_color": "000000"
 		},
 		"overground14": {
-			"texture_id": "mtr:custom_directory/overground_cup.png",
+			"texture_id": "mtr:custom_textures/overground_cup.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1539,7 +1539,7 @@
 			"background_color": "000000"
 		},
 		"ukemerexit": {
-			"texture_id": "mtr:custom_directory/uk_exit.png",
+			"texture_id": "mtr:custom_textures/uk_exit.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1547,7 +1547,7 @@
 			"background_color": "000000"
 		},
 		"wayoutnwa": {
-			"texture_id": "mtr:custom_directory/wayout_nwa.png",
+			"texture_id": "mtr:custom_textures/wayout_nwa.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
@@ -1555,7 +1555,7 @@
 			"background_color": "000000"
 		},
 		"wayoutnwb": {
-			"texture_id": "mtr:custom_directory/wayout_nwb.png",
+			"texture_id": "mtr:custom_textures/wayout_nwb.png",
 			"flip_texture": false,
 			"custom_text": "",
 			"flip_custom_text": false,
