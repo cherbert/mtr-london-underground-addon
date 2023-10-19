@@ -20,7 +20,7 @@ public class TunnelA0 extends HorizontalDirectionalBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext ctx) {
-		return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection());
+		return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite());
 	}
 
 

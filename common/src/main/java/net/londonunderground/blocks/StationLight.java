@@ -23,7 +23,7 @@ public class StationLight extends HorizontalDirectionalBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext ctx) {
-		return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getClockWise());
+		return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection());
 	}
 
 	@Override
