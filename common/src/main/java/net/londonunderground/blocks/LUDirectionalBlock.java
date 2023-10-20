@@ -32,6 +32,6 @@ public class LUDirectionalBlock extends HorizontalDirectionalBlock {
 
 	@Override
 	public void appendHoverText(ItemStack stack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-		tooltip.add(Text.literal("DEPRECATED!!!").setStyle(Style.EMPTY.withColor(ChatFormatting.RED)));
+		//tooltip.add(Text.literal("DEPRECATED!!!").setStyle(Style.EMPTY.withColor(ChatFormatting.RED)));
 	}
 }

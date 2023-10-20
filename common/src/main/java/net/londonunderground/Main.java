@@ -70,18 +70,26 @@ public class Main {
 
 		registerBlockItem.accept("tunnel_entrance_1", MyBlocks.TUNNEL_ENTRANCE_1, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a0", MyBlocks.TUNNEL_A0, MyItems.TFL_STATION);
+
 		registerBlockItem.accept("tunnel_a1", MyBlocks.TUNNEL_A1, MyItems.TFL_STATION);
+
 		registerBlockItem.accept("tunnel_a1_duel", MyBlocks.TUNNEL_A1_DUEL, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a2", MyBlocks.TUNNEL_A2, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a2_duel", MyBlocks.TUNNEL_A2_DUEL, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a2_signal", MyBlocks.TUNNEL_A2_SIGNAL, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a2_nowires", MyBlocks.TUNNEL_A2_NOWIRES, MyItems.TFL_STATION);
+
 		registerBlockItem.accept("tunnel_a3_duel", MyBlocks.TUNNEL_A3_DUEL, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a3_nowires", MyBlocks.TUNNEL_A3_NOWIRES, MyItems.TFL_STATION);
+
 		registerBlockItem.accept("tunnel_a3", MyBlocks.TUNNEL_A3, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a4", MyBlocks.TUNNEL_A4, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a5", MyBlocks.TUNNEL_A5, MyItems.TFL_STATION);
 
+		registerBlockItem.accept("tunnel_a0_morden", MyBlocks.TUNNEL_A0_MORDEN, MyItems.TFL_STATION);
+		registerBlockItem.accept("tunnel_a1_morden", MyBlocks.TUNNEL_A1_MORDEN, MyItems.TFL_STATION);
+		registerBlockItem.accept("tunnel_a2_nowires_morden", MyBlocks.TUNNEL_A2_NOWIRES_MORDEN, MyItems.TFL_STATION);
+		registerBlockItem.accept("tunnel_a3_nowires_morden", MyBlocks.TUNNEL_A3_NOWIRES_MORDEN, MyItems.TFL_STATION);
 		registerBlockItem.accept("morden_arch_new", MyBlocks.MORDEN_ARCH_NEW, MyItems.TFL_STATION);
 		registerBlockItem.accept("morden_arch_roof", MyBlocks.MORDEN_ARCH_ROOF, MyItems.TFL_STATION);
 
