@@ -5,8 +5,8 @@
         "facing": "north"
       },
       "apply": {
-        "model": "londonunderground:block/tunnel_a0",
-        "y": 180
+        "model": "londonunderground:block/station_a9b_pidpole",
+        "y": 0
       }
     },
     {
@@ -14,8 +14,8 @@
         "facing": "east"
       },
       "apply": {
-        "model": "londonunderground:block/tunnel_a0",
-        "y": -90
+        "model": "londonunderground:block/station_a9b_pidpole",
+        "y": 90
       }
     },
     {
@@ -23,7 +23,8 @@
         "facing": "south"
       },
       "apply": {
-        "model": "londonunderground:block/tunnel_a0"
+        "model": "londonunderground:block/station_a9b_pidpole",
+        "y": 180
       }
     },
     {
@@ -31,8 +32,8 @@
         "facing": "west"
       },
       "apply": {
-        "model": "londonunderground:block/tunnel_a0",
-        "y": 90
+        "model": "londonunderground:block/station_a9b_pidpole",
+        "y": -90
       }
     }
   ]

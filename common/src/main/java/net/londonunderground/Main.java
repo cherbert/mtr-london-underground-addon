@@ -70,7 +70,6 @@ public class Main {
 
 		registerBlockItem.accept("tunnel_entrance_1", MyBlocks.TUNNEL_ENTRANCE_1, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a0", MyBlocks.TUNNEL_A0, MyItems.TFL_STATION);
-
 		registerBlockItem.accept("tunnel_a1", MyBlocks.TUNNEL_A1, MyItems.TFL_STATION);
 
 		registerBlockItem.accept("tunnel_a1_duel", MyBlocks.TUNNEL_A1_DUEL, MyItems.TFL_STATION);
@@ -93,6 +92,8 @@ public class Main {
 		registerBlockItem.accept("morden_arch_new", MyBlocks.MORDEN_ARCH_NEW, MyItems.TFL_STATION);
 		registerBlockItem.accept("morden_arch_roof", MyBlocks.MORDEN_ARCH_ROOF, MyItems.TFL_STATION);
 
+		registerBlockItem.accept("station_a9_pidpole", MyBlocks.STATION_A9_PIDPOLE, MyItems.TFL_STATION);
+		registerBlockItem.accept("station_a9b_pidpole", MyBlocks.STATION_A9b_PIDPOLE, MyItems.TFL_STATION);
 
 		registerBlockItem.accept("pids_northern", MyBlocks.NORTHERN_PIDS, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("pids_pole", MyBlocks.PIDS_POLE, MyItems.TFL_BLOCKS);

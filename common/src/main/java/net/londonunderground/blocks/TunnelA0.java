@@ -23,11 +23,9 @@ public class TunnelA0 extends HorizontalDirectionalBlock {
 		return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite());
 	}
 
-
-
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
-		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+		final Direction facing = IBlock.getStatePropertySafe(state, FACING).getOpposite();
 		return Shapes.or(
 				IBlock.getVoxelShapeByDirection(0, 0, 6, 16, 0.83333, 8, facing),
 				IBlock.getVoxelShapeByDirection(0, 2.66667, 0, 16, 3.66667, 4, facing),
@@ -36,7 +34,6 @@ public class TunnelA0 extends HorizontalDirectionalBlock {
 				IBlock.getVoxelShapeByDirection(0, 3.66667, 0, 16, 4.66667, 3, facing),
 				IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 2.66667, 5, facing),
 				IBlock.getVoxelShapeByDirection(0, 6, 0, 16, 6.83333, 1, facing)
-
 		);
 	}
 

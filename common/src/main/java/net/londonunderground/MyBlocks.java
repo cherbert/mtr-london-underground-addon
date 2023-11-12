@@ -1,7 +1,6 @@
 package net.londonunderground;
 
 import mtr.RegistryObject;
-import mtr.block.BlockPIDSPole;
 import net.londonunderground.blocks.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
@@ -55,7 +54,7 @@ public interface MyBlocks {
 	RegistryObject<Block> STATION_A7 =new RegistryObject<>(()-> new StationA7(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A8 =new RegistryObject<>(()-> new StationA8(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A9 =new RegistryObject<>(()-> new StationA9(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).lightLevel(state -> 2)));
-
+	RegistryObject<Block> STATION_A9_PIDPOLE =new RegistryObject<>(()-> new BlockPIDSPoleStation(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).lightLevel(state -> 2)));
 	RegistryObject<Block> STATION_A1b =new RegistryObject<>(()-> new StationA1(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A2b =new RegistryObject<>(()-> new StationA2(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	//RegistryObject<Block> STATION_A3b_STOP =new RegistryObject<>(()-> new StationA3StopMarker(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
@@ -67,6 +66,7 @@ public interface MyBlocks {
 	RegistryObject<Block> STATION_A7b =new RegistryObject<>(()-> new StationA7(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A8b =new RegistryObject<>(()-> new StationA8(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
 	RegistryObject<Block> STATION_A9b =new RegistryObject<>(()-> new StationA9(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2)));
+	RegistryObject<Block> STATION_A9b_PIDPOLE =new RegistryObject<>(()-> new BlockPIDSPoleStation(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).lightLevel(state -> 2)));
 
 	RegistryObject<Block> TUBE_0 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));
 	RegistryObject<Block> TUBE_0_SLAB =new RegistryObject<>(()-> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).noOcclusion()));

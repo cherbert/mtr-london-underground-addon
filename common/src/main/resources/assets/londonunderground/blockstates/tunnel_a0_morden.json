@@ -6,7 +6,7 @@
       },
       "apply": {
         "model": "londonunderground:block/tunnel_a0_morden",
-        "y": 0
+        "y": 180
       }
     },
     {
@@ -15,7 +15,7 @@
       },
       "apply": {
         "model": "londonunderground:block/tunnel_a0_morden",
-        "y": 90
+        "y": -90
       }
     },
     {
@@ -23,8 +23,7 @@
         "facing": "south"
       },
       "apply": {
-        "model": "londonunderground:block/tunnel_a0_morden",
-        "y": 180
+        "model": "londonunderground:block/tunnel_a0_morden"
       }
     },
     {
@@ -33,7 +32,7 @@
       },
       "apply": {
         "model": "londonunderground:block/tunnel_a0_morden",
-        "y": -90
+        "y": 90
       }
     }
   ]
