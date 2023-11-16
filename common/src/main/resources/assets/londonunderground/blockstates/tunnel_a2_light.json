@@ -1,0 +1,77 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_a2_light",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_a2_light",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_a2_nowires",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_a2_nowires",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_a2_light",
+        "y": 90
+
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_a2_light",
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_a2_nowires",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "londonunderground:block/tunnel_a2_nowires",
+        "y": -90
+      }
+    }
+  ]
+}

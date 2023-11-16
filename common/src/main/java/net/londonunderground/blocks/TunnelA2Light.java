@@ -13,8 +13,8 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class StationA2 extends HorizontalDirectionalBlock {
-	public StationA2(Properties settings) {
+public class TunnelA2Light extends HorizontalDirectionalBlock {
+	public TunnelA2Light(Properties settings) {
 		super(settings);
 	}
 
@@ -26,12 +26,10 @@ public class StationA2 extends HorizontalDirectionalBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
 		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
-		return Shapes.or(IBlock.getVoxelShapeByDirection(0,0,8,16, 1, 9, facing),
-				IBlock.getVoxelShapeByDirection(0, 0, 7,16, 7, 8, facing),
-				IBlock.getVoxelShapeByDirection(0, 0, 6,16, 16, 7, facing),
-				IBlock.getVoxelShapeByDirection(0, 0, 5,16, 16, 6, facing),
-				IBlock.getVoxelShapeByDirection(0, 0, 4,16, 16, 5, facing),
-				IBlock.getVoxelShapeByDirection(0, 0, 0,16, 16, 4, facing));
+		return Shapes.or(IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 3, 10.83333, facing),
+				IBlock.getVoxelShapeByDirection(0, 3, 0, 16, 7, 9.83333, facing),
+				IBlock.getVoxelShapeByDirection(0, 7, 0, 16, 15, 9, facing),
+				IBlock.getVoxelShapeByDirection(0, 15, 0, 16, 16, 9.83333, facing));
 	}
 
 	@Override

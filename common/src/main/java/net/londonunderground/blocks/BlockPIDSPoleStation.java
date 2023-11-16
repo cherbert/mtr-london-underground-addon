@@ -35,7 +35,7 @@ public class BlockPIDSPoleStation extends BlockPoleCheckBase {
 
 	@Override
 	protected boolean isBlock(Block block) {
-		return block instanceof BlockPIDSBaseHorizontal || block instanceof BlockPIDSPoleStation;
+		return true;
 	}
 
 	@Override
