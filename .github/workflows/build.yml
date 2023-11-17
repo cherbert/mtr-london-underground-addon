@@ -23,7 +23,7 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu'
-      - name: Make gradle wrapper executable
+      #- name: Make gradle wrapper executable
         #run: chmod +x ./gradlew
       - name: Setup ${{ matrix.minecraft }} ${{ matrix.loader }}
         run: ./gradlew setupLibrary -PbuildVersion="${{ matrix.minecraft }}"
