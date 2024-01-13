@@ -30,7 +30,7 @@ jobs:
       - name: Build ${{ matrix.minecraft }} ${{ matrix.loader }}
         run: ./gradlew build -PbuildVersion="${{ matrix.minecraft }}"
       - name: Capture release artifacts
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@3
         with:
           name: Artifacts
           path: build/release
