@@ -78,6 +78,7 @@ public class Main {
 		registerBlockItem.accept("tunnel_a2_signal", MyBlocks.TUNNEL_A2_SIGNAL, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a2_nowires", MyBlocks.TUNNEL_A2_NOWIRES, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a2_light", MyBlocks.TUNNEL_A2_LIGHT, MyItems.TFL_STATION);
+		registerBlockItem.accept("tunnel_a2_light_white", MyBlocks.TUNNEL_A2_LIGHT_WHITE, MyItems.TFL_STATION);
 
 		registerBlockItem.accept("tunnel_a3_duel", MyBlocks.TUNNEL_A3_DUEL, MyItems.TFL_STATION);
 		registerBlockItem.accept("tunnel_a3_nowires", MyBlocks.TUNNEL_A3_NOWIRES, MyItems.TFL_STATION);

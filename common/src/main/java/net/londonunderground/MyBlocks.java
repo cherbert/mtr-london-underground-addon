@@ -32,6 +32,8 @@ public interface MyBlocks {
 	RegistryObject<Block> TUNNEL_A2 =new RegistryObject<>(()-> new TunnelA2(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> TUNNEL_A2_NOWIRES =new RegistryObject<>(()-> new TunnelA2NoWires(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> TUNNEL_A2_LIGHT =new RegistryObject<>(()-> new TunnelA2Light(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).lightLevel(state -> 15)));
+	RegistryObject<Block> TUNNEL_A2_LIGHT_WHITE =new RegistryObject<>(()-> new TunnelA2Light(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).strength(2).lightLevel(state -> 15)));
+
 	RegistryObject<Block> TUNNEL_A2_NOWIRES_MORDEN =new RegistryObject<>(()-> new TunnelA2NoWires(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> TUNNEL_A2_SIGNAL =new RegistryObject<>(()-> new TunnelA2Signal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> TUNNEL_A2_DUEL =new RegistryObject<>(()-> new TunnelA2Duel(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
