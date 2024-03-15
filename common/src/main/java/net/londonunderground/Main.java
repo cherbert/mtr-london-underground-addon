@@ -139,11 +139,6 @@ public class Main {
 		registerBlockItem.accept("block_roundel_5_big", MyBlocks.BLOCK_ROUNDEL_5_BIG, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("block_roundel_5_big_even", MyBlocks.BLOCK_ROUNDEL_5_BIG_EVEN, MyItems.TFL_SIGNS);
 
-		registerBlockItem.accept("block_roundel_station", MyBlocks.BLOCK_ROUNDEL_STATION, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("block_roundel_station_type_b", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("block_roundel_station_type_c", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_C, MyItems.TFL_BLOCKS);
-		registerBlockItem.accept("block_roundel_station_top", MyBlocks.BLOCK_ROUNDEL_STATION_TOP, MyItems.TFL_BLOCKS);
-
 		registerBlockItem.accept("british_rail_underground", MyBlocks.BRITISH_RAIL_UNDERGROUND, MyItems.TFL_SIGNS);
 		registerBlockItem.accept("block_roundel_nle", MyBlocks.BLOCK_ROUNDEL_NLE, MyItems.TFL_SIGNS);
 
@@ -156,9 +151,15 @@ public class Main {
 		registerBlockItem.accept("morden_steps_middle", MyBlocks.MORDEN_STEPS_MIDDLE, MyItems.TFL_BLOCKS);
 		registerBlockItem.accept("morden_steps_right", MyBlocks.MORDEN_STEPS_RIGHT, MyItems.TFL_BLOCKS);
 
+		registerBlockItem.accept("name_projector", MyBlocks.NAME_PROJECTOR, MyItems.TFL_BLOCKS);
 
 
 		// Legacy Items
+
+		registerBlockItem.accept("block_roundel_station", MyBlocks.BLOCK_ROUNDEL_STATION, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("block_roundel_station_type_b", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_B, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("block_roundel_station_type_c", MyBlocks.BLOCK_ROUNDEL_STATION_TYPE_C, MyItems.TFL_LEGACY);
+		registerBlockItem.accept("block_roundel_station_top", MyBlocks.BLOCK_ROUNDEL_STATION_TOP, MyItems.TFL_LEGACY);
 
 		registerBlockItem.accept("track_1", MyBlocks.TRACK_1, MyItems.TFL_LEGACY);
 		registerBlockItem.accept("track_2", MyBlocks.TRACK_2, MyItems.TFL_LEGACY);

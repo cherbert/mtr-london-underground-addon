@@ -53,4 +53,7 @@ public interface MyBlockEntityTypes {
 	RegistryObject<BlockEntityType<SignUnderground.TileEntitySignUnderground>> SIGN_UNDERGROUND_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(SignUnderground.TileEntitySignUnderground::new, MyBlocks.SIGN_UNDERGROUND.get()));
 	RegistryObject<BlockEntityType<SignPride.TileEntitySignPride>> SIGN_PRIDE_TILE_ENTITY = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(SignPride.TileEntitySignPride::new, MyBlocks.SIGN_PRIDE.get()));
 
+	RegistryObject<BlockEntityType<NameProjector.TileEntityNameProjector>> NAME_PROJECTOR = new RegistryObject<>(()->RegistryUtilities.getBlockEntityType(NameProjector.TileEntityNameProjector::new, MyBlocks.NAME_PROJECTOR.get()));
+
+
 }

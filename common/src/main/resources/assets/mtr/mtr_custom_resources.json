@@ -23,6 +23,54 @@
 			"color": "0x007229",
 			"base_train_type": "london_underground_d78",
 			"texture_id": "mtr:custom_textures/london_underground_d78.png"
+		},
+		"d78_weathered": {
+			"name": "London Underground D78 Stock (Weathered)",
+			"color": "007229",
+			"base_train_type": "london_underground_d78",
+			"texture_id": "mtr:custom_textures/weathered_d78.png"
+		},
+		"d78_weathered_mini": {
+			"name": "London Underground D78 Stock (Weathered Mini)",
+			"color": "007229",
+			"base_train_type": "london_underground_d78_mini",
+			"texture_id": "mtr:custom_textures/weathered_d78.png"
+		},
+		"d78_graffiti": {
+			"name": "London Underground D78 Stock (Graffitied)",
+			"color": "007229",
+			"base_train_type": "london_underground_d78",
+			"texture_id": "mtr:custom_textures/graffiti_d78.png"
+		},
+		"d78_graffiti_mini": {
+			"name": "London Underground D78 Stock (Graffitied Mini)",
+			"color": "007229",
+			"base_train_type": "london_underground_d78_mini",
+			"texture_id": "mtr:custom_textures/graffiti_d78.png"
+		},
+		"d78_better": {
+			"name": "London Underground D78 Stock (Enhanced)",
+			"color": "007229",
+			"base_train_type": "london_underground_d78",
+			"texture_id": "mtr:custom_textures/better_d78.png"
+		},
+		"d78_better_mini": {
+			"name": "London Underground D78 Stock (Enhanced Mini)",
+			"color": "007229",
+			"base_train_type": "london_underground_d78_mini",
+			"texture_id": "mtr:custom_textures/better_d78.png"
+		},
+		"d78_worker": {
+			"name": "London Underground D78 Stock (Worker)",
+			"color": "007229",
+			"base_train_type": "london_underground_d78",
+			"texture_id": "mtr:custom_textures/worker_d78.png"
+		},
+		"d78_worker_mini": {
+			"name": "London Underground D78 Stock (Worker Mini)",
+			"color": "007229",
+			"base_train_type": "london_underground_d78_mini",
+			"texture_id": "mtr:custom_textures/worker_d78.png"
 		}
 	},
 	"custom_signs": {

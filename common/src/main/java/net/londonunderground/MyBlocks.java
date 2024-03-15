@@ -124,16 +124,13 @@ public interface MyBlocks {
 	RegistryObject<Block> BLOCK_ROUNDEL_5 =new RegistryObject<>(()-> new BlockRoundel5(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> BLOCK_ROUNDEL_5_BIG =new RegistryObject<>(()-> new BlockRoundel5Big(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> BLOCK_ROUNDEL_5_BIG_EVEN =new RegistryObject<>(()-> new BlockRoundel5BigEven(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> BLOCK_ROUNDEL_STATION =new RegistryObject<>(()-> new BlockRoundelStation(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> BLOCK_ROUNDEL_STATION_TYPE_B =new RegistryObject<>(()-> new BlockRoundelStationTypeB(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> BLOCK_ROUNDEL_STATION_TYPE_C =new RegistryObject<>(()-> new BlockRoundelStationTypeC(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
-	RegistryObject<Block> BLOCK_ROUNDEL_STATION_TOP =new RegistryObject<>(()-> new BlockRoundelStationTop(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> LU_CROSSBAR =new RegistryObject<>(()-> new BlockLUCrossbar(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
 	RegistryObject<Block> MORDEN_STEPS_LEFT =new RegistryObject<>(()-> new MordenStepsLeft(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> MORDEN_STEPS_MIDDLE =new RegistryObject<>(()-> new MordenStepsMiddle(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 	RegistryObject<Block> MORDEN_STEPS_RIGHT =new RegistryObject<>(()-> new MordenStepsRight(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2)));
 
+	RegistryObject<Block> NAME_PROJECTOR =new RegistryObject<>(()-> new NameProjector(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
 	//
 	// Legacy Items
@@ -168,5 +165,9 @@ public interface MyBlocks {
 	RegistryObject<Block> TUNNEL_BLOCK_4 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 	RegistryObject<Block> TUNNEL_BLOCK_5 =new RegistryObject<>(()-> new LUDirectionalBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
+	RegistryObject<Block> BLOCK_ROUNDEL_STATION =new RegistryObject<>(()-> new BlockRoundelStation(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> BLOCK_ROUNDEL_STATION_TYPE_B =new RegistryObject<>(()-> new BlockRoundelStationTypeB(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> BLOCK_ROUNDEL_STATION_TYPE_C =new RegistryObject<>(()-> new BlockRoundelStationTypeC(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
+	RegistryObject<Block> BLOCK_ROUNDEL_STATION_TOP =new RegistryObject<>(()-> new BlockRoundelStationTop(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.QUARTZ).requiresCorrectToolForDrops().strength(2).noOcclusion()));
 
 }

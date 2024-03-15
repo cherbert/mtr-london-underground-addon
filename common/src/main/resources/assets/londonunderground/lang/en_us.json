@@ -144,5 +144,6 @@
   "block.londonunderground.block_roundel_station_type_c" : "Station Name Panel Projection (TypeC)",
   "block.londonunderground.block_roundel_station_top" : "Station Name Panel Projection (Top Tilt)",
   "tooltip.londonunderground.block_roundel" : "Text depends on the station",
+  "block.londonunderground.name_projector" : "Dynamic Station Name Projector",
   "gui.londonunderground.arrival_sec": " Due"
 }
