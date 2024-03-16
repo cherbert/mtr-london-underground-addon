@@ -9,8 +9,6 @@ subprojects {
 	apply plugin: "java"
 
 	dependencies {
-		implementation "com.github.jonafanho:Shadow-Libraries:master-SNAPSHOT"
-		implementation "com.squareup.okhttp3:okhttp:+"
 		compileOnly "com.google.code.findbugs:jsr305:+"
 	}
 

@@ -17,7 +17,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${buildTools.getFabricVersion()}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${buildTools.getFabricApiVersion()}"
 	modApi "com.terraformersmc:modmenu:${buildTools.getModMenuVersion()}"
-	modImplementation "org.mtr:MTR-fabric-${minecraftVersion}:0.0.1"
+	modImplementation "org.mtr:MTR-fabric-${minecraftVersion}:${mtrVersion}"
 }
 
 repositories {
