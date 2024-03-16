@@ -1,0 +1,17 @@
+{
+	"providers": [
+		{
+			"type": "ttf",
+			"file": "londonunderground:@font@.ttf",
+			"size": 9.0,
+			"shift": [
+				0,
+				1.5
+			],
+			"oversample": 8.0
+		},
+		{
+			"type": "@type@"
+		}
+	]
+}

@@ -1,84 +1,83 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+import org.mtr.mod.BuildTools
+
 plugins {
-	id "com.github.johnrengelman.shadow"
+	id "net.minecraftforge.gradle" version "+"
+	id "org.spongepowered.mixin" version "+"
 }
 
-loom {
-	forge {
-		mixinConfig "londonunderground.mixins.json"
+
+final BuildTools buildTools = new BuildTools(minecraftVersion, "forge", project)
+
+minecraft {
+	mappings channel: "official", version: minecraftVersion
+	runs {
+		configureEach {
+			property "forge.logging.markers", "REGISTRIES"
+			property "forge.logging.console.level", "debug"
+		}
+		client {}
+		server { args "--nogui" }
 	}
 }
 
-architectury {
-	platformSetupLoomIde()
-	forge()
-}
-
-configurations {
-	common
-	shadowCommon
-	compileClasspath.extendsFrom common
-	runtimeClasspath.extendsFrom common
-	developmentForge.extendsFrom common
-}
+sourceSets.main.resources { srcDir "src/generated/resources" }
 
 dependencies {
-	forge "net.minecraftforge:forge:${rootProject.forge_version}"
-	modApi "${rootProject.architectury_id}:architectury-forge:${rootProject.architectury_version}"
-
-	common(project(path: ":common", configuration: "namedElements")) { transitive false }
-	shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+	minecraft "net.minecraftforge:forge:${minecraftVersion}-${buildTools.getForgeVersion()}"
+	annotationProcessor "org.spongepowered:mixin:+:processor"
+	implementation "org.mtr:MTR-forge-${minecraftVersion}:0.0.1"
 }
 
-processResources {
-	inputs.property "version", project.version
+mixin {
+	add sourceSets.main, "mtr.refmap.json"
+	config "mtr.mixins.json"
+	debug.verbose = true
+	debug.export = true
+}
 
-	filesMatching("META-INF/mods.toml") {
-		expand "version": project.version
+java {
+	toolchain {
+		languageVersion.set(JavaLanguageVersion.of(buildTools.javaLanguageVersion))
+	}
+	withSourcesJar()
+	withJavadocJar()
+}
+
+tasks.register("setupFiles") {
+	copy {
+		outputs.upToDateWhen { false }
+		from "src/main/mods.template.toml"
+		into "src/main/resources/META-INF"
+		filter(ReplaceTokens, tokens: ["minecraft": minecraftVersion, "version": minecraftVersion + "-" + version])
+		rename "(.+).template.toml", "\$1.toml"
+	}
+
+	delete fileTree("src/main/java/net/londonunderground/mod")
+	delete fileTree("src/main/resources/assets")
+	delete fileTree("src/main/resources/data")
+
+	copy {
+		outputs.upToDateWhen { false }
+		from "../fabric/src/main/java/net/londonunderground/mod"
+		into "src/main/java/net/londonunderground/mod"
+	}
+
+	copy {
+		outputs.upToDateWhen { false }
+		from "../fabric/src/main/resources/assets"
+		into "src/main/resources/assets"
+	}
+
+	copy {
+		outputs.upToDateWhen { false }
+		from "../fabric/src/main/resources/data"
+		into "src/main/resources/data"
 	}
 }
 
-shadowJar {
-	exclude "fabric.mod.json"
-
-	configurations = [project.configurations.shadowCommon]
-	classifier "dev-shadow"
-}
-
-remapJar {
-	input.set shadowJar.archiveFile
-	dependsOn shadowJar
-	classifier null
-}
-
-components.java {
-	withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
-		skip()
-	}
-}
-
-task moveForgeBuilds() {
+build {
 	doLast {
-		delete fileTree("../build").matching {
-			include "**/MTR-LU-Addon-forge*"
-		}
-		copy {
-			from "build/libs"
-			into "../build/release"
-			exclude "*dev-shadow.jar"
-			rename "(.+)", "MTR-LU-Addon-\$1"
-		}
-		copy {
-			from "../build/release"
-			into "../build/latest"
-			rename { fileName -> fileName.replace(rootProject.mod_version, "latest") }
-		}
-	}
-}
-
-afterEvaluate {
-	for (def task in it.tasks) {
-		if (task == tasks.build) {
-			task.finalizedBy tasks.moveForgeBuilds
-		}
+		buildTools.copyBuildFile()
 	}
 }
