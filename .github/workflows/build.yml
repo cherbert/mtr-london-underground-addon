@@ -19,8 +19,8 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu'
-      - name: Make gradle wrapper executable
-        run: chmod +x ./gradlew
+     # - name: Make gradle wrapper executable
+       # run: chmod +x ./gradlew
       - name: Setup Fabric files
         run: ./gradlew fabric:setupFiles -PminecraftVersion="${{ matrix.minecraft }}"
       - name: Setup Forge files
@@ -28,7 +28,7 @@ jobs:
       - name: Build ${{ matrix.minecraft }}
         run: ./gradlew build -PminecraftVersion="${{ matrix.minecraft }}"
       - name: Capture release artifacts
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@v3
         with:
           name: Fabric and Forge ${{ matrix.minecraft }}
           path: build/release/
