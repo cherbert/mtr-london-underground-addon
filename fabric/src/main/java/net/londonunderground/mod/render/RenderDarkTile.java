@@ -47,7 +47,12 @@ public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkne
 	}
 
 	@Override
-	public int getRenderDistance() {
+	public int getRenderDistance2() {
 		return 512;
+	}
+
+	@Override
+	public boolean isInRenderDistance(@Nonnull T blockEntity, @Nonnull Vector3d position) {
+		return true;
 	}
 }
