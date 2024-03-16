@@ -8,7 +8,6 @@ jobs:
       matrix:
         minecraft: [ 1.16.5, 1.17.1, 1.18.2, 1.19.4, 1.20.4 ]
     runs-on: self-hosted
-    #runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@main
@@ -19,16 +18,12 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu'
-     # - name: Make gradle wrapper executable
-       # run: chmod +x ./gradlew
-      - name: Setup Fabric files
-        run: ./gradlew fabric:setupFiles -PminecraftVersion="${{ matrix.minecraft }}"
-      - name: Setup Forge files
-        run: ./gradlew forge:setupFiles -PminecraftVersion="${{ matrix.minecraft }}"
-      - name: Build ${{ matrix.minecraft }}
-        run: ./gradlew build -PminecraftVersion="${{ matrix.minecraft }}"
+      - name: Setup ${{ matrix.minecraft }} ${{ matrix.loader }}
+        run: ./gradlew setupLibrary -PbuildVersion="${{ matrix.minecraft }}"
+      - name: Build ${{ matrix.minecraft }} ${{ matrix.loader }}
+        run: ./gradlew build -PbuildVersion="${{ matrix.minecraft }}"
       - name: Capture release artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: Fabric and Forge ${{ matrix.minecraft }}
-          path: build/release/
+          name: Artifacts
+          path: build/release
