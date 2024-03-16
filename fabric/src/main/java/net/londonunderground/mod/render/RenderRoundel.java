@@ -79,7 +79,7 @@ public class RenderRoundel<T extends BlockRoundelBase.TileEntityBlockRoundelBase
 			storedMatrixTransformations.transform(graphicsHolderNew, offset);
 			render(graphicsHolderNew, roundelText, textWidth, light);
 			if (isDoubleSided) {
-				graphicsHolder.rotateYDegrees(180);
+				graphicsHolderNew.rotateYDegrees(180);
 				render(graphicsHolderNew, roundelText, textWidth, light);
 			}
 			graphicsHolderNew.pop();

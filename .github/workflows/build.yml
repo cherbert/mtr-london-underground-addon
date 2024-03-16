@@ -18,8 +18,8 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu'
-      - name: Make gradle wrapper executable
-        run: chmod +x ./gradlew
+      #      - name: Make gradle wrapper executable
+      #        run: chmod +x ./gradlew
       - name: Setup Fabric files
         run: ./gradlew fabric:setupFiles -PminecraftVersion="${{ matrix.minecraft }}"
       - name: Setup Forge files

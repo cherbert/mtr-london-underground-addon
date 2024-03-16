@@ -2,7 +2,6 @@ package net.londonunderground.mod.render;
 
 import net.londonunderground.mod.Init;
 import net.londonunderground.mod.blocks.TunnelDarknessBlock;
-import net.minecraft.util.math.Vec3d;
 import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.BlockEntityRenderer;
 import org.mtr.mapping.mapper.GraphicsHolder;
@@ -50,10 +49,5 @@ public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkne
 	@Override
 	public int getRenderDistance() {
 		return 512;
-	}
-
-	@Override
-	public boolean isInRenderDistance(T blockEntity, Vec3d pos) {
-		return true;
 	}
 }
