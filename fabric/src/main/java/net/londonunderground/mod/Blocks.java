@@ -139,39 +139,39 @@ public final class Blocks {
 		// Legacy Items
 		//
 
-		TRACK_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "track_1"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TRACK_2 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "track_2"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_1_STOP = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1_stop"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_1_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_2 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_2"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_2_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_2_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_3 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_3"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_1b = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1b"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_1b_STOP = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1b_stop"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_1b_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1b_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_2b = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_2b"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_2b_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_2b_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUBE_3b = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_3b"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
+		TRACK_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "track_1"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TRACK_2 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "track_2"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_1_STOP = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1_stop"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_1_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_2 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_2"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_2_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_2_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_3 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_3"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_1b = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1b"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_1b_STOP = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1b_stop"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_1b_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_1b_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_2b = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_2b"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_2b_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_2b_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUBE_3b = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tube_3b"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
 
-		MORDEN_STEPS = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_arch"), () -> new Block(new StairBlockExtends(getGenericState(), BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		MORDEN_ARCH = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_steps"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
+		MORDEN_STEPS = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_arch"), () -> new Block(new StairBlockExtends(getGenericState(), BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		MORDEN_ARCH = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_steps"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
 
-		TUNNEL_BLOCK_0 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_0"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).noCollision().nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUNNEL_BLOCK_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_1"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUNNEL_BLOCK_1_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_1_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUNNEL_BLOCK_2 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_2"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUNNEL_BLOCK_2_SIGNAL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_2_duel"), () -> new Block(new BlockTunnelSignal(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUNNEL_BLOCK_2_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_2_signal"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUNNEL_BLOCK_3 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_3"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUNNEL_BLOCK_3_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_3_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUNNEL_BLOCK_4 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_4"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		TUNNEL_BLOCK_5 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_5"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
+		TUNNEL_BLOCK_0 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_0"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).noCollision().nonOpaque())));
+		TUNNEL_BLOCK_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_1"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUNNEL_BLOCK_1_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_1_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUNNEL_BLOCK_2 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_2"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUNNEL_BLOCK_2_SIGNAL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_2_duel"), () -> new Block(new BlockTunnelSignal(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUNNEL_BLOCK_2_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_2_signal"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUNNEL_BLOCK_3 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_3"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUNNEL_BLOCK_3_DUEL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_3_duel"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUNNEL_BLOCK_4 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_4"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		TUNNEL_BLOCK_5 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "tunnel_block_5"), () -> new Block(new LUDirectionalBlock(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
 
-		BLOCK_ROUNDEL_STATION = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_station"), () -> new Block(new BlockRoundelStation(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		BLOCK_ROUNDEL_STATION_TYPE_B = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_station_type_b"), () -> new Block(new BlockRoundelStationTypeB(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		BLOCK_ROUNDEL_STATION_TYPE_C = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_station_type_c"), () -> new Block(new BlockRoundelStationTypeC(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
-		BLOCK_ROUNDEL_STATION_TOP = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_station_top"), () -> new Block(new BlockRoundelStationTop(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())), CreativeModeTabs.TFL_LEGACY);
+		BLOCK_ROUNDEL_STATION = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_station"), () -> new Block(new BlockRoundelStation(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		BLOCK_ROUNDEL_STATION_TYPE_B = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_station_type_b"), () -> new Block(new BlockRoundelStationTypeB(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		BLOCK_ROUNDEL_STATION_TYPE_C = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_station_type_c"), () -> new Block(new BlockRoundelStationTypeC(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
+		BLOCK_ROUNDEL_STATION_TOP = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_station_top"), () -> new Block(new BlockRoundelStationTop(BlockHelper.createBlockSettings(true).strength(2).nonOpaque())));
 	}
 
 	public static final BlockRegistryObject PLATFORM_TFL_1;
