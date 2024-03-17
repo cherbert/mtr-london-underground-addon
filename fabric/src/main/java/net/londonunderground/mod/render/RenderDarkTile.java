@@ -14,6 +14,7 @@ import javax.annotation.Nonnull;
 public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkness> extends BlockEntityRenderer<T> {
 
 	private static final TunnelEntityModel TUNNEL_ENTITY_MODEL = new TunnelEntityModel();
+	private static final int VIEW_DISTANCE = 64; // Distance to start rendering the tunnel block
 
 	public RenderDarkTile(Argument dispatcher) {
 		super(dispatcher);
@@ -28,7 +29,7 @@ public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkne
 
 		final BlockPos pos = entity.getPos2();
 		if (!PlayerHelper.isHolding(PlayerEntity.cast(player), item -> Block.getBlockFromItem(item).data instanceof TunnelDarknessBlock)) {
-			if (pos.getManhattanDistance(new Vector3i(player.getBlockPos().data)) < 8196) {
+			if (pos.getSquaredDistance(new Vector3i(player.getBlockPos().data)) < VIEW_DISTANCE * VIEW_DISTANCE) {
 				return;
 			}
 		}

@@ -39,7 +39,8 @@ public class TunnelDarknessBlock extends BlockExtension implements BlockWithEnti
 			super(BlockEntityTypes.DARK_TILE.get(), pos, state);
 		}
 
-		public double getViewDistance() {
+		@Override
+		public double getRenderDistance3() {
 			return 512;
 		}
 	}
