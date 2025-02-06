@@ -3,10 +3,11 @@ package net.londonunderground.mod.blocks;
 import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.BlockExtension;
 import org.mtr.mapping.mapper.BlockHelper;
+import org.mtr.mod.block.BlockWaterloggable;
 
 import javax.annotation.Nonnull;
 
-public class BlockLUPole extends BlockExtension {
+public class BlockLUPole extends BlockWaterloggable {
 
 	public BlockLUPole(BlockSettings settings) {
 		super(settings);

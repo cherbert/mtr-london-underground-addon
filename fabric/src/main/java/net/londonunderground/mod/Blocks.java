@@ -5,7 +5,6 @@ import org.mtr.mapping.holder.Block;
 import org.mtr.mapping.holder.BlockState;
 import org.mtr.mapping.holder.Identifier;
 import org.mtr.mapping.mapper.BlockExtension;
-import org.mtr.mapping.mapper.BlockHelper;
 import org.mtr.mapping.mapper.SlabBlockExtension;
 import org.mtr.mapping.mapper.StairsBlockExtension;
 import org.mtr.mapping.registry.BlockRegistryObject;
@@ -129,9 +128,9 @@ public final class Blocks {
 		BLOCK_ROUNDEL_5_BIG = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_5_big"), () -> new Block(new BlockRoundel5Big(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_SIGNS);
 		BLOCK_ROUNDEL_5_BIG_EVEN = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "block_roundel_5_big_even"), () -> new Block(new BlockRoundel5BigEven(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_SIGNS);
 
-		MORDEN_STEPS_LEFT = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_steps_left"), () -> new Block(new MordenStepsLeft(org.mtr.mod.Blocks.createDefaultBlockSettings(true))), CreativeModeTabs.TFL_BLOCKS);
-		MORDEN_STEPS_MIDDLE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_steps_middle"), () -> new Block(new MordenStepsMiddle(org.mtr.mod.Blocks.createDefaultBlockSettings(true))), CreativeModeTabs.TFL_BLOCKS);
-		MORDEN_STEPS_RIGHT = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_steps_right"), () -> new Block(new MordenStepsRight(org.mtr.mod.Blocks.createDefaultBlockSettings(true))), CreativeModeTabs.TFL_BLOCKS);
+		MORDEN_STEPS_LEFT = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_steps_left"), () -> new Block(new MordenSteps(org.mtr.mod.Blocks.createDefaultBlockSettings(true))), CreativeModeTabs.TFL_BLOCKS);
+		MORDEN_STEPS_MIDDLE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_steps_middle"), () -> new Block(new MordenSteps(org.mtr.mod.Blocks.createDefaultBlockSettings(true))), CreativeModeTabs.TFL_BLOCKS);
+		MORDEN_STEPS_RIGHT = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_steps_right"), () -> new Block(new MordenSteps(org.mtr.mod.Blocks.createDefaultBlockSettings(true))), CreativeModeTabs.TFL_BLOCKS);
 
 		NAME_PROJECTOR = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "name_projector"), () -> new Block(new NameProjector(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_BLOCKS);
 

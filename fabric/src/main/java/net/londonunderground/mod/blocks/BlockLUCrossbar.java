@@ -5,24 +5,27 @@ import org.mtr.mapping.mapper.BlockExtension;
 import org.mtr.mapping.mapper.BlockHelper;
 import org.mtr.mapping.mapper.DirectionHelper;
 import org.mtr.mapping.tool.HolderBase;
+import org.mtr.mod.block.BlockWaterloggable;
 import org.mtr.mod.block.IBlock;
 
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class BlockLUCrossbar extends BlockExtension implements DirectionHelper {
+public class BlockLUCrossbar extends BlockWaterloggable implements DirectionHelper {
 
 	public BlockLUCrossbar(BlockSettings settings) {
 		super(settings);
 	}
 
+	@Nonnull
 	@Override
-	public BlockState getPlacementState2(ItemPlacementContext ctx) {
-		return getDefaultState2().with(new Property<>(FACING.data), ctx.getPlayerFacing().data);
+	public BlockState getPlacementState2(ItemPlacementContext itemPlacementContext) {
+		return super.getPlacementState2(itemPlacementContext).with(new Property<>(FACING.data), itemPlacementContext.getPlayerFacing().data);
 	}
 
 	@Override
 	public void addBlockProperties(List<HolderBase<?>> builder) {
+		super.addBlockProperties(builder);
 		builder.add(FACING);
 	}
 

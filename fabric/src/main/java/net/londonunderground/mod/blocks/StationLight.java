@@ -4,12 +4,13 @@ import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.BlockExtension;
 import org.mtr.mapping.mapper.BlockHelper;
 import org.mtr.mapping.tool.HolderBase;
+import org.mtr.mod.block.BlockWaterloggable;
 import org.mtr.mod.block.IBlock;
 
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class StationLight extends BlockExtension {
+public class StationLight extends BlockWaterloggable {
 
 	public static final BooleanProperty FACING = BooleanProperty.of("facing");
 
@@ -17,10 +18,11 @@ public class StationLight extends BlockExtension {
 		super(settings);
 	}
 
+	@Nonnull
 	@Override
-	public BlockState getPlacementState2(ItemPlacementContext ctx) {
-		boolean facing = ctx.getPlayerFacing().getAxis() == Axis.X;
-		return getDefaultState2().with(new Property<>(FACING.data), facing);
+	public BlockState getPlacementState2(ItemPlacementContext itemPlacementContext) {
+		boolean facing = itemPlacementContext.getPlayerFacing().getAxis() == Axis.X;
+		return super.getPlacementState2(itemPlacementContext).with(new Property<>(FACING.data), facing);
 	}
 
 	@Nonnull
@@ -44,6 +46,7 @@ public class StationLight extends BlockExtension {
 
 	@Override
 	public void addBlockProperties(List<HolderBase<?>> builder) {
+		super.addBlockProperties(builder);
 		builder.add(FACING);
 	}
 }
