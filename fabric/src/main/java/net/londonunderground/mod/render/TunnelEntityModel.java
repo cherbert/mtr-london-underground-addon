@@ -14,8 +14,8 @@ public class TunnelEntityModel extends EntityModelExtension<EntityExtension> {
 	public TunnelEntityModel() {
 		super(16, 16);
 		main = createModelPart();
-		main.setPivot(0, 24, 0);
-		main.setTextureUVOffset(0, 0).addCuboid(0, -24, 0, 16, 16, 16, 0, false);
+		main.setPivot(0, 0, 0);
+		main.setTextureUVOffset(0, 0).addCuboid(0, 0, 0, 16, 16, 16, 0, false);
 		buildModel();
 	}
 

@@ -35,7 +35,7 @@ public class RenderDarkTile<T extends TunnelDarknessBlock.TileEntityTunnelDarkne
 			}
 		}
 
-		final StoredMatrixTransformations storedMatrixTransformations = new StoredMatrixTransformations(pos.getX(), pos.getY() + 1.5, pos.getZ());
+		final StoredMatrixTransformations storedMatrixTransformations = new StoredMatrixTransformations(pos.getX(), pos.getY(), pos.getZ());
 		MainRenderer.scheduleRender(new Identifier(Init.MOD_ID, "textures/block/tunnel_darkness.png"), false, QueuedRenderLayer.EXTERIOR, (graphicsHolderNew, offset) -> {
 			storedMatrixTransformations.transform(graphicsHolderNew, offset);
 			TUNNEL_ENTITY_MODEL.render(graphicsHolderNew, light, overlay, 1, 1, 1, 50);
