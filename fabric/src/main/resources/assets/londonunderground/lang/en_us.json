@@ -97,6 +97,8 @@
   "block.londonunderground.morden_arch_new" : "Tube Tunnel Block #4 (Morden Cobblestone)",
   "block.londonunderground.morden_arch_roof" : "Tube Tunnel Block #5 (Morden Cobblestone)",
   "block.londonunderground.morden_sign" : "Morden Style Sign",
+  "block.londonunderground.morden_sign_dlr" : "Morden Style Sign (DLR)",
+  "block.londonunderground.morden_sign_overground" : "Morden Style Sign (Overground)",
   "block.londonunderground.pids_pole": "LU PIDS Pole",
   "block.londonunderground.elizabeth_sign" : "Morden Style Sign (Elizabeth Style)",
   "block.londonunderground.metropolitan_sign" : "Morden Style Sign (Metropolitan Style)",

@@ -39,6 +39,9 @@ public final class InitClient {
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.NAME_PROJECTOR, RenderNameProjector::new);
 
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.MORDEN_SIGN_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
+		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.MORDEN_SIGN_TILE_ENTITY_DLR, dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
+		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.MORDEN_SIGN_TILE_ENTITY_OVERGROUND, dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
+
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.METROPOLITAN_SIGN_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.ELIZABETH_SIGN_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 15 / 16F, 0.2F / 16, 0, 10 / 16F, 0.425F / 16, 0, 0xFFB3B3B3, true, "johnston"));
 

@@ -94,7 +94,11 @@ public final class Blocks {
 		MORDEN_COBBLESTONE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_cobblestone"), () -> new Block(new MordenBlock(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_BLOCKS);
 		MORDEN_ARCH_NEW = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_arch_new"), () -> new Block(new TunnelA4(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_STATION);
 		MORDEN_ARCH_ROOF = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_arch_roof"), () -> new Block(new TunnelA5(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_STATION);
+
 		MORDEN_SIGN = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_sign"), () -> new Block(new MordenSign(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_SIGNS);
+		MORDEN_SIGN_DLR = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_sign_dlr"), () -> new Block(new MordenSignDLR(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_SIGNS);
+		MORDEN_SIGN_OVERGROUND = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_sign_overground"), () -> new Block(new MordenSignOverground(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_SIGNS);
+
 		METROPOLITAN_SIGN = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "metropolitan_sign"), () -> new Block(new MetropolitanSign(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_SIGNS);
 		ELIZABETH_SIGN = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "elizabeth_sign"), () -> new Block(new ElizabethSign(org.mtr.mod.Blocks.createDefaultBlockSettings(true))), CreativeModeTabs.TFL_SIGNS);
 
@@ -245,6 +249,9 @@ public final class Blocks {
 	public static final BlockRegistryObject MORDEN_ARCH_NEW;
 	public static final BlockRegistryObject MORDEN_ARCH_ROOF;
 	public static final BlockRegistryObject MORDEN_SIGN;
+	public static final BlockRegistryObject MORDEN_SIGN_DLR;
+	public static final BlockRegistryObject MORDEN_SIGN_OVERGROUND;
+
 	public static final BlockRegistryObject METROPOLITAN_SIGN;
 	public static final BlockRegistryObject ELIZABETH_SIGN;
 	public static final BlockRegistryObject SIGN_RIVER;

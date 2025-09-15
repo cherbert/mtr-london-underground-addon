@@ -39,7 +39,11 @@ public final class BlockEntityTypes {
 		BLOCK_ROUNDEL_STATION_TYPE_B_TILE_ENTITY = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "block_roundel_station_type_b"), BlockRoundelStationTypeB.TileEntityBlockRoundelStationTypeB::new, Blocks.BLOCK_ROUNDEL_STATION_TYPE_B::get);
 		BLOCK_ROUNDEL_STATION_TYPE_C_TILE_ENTITY = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "block_roundel_station_type_c"), BlockRoundelStationTypeC.TileEntityBlockRoundelStationTypeC::new, Blocks.BLOCK_ROUNDEL_STATION_TYPE_C::get);
 		BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "block_roundel_station_top"), BlockRoundelStationTop.TileEntityBlockRoundelStationTop::new, Blocks.BLOCK_ROUNDEL_STATION_TOP::get);
+
 		MORDEN_SIGN_TILE_ENTITY = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "morden_sign"), MordenSign.TileEntityMordenSign::new, Blocks.MORDEN_SIGN::get);
+		MORDEN_SIGN_TILE_ENTITY_DLR = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "morden_sign_dlr"), MordenSignDLR.TileEntityMordenSignDLR::new, Blocks.MORDEN_SIGN_DLR::get);
+		MORDEN_SIGN_TILE_ENTITY_OVERGROUND = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "morden_sign_overground"), MordenSignOverground.TileEntityMordenSignOverground::new, Blocks.MORDEN_SIGN_OVERGROUND::get);
+
 		METROPOLITAN_SIGN_TILE_ENTITY = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "metropolitan_sign"), MetropolitanSign.TileEntityMetropolitanSign::new, Blocks.METROPOLITAN_SIGN::get);
 		ELIZABETH_SIGN_TILE_ENTITY = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "elizabeth_sign"), ElizabethSign.TileEntityElizabethSign::new, Blocks.ELIZABETH_SIGN::get);
 
@@ -82,6 +86,8 @@ public final class BlockEntityTypes {
 	public static final BlockEntityTypeRegistryObject<BlockRoundelStationTypeC.TileEntityBlockRoundelStationTypeC> BLOCK_ROUNDEL_STATION_TYPE_C_TILE_ENTITY;
 	public static final BlockEntityTypeRegistryObject<BlockRoundelStationTop.TileEntityBlockRoundelStationTop> BLOCK_ROUNDEL_STATION_TOP_TILE_ENTITY;
 	public static final BlockEntityTypeRegistryObject<MordenSign.TileEntityMordenSign> MORDEN_SIGN_TILE_ENTITY;
+	public static final BlockEntityTypeRegistryObject<MordenSignDLR.TileEntityMordenSignDLR> MORDEN_SIGN_TILE_ENTITY_DLR;
+	public static final BlockEntityTypeRegistryObject<MordenSignOverground.TileEntityMordenSignOverground> MORDEN_SIGN_TILE_ENTITY_OVERGROUND;
 	public static final BlockEntityTypeRegistryObject<MetropolitanSign.TileEntityMetropolitanSign> METROPOLITAN_SIGN_TILE_ENTITY;
 	public static final BlockEntityTypeRegistryObject<ElizabethSign.TileEntityElizabethSign> ELIZABETH_SIGN_TILE_ENTITY;
 	public static final BlockEntityTypeRegistryObject<SignRiver.TileEntitySignRiver> SIGN_RIVER_TILE_ENTITY;

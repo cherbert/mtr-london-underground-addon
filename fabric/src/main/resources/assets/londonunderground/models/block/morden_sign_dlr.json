@@ -1,0 +1,10 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "londonunderground:block/morden_sign_base",
+	"textures": {
+		"1": "londonunderground:block/morden3",
+		"2": "londonunderground:block/morden4",
+		"5": "londonunderground:block/gray_concrete",
+		"particle": "londonunderground:block/morden3"
+	}
+}

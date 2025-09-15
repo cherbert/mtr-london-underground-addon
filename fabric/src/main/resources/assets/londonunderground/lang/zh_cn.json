@@ -96,6 +96,8 @@
   "block.londonunderground.morden_arch_new": "隧道方块 #4 (莫登站鹅卵石风格)",
   "block.londonunderground.morden_arch_roof": "隧道方块 #5 (莫登站鹅卵石风格)",
   "block.londonunderground.morden_sign": "莫登站风格标志",
+  "block.londonunderground.morden_sign_dlr" : "莫登站风格标志 (DLR)",
+  "block.londonunderground.morden_sign_overground" : "莫登站风格标志 (Overground)",
   "block.londonunderground.pids_pole": "伦敦地铁乘客资讯显示牌杆",
   "block.londonunderground.elizabeth_sign": "莫登站风格标识 (伊丽莎白线风格)",
   "block.londonunderground.metropolitan_sign": "莫登站风格标识 (大都会线风格)",
