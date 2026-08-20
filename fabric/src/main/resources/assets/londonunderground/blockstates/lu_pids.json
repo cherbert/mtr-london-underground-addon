@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "londonunderground:block/lu_pids" },
+		"facing=east": { "model": "londonunderground:block/lu_pids", "y": 90 },
+		"facing=south": { "model": "londonunderground:block/lu_pids", "y": 180 },
+		"facing=west": { "model": "londonunderground:block/lu_pids", "y": 270 }
+	}
+}

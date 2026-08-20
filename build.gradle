@@ -15,6 +15,14 @@ subprojects {
 	repositories {
 		flatDir { dirs "../libs" }
 		maven { url "https://jitpack.io" }
+		// JCM resolves from Modrinth, keeping a third-party jar out of libs/.
+		// Scoped to its own group: unrestricted, Loom also queries it for yarn and
+		// Minecraft, and Modrinth answers unknown artifacts with redirects rather
+		// than a clean 404, which breaks mapping setup.
+		maven {
+			url "https://api.modrinth.com/maven"
+			content { includeGroup "maven.modrinth" }
+		}
 	}
 
 	tasks.withType(Javadoc).tap {

@@ -37,3 +37,7 @@ forge/src/main/resources/data
 forge/src/main/resources/META-INF
 fabric.mod.json
 **/font/*.json
+
+# Third-party mod jars must never be committed: MTR and JCM resolve from
+# Modrinth maven, so a clean clone builds without them.
+libs/*.jar

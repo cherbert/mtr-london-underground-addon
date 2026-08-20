@@ -23,6 +23,7 @@
 	"depends": {
 		"fabric": "*",
 		"minecraft": "@minecraft@",
-		"mtr": ">=4.0.0 <4.1"
+		"mtr": ">=4.0.0 <4.1",
+		"jsblock": ">=2.2.0"
 	}
 }

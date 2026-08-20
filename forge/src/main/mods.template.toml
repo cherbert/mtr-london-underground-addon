@@ -30,3 +30,10 @@ mandatory = true
 versionRange = "[4.0.0,4.1)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies.londonunderground]]
+modId = "jsblock"
+mandatory = true
+versionRange = "[2.2.0,)"
+ordering = "AFTER"
+side = "BOTH"

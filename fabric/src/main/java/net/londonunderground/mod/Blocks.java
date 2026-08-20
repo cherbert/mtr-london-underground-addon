@@ -86,6 +86,7 @@ public final class Blocks {
 		ROUNDEL_POLE_OVERGROUND = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "roundel_pole_overground"), () -> new Block(new LUPoleRoundel(org.mtr.mod.Blocks.createDefaultBlockSettings(true, state -> 15).nonOpaque())), CreativeModeTabs.TFL_SIGNS);
 
 		NORTHERN_PIDS = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pids_northern"), () -> new Block(new NorthernLinePIDS()), CreativeModeTabs.TFL_BLOCKS);
+		LU_PIDS = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "lu_pids"), () -> new Block(new LUPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(true))), CreativeModeTabs.TFL_BLOCKS);
 
 		MORDEN_STAIRS = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_stairs"), () -> new Block(new StairsBlockExtension(getGenericState(), org.mtr.mod.Blocks.createDefaultBlockSettings(true))), CreativeModeTabs.TFL_BLOCKS);
 		MORDEN_STONE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "morden_stone"), () -> new Block(new MordenBlock(org.mtr.mod.Blocks.createDefaultBlockSettings(true).nonOpaque())), CreativeModeTabs.TFL_BLOCKS);
@@ -241,6 +242,7 @@ public final class Blocks {
 	public static final BlockRegistryObject ROUNDEL_POLE_LIZ;
 	public static final BlockRegistryObject ROUNDEL_POLE_OVERGROUND;
 	public static final BlockRegistryObject NORTHERN_PIDS;
+	public static final BlockRegistryObject LU_PIDS;
 	public static final BlockRegistryObject MORDEN_STAIRS;
 	public static final BlockRegistryObject MORDEN_STONE;
 	public static final BlockRegistryObject MORDEN_SLAB;

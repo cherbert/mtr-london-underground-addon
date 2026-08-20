@@ -13,6 +13,7 @@ public final class InitClient {
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.TUNNEL_BLOCK_2_SIGNAL, dispatcher -> new RenderTunnelSignalLight<>(dispatcher, false, 0xFF00FF00));
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.TUNNEL_A2_SIGNAL, dispatcher -> new RenderTunnelSignalLight<>(dispatcher, false, 0xFF00FF00));
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.PIDS_NORTHERN_TILE_ENTITY, RenderNorthernLinePIDS::new);
+		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.LU_PIDS_TILE_ENTITY, RenderLUPIDS::new);
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.BLOCK_ROUNDEL_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 14 / 16F, 0.2F / 16, 0, 0, -0.5F, 0, 0xFFB3B3B3, false, "johnston"));
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.BLOCK_ROUNDEL_NLE_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 14 / 16F, 0.2F / 16, 0, 0, -0.495F, 0, 0xFFB3B3B3, false, "johnston"));
 		REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.BRITISH_RAIL_UNDERGROUND_TILE_ENTITY, dispatcher -> new RenderRoundel<>(dispatcher, 14 / 16F, 0.2F / 16, 0, 0.09F, -0.480F, 0, 0xFFB3B3B3, false, "johnston"));

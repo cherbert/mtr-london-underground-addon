@@ -10,6 +10,7 @@ public final class BlockEntityTypes {
 	static {
 		DARK_TILE = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "tunnel_darkness"), TunnelDarknessBlock.TileEntityTunnelDarkness::new, Blocks.TUNNEL_DARKNESS::get);
 		PIDS_NORTHERN_TILE_ENTITY = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "pids_northern"), NorthernLinePIDS.TileEntityNorthernLinePIDS::new, Blocks.NORTHERN_PIDS::get);
+		LU_PIDS_TILE_ENTITY = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "lu_pids"), LUPIDS.TileEntityLUPIDS::new, Blocks.LU_PIDS::get);
 		TUNNEL_BLOCK_2_SIGNAL = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "tunnel_block_2_signal"), BlockTunnelSignal.TileEntityTunnelSignalLight1::new, Blocks.TUNNEL_BLOCK_2_SIGNAL::get);
 		TUNNEL_A2_SIGNAL = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "tunnel_a2_signal"), TunnelA2Signal.TileEntityTunnelSignalLight1::new, Blocks.TUNNEL_A2_SIGNAL::get);
 		BRITISH_RAIL_UNDERGROUND_TILE_ENTITY = Init.REGISTRY.registerBlockEntityType(new Identifier(Init.MOD_ID, "british_rail_underground"), BritishRailUnderground.TileEntityBritishRailUnderground::new, Blocks.BRITISH_RAIL_UNDERGROUND::get);
@@ -62,6 +63,7 @@ public final class BlockEntityTypes {
 
 	public static final BlockEntityTypeRegistryObject<TunnelDarknessBlock.TileEntityTunnelDarkness> DARK_TILE;
 	public static final BlockEntityTypeRegistryObject<NorthernLinePIDS.TileEntityNorthernLinePIDS> PIDS_NORTHERN_TILE_ENTITY;
+	public static final BlockEntityTypeRegistryObject<LUPIDS.TileEntityLUPIDS> LU_PIDS_TILE_ENTITY;
 	public static final BlockEntityTypeRegistryObject<BlockTunnelSignal.TileEntityTunnelSignalLight1> TUNNEL_BLOCK_2_SIGNAL;
 	public static final BlockEntityTypeRegistryObject<TunnelA2Signal.TileEntityTunnelSignalLight1> TUNNEL_A2_SIGNAL;
 	public static final BlockEntityTypeRegistryObject<BritishRailUnderground.TileEntityBritishRailUnderground> BRITISH_RAIL_UNDERGROUND_TILE_ENTITY;

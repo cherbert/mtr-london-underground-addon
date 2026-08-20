@@ -26,7 +26,11 @@ sourceSets.main.resources { srcDir "src/generated/resources" }
 dependencies {
 	minecraft "net.minecraftforge:forge:${minecraftVersion}-${buildTools.getForgeVersion()}"
 	annotationProcessor "org.spongepowered:mixin:+:processor"
-	implementation fg.deobf("org.mtr:MTR-forge:${mtrVersion}+${minecraftVersion}-server")
+	implementation fg.deobf("maven.modrinth:minecraft-transit-railway:FORGE-${mtrVersion}+${minecraftVersion}")
+	// LUPIDS extends JCMPIDSBlock and is copied into this subproject by
+	// setupFiles, so JCM is needed to compile here as well. Compile-only: the
+	// jar must not be bundled.
+	compileOnly fg.deobf("maven.modrinth:jcm:v${jcmVersion}+${minecraftVersion}")
 }
 
 mixin {

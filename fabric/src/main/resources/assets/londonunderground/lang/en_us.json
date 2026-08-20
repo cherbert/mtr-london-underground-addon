@@ -57,6 +57,7 @@
   "block.londonunderground.station_light" : "Station Light",
   "block.londonunderground.exit_sign" : "Exit Sign",
   "block.londonunderground.pids_northern": "London Underground PID",
+  "block.londonunderground.lu_pids": "London Underground PIDS (Scripted)",
   "block.londonunderground.tunnel_block_5" : "Tunnel #5",
   "block.londonunderground.tunnel_block_4" : "Tunnel #4",
   "block.londonunderground.tunnel_block_3" : "Tunnel #3",

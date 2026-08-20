@@ -1,0 +1,9 @@
+{
+  "pids_images": [
+    {
+      "id": "lu_pids",
+      "name": "London Underground PIDS",
+      "scriptFiles": ["londonunderground:scripts/lu_pids.js"]
+    }
+  ]
+}
