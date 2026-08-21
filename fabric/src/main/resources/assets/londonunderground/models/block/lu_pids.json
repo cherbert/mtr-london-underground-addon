@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "londonunderground:block/tunnel_1",
-		"back": "londonunderground:block/black",
-		"particle": "londonunderground:block/tunnel_1"
+		"particle": "londonunderground:block/tunnel_1",
+		"back": "londonunderground:block/black"
 	},
 	"elements": [
 		{

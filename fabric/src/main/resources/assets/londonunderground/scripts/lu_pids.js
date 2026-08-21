@@ -3,7 +3,8 @@
  *
  * Row 1        lead train, always shown
  * Row 2        second train, replaced by STAND BACK once the lead train is due
- * Row 3        third train, cycling with the second while STAND BACK shows
+ * Row 3        two trains rolling between each other - 3 and 4 normally,
+ *              2 and 3 while STAND BACK has displaced arrival 2 from row 2
  * Clock        centred below the rows, with seconds
  */
 include(Resources.id("jsblock:scripts/pids_util.js"));
@@ -47,6 +48,10 @@ const DUE_AT_MS     = 60000;
 // above it fires at 30s out. Change this one number to retime the warning.
 const AFTER_DUE_MS  = 30000;
 const APPROACH_MS   = DUE_AT_MS - AFTER_DUE_MS;
+// Row 1's time column is cleared once STAND BACK is up: by then the train is
+// visibly arriving and "due" adds nothing. Set false to keep it showing through
+// the warning.
+const HIDE_DUE_WHEN_APPROACHING = true;
 
 const WIPE_MS       = 1400;       // time for the cursor to cross the row
 const WIPE_LTR      = false;      // false = cursor travels right-to-left
@@ -58,6 +63,26 @@ const CHAR_W        = 5;
 // Warning flash. One full on/off cycle takes FLASH_MS * 2.
 const FLASH_MS      = 500;
 const ROW3_CYCLE_MS = 3000;       // dwell per train on row 3
+
+// Row 3 custom message. Deliberately unlike the amber arrival rows so a
+// configured message reads as station information rather than a train.
+const MSG_SCALE     = 0.8;             // a touch smaller than the arrival rows
+const MSG_COLOR     = 0x90EE90;        // light green
+const MSG_Y_NUDGE   = 1;               // re-centres the smaller glyphs in the band
+// Seconds for one full marquee pass, or -1 for JCM's own pacing (half a second
+// per character). Only ever used when the message is too wide to fit.
+const MSG_MARQUEE_SECS = -1;
+// Estimated glyph advance for the fit test, at scale 1. There is no measureText
+// in the script API, so whether the message needs a marquee has to be guessed -
+// and the guess must be an UNDER-estimate. JCM only actually scrolls when it
+// measures the text as wider than the box; if this estimate ran ahead of that,
+// a message could be routed to the marquee branch and then not scroll, leaving
+// it sitting left-aligned. Under-estimating fails the harmless way instead:
+// the message stays centred and stretchXY squashes it slightly.
+//
+// Lower it if long messages squash rather than scroll. Kept separate from
+// CHAR_W, which is tuned for the wipe and wants to be accurate, not low.
+const MSG_CHAR_W    = 4;
 const ROW3_SCROLL_MS = 450;       // slide duration between the two trains
 // Roll travel, set to one full text height so the outgoing entry clears the
 // band as the incoming one enters. Shorter values make the two overlap, which
@@ -65,7 +90,14 @@ const ROW3_SCROLL_MS = 450;       // slide duration between the two trains
 const ROW3_SCROLL_DIST = 9;
 // Height of a row's text box, matching the value passed to size().
 const ROW_TEXT_H    = 9;
-// Roll masks. A flat black texture from JCM, tinted, used as a solid fill.
+// Roll and flash masks. Both hide text by repainting the panel colour over it,
+// so this fill has to match the model's Background element exactly. A flat
+// black texture from JCM, tinted, gives a solid fill.
+//
+// Note if the Background is ever recoloured: color() MULTIPLIES, and this
+// texture is pure black, so no tint of it can produce anything but black.
+// Point MASK_TEXTURE at londonunderground:textures/block/black.png instead and
+// leave MASK_COLOR white - the mask is then the model's own texture, untinted.
 const MASK_TEXTURE  = "jsblock:textures/block/pids/black.png";
 // | 0 forces the signed 32-bit value. Written plain, 0xFF000000 is 4278190080,
 // which overflows Java's signed int and Rhino refuses to convert it - every
@@ -103,8 +135,8 @@ const CLOCK_Z       = 6;
 // not be stretched - stretchXY() fills the box and mangles the glyphs.
 const CLOCK_SCALE   = 1.0;
 const CLOCK_WIDTH   = 46;
-const CLOCK_BOTTOM  = 12;         // distance from the bottom edge; raise to move up
-const CLOCK_X_SHIFT = 0;          // horizontal nudge from centre; negative = left
+const CLOCK_BOTTOM  = 11;         // distance from the bottom edge; raise to move up
+const CLOCK_X_SHIFT = 1;          // horizontal nudge from centre; negative = left
 const CLOCK_BOLD    = true;       // synthetic bold: redraws the glyph offset
 // true = real-world clock; false = Minecraft's in-game time of day.
 const CLOCK_REALTIME = true;
@@ -292,41 +324,45 @@ function drawMask(ctx, x, y, w, h, z) {
     }
 }
 
-// Row 3, including the roll between arrivals 2 and 3 while the warning is up.
-function renderRow3Band(ctx, state, pids, now, approaching, second, third, textW, rowH) {
+// Row 3 always carries two arrivals rolling between each other. WHICH two
+// depends on the warning: with STAND BACK up, arrival 2 has been displaced from
+// row 2 and has nowhere else to go, so row 3 rolls 2 and 3. Otherwise rows 1-2
+// already hold arrivals 1-2, so row 3 rolls 3 and 4.
+function renderRow3Band(ctx, state, pids, now, approaching, second, third, fourth, textW, rowH) {
     let y = TOP_PADDING + (rowH * 2);
 
     // A custom message takes the row outright - no arrivals, no roll.
     let msg = customMessage(pids, 2);
     if (msg !== "") {
-        drawText(ctx, "R3 Custom", msg, SIDE_PADDING, y, textW, false, false, ROW3_Z);
+        drawCustomMessage(ctx, pids, msg, y, textW);
         return;
     }
 
-    if (!approaching || second == null) {
-        drawRow3(ctx, pids, third, y, textW);
-        return;
-    }
-    if (third == null) {
-        drawRow3(ctx, pids, second, y, textW);
-        return;
+    let rowA = approaching ? second : third;
+    let rowB = approaching ? third : fourth;
+
+    // With only one of the pair known there is nothing to roll between.
+    if (rowA == null) { drawRow3(ctx, pids, rowB, y, textW); return; }
+    if (rowB == null) { drawRow3(ctx, pids, rowA, y, textW); return; }
+
+    // While the warning is up the cycle is anchored to the END of the wipe,
+    // not to approachSince. Two animations kicking off together read as noise,
+    // so row 3 holds on arrival 2 until the square has finished clearing row 2.
+    // With no warning there is nothing to wait for, so the roll free-runs.
+    let elapsed;
+    if (approaching) {
+        elapsed = now - state.approachSince - WIPE_MS;
+        if (elapsed < 0) { drawRow3(ctx, pids, rowA, y, textW); return; }
+    } else {
+        elapsed = now;
     }
 
-    // Anchored to the END of the wipe, not to approachSince. Two animations
-    // kicking off together read as noise, so row 3 holds on arrival 2 until the
-    // square has finished clearing row 2, then begins its cycle.
-    let sinceWipeEnd = now - state.approachSince - WIPE_MS;
-    if (sinceWipeEnd < 0) {
-        drawRow3(ctx, pids, second, y, textW);
-        return;
-    }
-
-    let cyclePos = sinceWipeEnd % (ROW3_CYCLE_MS * 2);
-    let onSecond = cyclePos < ROW3_CYCLE_MS;
+    let cyclePos = elapsed % (ROW3_CYCLE_MS * 2);
+    let onFirst = cyclePos < ROW3_CYCLE_MS;
     let intoPhase = cyclePos % ROW3_CYCLE_MS;
 
-    let current = onSecond ? second : third;
-    let previous = onSecond ? third : second;
+    let current = onFirst ? rowA : rowB;
+    let previous = onFirst ? rowB : rowA;
 
     if (ROW3_SCROLL_DIST <= 0 || intoPhase >= ROW3_SCROLL_MS) {
         drawRow3(ctx, pids, current, y, textW);
@@ -337,22 +373,58 @@ function renderRow3Band(ctx, state, pids, now, approaching, second, third, textW
     // so the outgoing one leaves through the top as the new one arrives from
     // the bottom.
     //
-    // The band needs clipping on both sides, and the two sides are handled
-    // differently:
+    // The band needs clipping on both sides, and neither side gets it for
+    // free - both strips are inside the Background, so the model's protruding
+    // casing cannot help:
     //
-    //   below - the incoming entry starts beneath the band, past the bottom of
-    //           the Background, where the protruding casing occludes it. The
-    //           model does that clipping for free.
+    //   above - the outgoing entry rises into ROW 2's space, and without a
+    //           mask simply rides up over the line above.
     //
-    //   above - the outgoing entry rises into ROW 2's space, which is well
-    //           inside the panel, so the casing cannot help: without a mask it
-    //           simply rides up over the line above. The mask sits at MASK_Z,
-    //           below ROW_Z, so it hides row 3's overflow without touching
-    //           row 2 itself.
+    //   below - the incoming entry starts in the strip the clock occupies, and
+    //           was visible sliding up past it.
+    //
+    // Both masks sit at MASK_Z: above ROW3_Z so they clip the roll, below ROW_Z
+    // and CLOCK_Z so rows 1-2 and the clock still draw in front of them.
     let p = intoPhase / ROW3_SCROLL_MS;
     drawRow3(ctx, pids, previous, y - (ROW_TEXT_H * p), textW, ROW3_Z);
     drawRow3(ctx, pids, current, y + (ROW_TEXT_H * (1 - p)), textW, ROW3_Z);
     drawMask(ctx, MASK_INSET, y - ROW_TEXT_H, pids.width - (MASK_INSET * 2), ROW_TEXT_H, MASK_Z);
+    drawMask(ctx, MASK_INSET, y + ROW_TEXT_H, pids.width - (MASK_INSET * 2), ROW_TEXT_H, MASK_Z);
+}
+
+// A configured message on row 3, centred and in light green.
+//
+// Alignment and marquee anchor the box differently - centerAlign() centres the
+// text ON pos, while marquee scrolls it through the box pos..pos+width - so the
+// two cannot be combined and the branch has to be taken up front. That needs a
+// width the script cannot measure, hence the MSG_CHAR_W estimate.
+//
+// The branch matters more than it looks: JCM only scrolls a marquee when IT
+// measures the text as overflowing, and ignores alignment while doing so. Send
+// a message that actually fits down the marquee branch and it neither scrolls
+// nor centres - it just sits at the left edge. Hence the deliberately low
+// estimate; see MSG_CHAR_W.
+//
+// The marquee clips itself: JCM walks the string a character at a time and
+// skips any that fall outside the box, so no mask is needed here.
+function drawCustomMessage(ctx, pids, str, y, textW) {
+    let fits = (str.length * MSG_CHAR_W * MSG_SCALE) <= textW;
+    let t = Text.create("R3 Custom")
+        .text(str)
+        .scale(MSG_SCALE)
+        .size(textW / MSG_SCALE, ROW_TEXT_H)
+        .zOrder(ROW3_Z)
+        .font(FONT_ID)
+        .color(MSG_COLOR);
+    if (fits) {
+        // stretchXY is a backstop, not the intent: it only acts when the text
+        // overruns, so a message the estimate called wrong squashes to fit
+        // rather than spilling over the casing.
+        t = t.stretchXY().centerAlign().pos(pids.width / 2, y + MSG_Y_NUDGE);
+    } else {
+        t = t.marquee(MSG_MARQUEE_SECS).pos(SIDE_PADDING, y + MSG_Y_NUDGE);
+    }
+    t.draw(ctx);
 }
 
 // "Hide platform number" in the block's config screen drops the leading platform
@@ -441,6 +513,9 @@ function render(ctx, state, pids) {
     const lead = pids.arrivals().get(0);
     const second = pids.arrivals().get(1);
     const third = pids.arrivals().get(2);
+    // Row 3 rolls 3 against 4 whenever the warning is not up. get() is bounds
+    // safe and returns null past the end of the list, which the roll handles.
+    const fourth = pids.arrivals().get(3);
 
     // Warning starts once the lead train is inside APPROACH_MS, i.e. a set
     // interval after row 1 begins reading "due".
@@ -457,7 +532,7 @@ function render(ctx, state, pids) {
     // strips either side of row 3, so anything drawn after them stays on top
     // and cannot be clipped by them.
     if (!pids.isRowHidden(2)) {
-        renderRow3Band(ctx, state, pids, now, approaching, second, third, textW, rowH);
+        renderRow3Band(ctx, state, pids, now, approaching, second, third, fourth, textW, rowH);
     }
 
     // --- row 1: custom message, else the lead train ------------------------
@@ -468,7 +543,12 @@ function render(ctx, state, pids) {
             drawText(ctx, "R1 Custom", msg, SIDE_PADDING, y, textW, false);
         } else if (lead != null) {
             drawText(ctx, "R1 Dest", rowLabel(pids, lead), SIDE_PADDING, y, textW - ETA_WIDTH, false);
-            drawText(ctx, "R1 ETA", etaText(lead), pids.width - SIDE_PADDING, y, ETA_WIDTH, true);
+            // The destination box keeps its full width either way. It is fitted
+            // with stretchXY, so handing it the freed ETA space would refit the
+            // text and visibly resize the line the moment the warning fired.
+            if (!approaching || !HIDE_DUE_WHEN_APPROACHING) {
+                drawText(ctx, "R1 ETA", etaText(lead), pids.width - SIDE_PADDING, y, ETA_WIDTH, true);
+            }
         }
     }
 
